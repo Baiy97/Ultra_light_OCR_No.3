@@ -1,0 +1,270 @@
+/home/xingli/miniconda3/envs/paddle/lib/python3.7/site-packages/paddle/fluid/layers/utils.py:26: DeprecationWarning: `np.int` is a deprecated alias for the builtin `int`. To silence this warning, use `int` by itself. Doing this will not modify any behavior and is safe. When replacing `np.int`, you may wish to use e.g. `np.int64` or `np.int32` to specify the precision. If you wish to review your current use, check the release note link for additional information.
+Deprecated in NumPy 1.20; for more details and guidance: https://numpy.org/devdocs/release/1.20.0-notes.html#deprecations
+  def convert_to_list(value, n, name, dtype=np.int):
+/home/xingli/miniconda3/envs/paddle/lib/python3.7/site-packages/skimage/morphology/_skeletonize.py:241: DeprecationWarning: `np.bool` is a deprecated alias for the builtin `bool`. To silence this warning, use `bool` by itself. Doing this will not modify any behavior and is safe. If you specifically wanted the numpy scalar type, use `np.bool_` here.
+Deprecated in NumPy 1.20; for more details and guidance: https://numpy.org/devdocs/release/1.20.0-notes.html#deprecations
+  0, 1, 1, 0, 0, 1, 0, 0, 0], dtype=np.bool)
+/home/xingli/miniconda3/envs/paddle/lib/python3.7/site-packages/skimage/morphology/_skeletonize.py:256: DeprecationWarning: `np.bool` is a deprecated alias for the builtin `bool`. To silence this warning, use `bool` by itself. Doing this will not modify any behavior and is safe. If you specifically wanted the numpy scalar type, use `np.bool_` here.
+Deprecated in NumPy 1.20; for more details and guidance: https://numpy.org/devdocs/release/1.20.0-notes.html#deprecations
+  0, 0, 0, 0, 0, 0, 0, 0, 0], dtype=np.bool)
+Traceback (most recent call last):
+  File "tools/train.py", line 124, in <module>
+    config, device, logger, vdl_writer = program.preprocess(is_train=True)
+  File "/home/xingli/research/PaddleOCR/tools/program.py", line 379, in preprocess
+    config = load_config(FLAGS.config)
+  File "/home/xingli/research/PaddleOCR/tools/program.py", line 92, in load_config
+    merge_config(yaml.load(open(file_path, 'rb'), Loader=yaml.Loader))
+FileNotFoundError: [Errno 2] No such file or directory: 'configs/rec/rec/ch_ppocr_v2.0/rec_chinese_lite_train_v2.0.yml'
+/home/xingli/miniconda3/envs/paddle/lib/python3.7/site-packages/paddle/fluid/layers/utils.py:26: DeprecationWarning: `np.int` is a deprecated alias for the builtin `int`. To silence this warning, use `int` by itself. Doing this will not modify any behavior and is safe. When replacing `np.int`, you may wish to use e.g. `np.int64` or `np.int32` to specify the precision. If you wish to review your current use, check the release note link for additional information.
+Deprecated in NumPy 1.20; for more details and guidance: https://numpy.org/devdocs/release/1.20.0-notes.html#deprecations
+  def convert_to_list(value, n, name, dtype=np.int):
+/home/xingli/miniconda3/envs/paddle/lib/python3.7/site-packages/skimage/morphology/_skeletonize.py:241: DeprecationWarning: `np.bool` is a deprecated alias for the builtin `bool`. To silence this warning, use `bool` by itself. Doing this will not modify any behavior and is safe. If you specifically wanted the numpy scalar type, use `np.bool_` here.
+Deprecated in NumPy 1.20; for more details and guidance: https://numpy.org/devdocs/release/1.20.0-notes.html#deprecations
+  0, 1, 1, 0, 0, 1, 0, 0, 0], dtype=np.bool)
+/home/xingli/miniconda3/envs/paddle/lib/python3.7/site-packages/skimage/morphology/_skeletonize.py:256: DeprecationWarning: `np.bool` is a deprecated alias for the builtin `bool`. To silence this warning, use `bool` by itself. Doing this will not modify any behavior and is safe. If you specifically wanted the numpy scalar type, use `np.bool_` here.
+Deprecated in NumPy 1.20; for more details and guidance: https://numpy.org/devdocs/release/1.20.0-notes.html#deprecations
+  0, 0, 0, 0, 0, 0, 0, 0, 0], dtype=np.bool)
+/home/xingli/miniconda3/envs/paddle/lib/python3.7/site-packages/paddle/fluid/layers/utils.py:26: DeprecationWarning: `np.int` is a deprecated alias for the builtin `int`. To silence this warning, use `int` by itself. Doing this will not modify any behavior and is safe. When replacing `np.int`, you may wish to use e.g. `np.int64` or `np.int32` to specify the precision. If you wish to review your current use, check the release note link for additional information.
+Deprecated in NumPy 1.20; for more details and guidance: https://numpy.org/devdocs/release/1.20.0-notes.html#deprecations
+  def convert_to_list(value, n, name, dtype=np.int):
+/home/xingli/miniconda3/envs/paddle/lib/python3.7/site-packages/skimage/morphology/_skeletonize.py:241: DeprecationWarning: `np.bool` is a deprecated alias for the builtin `bool`. To silence this warning, use `bool` by itself. Doing this will not modify any behavior and is safe. If you specifically wanted the numpy scalar type, use `np.bool_` here.
+Deprecated in NumPy 1.20; for more details and guidance: https://numpy.org/devdocs/release/1.20.0-notes.html#deprecations
+  0, 1, 1, 0, 0, 1, 0, 0, 0], dtype=np.bool)
+/home/xingli/miniconda3/envs/paddle/lib/python3.7/site-packages/skimage/morphology/_skeletonize.py:256: DeprecationWarning: `np.bool` is a deprecated alias for the builtin `bool`. To silence this warning, use `bool` by itself. Doing this will not modify any behavior and is safe. If you specifically wanted the numpy scalar type, use `np.bool_` here.
+Deprecated in NumPy 1.20; for more details and guidance: https://numpy.org/devdocs/release/1.20.0-notes.html#deprecations
+  0, 0, 0, 0, 0, 0, 0, 0, 0], dtype=np.bool)
+I0512 23:18:14.279093  4058 nccl_context.cc:189] init nccl context nranks: 3 local rank: 2 gpu id: 3 ring id: 0
+W0512 23:18:14.657325  4058 device_context.cc:362] Please NOTE: device: 3, GPU Compute Capability: 6.1, Driver API Version: 11.0, Runtime API Version: 10.2
+W0512 23:18:14.657589  4058 dynamic_loader.cc:236] The third-party dynamic library (libcudnn.so) that Paddle depends on is not configured correctly. (error code is libcudnn.so: cannot open shared object file: No such file or directory)
+  Suggestions:
+  1. Check if the third-party dynamic library (e.g. CUDA, CUDNN) is installed correctly and its version is matched with paddlepaddle you installed.
+  2. Configure third-party dynamic library environment variables as follows:
+  - Linux: set LD_LIBRARY_PATH by `export LD_LIBRARY_PATH=...`
+  - Windows: set PATH by `set PATH=XXX;
+Traceback (most recent call last):
+  File "tools/train.py", line 125, in <module>
+    main(config, device, logger, vdl_writer)
+  File "tools/train.py", line 47, in main
+    dist.init_parallel_env()
+  File "/home/xingli/miniconda3/envs/paddle/lib/python3.7/site-packages/paddle/distributed/parallel.py", line 184, in init_parallel_env
+    parallel_helper._init_parallel_ctx()
+  File "/home/xingli/miniconda3/envs/paddle/lib/python3.7/site-packages/paddle/fluid/dygraph/parallel_helper.py", line 42, in _init_parallel_ctx
+    __parallel_ctx__clz__.init()
+RuntimeError: (PreconditionNotMet) Cannot load cudnn shared library. Cannot invoke method cudnnGetVersion.
+  [Hint: cudnn_dso_handle should not be null.] (at /paddle/paddle/fluid/platform/dynload/cudnn.cc:76)
+
+/home/xingli/miniconda3/envs/paddle/lib/python3.7/site-packages/paddle/fluid/layers/utils.py:26: DeprecationWarning: `np.int` is a deprecated alias for the builtin `int`. To silence this warning, use `int` by itself. Doing this will not modify any behavior and is safe. When replacing `np.int`, you may wish to use e.g. `np.int64` or `np.int32` to specify the precision. If you wish to review your current use, check the release note link for additional information.
+Deprecated in NumPy 1.20; for more details and guidance: https://numpy.org/devdocs/release/1.20.0-notes.html#deprecations
+  def convert_to_list(value, n, name, dtype=np.int):
+/home/xingli/miniconda3/envs/paddle/lib/python3.7/site-packages/skimage/morphology/_skeletonize.py:241: DeprecationWarning: `np.bool` is a deprecated alias for the builtin `bool`. To silence this warning, use `bool` by itself. Doing this will not modify any behavior and is safe. If you specifically wanted the numpy scalar type, use `np.bool_` here.
+Deprecated in NumPy 1.20; for more details and guidance: https://numpy.org/devdocs/release/1.20.0-notes.html#deprecations
+  0, 1, 1, 0, 0, 1, 0, 0, 0], dtype=np.bool)
+/home/xingli/miniconda3/envs/paddle/lib/python3.7/site-packages/skimage/morphology/_skeletonize.py:256: DeprecationWarning: `np.bool` is a deprecated alias for the builtin `bool`. To silence this warning, use `bool` by itself. Doing this will not modify any behavior and is safe. If you specifically wanted the numpy scalar type, use `np.bool_` here.
+Deprecated in NumPy 1.20; for more details and guidance: https://numpy.org/devdocs/release/1.20.0-notes.html#deprecations
+  0, 0, 0, 0, 0, 0, 0, 0, 0], dtype=np.bool)
+I0512 23:30:25.588161 17084 nccl_context.cc:189] init nccl context nranks: 3 local rank: 2 gpu id: 3 ring id: 0
+W0512 23:30:26.213800 17084 device_context.cc:362] Please NOTE: device: 3, GPU Compute Capability: 6.1, Driver API Version: 11.0, Runtime API Version: 10.2
+W0512 23:30:26.218330 17084 device_context.cc:372] device: 3, cuDNN Version: 7.6.
+Traceback (most recent call last):
+  File "tools/train.py", line 125, in <module>
+    main(config, device, logger, vdl_writer)
+  File "tools/train.py", line 52, in main
+    train_dataloader = build_dataloader(config, 'Train', device, logger)
+  File "/home/xingli/research/PaddleOCR/ppocr/data/__init__.py", line 65, in build_dataloader
+    dataset = eval(module_name)(config, mode, logger, seed)
+  File "/home/xingli/research/PaddleOCR/ppocr/data/simple_dataset.py", line 47, in __init__
+    self.data_lines = self.get_image_info_list(label_file_list, ratio_list)
+  File "/home/xingli/research/PaddleOCR/ppocr/data/simple_dataset.py", line 58, in get_image_info_list
+    with open(file, "rb") as f:
+FileNotFoundError: [Errno 2] No such file or directory: './train/Label.txt'
+/home/xingli/miniconda3/envs/paddle/lib/python3.7/site-packages/paddle/fluid/layers/utils.py:26: DeprecationWarning: `np.int` is a deprecated alias for the builtin `int`. To silence this warning, use `int` by itself. Doing this will not modify any behavior and is safe. When replacing `np.int`, you may wish to use e.g. `np.int64` or `np.int32` to specify the precision. If you wish to review your current use, check the release note link for additional information.
+Deprecated in NumPy 1.20; for more details and guidance: https://numpy.org/devdocs/release/1.20.0-notes.html#deprecations
+  def convert_to_list(value, n, name, dtype=np.int):
+/home/xingli/miniconda3/envs/paddle/lib/python3.7/site-packages/skimage/morphology/_skeletonize.py:241: DeprecationWarning: `np.bool` is a deprecated alias for the builtin `bool`. To silence this warning, use `bool` by itself. Doing this will not modify any behavior and is safe. If you specifically wanted the numpy scalar type, use `np.bool_` here.
+Deprecated in NumPy 1.20; for more details and guidance: https://numpy.org/devdocs/release/1.20.0-notes.html#deprecations
+  0, 1, 1, 0, 0, 1, 0, 0, 0], dtype=np.bool)
+/home/xingli/miniconda3/envs/paddle/lib/python3.7/site-packages/skimage/morphology/_skeletonize.py:256: DeprecationWarning: `np.bool` is a deprecated alias for the builtin `bool`. To silence this warning, use `bool` by itself. Doing this will not modify any behavior and is safe. If you specifically wanted the numpy scalar type, use `np.bool_` here.
+Deprecated in NumPy 1.20; for more details and guidance: https://numpy.org/devdocs/release/1.20.0-notes.html#deprecations
+  0, 0, 0, 0, 0, 0, 0, 0, 0], dtype=np.bool)
+I0512 23:31:02.592985 18169 nccl_context.cc:189] init nccl context nranks: 3 local rank: 2 gpu id: 3 ring id: 0
+W0512 23:31:03.020514 18169 device_context.cc:362] Please NOTE: device: 3, GPU Compute Capability: 6.1, Driver API Version: 11.0, Runtime API Version: 10.2
+W0512 23:31:03.025784 18169 device_context.cc:372] device: 3, cuDNN Version: 7.6.
+Traceback (most recent call last):
+  File "tools/train.py", line 125, in <module>
+    main(config, device, logger, vdl_writer)
+  File "tools/train.py", line 52, in main
+    train_dataloader = build_dataloader(config, 'Train', device, logger)
+  File "/home/xingli/research/PaddleOCR/ppocr/data/__init__.py", line 65, in build_dataloader
+    dataset = eval(module_name)(config, mode, logger, seed)
+  File "/home/xingli/research/PaddleOCR/ppocr/data/simple_dataset.py", line 47, in __init__
+    self.data_lines = self.get_image_info_list(label_file_list, ratio_list)
+  File "/home/xingli/research/PaddleOCR/ppocr/data/simple_dataset.py", line 58, in get_image_info_list
+    with open(file, "rb") as f:
+FileNotFoundError: [Errno 2] No such file or directory: './train/TrainLabel.txt'
+/home/xingli/miniconda3/envs/paddle/lib/python3.7/site-packages/paddle/fluid/layers/utils.py:26: DeprecationWarning: `np.int` is a deprecated alias for the builtin `int`. To silence this warning, use `int` by itself. Doing this will not modify any behavior and is safe. When replacing `np.int`, you may wish to use e.g. `np.int64` or `np.int32` to specify the precision. If you wish to review your current use, check the release note link for additional information.
+Deprecated in NumPy 1.20; for more details and guidance: https://numpy.org/devdocs/release/1.20.0-notes.html#deprecations
+  def convert_to_list(value, n, name, dtype=np.int):
+/home/xingli/miniconda3/envs/paddle/lib/python3.7/site-packages/skimage/morphology/_skeletonize.py:241: DeprecationWarning: `np.bool` is a deprecated alias for the builtin `bool`. To silence this warning, use `bool` by itself. Doing this will not modify any behavior and is safe. If you specifically wanted the numpy scalar type, use `np.bool_` here.
+Deprecated in NumPy 1.20; for more details and guidance: https://numpy.org/devdocs/release/1.20.0-notes.html#deprecations
+  0, 1, 1, 0, 0, 1, 0, 0, 0], dtype=np.bool)
+/home/xingli/miniconda3/envs/paddle/lib/python3.7/site-packages/skimage/morphology/_skeletonize.py:256: DeprecationWarning: `np.bool` is a deprecated alias for the builtin `bool`. To silence this warning, use `bool` by itself. Doing this will not modify any behavior and is safe. If you specifically wanted the numpy scalar type, use `np.bool_` here.
+Deprecated in NumPy 1.20; for more details and guidance: https://numpy.org/devdocs/release/1.20.0-notes.html#deprecations
+  0, 0, 0, 0, 0, 0, 0, 0, 0], dtype=np.bool)
+I0512 23:32:04.406657 19445 nccl_context.cc:189] init nccl context nranks: 3 local rank: 2 gpu id: 3 ring id: 0
+W0512 23:32:04.944283 19445 device_context.cc:362] Please NOTE: device: 3, GPU Compute Capability: 6.1, Driver API Version: 11.0, Runtime API Version: 10.2
+W0512 23:32:04.949221 19445 device_context.cc:372] device: 3, cuDNN Version: 7.6.
+main proc 19707 exit, kill process group 19364
+/home/xingli/miniconda3/envs/paddle/lib/python3.7/site-packages/paddle/fluid/layers/utils.py:26: DeprecationWarning: `np.int` is a deprecated alias for the builtin `int`. To silence this warning, use `int` by itself. Doing this will not modify any behavior and is safe. When replacing `np.int`, you may wish to use e.g. `np.int64` or `np.int32` to specify the precision. If you wish to review your current use, check the release note link for additional information.
+Deprecated in NumPy 1.20; for more details and guidance: https://numpy.org/devdocs/release/1.20.0-notes.html#deprecations
+  def convert_to_list(value, n, name, dtype=np.int):
+/home/xingli/miniconda3/envs/paddle/lib/python3.7/site-packages/skimage/morphology/_skeletonize.py:241: DeprecationWarning: `np.bool` is a deprecated alias for the builtin `bool`. To silence this warning, use `bool` by itself. Doing this will not modify any behavior and is safe. If you specifically wanted the numpy scalar type, use `np.bool_` here.
+Deprecated in NumPy 1.20; for more details and guidance: https://numpy.org/devdocs/release/1.20.0-notes.html#deprecations
+  0, 1, 1, 0, 0, 1, 0, 0, 0], dtype=np.bool)
+/home/xingli/miniconda3/envs/paddle/lib/python3.7/site-packages/skimage/morphology/_skeletonize.py:256: DeprecationWarning: `np.bool` is a deprecated alias for the builtin `bool`. To silence this warning, use `bool` by itself. Doing this will not modify any behavior and is safe. If you specifically wanted the numpy scalar type, use `np.bool_` here.
+Deprecated in NumPy 1.20; for more details and guidance: https://numpy.org/devdocs/release/1.20.0-notes.html#deprecations
+  0, 0, 0, 0, 0, 0, 0, 0, 0], dtype=np.bool)
+I0512 23:34:49.969730 24697 nccl_context.cc:189] init nccl context nranks: 3 local rank: 2 gpu id: 3 ring id: 0
+W0512 23:34:50.376066 24697 device_context.cc:362] Please NOTE: device: 3, GPU Compute Capability: 6.1, Driver API Version: 11.0, Runtime API Version: 10.2
+W0512 23:34:50.381646 24697 device_context.cc:372] device: 3, cuDNN Version: 7.6.
+/home/xingli/miniconda3/envs/paddle/lib/python3.7/site-packages/paddle/fluid/layers/utils.py:26: DeprecationWarning: `np.int` is a deprecated alias for the builtin `int`. To silence this warning, use `int` by itself. Doing this will not modify any behavior and is safe. When replacing `np.int`, you may wish to use e.g. `np.int64` or `np.int32` to specify the precision. If you wish to review your current use, check the release note link for additional information.
+Deprecated in NumPy 1.20; for more details and guidance: https://numpy.org/devdocs/release/1.20.0-notes.html#deprecations
+  def convert_to_list(value, n, name, dtype=np.int):
+Traceback (most recent call last):
+  File "tools/train.py", line 27, in <module>
+    import paddle
+  File "/home/xingli/miniconda3/envs/paddle/lib/python3.7/site-packages/paddle/__init__.py", line 29, in <module>
+    from .fluid import monkey_patch_variable
+  File "/home/xingli/miniconda3/envs/paddle/lib/python3.7/site-packages/paddle/fluid/__init__.py", line 51, in <module>
+    from . import io
+  File "/home/xingli/miniconda3/envs/paddle/lib/python3.7/site-packages/paddle/fluid/io.py", line 40, in <module>
+    from . import reader
+  File "/home/xingli/miniconda3/envs/paddle/lib/python3.7/site-packages/paddle/fluid/reader.py", line 25, in <module>
+    from .dataloader import BatchSampler, Dataset, IterableDataset
+  File "/home/xingli/miniconda3/envs/paddle/lib/python3.7/site-packages/paddle/fluid/dataloader/__init__.py", line 17, in <module>
+    from . import dataset
+  File "/home/xingli/miniconda3/envs/paddle/lib/python3.7/site-packages/paddle/fluid/dataloader/dataset.py", line 18, in <module>
+    import paddle.dataset.common
+  File "/home/xingli/miniconda3/envs/paddle/lib/python3.7/site-packages/paddle/dataset/__init__.py", line 27, in <module>
+    import paddle.dataset.flowers
+  File "/home/xingli/miniconda3/envs/paddle/lib/python3.7/site-packages/paddle/dataset/flowers.py", line 38, in <module>
+    from paddle.dataset.image import *
+  File "/home/xingli/miniconda3/envs/paddle/lib/python3.7/site-packages/paddle/dataset/image.py", line 46, in <module>
+    out, err = import_cv2_proc.communicate()
+  File "/home/xingli/miniconda3/envs/paddle/lib/python3.7/subprocess.py", line 964, in communicate
+    stdout, stderr = self._communicate(input, endtime, timeout)
+  File "/home/xingli/miniconda3/envs/paddle/lib/python3.7/subprocess.py", line 1715, in _communicate
+    ready = selector.select(timeout)
+  File "/home/xingli/miniconda3/envs/paddle/lib/python3.7/selectors.py", line 415, in select
+    fd_event_list = self._selector.poll(timeout)
+KeyboardInterrupt
+/home/xingli/miniconda3/envs/paddle/lib/python3.7/site-packages/paddle/fluid/layers/utils.py:26: DeprecationWarning: `np.int` is a deprecated alias for the builtin `int`. To silence this warning, use `int` by itself. Doing this will not modify any behavior and is safe. When replacing `np.int`, you may wish to use e.g. `np.int64` or `np.int32` to specify the precision. If you wish to review your current use, check the release note link for additional information.
+Deprecated in NumPy 1.20; for more details and guidance: https://numpy.org/devdocs/release/1.20.0-notes.html#deprecations
+  def convert_to_list(value, n, name, dtype=np.int):
+/home/xingli/miniconda3/envs/paddle/lib/python3.7/site-packages/skimage/morphology/_skeletonize.py:241: DeprecationWarning: `np.bool` is a deprecated alias for the builtin `bool`. To silence this warning, use `bool` by itself. Doing this will not modify any behavior and is safe. If you specifically wanted the numpy scalar type, use `np.bool_` here.
+Deprecated in NumPy 1.20; for more details and guidance: https://numpy.org/devdocs/release/1.20.0-notes.html#deprecations
+  0, 1, 1, 0, 0, 1, 0, 0, 0], dtype=np.bool)
+/home/xingli/miniconda3/envs/paddle/lib/python3.7/site-packages/skimage/morphology/_skeletonize.py:256: DeprecationWarning: `np.bool` is a deprecated alias for the builtin `bool`. To silence this warning, use `bool` by itself. Doing this will not modify any behavior and is safe. If you specifically wanted the numpy scalar type, use `np.bool_` here.
+Deprecated in NumPy 1.20; for more details and guidance: https://numpy.org/devdocs/release/1.20.0-notes.html#deprecations
+  0, 0, 0, 0, 0, 0, 0, 0, 0], dtype=np.bool)
+I0514 12:15:48.349470  2353 nccl_context.cc:189] init nccl context nranks: 3 local rank: 2 gpu id: 3 ring id: 0
+W0514 12:15:48.789163  2353 device_context.cc:362] Please NOTE: device: 3, GPU Compute Capability: 6.1, Driver API Version: 11.0, Runtime API Version: 10.2
+W0514 12:15:48.793416  2353 device_context.cc:372] device: 3, cuDNN Version: 7.6.
+main proc 2586 exit, kill process group 2252
+main proc 2584 exit, kill process group 2252
+/home/xingli/miniconda3/envs/paddle/lib/python3.7/site-packages/paddle/fluid/layers/utils.py:26: DeprecationWarning: `np.int` is a deprecated alias for the builtin `int`. To silence this warning, use `int` by itself. Doing this will not modify any behavior and is safe. When replacing `np.int`, you may wish to use e.g. `np.int64` or `np.int32` to specify the precision. If you wish to review your current use, check the release note link for additional information.
+Deprecated in NumPy 1.20; for more details and guidance: https://numpy.org/devdocs/release/1.20.0-notes.html#deprecations
+  def convert_to_list(value, n, name, dtype=np.int):
+/home/xingli/miniconda3/envs/paddle/lib/python3.7/site-packages/skimage/morphology/_skeletonize.py:241: DeprecationWarning: `np.bool` is a deprecated alias for the builtin `bool`. To silence this warning, use `bool` by itself. Doing this will not modify any behavior and is safe. If you specifically wanted the numpy scalar type, use `np.bool_` here.
+Deprecated in NumPy 1.20; for more details and guidance: https://numpy.org/devdocs/release/1.20.0-notes.html#deprecations
+  0, 1, 1, 0, 0, 1, 0, 0, 0], dtype=np.bool)
+/home/xingli/miniconda3/envs/paddle/lib/python3.7/site-packages/skimage/morphology/_skeletonize.py:256: DeprecationWarning: `np.bool` is a deprecated alias for the builtin `bool`. To silence this warning, use `bool` by itself. Doing this will not modify any behavior and is safe. If you specifically wanted the numpy scalar type, use `np.bool_` here.
+Deprecated in NumPy 1.20; for more details and guidance: https://numpy.org/devdocs/release/1.20.0-notes.html#deprecations
+  0, 0, 0, 0, 0, 0, 0, 0, 0], dtype=np.bool)
+I0514 12:17:15.283994  5069 nccl_context.cc:189] init nccl context nranks: 3 local rank: 2 gpu id: 3 ring id: 0
+W0514 12:17:15.834569  5069 device_context.cc:362] Please NOTE: device: 3, GPU Compute Capability: 6.1, Driver API Version: 11.0, Runtime API Version: 10.2
+W0514 12:17:15.840277  5069 device_context.cc:372] device: 3, cuDNN Version: 7.6.
+/home/zlxu/anaconda3/envs/paddleOCR/lib/python3.7/site-packages/paddle/fluid/layers/utils.py:26: DeprecationWarning: `np.int` is a deprecated alias for the builtin `int`. To silence this warning, use `int` by itself. Doing this will not modify any behavior and is safe. When replacing `np.int`, you may wish to use e.g. `np.int64` or `np.int32` to specify the precision. If you wish to review your current use, check the release note link for additional information.
+Deprecated in NumPy 1.20; for more details and guidance: https://numpy.org/devdocs/release/1.20.0-notes.html#deprecations
+  def convert_to_list(value, n, name, dtype=np.int):
+/home/zlxu/anaconda3/envs/paddleOCR/lib/python3.7/site-packages/skimage/morphology/_skeletonize.py:241: DeprecationWarning: `np.bool` is a deprecated alias for the builtin `bool`. To silence this warning, use `bool` by itself. Doing this will not modify any behavior and is safe. If you specifically wanted the numpy scalar type, use `np.bool_` here.
+Deprecated in NumPy 1.20; for more details and guidance: https://numpy.org/devdocs/release/1.20.0-notes.html#deprecations
+  0, 1, 1, 0, 0, 1, 0, 0, 0], dtype=np.bool)
+/home/zlxu/anaconda3/envs/paddleOCR/lib/python3.7/site-packages/skimage/morphology/_skeletonize.py:256: DeprecationWarning: `np.bool` is a deprecated alias for the builtin `bool`. To silence this warning, use `bool` by itself. Doing this will not modify any behavior and is safe. If you specifically wanted the numpy scalar type, use `np.bool_` here.
+Deprecated in NumPy 1.20; for more details and guidance: https://numpy.org/devdocs/release/1.20.0-notes.html#deprecations
+  0, 0, 0, 0, 0, 0, 0, 0, 0], dtype=np.bool)
+main proc 23534 exit, kill process group 23437/home/zlxu/anaconda3/envs/paddleOCR/lib/python3.7/site-packages/paddle/fluid/layers/utils.py:26: DeprecationWarning: `np.int` is a deprecated alias for the builtin `int`. To silence this warning, use `int` by itself. Doing this will not modify any behavior and is safe. When replacing `np.int`, you may wish to use e.g. `np.int64` or `np.int32` to specify the precision. If you wish to review your current use, check the release note link for additional information.
+Deprecated in NumPy 1.20; for more details and guidance: https://numpy.org/devdocs/release/1.20.0-notes.html#deprecations
+  def convert_to_list(value, n, name, dtype=np.int):
+/home/zlxu/anaconda3/envs/paddleOCR/lib/python3.7/site-packages/skimage/morphology/_skeletonize.py:241: DeprecationWarning: `np.bool` is a deprecated alias for the builtin `bool`. To silence this warning, use `bool` by itself. Doing this will not modify any behavior and is safe. If you specifically wanted the numpy scalar type, use `np.bool_` here.
+Deprecated in NumPy 1.20; for more details and guidance: https://numpy.org/devdocs/release/1.20.0-notes.html#deprecations
+  0, 1, 1, 0, 0, 1, 0, 0, 0], dtype=np.bool)
+/home/zlxu/anaconda3/envs/paddleOCR/lib/python3.7/site-packages/skimage/morphology/_skeletonize.py:256: DeprecationWarning: `np.bool` is a deprecated alias for the builtin `bool`. To silence this warning, use `bool` by itself. Doing this will not modify any behavior and is safe. If you specifically wanted the numpy scalar type, use `np.bool_` here.
+Deprecated in NumPy 1.20; for more details and guidance: https://numpy.org/devdocs/release/1.20.0-notes.html#deprecations
+  0, 0, 0, 0, 0, 0, 0, 0, 0], dtype=np.bool)
+/home/zlxu/anaconda3/envs/paddleOCR/lib/python3.7/site-packages/paddle/fluid/layers/utils.py:26: DeprecationWarning: `np.int` is a deprecated alias for the builtin `int`. To silence this warning, use `int` by itself. Doing this will not modify any behavior and is safe. When replacing `np.int`, you may wish to use e.g. `np.int64` or `np.int32` to specify the precision. If you wish to review your current use, check the release note link for additional information.
+Deprecated in NumPy 1.20; for more details and guidance: https://numpy.org/devdocs/release/1.20.0-notes.html#deprecations
+  def convert_to_list(value, n, name, dtype=np.int):
+/home/zlxu/anaconda3/envs/paddleOCR/lib/python3.7/site-packages/skimage/morphology/_skeletonize.py:241: DeprecationWarning: `np.bool` is a deprecated alias for the builtin `bool`. To silence this warning, use `bool` by itself. Doing this will not modify any behavior and is safe. If you specifically wanted the numpy scalar type, use `np.bool_` here.
+Deprecated in NumPy 1.20; for more details and guidance: https://numpy.org/devdocs/release/1.20.0-notes.html#deprecations
+  0, 1, 1, 0, 0, 1, 0, 0, 0], dtype=np.bool)
+/home/zlxu/anaconda3/envs/paddleOCR/lib/python3.7/site-packages/skimage/morphology/_skeletonize.py:256: DeprecationWarning: `np.bool` is a deprecated alias for the builtin `bool`. To silence this warning, use `bool` by itself. Doing this will not modify any behavior and is safe. If you specifically wanted the numpy scalar type, use `np.bool_` here.
+Deprecated in NumPy 1.20; for more details and guidance: https://numpy.org/devdocs/release/1.20.0-notes.html#deprecations
+  0, 0, 0, 0, 0, 0, 0, 0, 0], dtype=np.bool)
+I0517 10:59:11.190678 26488 nccl_context.cc:189] init nccl context nranks: 3 local rank: 2 gpu id: 2 ring id: 0
+W0517 10:59:11.705744 26488 device_context.cc:362] Please NOTE: device: 2, GPU Compute Capability: 6.1, Driver API Version: 11.0, Runtime API Version: 10.2
+W0517 10:59:11.711732 26488 device_context.cc:372] device: 2, cuDNN Version: 7.6.
+main proc 30089 exit, kill process group 26393main proc 30082 exit, kill process group 26393
+
+main proc 30095 exit, kill process group 26393
+/home/zlxu/anaconda3/envs/paddleOCR/lib/python3.7/site-packages/paddle/fluid/layers/utils.py:26: DeprecationWarning: `np.int` is a deprecated alias for the builtin `int`. To silence this warning, use `int` by itself. Doing this will not modify any behavior and is safe. When replacing `np.int`, you may wish to use e.g. `np.int64` or `np.int32` to specify the precision. If you wish to review your current use, check the release note link for additional information.
+Deprecated in NumPy 1.20; for more details and guidance: https://numpy.org/devdocs/release/1.20.0-notes.html#deprecations
+  def convert_to_list(value, n, name, dtype=np.int):
+/home/zlxu/anaconda3/envs/paddleOCR/lib/python3.7/site-packages/skimage/morphology/_skeletonize.py:241: DeprecationWarning: `np.bool` is a deprecated alias for the builtin `bool`. To silence this warning, use `bool` by itself. Doing this will not modify any behavior and is safe. If you specifically wanted the numpy scalar type, use `np.bool_` here.
+Deprecated in NumPy 1.20; for more details and guidance: https://numpy.org/devdocs/release/1.20.0-notes.html#deprecations
+  0, 1, 1, 0, 0, 1, 0, 0, 0], dtype=np.bool)
+/home/zlxu/anaconda3/envs/paddleOCR/lib/python3.7/site-packages/skimage/morphology/_skeletonize.py:256: DeprecationWarning: `np.bool` is a deprecated alias for the builtin `bool`. To silence this warning, use `bool` by itself. Doing this will not modify any behavior and is safe. If you specifically wanted the numpy scalar type, use `np.bool_` here.
+Deprecated in NumPy 1.20; for more details and guidance: https://numpy.org/devdocs/release/1.20.0-notes.html#deprecations
+  0, 0, 0, 0, 0, 0, 0, 0, 0], dtype=np.bool)
+I0517 11:06:06.014685 31994 nccl_context.cc:189] init nccl context nranks: 3 local rank: 2 gpu id: 2 ring id: 0
+W0517 11:06:06.573815 31994 device_context.cc:362] Please NOTE: device: 2, GPU Compute Capability: 6.1, Driver API Version: 11.0, Runtime API Version: 10.2
+W0517 11:06:06.580305 31994 device_context.cc:372] device: 2, cuDNN Version: 7.6.
+/home/zlxu/anaconda3/envs/paddleOCR/lib/python3.7/site-packages/paddle/fluid/layers/utils.py:26: DeprecationWarning: `np.int` is a deprecated alias for the builtin `int`. To silence this warning, use `int` by itself. Doing this will not modify any behavior and is safe. When replacing `np.int`, you may wish to use e.g. `np.int64` or `np.int32` to specify the precision. If you wish to review your current use, check the release note link for additional information.
+Deprecated in NumPy 1.20; for more details and guidance: https://numpy.org/devdocs/release/1.20.0-notes.html#deprecations
+  def convert_to_list(value, n, name, dtype=np.int):
+/home/zlxu/anaconda3/envs/paddleOCR/lib/python3.7/site-packages/skimage/morphology/_skeletonize.py:241: DeprecationWarning: `np.bool` is a deprecated alias for the builtin `bool`. To silence this warning, use `bool` by itself. Doing this will not modify any behavior and is safe. If you specifically wanted the numpy scalar type, use `np.bool_` here.
+Deprecated in NumPy 1.20; for more details and guidance: https://numpy.org/devdocs/release/1.20.0-notes.html#deprecations
+  0, 1, 1, 0, 0, 1, 0, 0, 0], dtype=np.bool)
+/home/zlxu/anaconda3/envs/paddleOCR/lib/python3.7/site-packages/skimage/morphology/_skeletonize.py:256: DeprecationWarning: `np.bool` is a deprecated alias for the builtin `bool`. To silence this warning, use `bool` by itself. Doing this will not modify any behavior and is safe. If you specifically wanted the numpy scalar type, use `np.bool_` here.
+Deprecated in NumPy 1.20; for more details and guidance: https://numpy.org/devdocs/release/1.20.0-notes.html#deprecations
+  0, 0, 0, 0, 0, 0, 0, 0, 0], dtype=np.bool)
+I0517 15:36:16.317095 20881 nccl_context.cc:189] init nccl context nranks: 3 local rank: 2 gpu id: 2 ring id: 0
+W0517 15:36:16.795238 20881 device_context.cc:362] Please NOTE: device: 2, GPU Compute Capability: 6.1, Driver API Version: 11.0, Runtime API Version: 10.2
+W0517 15:36:16.801489 20881 device_context.cc:372] device: 2, cuDNN Version: 7.6.
+main proc 20981 exit, kill process group 20804main proc 20980 exit, kill process group 20804main proc 20969 exit, kill process group 20804
+
+
+main proc 20967 exit, kill process group 20804
+/home/zlxu/anaconda3/envs/paddleOCR/lib/python3.7/site-packages/paddle/fluid/layers/utils.py:26: DeprecationWarning: `np.int` is a deprecated alias for the builtin `int`. To silence this warning, use `int` by itself. Doing this will not modify any behavior and is safe. When replacing `np.int`, you may wish to use e.g. `np.int64` or `np.int32` to specify the precision. If you wish to review your current use, check the release note link for additional information.
+Deprecated in NumPy 1.20; for more details and guidance: https://numpy.org/devdocs/release/1.20.0-notes.html#deprecations
+  def convert_to_list(value, n, name, dtype=np.int):
+/home/zlxu/anaconda3/envs/paddleOCR/lib/python3.7/site-packages/skimage/morphology/_skeletonize.py:241: DeprecationWarning: `np.bool` is a deprecated alias for the builtin `bool`. To silence this warning, use `bool` by itself. Doing this will not modify any behavior and is safe. If you specifically wanted the numpy scalar type, use `np.bool_` here.
+Deprecated in NumPy 1.20; for more details and guidance: https://numpy.org/devdocs/release/1.20.0-notes.html#deprecations
+  0, 1, 1, 0, 0, 1, 0, 0, 0], dtype=np.bool)
+/home/zlxu/anaconda3/envs/paddleOCR/lib/python3.7/site-packages/skimage/morphology/_skeletonize.py:256: DeprecationWarning: `np.bool` is a deprecated alias for the builtin `bool`. To silence this warning, use `bool` by itself. Doing this will not modify any behavior and is safe. If you specifically wanted the numpy scalar type, use `np.bool_` here.
+Deprecated in NumPy 1.20; for more details and guidance: https://numpy.org/devdocs/release/1.20.0-notes.html#deprecations
+  0, 0, 0, 0, 0, 0, 0, 0, 0], dtype=np.bool)
+I0517 15:37:30.741086 22252 nccl_context.cc:189] init nccl context nranks: 3 local rank: 2 gpu id: 2 ring id: 0
+W0517 15:37:31.197592 22252 device_context.cc:362] Please NOTE: device: 2, GPU Compute Capability: 6.1, Driver API Version: 11.0, Runtime API Version: 10.2
+W0517 15:37:31.202795 22252 device_context.cc:372] device: 2, cuDNN Version: 7.6.
+/home/zlxu/anaconda3/envs/paddleOCR/lib/python3.7/site-packages/paddle/fluid/layers/utils.py:26: DeprecationWarning: `np.int` is a deprecated alias for the builtin `int`. To silence this warning, use `int` by itself. Doing this will not modify any behavior and is safe. When replacing `np.int`, you may wish to use e.g. `np.int64` or `np.int32` to specify the precision. If you wish to review your current use, check the release note link for additional information.
+Deprecated in NumPy 1.20; for more details and guidance: https://numpy.org/devdocs/release/1.20.0-notes.html#deprecations
+  def convert_to_list(value, n, name, dtype=np.int):
+/home/zlxu/anaconda3/envs/paddleOCR/lib/python3.7/site-packages/skimage/morphology/_skeletonize.py:241: DeprecationWarning: `np.bool` is a deprecated alias for the builtin `bool`. To silence this warning, use `bool` by itself. Doing this will not modify any behavior and is safe. If you specifically wanted the numpy scalar type, use `np.bool_` here.
+Deprecated in NumPy 1.20; for more details and guidance: https://numpy.org/devdocs/release/1.20.0-notes.html#deprecations
+  0, 1, 1, 0, 0, 1, 0, 0, 0], dtype=np.bool)
+/home/zlxu/anaconda3/envs/paddleOCR/lib/python3.7/site-packages/skimage/morphology/_skeletonize.py:256: DeprecationWarning: `np.bool` is a deprecated alias for the builtin `bool`. To silence this warning, use `bool` by itself. Doing this will not modify any behavior and is safe. If you specifically wanted the numpy scalar type, use `np.bool_` here.
+Deprecated in NumPy 1.20; for more details and guidance: https://numpy.org/devdocs/release/1.20.0-notes.html#deprecations
+  0, 0, 0, 0, 0, 0, 0, 0, 0], dtype=np.bool)
+I0606 00:19:11.194327 19486 nccl_context.cc:189] init nccl context nranks: 3 local rank: 2 gpu id: 2 ring id: 0
+W0606 00:19:11.663899 19486 device_context.cc:362] Please NOTE: device: 2, GPU Compute Capability: 6.1, Driver API Version: 11.0, Runtime API Version: 10.2
+W0606 00:19:11.668614 19486 device_context.cc:372] device: 2, cuDNN Version: 7.6.

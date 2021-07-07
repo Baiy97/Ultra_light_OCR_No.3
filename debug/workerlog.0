@@ -1,0 +1,1492 @@
+/home/xingli/miniconda3/envs/paddle/lib/python3.7/site-packages/paddle/fluid/layers/utils.py:26: DeprecationWarning: `np.int` is a deprecated alias for the builtin `int`. To silence this warning, use `int` by itself. Doing this will not modify any behavior and is safe. When replacing `np.int`, you may wish to use e.g. `np.int64` or `np.int32` to specify the precision. If you wish to review your current use, check the release note link for additional information.
+Deprecated in NumPy 1.20; for more details and guidance: https://numpy.org/devdocs/release/1.20.0-notes.html#deprecations
+  def convert_to_list(value, n, name, dtype=np.int):
+/home/xingli/miniconda3/envs/paddle/lib/python3.7/site-packages/skimage/morphology/_skeletonize.py:241: DeprecationWarning: `np.bool` is a deprecated alias for the builtin `bool`. To silence this warning, use `bool` by itself. Doing this will not modify any behavior and is safe. If you specifically wanted the numpy scalar type, use `np.bool_` here.
+Deprecated in NumPy 1.20; for more details and guidance: https://numpy.org/devdocs/release/1.20.0-notes.html#deprecations
+  0, 1, 1, 0, 0, 1, 0, 0, 0], dtype=np.bool)
+/home/xingli/miniconda3/envs/paddle/lib/python3.7/site-packages/skimage/morphology/_skeletonize.py:256: DeprecationWarning: `np.bool` is a deprecated alias for the builtin `bool`. To silence this warning, use `bool` by itself. Doing this will not modify any behavior and is safe. If you specifically wanted the numpy scalar type, use `np.bool_` here.
+Deprecated in NumPy 1.20; for more details and guidance: https://numpy.org/devdocs/release/1.20.0-notes.html#deprecations
+  0, 0, 0, 0, 0, 0, 0, 0, 0], dtype=np.bool)
+Traceback (most recent call last):
+  File "tools/train.py", line 124, in <module>
+    config, device, logger, vdl_writer = program.preprocess(is_train=True)
+  File "/home/xingli/research/PaddleOCR/tools/program.py", line 379, in preprocess
+    config = load_config(FLAGS.config)
+  File "/home/xingli/research/PaddleOCR/tools/program.py", line 92, in load_config
+    merge_config(yaml.load(open(file_path, 'rb'), Loader=yaml.Loader))
+FileNotFoundError: [Errno 2] No such file or directory: 'configs/rec/rec/ch_ppocr_v2.0/rec_chinese_lite_train_v2.0.yml'
+/home/xingli/miniconda3/envs/paddle/lib/python3.7/site-packages/paddle/fluid/layers/utils.py:26: DeprecationWarning: `np.int` is a deprecated alias for the builtin `int`. To silence this warning, use `int` by itself. Doing this will not modify any behavior and is safe. When replacing `np.int`, you may wish to use e.g. `np.int64` or `np.int32` to specify the precision. If you wish to review your current use, check the release note link for additional information.
+Deprecated in NumPy 1.20; for more details and guidance: https://numpy.org/devdocs/release/1.20.0-notes.html#deprecations
+  def convert_to_list(value, n, name, dtype=np.int):
+/home/xingli/miniconda3/envs/paddle/lib/python3.7/site-packages/skimage/morphology/_skeletonize.py:241: DeprecationWarning: `np.bool` is a deprecated alias for the builtin `bool`. To silence this warning, use `bool` by itself. Doing this will not modify any behavior and is safe. If you specifically wanted the numpy scalar type, use `np.bool_` here.
+Deprecated in NumPy 1.20; for more details and guidance: https://numpy.org/devdocs/release/1.20.0-notes.html#deprecations
+  0, 1, 1, 0, 0, 1, 0, 0, 0], dtype=np.bool)
+/home/xingli/miniconda3/envs/paddle/lib/python3.7/site-packages/skimage/morphology/_skeletonize.py:256: DeprecationWarning: `np.bool` is a deprecated alias for the builtin `bool`. To silence this warning, use `bool` by itself. Doing this will not modify any behavior and is safe. If you specifically wanted the numpy scalar type, use `np.bool_` here.
+Deprecated in NumPy 1.20; for more details and guidance: https://numpy.org/devdocs/release/1.20.0-notes.html#deprecations
+  0, 0, 0, 0, 0, 0, 0, 0, 0], dtype=np.bool)
+[2021/05/12 22:51:50] root INFO: Architecture : 
+[2021/05/12 22:51:50] root INFO:     Backbone : 
+[2021/05/12 22:51:50] root INFO:         model_name : small
+[2021/05/12 22:51:50] root INFO:         name : MobileNetV3
+[2021/05/12 22:51:50] root INFO:         scale : 0.5
+[2021/05/12 22:51:50] root INFO:         small_stride : [1, 2, 2, 2]
+[2021/05/12 22:51:50] root INFO:     Head : 
+[2021/05/12 22:51:50] root INFO:         fc_decay : 1e-05
+[2021/05/12 22:51:50] root INFO:         name : CTCHead
+[2021/05/12 22:51:50] root INFO:     Neck : 
+[2021/05/12 22:51:50] root INFO:         encoder_type : rnn
+[2021/05/12 22:51:50] root INFO:         hidden_size : 48
+[2021/05/12 22:51:50] root INFO:         name : SequenceEncoder
+[2021/05/12 22:51:50] root INFO:     Transform : None
+[2021/05/12 22:51:50] root INFO:     algorithm : CRNN
+[2021/05/12 22:51:50] root INFO:     model_type : rec
+[2021/05/12 22:51:50] root INFO: Eval : 
+[2021/05/12 22:51:50] root INFO:     dataset : 
+[2021/05/12 22:51:50] root INFO:         data_dir : ./train/TrainImages
+[2021/05/12 22:51:50] root INFO:         label_file_list : ['./train/LabelVal.txt']
+[2021/05/12 22:51:50] root INFO:         name : SimpleDataSet
+[2021/05/12 22:51:50] root INFO:         transforms : 
+[2021/05/12 22:51:50] root INFO:             DecodeImage : 
+[2021/05/12 22:51:50] root INFO:                 channel_first : False
+[2021/05/12 22:51:50] root INFO:                 img_mode : BGR
+[2021/05/12 22:51:50] root INFO:             CTCLabelEncode : None
+[2021/05/12 22:51:50] root INFO:             RecResizeImg : 
+[2021/05/12 22:51:50] root INFO:                 image_shape : [3, 32, 320]
+[2021/05/12 22:51:50] root INFO:             KeepKeys : 
+[2021/05/12 22:51:50] root INFO:                 keep_keys : ['image', 'label', 'length']
+[2021/05/12 22:51:50] root INFO:     loader : 
+[2021/05/12 22:51:50] root INFO:         batch_size_per_card : 256
+[2021/05/12 22:51:50] root INFO:         drop_last : False
+[2021/05/12 22:51:50] root INFO:         num_workers : 8
+[2021/05/12 22:51:50] root INFO:         shuffle : False
+[2021/05/12 22:51:50] root INFO: Global : 
+[2021/05/12 22:51:50] root INFO:     cal_metric_during_train : True
+[2021/05/12 22:51:50] root INFO:     character_dict_path : ppocr/utils/ppocr_keys_v1.txt
+[2021/05/12 22:51:50] root INFO:     character_type : ch
+[2021/05/12 22:51:50] root INFO:     checkpoints : None
+[2021/05/12 22:51:50] root INFO:     debug : False
+[2021/05/12 22:51:50] root INFO:     distributed : True
+[2021/05/12 22:51:50] root INFO:     epoch_num : 500
+[2021/05/12 22:51:50] root INFO:     eval_batch_step : [0, 2000]
+[2021/05/12 22:51:50] root INFO:     infer_img : doc/imgs_words/ch/word_1.jpg
+[2021/05/12 22:51:50] root INFO:     infer_mode : False
+[2021/05/12 22:51:50] root INFO:     log_smooth_window : 20
+[2021/05/12 22:51:50] root INFO:     max_text_length : 25
+[2021/05/12 22:51:50] root INFO:     pretrained_model : None
+[2021/05/12 22:51:50] root INFO:     print_batch_step : 10
+[2021/05/12 22:51:50] root INFO:     save_epoch_step : 3
+[2021/05/12 22:51:50] root INFO:     save_inference_dir : None
+[2021/05/12 22:51:50] root INFO:     save_model_dir : ./output/rec_chinese_lite_v2.0
+[2021/05/12 22:51:50] root INFO:     save_res_path : ./output/rec/predicts_chinese_lite_v2.0.txt
+[2021/05/12 22:51:50] root INFO:     use_gpu : True
+[2021/05/12 22:51:50] root INFO:     use_space_char : True
+[2021/05/12 22:51:50] root INFO:     use_visualdl : False
+[2021/05/12 22:51:50] root INFO: Loss : 
+[2021/05/12 22:51:50] root INFO:     name : CTCLoss
+[2021/05/12 22:51:50] root INFO: Metric : 
+[2021/05/12 22:51:50] root INFO:     main_indicator : acc
+[2021/05/12 22:51:50] root INFO:     name : RecMetric
+[2021/05/12 22:51:50] root INFO: Optimizer : 
+[2021/05/12 22:51:50] root INFO:     beta1 : 0.9
+[2021/05/12 22:51:50] root INFO:     beta2 : 0.999
+[2021/05/12 22:51:50] root INFO:     lr : 
+[2021/05/12 22:51:50] root INFO:         learning_rate : 0.001
+[2021/05/12 22:51:50] root INFO:         name : Cosine
+[2021/05/12 22:51:50] root INFO:     name : Adam
+[2021/05/12 22:51:50] root INFO:     regularizer : 
+[2021/05/12 22:51:50] root INFO:         factor : 1e-05
+[2021/05/12 22:51:50] root INFO:         name : L2
+[2021/05/12 22:51:50] root INFO: PostProcess : 
+[2021/05/12 22:51:50] root INFO:     name : CTCLabelDecode
+[2021/05/12 22:51:50] root INFO: Train : 
+[2021/05/12 22:51:50] root INFO:     dataset : 
+[2021/05/12 22:51:50] root INFO:         data_dir : ./train/TrainImages
+[2021/05/12 22:51:50] root INFO:         label_file_list : ['./train/Label.txt']
+[2021/05/12 22:51:50] root INFO:         name : SimpleDataSet
+[2021/05/12 22:51:50] root INFO:         transforms : 
+[2021/05/12 22:51:50] root INFO:             DecodeImage : 
+[2021/05/12 22:51:50] root INFO:                 channel_first : False
+[2021/05/12 22:51:50] root INFO:                 img_mode : BGR
+[2021/05/12 22:51:50] root INFO:             RecAug : None
+[2021/05/12 22:51:50] root INFO:             CTCLabelEncode : None
+[2021/05/12 22:51:50] root INFO:             RecResizeImg : 
+[2021/05/12 22:51:50] root INFO:                 image_shape : [3, 32, 320]
+[2021/05/12 22:51:50] root INFO:             KeepKeys : 
+[2021/05/12 22:51:50] root INFO:                 keep_keys : ['image', 'label', 'length']
+[2021/05/12 22:51:50] root INFO:     loader : 
+[2021/05/12 22:51:50] root INFO:         batch_size_per_card : 256
+[2021/05/12 22:51:50] root INFO:         drop_last : True
+[2021/05/12 22:51:50] root INFO:         num_workers : 8
+[2021/05/12 22:51:50] root INFO:         shuffle : True
+[2021/05/12 22:51:50] root INFO: train with paddle 2.0.0 and device CUDAPlace(0)
+W0512 22:51:50.728948  7193 dynamic_loader.cc:207] You may need to install 'nccl2' from NVIDIA official website: https://developer.nvidia.com/nccl/nccl-downloadbefore install PaddlePaddle.
+Traceback (most recent call last):
+  File "tools/train.py", line 125, in <module>
+    main(config, device, logger, vdl_writer)
+  File "tools/train.py", line 47, in main
+    dist.init_parallel_env()
+  File "/home/xingli/miniconda3/envs/paddle/lib/python3.7/site-packages/paddle/distributed/parallel.py", line 184, in init_parallel_env
+    parallel_helper._init_parallel_ctx()
+  File "/home/xingli/miniconda3/envs/paddle/lib/python3.7/site-packages/paddle/fluid/dygraph/parallel_helper.py", line 42, in _init_parallel_ctx
+    __parallel_ctx__clz__.init()
+RuntimeError: (PreconditionNotMet) The third-party dynamic library (libnccl.so) that Paddle depends on is not configured correctly. (error code is libnccl.so: cannot open shared object file: No such file or directory)
+  Suggestions:
+  1. Check if the third-party dynamic library (e.g. CUDA, CUDNN) is installed correctly and its version is matched with paddlepaddle you installed.
+  2. Configure third-party dynamic library environment variables as follows:
+  - Linux: set LD_LIBRARY_PATH by `export LD_LIBRARY_PATH=...`
+  - Windows: set PATH by `set PATH=XXX; (at /paddle/paddle/fluid/platform/dynload/dynamic_loader.cc:234)
+
+/home/xingli/miniconda3/envs/paddle/lib/python3.7/site-packages/paddle/fluid/layers/utils.py:26: DeprecationWarning: `np.int` is a deprecated alias for the builtin `int`. To silence this warning, use `int` by itself. Doing this will not modify any behavior and is safe. When replacing `np.int`, you may wish to use e.g. `np.int64` or `np.int32` to specify the precision. If you wish to review your current use, check the release note link for additional information.
+Deprecated in NumPy 1.20; for more details and guidance: https://numpy.org/devdocs/release/1.20.0-notes.html#deprecations
+  def convert_to_list(value, n, name, dtype=np.int):
+/home/xingli/miniconda3/envs/paddle/lib/python3.7/site-packages/skimage/morphology/_skeletonize.py:241: DeprecationWarning: `np.bool` is a deprecated alias for the builtin `bool`. To silence this warning, use `bool` by itself. Doing this will not modify any behavior and is safe. If you specifically wanted the numpy scalar type, use `np.bool_` here.
+Deprecated in NumPy 1.20; for more details and guidance: https://numpy.org/devdocs/release/1.20.0-notes.html#deprecations
+  0, 1, 1, 0, 0, 1, 0, 0, 0], dtype=np.bool)
+/home/xingli/miniconda3/envs/paddle/lib/python3.7/site-packages/skimage/morphology/_skeletonize.py:256: DeprecationWarning: `np.bool` is a deprecated alias for the builtin `bool`. To silence this warning, use `bool` by itself. Doing this will not modify any behavior and is safe. If you specifically wanted the numpy scalar type, use `np.bool_` here.
+Deprecated in NumPy 1.20; for more details and guidance: https://numpy.org/devdocs/release/1.20.0-notes.html#deprecations
+  0, 0, 0, 0, 0, 0, 0, 0, 0], dtype=np.bool)
+[2021/05/12 23:18:14] root INFO: Architecture : 
+[2021/05/12 23:18:14] root INFO:     Backbone : 
+[2021/05/12 23:18:14] root INFO:         model_name : small
+[2021/05/12 23:18:14] root INFO:         name : MobileNetV3
+[2021/05/12 23:18:14] root INFO:         scale : 0.5
+[2021/05/12 23:18:14] root INFO:         small_stride : [1, 2, 2, 2]
+[2021/05/12 23:18:14] root INFO:     Head : 
+[2021/05/12 23:18:14] root INFO:         fc_decay : 1e-05
+[2021/05/12 23:18:14] root INFO:         name : CTCHead
+[2021/05/12 23:18:14] root INFO:     Neck : 
+[2021/05/12 23:18:14] root INFO:         encoder_type : rnn
+[2021/05/12 23:18:14] root INFO:         hidden_size : 48
+[2021/05/12 23:18:14] root INFO:         name : SequenceEncoder
+[2021/05/12 23:18:14] root INFO:     Transform : None
+[2021/05/12 23:18:14] root INFO:     algorithm : CRNN
+[2021/05/12 23:18:14] root INFO:     model_type : rec
+[2021/05/12 23:18:14] root INFO: Eval : 
+[2021/05/12 23:18:14] root INFO:     dataset : 
+[2021/05/12 23:18:14] root INFO:         data_dir : ./train/TrainImages
+[2021/05/12 23:18:14] root INFO:         label_file_list : ['./train/LabelVal.txt']
+[2021/05/12 23:18:14] root INFO:         name : SimpleDataSet
+[2021/05/12 23:18:14] root INFO:         transforms : 
+[2021/05/12 23:18:14] root INFO:             DecodeImage : 
+[2021/05/12 23:18:14] root INFO:                 channel_first : False
+[2021/05/12 23:18:14] root INFO:                 img_mode : BGR
+[2021/05/12 23:18:14] root INFO:             CTCLabelEncode : None
+[2021/05/12 23:18:14] root INFO:             RecResizeImg : 
+[2021/05/12 23:18:14] root INFO:                 image_shape : [3, 32, 320]
+[2021/05/12 23:18:14] root INFO:             KeepKeys : 
+[2021/05/12 23:18:14] root INFO:                 keep_keys : ['image', 'label', 'length']
+[2021/05/12 23:18:14] root INFO:     loader : 
+[2021/05/12 23:18:14] root INFO:         batch_size_per_card : 256
+[2021/05/12 23:18:14] root INFO:         drop_last : False
+[2021/05/12 23:18:14] root INFO:         num_workers : 8
+[2021/05/12 23:18:14] root INFO:         shuffle : False
+[2021/05/12 23:18:14] root INFO: Global : 
+[2021/05/12 23:18:14] root INFO:     cal_metric_during_train : True
+[2021/05/12 23:18:14] root INFO:     character_dict_path : ppocr/utils/ppocr_keys_v1.txt
+[2021/05/12 23:18:14] root INFO:     character_type : ch
+[2021/05/12 23:18:14] root INFO:     checkpoints : None
+[2021/05/12 23:18:14] root INFO:     debug : False
+[2021/05/12 23:18:14] root INFO:     distributed : True
+[2021/05/12 23:18:14] root INFO:     epoch_num : 500
+[2021/05/12 23:18:14] root INFO:     eval_batch_step : [0, 2000]
+[2021/05/12 23:18:14] root INFO:     infer_img : doc/imgs_words/ch/word_1.jpg
+[2021/05/12 23:18:14] root INFO:     infer_mode : False
+[2021/05/12 23:18:14] root INFO:     log_smooth_window : 20
+[2021/05/12 23:18:14] root INFO:     max_text_length : 25
+[2021/05/12 23:18:14] root INFO:     pretrained_model : None
+[2021/05/12 23:18:14] root INFO:     print_batch_step : 10
+[2021/05/12 23:18:14] root INFO:     save_epoch_step : 3
+[2021/05/12 23:18:14] root INFO:     save_inference_dir : None
+[2021/05/12 23:18:14] root INFO:     save_model_dir : ./output/rec_chinese_lite_v2.0
+[2021/05/12 23:18:14] root INFO:     save_res_path : ./output/rec/predicts_chinese_lite_v2.0.txt
+[2021/05/12 23:18:14] root INFO:     use_gpu : True
+[2021/05/12 23:18:14] root INFO:     use_space_char : True
+[2021/05/12 23:18:14] root INFO:     use_visualdl : False
+[2021/05/12 23:18:14] root INFO: Loss : 
+[2021/05/12 23:18:14] root INFO:     name : CTCLoss
+[2021/05/12 23:18:14] root INFO: Metric : 
+[2021/05/12 23:18:14] root INFO:     main_indicator : acc
+[2021/05/12 23:18:14] root INFO:     name : RecMetric
+[2021/05/12 23:18:14] root INFO: Optimizer : 
+[2021/05/12 23:18:14] root INFO:     beta1 : 0.9
+[2021/05/12 23:18:14] root INFO:     beta2 : 0.999
+[2021/05/12 23:18:14] root INFO:     lr : 
+[2021/05/12 23:18:14] root INFO:         learning_rate : 0.001
+[2021/05/12 23:18:14] root INFO:         name : Cosine
+[2021/05/12 23:18:14] root INFO:     name : Adam
+[2021/05/12 23:18:14] root INFO:     regularizer : 
+[2021/05/12 23:18:14] root INFO:         factor : 1e-05
+[2021/05/12 23:18:14] root INFO:         name : L2
+[2021/05/12 23:18:14] root INFO: PostProcess : 
+[2021/05/12 23:18:14] root INFO:     name : CTCLabelDecode
+[2021/05/12 23:18:14] root INFO: Train : 
+[2021/05/12 23:18:14] root INFO:     dataset : 
+[2021/05/12 23:18:14] root INFO:         data_dir : ./train/TrainImages
+[2021/05/12 23:18:14] root INFO:         label_file_list : ['./train/Label.txt']
+[2021/05/12 23:18:14] root INFO:         name : SimpleDataSet
+[2021/05/12 23:18:14] root INFO:         transforms : 
+[2021/05/12 23:18:14] root INFO:             DecodeImage : 
+[2021/05/12 23:18:14] root INFO:                 channel_first : False
+[2021/05/12 23:18:14] root INFO:                 img_mode : BGR
+[2021/05/12 23:18:14] root INFO:             RecAug : None
+[2021/05/12 23:18:14] root INFO:             CTCLabelEncode : None
+[2021/05/12 23:18:14] root INFO:             RecResizeImg : 
+[2021/05/12 23:18:14] root INFO:                 image_shape : [3, 32, 320]
+[2021/05/12 23:18:14] root INFO:             KeepKeys : 
+[2021/05/12 23:18:14] root INFO:                 keep_keys : ['image', 'label', 'length']
+[2021/05/12 23:18:14] root INFO:     loader : 
+[2021/05/12 23:18:14] root INFO:         batch_size_per_card : 256
+[2021/05/12 23:18:14] root INFO:         drop_last : True
+[2021/05/12 23:18:14] root INFO:         num_workers : 8
+[2021/05/12 23:18:14] root INFO:         shuffle : True
+[2021/05/12 23:18:14] root INFO: train with paddle 2.0.0 and device CUDAPlace(0)
+I0512 23:18:14.279078  4048 nccl_context.cc:189] init nccl context nranks: 3 local rank: 0 gpu id: 0 ring id: 0
+W0512 23:18:14.657114  4048 device_context.cc:362] Please NOTE: device: 0, GPU Compute Capability: 6.1, Driver API Version: 11.0, Runtime API Version: 10.2
+W0512 23:18:14.657277  4048 dynamic_loader.cc:236] The third-party dynamic library (libcudnn.so) that Paddle depends on is not configured correctly. (error code is libcudnn.so: cannot open shared object file: No such file or directory)
+  Suggestions:
+  1. Check if the third-party dynamic library (e.g. CUDA, CUDNN) is installed correctly and its version is matched with paddlepaddle you installed.
+  2. Configure third-party dynamic library environment variables as follows:
+  - Linux: set LD_LIBRARY_PATH by `export LD_LIBRARY_PATH=...`
+  - Windows: set PATH by `set PATH=XXX;
+Traceback (most recent call last):
+  File "tools/train.py", line 125, in <module>
+    main(config, device, logger, vdl_writer)
+  File "tools/train.py", line 47, in main
+    dist.init_parallel_env()
+  File "/home/xingli/miniconda3/envs/paddle/lib/python3.7/site-packages/paddle/distributed/parallel.py", line 184, in init_parallel_env
+    parallel_helper._init_parallel_ctx()
+  File "/home/xingli/miniconda3/envs/paddle/lib/python3.7/site-packages/paddle/fluid/dygraph/parallel_helper.py", line 42, in _init_parallel_ctx
+    __parallel_ctx__clz__.init()
+RuntimeError: (PreconditionNotMet) Cannot load cudnn shared library. Cannot invoke method cudnnGetVersion.
+  [Hint: cudnn_dso_handle should not be null.] (at /paddle/paddle/fluid/platform/dynload/cudnn.cc:76)
+
+/home/xingli/miniconda3/envs/paddle/lib/python3.7/site-packages/paddle/fluid/layers/utils.py:26: DeprecationWarning: `np.int` is a deprecated alias for the builtin `int`. To silence this warning, use `int` by itself. Doing this will not modify any behavior and is safe. When replacing `np.int`, you may wish to use e.g. `np.int64` or `np.int32` to specify the precision. If you wish to review your current use, check the release note link for additional information.
+Deprecated in NumPy 1.20; for more details and guidance: https://numpy.org/devdocs/release/1.20.0-notes.html#deprecations
+  def convert_to_list(value, n, name, dtype=np.int):
+/home/xingli/miniconda3/envs/paddle/lib/python3.7/site-packages/skimage/morphology/_skeletonize.py:241: DeprecationWarning: `np.bool` is a deprecated alias for the builtin `bool`. To silence this warning, use `bool` by itself. Doing this will not modify any behavior and is safe. If you specifically wanted the numpy scalar type, use `np.bool_` here.
+Deprecated in NumPy 1.20; for more details and guidance: https://numpy.org/devdocs/release/1.20.0-notes.html#deprecations
+  0, 1, 1, 0, 0, 1, 0, 0, 0], dtype=np.bool)
+/home/xingli/miniconda3/envs/paddle/lib/python3.7/site-packages/skimage/morphology/_skeletonize.py:256: DeprecationWarning: `np.bool` is a deprecated alias for the builtin `bool`. To silence this warning, use `bool` by itself. Doing this will not modify any behavior and is safe. If you specifically wanted the numpy scalar type, use `np.bool_` here.
+Deprecated in NumPy 1.20; for more details and guidance: https://numpy.org/devdocs/release/1.20.0-notes.html#deprecations
+  0, 0, 0, 0, 0, 0, 0, 0, 0], dtype=np.bool)
+[2021/05/12 23:30:22] root INFO: Architecture : 
+[2021/05/12 23:30:22] root INFO:     Backbone : 
+[2021/05/12 23:30:22] root INFO:         model_name : small
+[2021/05/12 23:30:22] root INFO:         name : MobileNetV3
+[2021/05/12 23:30:22] root INFO:         scale : 0.5
+[2021/05/12 23:30:22] root INFO:         small_stride : [1, 2, 2, 2]
+[2021/05/12 23:30:22] root INFO:     Head : 
+[2021/05/12 23:30:22] root INFO:         fc_decay : 1e-05
+[2021/05/12 23:30:22] root INFO:         name : CTCHead
+[2021/05/12 23:30:22] root INFO:     Neck : 
+[2021/05/12 23:30:22] root INFO:         encoder_type : rnn
+[2021/05/12 23:30:22] root INFO:         hidden_size : 48
+[2021/05/12 23:30:22] root INFO:         name : SequenceEncoder
+[2021/05/12 23:30:22] root INFO:     Transform : None
+[2021/05/12 23:30:22] root INFO:     algorithm : CRNN
+[2021/05/12 23:30:22] root INFO:     model_type : rec
+[2021/05/12 23:30:22] root INFO: Eval : 
+[2021/05/12 23:30:22] root INFO:     dataset : 
+[2021/05/12 23:30:22] root INFO:         data_dir : ./train/TrainImages
+[2021/05/12 23:30:22] root INFO:         label_file_list : ['./train/LabelVal.txt']
+[2021/05/12 23:30:22] root INFO:         name : SimpleDataSet
+[2021/05/12 23:30:22] root INFO:         transforms : 
+[2021/05/12 23:30:22] root INFO:             DecodeImage : 
+[2021/05/12 23:30:22] root INFO:                 channel_first : False
+[2021/05/12 23:30:22] root INFO:                 img_mode : BGR
+[2021/05/12 23:30:22] root INFO:             CTCLabelEncode : None
+[2021/05/12 23:30:22] root INFO:             RecResizeImg : 
+[2021/05/12 23:30:22] root INFO:                 image_shape : [3, 32, 320]
+[2021/05/12 23:30:22] root INFO:             KeepKeys : 
+[2021/05/12 23:30:22] root INFO:                 keep_keys : ['image', 'label', 'length']
+[2021/05/12 23:30:22] root INFO:     loader : 
+[2021/05/12 23:30:22] root INFO:         batch_size_per_card : 256
+[2021/05/12 23:30:22] root INFO:         drop_last : False
+[2021/05/12 23:30:22] root INFO:         num_workers : 8
+[2021/05/12 23:30:22] root INFO:         shuffle : False
+[2021/05/12 23:30:22] root INFO: Global : 
+[2021/05/12 23:30:22] root INFO:     cal_metric_during_train : True
+[2021/05/12 23:30:22] root INFO:     character_dict_path : ppocr/utils/ppocr_keys_v1.txt
+[2021/05/12 23:30:22] root INFO:     character_type : ch
+[2021/05/12 23:30:22] root INFO:     checkpoints : None
+[2021/05/12 23:30:22] root INFO:     debug : False
+[2021/05/12 23:30:22] root INFO:     distributed : True
+[2021/05/12 23:30:22] root INFO:     epoch_num : 500
+[2021/05/12 23:30:22] root INFO:     eval_batch_step : [0, 2000]
+[2021/05/12 23:30:22] root INFO:     infer_img : doc/imgs_words/ch/word_1.jpg
+[2021/05/12 23:30:22] root INFO:     infer_mode : False
+[2021/05/12 23:30:22] root INFO:     log_smooth_window : 20
+[2021/05/12 23:30:22] root INFO:     max_text_length : 25
+[2021/05/12 23:30:22] root INFO:     pretrained_model : None
+[2021/05/12 23:30:22] root INFO:     print_batch_step : 10
+[2021/05/12 23:30:22] root INFO:     save_epoch_step : 3
+[2021/05/12 23:30:22] root INFO:     save_inference_dir : None
+[2021/05/12 23:30:22] root INFO:     save_model_dir : ./output/rec_chinese_lite_v2.0
+[2021/05/12 23:30:22] root INFO:     save_res_path : ./output/rec/predicts_chinese_lite_v2.0.txt
+[2021/05/12 23:30:22] root INFO:     use_gpu : True
+[2021/05/12 23:30:22] root INFO:     use_space_char : True
+[2021/05/12 23:30:22] root INFO:     use_visualdl : False
+[2021/05/12 23:30:22] root INFO: Loss : 
+[2021/05/12 23:30:22] root INFO:     name : CTCLoss
+[2021/05/12 23:30:22] root INFO: Metric : 
+[2021/05/12 23:30:22] root INFO:     main_indicator : acc
+[2021/05/12 23:30:22] root INFO:     name : RecMetric
+[2021/05/12 23:30:22] root INFO: Optimizer : 
+[2021/05/12 23:30:22] root INFO:     beta1 : 0.9
+[2021/05/12 23:30:22] root INFO:     beta2 : 0.999
+[2021/05/12 23:30:22] root INFO:     lr : 
+[2021/05/12 23:30:22] root INFO:         learning_rate : 0.001
+[2021/05/12 23:30:22] root INFO:         name : Cosine
+[2021/05/12 23:30:22] root INFO:     name : Adam
+[2021/05/12 23:30:22] root INFO:     regularizer : 
+[2021/05/12 23:30:22] root INFO:         factor : 1e-05
+[2021/05/12 23:30:22] root INFO:         name : L2
+[2021/05/12 23:30:22] root INFO: PostProcess : 
+[2021/05/12 23:30:22] root INFO:     name : CTCLabelDecode
+[2021/05/12 23:30:22] root INFO: Train : 
+[2021/05/12 23:30:22] root INFO:     dataset : 
+[2021/05/12 23:30:22] root INFO:         data_dir : ./train/TrainImages
+[2021/05/12 23:30:22] root INFO:         label_file_list : ['./train/Label.txt']
+[2021/05/12 23:30:22] root INFO:         name : SimpleDataSet
+[2021/05/12 23:30:22] root INFO:         transforms : 
+[2021/05/12 23:30:22] root INFO:             DecodeImage : 
+[2021/05/12 23:30:22] root INFO:                 channel_first : False
+[2021/05/12 23:30:22] root INFO:                 img_mode : BGR
+[2021/05/12 23:30:22] root INFO:             RecAug : None
+[2021/05/12 23:30:22] root INFO:             CTCLabelEncode : None
+[2021/05/12 23:30:22] root INFO:             RecResizeImg : 
+[2021/05/12 23:30:22] root INFO:                 image_shape : [3, 32, 320]
+[2021/05/12 23:30:22] root INFO:             KeepKeys : 
+[2021/05/12 23:30:22] root INFO:                 keep_keys : ['image', 'label', 'length']
+[2021/05/12 23:30:22] root INFO:     loader : 
+[2021/05/12 23:30:22] root INFO:         batch_size_per_card : 256
+[2021/05/12 23:30:22] root INFO:         drop_last : True
+[2021/05/12 23:30:22] root INFO:         num_workers : 8
+[2021/05/12 23:30:22] root INFO:         shuffle : True
+[2021/05/12 23:30:22] root INFO: train with paddle 2.0.0 and device CUDAPlace(0)
+W0512 23:30:22.587616 17074 nccl_context.cc:142] Socket connect worker 127.0.0.1:39596 failed, try again after 3 seconds.
+I0512 23:30:25.588122 17074 nccl_context.cc:189] init nccl context nranks: 3 local rank: 0 gpu id: 0 ring id: 0
+W0512 23:30:26.214061 17074 device_context.cc:362] Please NOTE: device: 0, GPU Compute Capability: 6.1, Driver API Version: 11.0, Runtime API Version: 10.2
+W0512 23:30:26.219027 17074 device_context.cc:372] device: 0, cuDNN Version: 7.6.
+[2021/05/12 23:30:28] root INFO: Initialize indexs of datasets:['./train/Label.txt']
+Traceback (most recent call last):
+  File "tools/train.py", line 125, in <module>
+    main(config, device, logger, vdl_writer)
+  File "tools/train.py", line 52, in main
+    train_dataloader = build_dataloader(config, 'Train', device, logger)
+  File "/home/xingli/research/PaddleOCR/ppocr/data/__init__.py", line 65, in build_dataloader
+    dataset = eval(module_name)(config, mode, logger, seed)
+  File "/home/xingli/research/PaddleOCR/ppocr/data/simple_dataset.py", line 47, in __init__
+    self.data_lines = self.get_image_info_list(label_file_list, ratio_list)
+  File "/home/xingli/research/PaddleOCR/ppocr/data/simple_dataset.py", line 58, in get_image_info_list
+    with open(file, "rb") as f:
+FileNotFoundError: [Errno 2] No such file or directory: './train/Label.txt'
+/home/xingli/miniconda3/envs/paddle/lib/python3.7/site-packages/paddle/fluid/layers/utils.py:26: DeprecationWarning: `np.int` is a deprecated alias for the builtin `int`. To silence this warning, use `int` by itself. Doing this will not modify any behavior and is safe. When replacing `np.int`, you may wish to use e.g. `np.int64` or `np.int32` to specify the precision. If you wish to review your current use, check the release note link for additional information.
+Deprecated in NumPy 1.20; for more details and guidance: https://numpy.org/devdocs/release/1.20.0-notes.html#deprecations
+  def convert_to_list(value, n, name, dtype=np.int):
+/home/xingli/miniconda3/envs/paddle/lib/python3.7/site-packages/skimage/morphology/_skeletonize.py:241: DeprecationWarning: `np.bool` is a deprecated alias for the builtin `bool`. To silence this warning, use `bool` by itself. Doing this will not modify any behavior and is safe. If you specifically wanted the numpy scalar type, use `np.bool_` here.
+Deprecated in NumPy 1.20; for more details and guidance: https://numpy.org/devdocs/release/1.20.0-notes.html#deprecations
+  0, 1, 1, 0, 0, 1, 0, 0, 0], dtype=np.bool)
+/home/xingli/miniconda3/envs/paddle/lib/python3.7/site-packages/skimage/morphology/_skeletonize.py:256: DeprecationWarning: `np.bool` is a deprecated alias for the builtin `bool`. To silence this warning, use `bool` by itself. Doing this will not modify any behavior and is safe. If you specifically wanted the numpy scalar type, use `np.bool_` here.
+Deprecated in NumPy 1.20; for more details and guidance: https://numpy.org/devdocs/release/1.20.0-notes.html#deprecations
+  0, 0, 0, 0, 0, 0, 0, 0, 0], dtype=np.bool)
+[2021/05/12 23:31:02] root INFO: Architecture : 
+[2021/05/12 23:31:02] root INFO:     Backbone : 
+[2021/05/12 23:31:02] root INFO:         model_name : small
+[2021/05/12 23:31:02] root INFO:         name : MobileNetV3
+[2021/05/12 23:31:02] root INFO:         scale : 0.5
+[2021/05/12 23:31:02] root INFO:         small_stride : [1, 2, 2, 2]
+[2021/05/12 23:31:02] root INFO:     Head : 
+[2021/05/12 23:31:02] root INFO:         fc_decay : 1e-05
+[2021/05/12 23:31:02] root INFO:         name : CTCHead
+[2021/05/12 23:31:02] root INFO:     Neck : 
+[2021/05/12 23:31:02] root INFO:         encoder_type : rnn
+[2021/05/12 23:31:02] root INFO:         hidden_size : 48
+[2021/05/12 23:31:02] root INFO:         name : SequenceEncoder
+[2021/05/12 23:31:02] root INFO:     Transform : None
+[2021/05/12 23:31:02] root INFO:     algorithm : CRNN
+[2021/05/12 23:31:02] root INFO:     model_type : rec
+[2021/05/12 23:31:02] root INFO: Eval : 
+[2021/05/12 23:31:02] root INFO:     dataset : 
+[2021/05/12 23:31:02] root INFO:         data_dir : ./train/TrainImages
+[2021/05/12 23:31:02] root INFO:         label_file_list : ['./train/LabelVal.txt']
+[2021/05/12 23:31:02] root INFO:         name : SimpleDataSet
+[2021/05/12 23:31:02] root INFO:         transforms : 
+[2021/05/12 23:31:02] root INFO:             DecodeImage : 
+[2021/05/12 23:31:02] root INFO:                 channel_first : False
+[2021/05/12 23:31:02] root INFO:                 img_mode : BGR
+[2021/05/12 23:31:02] root INFO:             CTCLabelEncode : None
+[2021/05/12 23:31:02] root INFO:             RecResizeImg : 
+[2021/05/12 23:31:02] root INFO:                 image_shape : [3, 32, 320]
+[2021/05/12 23:31:02] root INFO:             KeepKeys : 
+[2021/05/12 23:31:02] root INFO:                 keep_keys : ['image', 'label', 'length']
+[2021/05/12 23:31:02] root INFO:     loader : 
+[2021/05/12 23:31:02] root INFO:         batch_size_per_card : 256
+[2021/05/12 23:31:02] root INFO:         drop_last : False
+[2021/05/12 23:31:02] root INFO:         num_workers : 8
+[2021/05/12 23:31:02] root INFO:         shuffle : False
+[2021/05/12 23:31:02] root INFO: Global : 
+[2021/05/12 23:31:02] root INFO:     cal_metric_during_train : True
+[2021/05/12 23:31:02] root INFO:     character_dict_path : ppocr/utils/ppocr_keys_v1.txt
+[2021/05/12 23:31:02] root INFO:     character_type : ch
+[2021/05/12 23:31:02] root INFO:     checkpoints : None
+[2021/05/12 23:31:02] root INFO:     debug : False
+[2021/05/12 23:31:02] root INFO:     distributed : True
+[2021/05/12 23:31:02] root INFO:     epoch_num : 500
+[2021/05/12 23:31:02] root INFO:     eval_batch_step : [0, 2000]
+[2021/05/12 23:31:02] root INFO:     infer_img : doc/imgs_words/ch/word_1.jpg
+[2021/05/12 23:31:02] root INFO:     infer_mode : False
+[2021/05/12 23:31:02] root INFO:     log_smooth_window : 20
+[2021/05/12 23:31:02] root INFO:     max_text_length : 25
+[2021/05/12 23:31:02] root INFO:     pretrained_model : None
+[2021/05/12 23:31:02] root INFO:     print_batch_step : 10
+[2021/05/12 23:31:02] root INFO:     save_epoch_step : 3
+[2021/05/12 23:31:02] root INFO:     save_inference_dir : None
+[2021/05/12 23:31:02] root INFO:     save_model_dir : ./output/rec_chinese_lite_v2.0
+[2021/05/12 23:31:02] root INFO:     save_res_path : ./output/rec/predicts_chinese_lite_v2.0.txt
+[2021/05/12 23:31:02] root INFO:     use_gpu : True
+[2021/05/12 23:31:02] root INFO:     use_space_char : True
+[2021/05/12 23:31:02] root INFO:     use_visualdl : False
+[2021/05/12 23:31:02] root INFO: Loss : 
+[2021/05/12 23:31:02] root INFO:     name : CTCLoss
+[2021/05/12 23:31:02] root INFO: Metric : 
+[2021/05/12 23:31:02] root INFO:     main_indicator : acc
+[2021/05/12 23:31:02] root INFO:     name : RecMetric
+[2021/05/12 23:31:02] root INFO: Optimizer : 
+[2021/05/12 23:31:02] root INFO:     beta1 : 0.9
+[2021/05/12 23:31:02] root INFO:     beta2 : 0.999
+[2021/05/12 23:31:02] root INFO:     lr : 
+[2021/05/12 23:31:02] root INFO:         learning_rate : 0.001
+[2021/05/12 23:31:02] root INFO:         name : Cosine
+[2021/05/12 23:31:02] root INFO:     name : Adam
+[2021/05/12 23:31:02] root INFO:     regularizer : 
+[2021/05/12 23:31:02] root INFO:         factor : 1e-05
+[2021/05/12 23:31:02] root INFO:         name : L2
+[2021/05/12 23:31:02] root INFO: PostProcess : 
+[2021/05/12 23:31:02] root INFO:     name : CTCLabelDecode
+[2021/05/12 23:31:02] root INFO: Train : 
+[2021/05/12 23:31:02] root INFO:     dataset : 
+[2021/05/12 23:31:02] root INFO:         data_dir : ./train/TrainImages
+[2021/05/12 23:31:02] root INFO:         label_file_list : ['./train/TrainLabel.txt']
+[2021/05/12 23:31:02] root INFO:         name : SimpleDataSet
+[2021/05/12 23:31:02] root INFO:         transforms : 
+[2021/05/12 23:31:02] root INFO:             DecodeImage : 
+[2021/05/12 23:31:02] root INFO:                 channel_first : False
+[2021/05/12 23:31:02] root INFO:                 img_mode : BGR
+[2021/05/12 23:31:02] root INFO:             RecAug : None
+[2021/05/12 23:31:02] root INFO:             CTCLabelEncode : None
+[2021/05/12 23:31:02] root INFO:             RecResizeImg : 
+[2021/05/12 23:31:02] root INFO:                 image_shape : [3, 32, 320]
+[2021/05/12 23:31:02] root INFO:             KeepKeys : 
+[2021/05/12 23:31:02] root INFO:                 keep_keys : ['image', 'label', 'length']
+[2021/05/12 23:31:02] root INFO:     loader : 
+[2021/05/12 23:31:02] root INFO:         batch_size_per_card : 256
+[2021/05/12 23:31:02] root INFO:         drop_last : True
+[2021/05/12 23:31:02] root INFO:         num_workers : 8
+[2021/05/12 23:31:02] root INFO:         shuffle : True
+[2021/05/12 23:31:02] root INFO: train with paddle 2.0.0 and device CUDAPlace(0)
+I0512 23:31:02.592988 18156 nccl_context.cc:189] init nccl context nranks: 3 local rank: 0 gpu id: 0 ring id: 0
+W0512 23:31:03.019104 18156 device_context.cc:362] Please NOTE: device: 0, GPU Compute Capability: 6.1, Driver API Version: 11.0, Runtime API Version: 10.2
+W0512 23:31:03.022177 18156 device_context.cc:372] device: 0, cuDNN Version: 7.6.
+[2021/05/12 23:31:04] root INFO: Initialize indexs of datasets:['./train/TrainLabel.txt']
+Traceback (most recent call last):
+  File "tools/train.py", line 125, in <module>
+    main(config, device, logger, vdl_writer)
+  File "tools/train.py", line 52, in main
+    train_dataloader = build_dataloader(config, 'Train', device, logger)
+  File "/home/xingli/research/PaddleOCR/ppocr/data/__init__.py", line 65, in build_dataloader
+    dataset = eval(module_name)(config, mode, logger, seed)
+  File "/home/xingli/research/PaddleOCR/ppocr/data/simple_dataset.py", line 47, in __init__
+    self.data_lines = self.get_image_info_list(label_file_list, ratio_list)
+  File "/home/xingli/research/PaddleOCR/ppocr/data/simple_dataset.py", line 58, in get_image_info_list
+    with open(file, "rb") as f:
+FileNotFoundError: [Errno 2] No such file or directory: './train/TrainLabel.txt'
+/home/xingli/miniconda3/envs/paddle/lib/python3.7/site-packages/paddle/fluid/layers/utils.py:26: DeprecationWarning: `np.int` is a deprecated alias for the builtin `int`. To silence this warning, use `int` by itself. Doing this will not modify any behavior and is safe. When replacing `np.int`, you may wish to use e.g. `np.int64` or `np.int32` to specify the precision. If you wish to review your current use, check the release note link for additional information.
+Deprecated in NumPy 1.20; for more details and guidance: https://numpy.org/devdocs/release/1.20.0-notes.html#deprecations
+  def convert_to_list(value, n, name, dtype=np.int):
+/home/xingli/miniconda3/envs/paddle/lib/python3.7/site-packages/skimage/morphology/_skeletonize.py:241: DeprecationWarning: `np.bool` is a deprecated alias for the builtin `bool`. To silence this warning, use `bool` by itself. Doing this will not modify any behavior and is safe. If you specifically wanted the numpy scalar type, use `np.bool_` here.
+Deprecated in NumPy 1.20; for more details and guidance: https://numpy.org/devdocs/release/1.20.0-notes.html#deprecations
+  0, 1, 1, 0, 0, 1, 0, 0, 0], dtype=np.bool)
+/home/xingli/miniconda3/envs/paddle/lib/python3.7/site-packages/skimage/morphology/_skeletonize.py:256: DeprecationWarning: `np.bool` is a deprecated alias for the builtin `bool`. To silence this warning, use `bool` by itself. Doing this will not modify any behavior and is safe. If you specifically wanted the numpy scalar type, use `np.bool_` here.
+Deprecated in NumPy 1.20; for more details and guidance: https://numpy.org/devdocs/release/1.20.0-notes.html#deprecations
+  0, 0, 0, 0, 0, 0, 0, 0, 0], dtype=np.bool)
+[2021/05/12 23:32:01] root INFO: Architecture : 
+[2021/05/12 23:32:01] root INFO:     Backbone : 
+[2021/05/12 23:32:01] root INFO:         model_name : small
+[2021/05/12 23:32:01] root INFO:         name : MobileNetV3
+[2021/05/12 23:32:01] root INFO:         scale : 0.5
+[2021/05/12 23:32:01] root INFO:         small_stride : [1, 2, 2, 2]
+[2021/05/12 23:32:01] root INFO:     Head : 
+[2021/05/12 23:32:01] root INFO:         fc_decay : 1e-05
+[2021/05/12 23:32:01] root INFO:         name : CTCHead
+[2021/05/12 23:32:01] root INFO:     Neck : 
+[2021/05/12 23:32:01] root INFO:         encoder_type : rnn
+[2021/05/12 23:32:01] root INFO:         hidden_size : 48
+[2021/05/12 23:32:01] root INFO:         name : SequenceEncoder
+[2021/05/12 23:32:01] root INFO:     Transform : None
+[2021/05/12 23:32:01] root INFO:     algorithm : CRNN
+[2021/05/12 23:32:01] root INFO:     model_type : rec
+[2021/05/12 23:32:01] root INFO: Eval : 
+[2021/05/12 23:32:01] root INFO:     dataset : 
+[2021/05/12 23:32:01] root INFO:         data_dir : ./train/TrainImages
+[2021/05/12 23:32:01] root INFO:         label_file_list : ['./train/LabelVal.txt']
+[2021/05/12 23:32:01] root INFO:         name : SimpleDataSet
+[2021/05/12 23:32:01] root INFO:         transforms : 
+[2021/05/12 23:32:01] root INFO:             DecodeImage : 
+[2021/05/12 23:32:01] root INFO:                 channel_first : False
+[2021/05/12 23:32:01] root INFO:                 img_mode : BGR
+[2021/05/12 23:32:01] root INFO:             CTCLabelEncode : None
+[2021/05/12 23:32:01] root INFO:             RecResizeImg : 
+[2021/05/12 23:32:01] root INFO:                 image_shape : [3, 32, 320]
+[2021/05/12 23:32:01] root INFO:             KeepKeys : 
+[2021/05/12 23:32:01] root INFO:                 keep_keys : ['image', 'label', 'length']
+[2021/05/12 23:32:01] root INFO:     loader : 
+[2021/05/12 23:32:01] root INFO:         batch_size_per_card : 256
+[2021/05/12 23:32:01] root INFO:         drop_last : False
+[2021/05/12 23:32:01] root INFO:         num_workers : 8
+[2021/05/12 23:32:01] root INFO:         shuffle : False
+[2021/05/12 23:32:01] root INFO: Global : 
+[2021/05/12 23:32:01] root INFO:     cal_metric_during_train : True
+[2021/05/12 23:32:01] root INFO:     character_dict_path : ppocr/utils/ppocr_keys_v1.txt
+[2021/05/12 23:32:01] root INFO:     character_type : ch
+[2021/05/12 23:32:01] root INFO:     checkpoints : None
+[2021/05/12 23:32:01] root INFO:     debug : False
+[2021/05/12 23:32:01] root INFO:     distributed : True
+[2021/05/12 23:32:01] root INFO:     epoch_num : 500
+[2021/05/12 23:32:01] root INFO:     eval_batch_step : [0, 2000]
+[2021/05/12 23:32:01] root INFO:     infer_img : doc/imgs_words/ch/word_1.jpg
+[2021/05/12 23:32:01] root INFO:     infer_mode : False
+[2021/05/12 23:32:01] root INFO:     log_smooth_window : 20
+[2021/05/12 23:32:01] root INFO:     max_text_length : 25
+[2021/05/12 23:32:01] root INFO:     pretrained_model : None
+[2021/05/12 23:32:01] root INFO:     print_batch_step : 10
+[2021/05/12 23:32:01] root INFO:     save_epoch_step : 3
+[2021/05/12 23:32:01] root INFO:     save_inference_dir : None
+[2021/05/12 23:32:01] root INFO:     save_model_dir : ./output/rec_chinese_lite_v2.0
+[2021/05/12 23:32:01] root INFO:     save_res_path : ./output/rec/predicts_chinese_lite_v2.0.txt
+[2021/05/12 23:32:01] root INFO:     use_gpu : True
+[2021/05/12 23:32:01] root INFO:     use_space_char : True
+[2021/05/12 23:32:01] root INFO:     use_visualdl : False
+[2021/05/12 23:32:01] root INFO: Loss : 
+[2021/05/12 23:32:01] root INFO:     name : CTCLoss
+[2021/05/12 23:32:01] root INFO: Metric : 
+[2021/05/12 23:32:01] root INFO:     main_indicator : acc
+[2021/05/12 23:32:01] root INFO:     name : RecMetric
+[2021/05/12 23:32:01] root INFO: Optimizer : 
+[2021/05/12 23:32:01] root INFO:     beta1 : 0.9
+[2021/05/12 23:32:01] root INFO:     beta2 : 0.999
+[2021/05/12 23:32:01] root INFO:     lr : 
+[2021/05/12 23:32:01] root INFO:         learning_rate : 0.001
+[2021/05/12 23:32:01] root INFO:         name : Cosine
+[2021/05/12 23:32:01] root INFO:     name : Adam
+[2021/05/12 23:32:01] root INFO:     regularizer : 
+[2021/05/12 23:32:01] root INFO:         factor : 1e-05
+[2021/05/12 23:32:01] root INFO:         name : L2
+[2021/05/12 23:32:01] root INFO: PostProcess : 
+[2021/05/12 23:32:01] root INFO:     name : CTCLabelDecode
+[2021/05/12 23:32:01] root INFO: Train : 
+[2021/05/12 23:32:01] root INFO:     dataset : 
+[2021/05/12 23:32:01] root INFO:         data_dir : ./train/TrainImages
+[2021/05/12 23:32:01] root INFO:         label_file_list : ['./train/LabelTrain.txt']
+[2021/05/12 23:32:01] root INFO:         name : SimpleDataSet
+[2021/05/12 23:32:01] root INFO:         transforms : 
+[2021/05/12 23:32:01] root INFO:             DecodeImage : 
+[2021/05/12 23:32:01] root INFO:                 channel_first : False
+[2021/05/12 23:32:01] root INFO:                 img_mode : BGR
+[2021/05/12 23:32:01] root INFO:             RecAug : None
+[2021/05/12 23:32:01] root INFO:             CTCLabelEncode : None
+[2021/05/12 23:32:01] root INFO:             RecResizeImg : 
+[2021/05/12 23:32:01] root INFO:                 image_shape : [3, 32, 320]
+[2021/05/12 23:32:01] root INFO:             KeepKeys : 
+[2021/05/12 23:32:01] root INFO:                 keep_keys : ['image', 'label', 'length']
+[2021/05/12 23:32:01] root INFO:     loader : 
+[2021/05/12 23:32:01] root INFO:         batch_size_per_card : 256
+[2021/05/12 23:32:01] root INFO:         drop_last : True
+[2021/05/12 23:32:01] root INFO:         num_workers : 8
+[2021/05/12 23:32:01] root INFO:         shuffle : True
+[2021/05/12 23:32:01] root INFO: train with paddle 2.0.0 and device CUDAPlace(0)
+W0512 23:32:01.406244 19432 nccl_context.cc:142] Socket connect worker 127.0.0.1:42866 failed, try again after 3 seconds.
+I0512 23:32:04.406637 19432 nccl_context.cc:189] init nccl context nranks: 3 local rank: 0 gpu id: 0 ring id: 0
+W0512 23:32:04.944367 19432 device_context.cc:362] Please NOTE: device: 0, GPU Compute Capability: 6.1, Driver API Version: 11.0, Runtime API Version: 10.2
+W0512 23:32:04.947057 19432 device_context.cc:372] device: 0, cuDNN Version: 7.6.
+[2021/05/12 23:32:06] root INFO: Initialize indexs of datasets:['./train/LabelTrain.txt']
+[2021/05/12 23:32:06] root INFO: Initialize indexs of datasets:['./train/LabelVal.txt']
+[2021/05/12 23:32:07] root INFO: train from scratch
+[2021/05/12 23:32:07] root INFO: train dataloader has 130 iters
+[2021/05/12 23:32:07] root INFO: valid dataloader has 4 iters
+[2021/05/12 23:32:07] root INFO: During the training process, after the 0th iteration, an evaluation is run every 2000 iterations
+[2021/05/12 23:32:07] root INFO: Initialize indexs of datasets:['./train/LabelTrain.txt']
+[2021/05/12 23:32:56] root INFO: epoch: [1/500], iter: 10, lr: 0.001000, loss: 612.651367, acc: 0.000000, norm_edit_dis: 0.000000, reader_cost: 1.67705 s, batch_cost: 4.17318 s, samples: 2816, ips: 67.47857
+[2021/05/12 23:33:15] root INFO: epoch: [1/500], iter: 20, lr: 0.001000, loss: 487.535126, acc: 0.000000, norm_edit_dis: 0.000000, reader_cost: 0.00222 s, batch_cost: 1.16919 s, samples: 2560, ips: 218.95500
+[2021/05/12 23:33:33] root INFO: epoch: [1/500], iter: 30, lr: 0.001000, loss: 243.909225, acc: 0.000000, norm_edit_dis: 0.000000, reader_cost: 0.00166 s, batch_cost: 1.12339 s, samples: 2560, ips: 227.88175
+[2021/05/12 23:33:52] root INFO: epoch: [1/500], iter: 40, lr: 0.001000, loss: 84.875778, acc: 0.000000, norm_edit_dis: 0.000000, reader_cost: 0.00254 s, batch_cost: 1.13269 s, samples: 2560, ips: 226.00978
+[2021/05/12 23:34:10] root INFO: epoch: [1/500], iter: 50, lr: 0.001000, loss: 47.811020, acc: 0.000000, norm_edit_dis: 0.000000, reader_cost: 0.00136 s, batch_cost: 1.13647 s, samples: 2560, ips: 225.25982
+/home/xingli/miniconda3/envs/paddle/lib/python3.7/site-packages/paddle/fluid/layers/utils.py:26: DeprecationWarning: `np.int` is a deprecated alias for the builtin `int`. To silence this warning, use `int` by itself. Doing this will not modify any behavior and is safe. When replacing `np.int`, you may wish to use e.g. `np.int64` or `np.int32` to specify the precision. If you wish to review your current use, check the release note link for additional information.
+Deprecated in NumPy 1.20; for more details and guidance: https://numpy.org/devdocs/release/1.20.0-notes.html#deprecations
+  def convert_to_list(value, n, name, dtype=np.int):
+/home/xingli/miniconda3/envs/paddle/lib/python3.7/site-packages/skimage/morphology/_skeletonize.py:241: DeprecationWarning: `np.bool` is a deprecated alias for the builtin `bool`. To silence this warning, use `bool` by itself. Doing this will not modify any behavior and is safe. If you specifically wanted the numpy scalar type, use `np.bool_` here.
+Deprecated in NumPy 1.20; for more details and guidance: https://numpy.org/devdocs/release/1.20.0-notes.html#deprecations
+  0, 1, 1, 0, 0, 1, 0, 0, 0], dtype=np.bool)
+/home/xingli/miniconda3/envs/paddle/lib/python3.7/site-packages/skimage/morphology/_skeletonize.py:256: DeprecationWarning: `np.bool` is a deprecated alias for the builtin `bool`. To silence this warning, use `bool` by itself. Doing this will not modify any behavior and is safe. If you specifically wanted the numpy scalar type, use `np.bool_` here.
+Deprecated in NumPy 1.20; for more details and guidance: https://numpy.org/devdocs/release/1.20.0-notes.html#deprecations
+  0, 0, 0, 0, 0, 0, 0, 0, 0], dtype=np.bool)
+[2021/05/12 23:34:49] root INFO: Architecture : 
+[2021/05/12 23:34:49] root INFO:     Backbone : 
+[2021/05/12 23:34:49] root INFO:         model_name : small
+[2021/05/12 23:34:49] root INFO:         name : MobileNetV3
+[2021/05/12 23:34:49] root INFO:         scale : 0.5
+[2021/05/12 23:34:49] root INFO:         small_stride : [1, 2, 2, 2]
+[2021/05/12 23:34:49] root INFO:     Head : 
+[2021/05/12 23:34:49] root INFO:         fc_decay : 1e-05
+[2021/05/12 23:34:49] root INFO:         name : CTCHead
+[2021/05/12 23:34:49] root INFO:     Neck : 
+[2021/05/12 23:34:49] root INFO:         encoder_type : rnn
+[2021/05/12 23:34:49] root INFO:         hidden_size : 48
+[2021/05/12 23:34:49] root INFO:         name : SequenceEncoder
+[2021/05/12 23:34:49] root INFO:     Transform : None
+[2021/05/12 23:34:49] root INFO:     algorithm : CRNN
+[2021/05/12 23:34:49] root INFO:     model_type : rec
+[2021/05/12 23:34:49] root INFO: Eval : 
+[2021/05/12 23:34:49] root INFO:     dataset : 
+[2021/05/12 23:34:49] root INFO:         data_dir : ./train/TrainImages
+[2021/05/12 23:34:49] root INFO:         label_file_list : ['./train/LabelVal.txt']
+[2021/05/12 23:34:49] root INFO:         name : SimpleDataSet
+[2021/05/12 23:34:49] root INFO:         transforms : 
+[2021/05/12 23:34:49] root INFO:             DecodeImage : 
+[2021/05/12 23:34:49] root INFO:                 channel_first : False
+[2021/05/12 23:34:49] root INFO:                 img_mode : BGR
+[2021/05/12 23:34:49] root INFO:             CTCLabelEncode : None
+[2021/05/12 23:34:49] root INFO:             RecResizeImg : 
+[2021/05/12 23:34:49] root INFO:                 image_shape : [3, 32, 320]
+[2021/05/12 23:34:49] root INFO:             KeepKeys : 
+[2021/05/12 23:34:49] root INFO:                 keep_keys : ['image', 'label', 'length']
+[2021/05/12 23:34:49] root INFO:     loader : 
+[2021/05/12 23:34:49] root INFO:         batch_size_per_card : 256
+[2021/05/12 23:34:49] root INFO:         drop_last : False
+[2021/05/12 23:34:49] root INFO:         num_workers : 14
+[2021/05/12 23:34:49] root INFO:         shuffle : False
+[2021/05/12 23:34:49] root INFO: Global : 
+[2021/05/12 23:34:49] root INFO:     cal_metric_during_train : True
+[2021/05/12 23:34:49] root INFO:     character_dict_path : ppocr/utils/ppocr_keys_v1.txt
+[2021/05/12 23:34:49] root INFO:     character_type : ch
+[2021/05/12 23:34:49] root INFO:     checkpoints : None
+[2021/05/12 23:34:49] root INFO:     debug : False
+[2021/05/12 23:34:49] root INFO:     distributed : True
+[2021/05/12 23:34:49] root INFO:     epoch_num : 500
+[2021/05/12 23:34:49] root INFO:     eval_batch_step : [0, 2000]
+[2021/05/12 23:34:49] root INFO:     infer_img : doc/imgs_words/ch/word_1.jpg
+[2021/05/12 23:34:49] root INFO:     infer_mode : False
+[2021/05/12 23:34:49] root INFO:     log_smooth_window : 20
+[2021/05/12 23:34:49] root INFO:     max_text_length : 25
+[2021/05/12 23:34:49] root INFO:     pretrained_model : None
+[2021/05/12 23:34:49] root INFO:     print_batch_step : 10
+[2021/05/12 23:34:49] root INFO:     save_epoch_step : 3
+[2021/05/12 23:34:49] root INFO:     save_inference_dir : None
+[2021/05/12 23:34:49] root INFO:     save_model_dir : ./output/rec_chinese_lite_v2.0
+[2021/05/12 23:34:49] root INFO:     save_res_path : ./output/rec/predicts_chinese_lite_v2.0.txt
+[2021/05/12 23:34:49] root INFO:     use_gpu : True
+[2021/05/12 23:34:49] root INFO:     use_space_char : True
+[2021/05/12 23:34:49] root INFO:     use_visualdl : False
+[2021/05/12 23:34:49] root INFO: Loss : 
+[2021/05/12 23:34:49] root INFO:     name : CTCLoss
+[2021/05/12 23:34:49] root INFO: Metric : 
+[2021/05/12 23:34:49] root INFO:     main_indicator : acc
+[2021/05/12 23:34:49] root INFO:     name : RecMetric
+[2021/05/12 23:34:49] root INFO: Optimizer : 
+[2021/05/12 23:34:49] root INFO:     beta1 : 0.9
+[2021/05/12 23:34:49] root INFO:     beta2 : 0.999
+[2021/05/12 23:34:49] root INFO:     lr : 
+[2021/05/12 23:34:49] root INFO:         learning_rate : 0.001
+[2021/05/12 23:34:49] root INFO:         name : Cosine
+[2021/05/12 23:34:49] root INFO:     name : Adam
+[2021/05/12 23:34:49] root INFO:     regularizer : 
+[2021/05/12 23:34:49] root INFO:         factor : 1e-05
+[2021/05/12 23:34:49] root INFO:         name : L2
+[2021/05/12 23:34:49] root INFO: PostProcess : 
+[2021/05/12 23:34:49] root INFO:     name : CTCLabelDecode
+[2021/05/12 23:34:49] root INFO: Train : 
+[2021/05/12 23:34:49] root INFO:     dataset : 
+[2021/05/12 23:34:49] root INFO:         data_dir : ./train/TrainImages
+[2021/05/12 23:34:49] root INFO:         label_file_list : ['./train/LabelTrain.txt']
+[2021/05/12 23:34:49] root INFO:         name : SimpleDataSet
+[2021/05/12 23:34:49] root INFO:         transforms : 
+[2021/05/12 23:34:49] root INFO:             DecodeImage : 
+[2021/05/12 23:34:49] root INFO:                 channel_first : False
+[2021/05/12 23:34:49] root INFO:                 img_mode : BGR
+[2021/05/12 23:34:49] root INFO:             RecAug : None
+[2021/05/12 23:34:49] root INFO:             CTCLabelEncode : None
+[2021/05/12 23:34:49] root INFO:             RecResizeImg : 
+[2021/05/12 23:34:49] root INFO:                 image_shape : [3, 32, 320]
+[2021/05/12 23:34:49] root INFO:             KeepKeys : 
+[2021/05/12 23:34:49] root INFO:                 keep_keys : ['image', 'label', 'length']
+[2021/05/12 23:34:49] root INFO:     loader : 
+[2021/05/12 23:34:49] root INFO:         batch_size_per_card : 256
+[2021/05/12 23:34:49] root INFO:         drop_last : True
+[2021/05/12 23:34:49] root INFO:         num_workers : 14
+[2021/05/12 23:34:49] root INFO:         shuffle : True
+[2021/05/12 23:34:49] root INFO: train with paddle 2.0.0 and device CUDAPlace(0)
+I0512 23:34:49.969707 24687 nccl_context.cc:189] init nccl context nranks: 3 local rank: 0 gpu id: 0 ring id: 0
+W0512 23:34:50.386298 24687 device_context.cc:362] Please NOTE: device: 0, GPU Compute Capability: 6.1, Driver API Version: 11.0, Runtime API Version: 10.2
+W0512 23:34:50.391144 24687 device_context.cc:372] device: 0, cuDNN Version: 7.6.
+[2021/05/12 23:34:52] root INFO: Initialize indexs of datasets:['./train/LabelTrain.txt']
+[2021/05/12 23:34:52] root INFO: Initialize indexs of datasets:['./train/LabelVal.txt']
+[2021/05/12 23:34:52] root INFO: train from scratch
+[2021/05/12 23:34:52] root INFO: train dataloader has 130 iters
+[2021/05/12 23:34:52] root INFO: valid dataloader has 4 iters
+[2021/05/12 23:34:52] root INFO: During the training process, after the 0th iteration, an evaluation is run every 2000 iterations
+[2021/05/12 23:34:52] root INFO: Initialize indexs of datasets:['./train/LabelTrain.txt']
+[2021/05/12 23:35:29] root INFO: epoch: [1/500], iter: 10, lr: 0.001000, loss: 612.644226, acc: 0.000000, norm_edit_dis: 0.000000, reader_cost: 1.06624 s, batch_cost: 2.83132 s, samples: 2816, ips: 99.45882
+[2021/05/12 23:35:47] root INFO: epoch: [1/500], iter: 20, lr: 0.001000, loss: 490.292877, acc: 0.000000, norm_edit_dis: 0.000000, reader_cost: 0.00230 s, batch_cost: 1.14119 s, samples: 2560, ips: 224.32708
+[2021/05/12 23:36:05] root INFO: epoch: [1/500], iter: 30, lr: 0.001000, loss: 244.753906, acc: 0.000000, norm_edit_dis: 0.000000, reader_cost: 0.00270 s, batch_cost: 1.16407 s, samples: 2560, ips: 219.91766
+[2021/05/12 23:36:23] root INFO: epoch: [1/500], iter: 40, lr: 0.001000, loss: 86.226593, acc: 0.000000, norm_edit_dis: 0.000000, reader_cost: 0.00295 s, batch_cost: 1.11572 s, samples: 2560, ips: 229.44749
+[2021/05/12 23:36:40] root INFO: epoch: [1/500], iter: 50, lr: 0.001000, loss: 47.935776, acc: 0.000000, norm_edit_dis: 0.000000, reader_cost: 0.00176 s, batch_cost: 1.10687 s, samples: 2560, ips: 231.28333
+[2021/05/12 23:36:58] root INFO: epoch: [1/500], iter: 60, lr: 0.001000, loss: 44.268768, acc: 0.000000, norm_edit_dis: 0.000000, reader_cost: 0.00293 s, batch_cost: 1.09972 s, samples: 2560, ips: 232.78559
+[2021/05/12 23:37:15] root INFO: epoch: [1/500], iter: 70, lr: 0.001000, loss: 42.721020, acc: 0.000000, norm_edit_dis: 0.000000, reader_cost: 0.00212 s, batch_cost: 1.12876 s, samples: 2560, ips: 226.79759
+[2021/05/12 23:37:33] root INFO: epoch: [1/500], iter: 80, lr: 0.001000, loss: 40.916504, acc: 0.000000, norm_edit_dis: 0.000000, reader_cost: 0.00208 s, batch_cost: 1.09757 s, samples: 2560, ips: 233.24309
+[2021/05/12 23:37:51] root INFO: epoch: [1/500], iter: 90, lr: 0.001000, loss: 40.156124, acc: 0.000000, norm_edit_dis: 0.000000, reader_cost: 0.00123 s, batch_cost: 1.13784 s, samples: 2560, ips: 224.98865
+[2021/05/12 23:38:09] root INFO: epoch: [1/500], iter: 100, lr: 0.001000, loss: 40.627167, acc: 0.000000, norm_edit_dis: 0.000000, reader_cost: 0.00170 s, batch_cost: 1.11511 s, samples: 2560, ips: 229.57362
+[2021/05/12 23:38:27] root INFO: epoch: [1/500], iter: 110, lr: 0.001000, loss: 40.285034, acc: 0.000000, norm_edit_dis: 0.000000, reader_cost: 0.00221 s, batch_cost: 1.12365 s, samples: 2560, ips: 227.82994
+[2021/05/12 23:38:44] root INFO: epoch: [1/500], iter: 120, lr: 0.001000, loss: 39.853577, acc: 0.000000, norm_edit_dis: 0.000000, reader_cost: 0.00110 s, batch_cost: 1.07706 s, samples: 2560, ips: 237.68312
+[2021/05/12 23:38:59] root INFO: epoch: [1/500], iter: 129, lr: 0.001000, loss: 40.194309, acc: 0.000000, norm_edit_dis: 0.000000, reader_cost: 0.00016 s, batch_cost: 0.97090 s, samples: 2304, ips: 237.30678
+[2021/05/12 23:39:00] root INFO: save model in ./output/rec_chinese_lite_v2.0/latest
+[2021/05/12 23:39:00] root INFO: Initialize indexs of datasets:['./train/LabelTrain.txt']
+[2021/05/12 23:39:16] root INFO: epoch: [2/500], iter: 130, lr: 0.001000, loss: 40.479527, acc: 0.000000, norm_edit_dis: 0.000000, reader_cost: 0.76783 s, batch_cost: 1.36551 s, samples: 256, ips: 18.74756
+[2021/05/12 23:39:37] root INFO: epoch: [2/500], iter: 140, lr: 0.001000, loss: 41.427521, acc: 0.000000, norm_edit_dis: 0.000000, reader_cost: 0.00657 s, batch_cost: 1.36446 s, samples: 2560, ips: 187.61952
+[2021/05/12 23:39:54] root INFO: epoch: [2/500], iter: 150, lr: 0.001000, loss: 40.503178, acc: 0.000000, norm_edit_dis: 0.000000, reader_cost: 0.00160 s, batch_cost: 1.10985 s, samples: 2560, ips: 230.66158
+[2021/05/12 23:40:13] root INFO: epoch: [2/500], iter: 160, lr: 0.001000, loss: 39.780113, acc: 0.000000, norm_edit_dis: 0.000000, reader_cost: 0.00188 s, batch_cost: 1.17689 s, samples: 2560, ips: 217.52257
+[2021/05/12 23:40:31] root INFO: epoch: [2/500], iter: 170, lr: 0.001000, loss: 39.465508, acc: 0.000000, norm_edit_dis: 0.000000, reader_cost: 0.00562 s, batch_cost: 1.16983 s, samples: 2560, ips: 218.83549
+[2021/05/12 23:40:49] root INFO: epoch: [2/500], iter: 180, lr: 0.001000, loss: 39.815948, acc: 0.000000, norm_edit_dis: 0.000000, reader_cost: 0.00207 s, batch_cost: 1.11337 s, samples: 2560, ips: 229.93245
+[2021/05/12 23:41:07] root INFO: epoch: [2/500], iter: 190, lr: 0.001000, loss: 39.391640, acc: 0.000000, norm_edit_dis: 0.000000, reader_cost: 0.00191 s, batch_cost: 1.12927 s, samples: 2560, ips: 226.69459
+[2021/05/12 23:41:25] root INFO: epoch: [2/500], iter: 200, lr: 0.001000, loss: 39.854141, acc: 0.000000, norm_edit_dis: 0.000000, reader_cost: 0.00199 s, batch_cost: 1.14710 s, samples: 2560, ips: 223.17087
+[2021/05/12 23:41:43] root INFO: epoch: [2/500], iter: 210, lr: 0.001000, loss: 40.080177, acc: 0.000000, norm_edit_dis: 0.000000, reader_cost: 0.00188 s, batch_cost: 1.13001 s, samples: 2560, ips: 226.54720
+[2021/05/12 23:42:01] root INFO: epoch: [2/500], iter: 220, lr: 0.001000, loss: 39.307812, acc: 0.000000, norm_edit_dis: 0.000000, reader_cost: 0.00174 s, batch_cost: 1.11471 s, samples: 2560, ips: 229.65516
+[2021/05/12 23:42:18] root INFO: epoch: [2/500], iter: 230, lr: 0.001000, loss: 39.080711, acc: 0.000000, norm_edit_dis: 0.000000, reader_cost: 0.00191 s, batch_cost: 1.12010 s, samples: 2560, ips: 228.55126
+[2021/05/12 23:42:36] root INFO: epoch: [2/500], iter: 240, lr: 0.001000, loss: 39.126877, acc: 0.000000, norm_edit_dis: 0.000000, reader_cost: 0.00082 s, batch_cost: 1.07809 s, samples: 2560, ips: 237.45606
+[2021/05/12 23:42:53] root INFO: epoch: [2/500], iter: 250, lr: 0.001000, loss: 39.115303, acc: 0.000000, norm_edit_dis: 0.000000, reader_cost: 0.00046 s, batch_cost: 1.07924 s, samples: 2560, ips: 237.20396
+[2021/05/12 23:43:09] root INFO: epoch: [2/500], iter: 259, lr: 0.001000, loss: 39.384384, acc: 0.000000, norm_edit_dis: 0.000000, reader_cost: 0.00026 s, batch_cost: 0.95519 s, samples: 2304, ips: 241.20743
+[2021/05/12 23:43:09] root INFO: save model in ./output/rec_chinese_lite_v2.0/latest
+[2021/05/12 23:43:09] root INFO: Initialize indexs of datasets:['./train/LabelTrain.txt']
+[2021/05/12 23:43:26] root INFO: epoch: [3/500], iter: 260, lr: 0.001000, loss: 39.384384, acc: 0.000000, norm_edit_dis: 0.000000, reader_cost: 1.05591 s, batch_cost: 1.45387 s, samples: 256, ips: 17.60817
+[2021/05/12 23:43:47] root INFO: epoch: [3/500], iter: 270, lr: 0.001000, loss: 39.005249, acc: 0.000000, norm_edit_dis: 0.000000, reader_cost: 0.00310 s, batch_cost: 1.35727 s, samples: 2560, ips: 188.61387
+[2021/05/12 23:44:05] root INFO: epoch: [3/500], iter: 280, lr: 0.001000, loss: 38.691093, acc: 0.000000, norm_edit_dis: 0.000000, reader_cost: 0.00194 s, batch_cost: 1.14164 s, samples: 2560, ips: 224.23844
+[2021/05/12 23:44:22] root INFO: epoch: [3/500], iter: 290, lr: 0.001000, loss: 38.138180, acc: 0.000000, norm_edit_dis: 0.000000, reader_cost: 0.00189 s, batch_cost: 1.12250 s, samples: 2560, ips: 228.06264
+[2021/05/12 23:44:40] root INFO: epoch: [3/500], iter: 300, lr: 0.001000, loss: 39.135078, acc: 0.000000, norm_edit_dis: 0.000000, reader_cost: 0.00188 s, batch_cost: 1.11642 s, samples: 2560, ips: 229.30353
+[2021/05/12 23:44:58] root INFO: epoch: [3/500], iter: 310, lr: 0.001000, loss: 39.380226, acc: 0.000000, norm_edit_dis: 0.000000, reader_cost: 0.00180 s, batch_cost: 1.09891 s, samples: 2560, ips: 232.95832
+[2021/05/12 23:45:16] root INFO: epoch: [3/500], iter: 320, lr: 0.001000, loss: 38.161957, acc: 0.000000, norm_edit_dis: 0.000000, reader_cost: 0.00240 s, batch_cost: 1.10799 s, samples: 2560, ips: 231.04913
+[2021/05/12 23:45:33] root INFO: epoch: [3/500], iter: 330, lr: 0.001000, loss: 38.123978, acc: 0.000000, norm_edit_dis: 0.000000, reader_cost: 0.00186 s, batch_cost: 1.11341 s, samples: 2560, ips: 229.92519
+[2021/05/12 23:45:51] root INFO: epoch: [3/500], iter: 340, lr: 0.001000, loss: 38.658577, acc: 0.000000, norm_edit_dis: 0.000000, reader_cost: 0.00202 s, batch_cost: 1.09512 s, samples: 2560, ips: 233.76506
+[2021/05/12 23:46:09] root INFO: epoch: [3/500], iter: 350, lr: 0.001000, loss: 38.393429, acc: 0.000000, norm_edit_dis: 0.000000, reader_cost: 0.00237 s, batch_cost: 1.10068 s, samples: 2560, ips: 232.58296
+[2021/05/12 23:46:27] root INFO: epoch: [3/500], iter: 360, lr: 0.001000, loss: 38.259281, acc: 0.000000, norm_edit_dis: 0.000000, reader_cost: 0.00184 s, batch_cost: 1.13861 s, samples: 2560, ips: 224.83542
+[2021/05/12 23:46:44] root INFO: epoch: [3/500], iter: 370, lr: 0.001000, loss: 38.227180, acc: 0.000000, norm_edit_dis: 0.000000, reader_cost: 0.00103 s, batch_cost: 1.08255 s, samples: 2560, ips: 236.47817
+[2021/05/12 23:47:02] root INFO: epoch: [3/500], iter: 380, lr: 0.001000, loss: 38.636345, acc: 0.000000, norm_edit_dis: 0.000000, reader_cost: 0.00029 s, batch_cost: 1.08302 s, samples: 2560, ips: 236.37695
+[2021/05/12 23:47:17] root INFO: epoch: [3/500], iter: 389, lr: 0.001000, loss: 37.791981, acc: 0.000000, norm_edit_dis: 0.000000, reader_cost: 0.00030 s, batch_cost: 0.98077 s, samples: 2304, ips: 234.91845
+[2021/05/12 23:47:17] root INFO: save model in ./output/rec_chinese_lite_v2.0/latest
+[2021/05/12 23:47:18] root INFO: save model in ./output/rec_chinese_lite_v2.0/iter_epoch_3
+[2021/05/12 23:47:18] root INFO: Initialize indexs of datasets:['./train/LabelTrain.txt']
+[2021/05/12 23:47:36] root INFO: epoch: [4/500], iter: 390, lr: 0.001000, loss: 37.791981, acc: 0.000000, norm_edit_dis: 0.000000, reader_cost: 1.12783 s, batch_cost: 1.55647 s, samples: 256, ips: 16.44750
+[2021/05/12 23:47:55] root INFO: epoch: [4/500], iter: 400, lr: 0.001000, loss: 37.645367, acc: 0.000000, norm_edit_dis: 0.000000, reader_cost: 0.00523 s, batch_cost: 1.24756 s, samples: 2560, ips: 205.19977
+[2021/05/12 23:48:13] root INFO: epoch: [4/500], iter: 410, lr: 0.001000, loss: 37.910316, acc: 0.000000, norm_edit_dis: 0.000000, reader_cost: 0.00197 s, batch_cost: 1.16264 s, samples: 2560, ips: 220.18884
+[2021/05/12 23:48:31] root INFO: epoch: [4/500], iter: 420, lr: 0.001000, loss: 38.617336, acc: 0.000000, norm_edit_dis: 0.000000, reader_cost: 0.00186 s, batch_cost: 1.14883 s, samples: 2560, ips: 222.83543
+[2021/05/12 23:48:49] root INFO: epoch: [4/500], iter: 430, lr: 0.001000, loss: 38.228828, acc: 0.000000, norm_edit_dis: 0.000000, reader_cost: 0.00206 s, batch_cost: 1.14183 s, samples: 2560, ips: 224.20158
+[2021/05/12 23:49:07] root INFO: epoch: [4/500], iter: 440, lr: 0.001000, loss: 37.394241, acc: 0.000000, norm_edit_dis: 0.000000, reader_cost: 0.00178 s, batch_cost: 1.14813 s, samples: 2560, ips: 222.97076
+[2021/05/12 23:49:24] root INFO: epoch: [4/500], iter: 450, lr: 0.001000, loss: 37.361107, acc: 0.000000, norm_edit_dis: 0.000000, reader_cost: 0.00192 s, batch_cost: 1.13569 s, samples: 2560, ips: 225.41303
+[2021/05/12 23:49:42] root INFO: epoch: [4/500], iter: 460, lr: 0.001000, loss: 37.810295, acc: 0.000000, norm_edit_dis: 0.000000, reader_cost: 0.00207 s, batch_cost: 1.11511 s, samples: 2560, ips: 229.57356
+[2021/05/12 23:49:59] root INFO: epoch: [4/500], iter: 470, lr: 0.001000, loss: 37.858921, acc: 0.000000, norm_edit_dis: 0.000000, reader_cost: 0.00210 s, batch_cost: 1.11311 s, samples: 2560, ips: 229.98530
+[2021/05/12 23:50:18] root INFO: epoch: [4/500], iter: 480, lr: 0.001000, loss: 37.755371, acc: 0.000000, norm_edit_dis: 0.000000, reader_cost: 0.00185 s, batch_cost: 1.17548 s, samples: 2560, ips: 217.78270
+[2021/05/12 23:50:37] root INFO: epoch: [4/500], iter: 490, lr: 0.001000, loss: 37.173298, acc: 0.000000, norm_edit_dis: 0.000000, reader_cost: 0.00205 s, batch_cost: 1.17284 s, samples: 2560, ips: 218.27430
+[2021/05/12 23:50:54] root INFO: epoch: [4/500], iter: 500, lr: 0.001000, loss: 37.258587, acc: 0.000000, norm_edit_dis: 0.000000, reader_cost: 0.00069 s, batch_cost: 1.10202 s, samples: 2560, ips: 232.30050
+[2021/05/12 23:51:11] root INFO: epoch: [4/500], iter: 510, lr: 0.001000, loss: 38.250839, acc: 0.000000, norm_edit_dis: 0.000000, reader_cost: 0.00010 s, batch_cost: 1.11508 s, samples: 2560, ips: 229.57946
+[2021/05/12 23:51:27] root INFO: epoch: [4/500], iter: 519, lr: 0.001000, loss: 38.071365, acc: 0.000000, norm_edit_dis: 0.000000, reader_cost: 0.00026 s, batch_cost: 1.02527 s, samples: 2304, ips: 224.72075
+[2021/05/12 23:51:27] root INFO: save model in ./output/rec_chinese_lite_v2.0/latest
+[2021/05/12 23:51:27] root INFO: Initialize indexs of datasets:['./train/LabelTrain.txt']
+[2021/05/12 23:51:45] root INFO: epoch: [5/500], iter: 520, lr: 0.001000, loss: 37.732315, acc: 0.000000, norm_edit_dis: 0.000000, reader_cost: 1.00697 s, batch_cost: 1.52099 s, samples: 256, ips: 16.83115
+[2021/05/12 23:52:04] root INFO: epoch: [5/500], iter: 530, lr: 0.001000, loss: 37.400349, acc: 0.000000, norm_edit_dis: 0.000000, reader_cost: 0.00538 s, batch_cost: 1.22705 s, samples: 2560, ips: 208.62981
+[2021/05/12 23:52:21] root INFO: epoch: [5/500], iter: 540, lr: 0.001000, loss: 37.246925, acc: 0.000000, norm_edit_dis: 0.000000, reader_cost: 0.00239 s, batch_cost: 1.12780 s, samples: 2560, ips: 226.99087
+[2021/05/12 23:52:39] root INFO: epoch: [5/500], iter: 550, lr: 0.001000, loss: 36.103020, acc: 0.000000, norm_edit_dis: 0.000000, reader_cost: 0.00167 s, batch_cost: 1.16474 s, samples: 2560, ips: 219.79227
+[2021/05/12 23:52:57] root INFO: epoch: [5/500], iter: 560, lr: 0.001000, loss: 37.775467, acc: 0.000000, norm_edit_dis: 0.000000, reader_cost: 0.00176 s, batch_cost: 1.14841 s, samples: 2560, ips: 222.91752
+[2021/05/12 23:53:15] root INFO: epoch: [5/500], iter: 570, lr: 0.001000, loss: 37.039444, acc: 0.000000, norm_edit_dis: 0.000000, reader_cost: 0.00206 s, batch_cost: 1.11838 s, samples: 2560, ips: 228.90269
+[2021/05/12 23:53:33] root INFO: epoch: [5/500], iter: 580, lr: 0.001000, loss: 37.039444, acc: 0.000000, norm_edit_dis: 0.000000, reader_cost: 0.00168 s, batch_cost: 1.14950 s, samples: 2560, ips: 222.70492
+[2021/05/12 23:53:51] root INFO: epoch: [5/500], iter: 590, lr: 0.001000, loss: 38.155281, acc: 0.000000, norm_edit_dis: 0.000000, reader_cost: 0.00169 s, batch_cost: 1.13758 s, samples: 2560, ips: 225.03966
+[2021/05/12 23:54:08] root INFO: epoch: [5/500], iter: 600, lr: 0.001000, loss: 38.300934, acc: 0.000000, norm_edit_dis: 0.000000, reader_cost: 0.00300 s, batch_cost: 1.10404 s, samples: 2560, ips: 231.87562
+[2021/05/12 23:54:26] root INFO: epoch: [5/500], iter: 610, lr: 0.001000, loss: 37.101219, acc: 0.000000, norm_edit_dis: 0.000000, reader_cost: 0.00176 s, batch_cost: 1.12493 s, samples: 2560, ips: 227.57064
+[2021/05/12 23:54:44] root INFO: epoch: [5/500], iter: 620, lr: 0.001000, loss: 36.716103, acc: 0.000000, norm_edit_dis: 0.000000, reader_cost: 0.00175 s, batch_cost: 1.13674 s, samples: 2560, ips: 225.20639
+[2021/05/12 23:55:01] root INFO: epoch: [5/500], iter: 630, lr: 0.001000, loss: 37.081806, acc: 0.000000, norm_edit_dis: 0.000000, reader_cost: 0.00077 s, batch_cost: 1.09242 s, samples: 2560, ips: 234.34152
+[2021/05/12 23:55:18] root INFO: epoch: [5/500], iter: 640, lr: 0.001000, loss: 36.311325, acc: 0.000000, norm_edit_dis: 0.000000, reader_cost: 0.00049 s, batch_cost: 1.11007 s, samples: 2560, ips: 230.61696
+[2021/05/12 23:55:34] root INFO: epoch: [5/500], iter: 649, lr: 0.001000, loss: 36.358475, acc: 0.000000, norm_edit_dis: 0.000000, reader_cost: 0.00009 s, batch_cost: 0.98945 s, samples: 2304, ips: 232.85586
+[2021/05/12 23:55:34] root INFO: save model in ./output/rec_chinese_lite_v2.0/latest
+[2021/05/12 23:55:34] root INFO: Initialize indexs of datasets:['./train/LabelTrain.txt']
+[2021/05/12 23:55:52] root INFO: epoch: [6/500], iter: 650, lr: 0.001000, loss: 36.358475, acc: 0.000000, norm_edit_dis: 0.000000, reader_cost: 0.91030 s, batch_cost: 1.48958 s, samples: 256, ips: 17.18610
+[2021/05/12 23:56:11] root INFO: epoch: [6/500], iter: 660, lr: 0.001000, loss: 36.893433, acc: 0.000000, norm_edit_dis: 0.000000, reader_cost: 0.00404 s, batch_cost: 1.28414 s, samples: 2560, ips: 199.35545
+[2021/05/12 23:56:28] root INFO: epoch: [6/500], iter: 670, lr: 0.001000, loss: 37.022564, acc: 0.000000, norm_edit_dis: 0.000000, reader_cost: 0.00162 s, batch_cost: 1.12167 s, samples: 2560, ips: 228.23209
+[2021/05/12 23:56:47] root INFO: epoch: [6/500], iter: 680, lr: 0.001000, loss: 37.427345, acc: 0.000000, norm_edit_dis: 0.000000, reader_cost: 0.00305 s, batch_cost: 1.15967 s, samples: 2560, ips: 220.75153
+[2021/05/12 23:57:04] root INFO: epoch: [6/500], iter: 690, lr: 0.001000, loss: 38.116047, acc: 0.000000, norm_edit_dis: 0.000000, reader_cost: 0.00184 s, batch_cost: 1.13651 s, samples: 2560, ips: 225.25004
+[2021/05/12 23:57:22] root INFO: epoch: [6/500], iter: 700, lr: 0.001000, loss: 36.243031, acc: 0.000000, norm_edit_dis: 0.000000, reader_cost: 0.00171 s, batch_cost: 1.15368 s, samples: 2560, ips: 221.89850
+[2021/05/12 23:57:40] root INFO: epoch: [6/500], iter: 710, lr: 0.001000, loss: 35.814762, acc: 0.000000, norm_edit_dis: 0.000000, reader_cost: 0.00155 s, batch_cost: 1.15714 s, samples: 2560, ips: 221.23560
+[2021/05/12 23:57:58] root INFO: epoch: [6/500], iter: 720, lr: 0.001000, loss: 35.993191, acc: 0.000000, norm_edit_dis: 0.000000, reader_cost: 0.00157 s, batch_cost: 1.15448 s, samples: 2560, ips: 221.74542
+[2021/05/12 23:58:16] root INFO: epoch: [6/500], iter: 730, lr: 0.001000, loss: 36.474480, acc: 0.000000, norm_edit_dis: 0.000000, reader_cost: 0.00163 s, batch_cost: 1.12648 s, samples: 2560, ips: 227.25746
+[2021/05/12 23:58:34] root INFO: epoch: [6/500], iter: 740, lr: 0.001000, loss: 36.563835, acc: 0.000000, norm_edit_dis: 0.000000, reader_cost: 0.00190 s, batch_cost: 1.12855 s, samples: 2560, ips: 226.84011
+[2021/05/12 23:58:51] root INFO: epoch: [6/500], iter: 750, lr: 0.001000, loss: 36.361771, acc: 0.000000, norm_edit_dis: 0.000000, reader_cost: 0.00188 s, batch_cost: 1.13735 s, samples: 2560, ips: 225.08507
+[2021/05/12 23:59:09] root INFO: epoch: [6/500], iter: 760, lr: 0.001000, loss: 36.030373, acc: 0.000000, norm_edit_dis: 0.000000, reader_cost: 0.00077 s, batch_cost: 1.15729 s, samples: 2560, ips: 221.20637
+[2021/05/12 23:59:27] root INFO: epoch: [6/500], iter: 770, lr: 0.001000, loss: 36.867634, acc: 0.000000, norm_edit_dis: 0.000000, reader_cost: 0.00033 s, batch_cost: 1.10923 s, samples: 2560, ips: 230.79063
+[2021/05/12 23:59:42] root INFO: epoch: [6/500], iter: 779, lr: 0.001000, loss: 37.234177, acc: 0.000000, norm_edit_dis: 0.000000, reader_cost: 0.00026 s, batch_cost: 1.00615 s, samples: 2304, ips: 228.99136
+[2021/05/12 23:59:43] root INFO: save model in ./output/rec_chinese_lite_v2.0/latest
+[2021/05/12 23:59:43] root INFO: save model in ./output/rec_chinese_lite_v2.0/iter_epoch_6
+[2021/05/12 23:59:43] root INFO: Initialize indexs of datasets:['./train/LabelTrain.txt']
+[2021/05/12 23:59:59] root INFO: epoch: [7/500], iter: 780, lr: 0.001000, loss: 37.407349, acc: 0.000000, norm_edit_dis: 0.000000, reader_cost: 0.81314 s, batch_cost: 1.34599 s, samples: 256, ips: 19.01944
+[2021/05/13 00:00:20] root INFO: epoch: [7/500], iter: 790, lr: 0.001000, loss: 36.907475, acc: 0.000000, norm_edit_dis: 0.000000, reader_cost: 0.00456 s, batch_cost: 1.42755 s, samples: 2560, ips: 179.32768
+[2021/05/13 00:00:37] root INFO: epoch: [7/500], iter: 800, lr: 0.001000, loss: 36.772743, acc: 0.000000, norm_edit_dis: 0.000000, reader_cost: 0.00172 s, batch_cost: 1.15496 s, samples: 2560, ips: 221.65227
+[2021/05/13 00:00:55] root INFO: epoch: [7/500], iter: 810, lr: 0.001000, loss: 36.484215, acc: 0.000000, norm_edit_dis: 0.000000, reader_cost: 0.00172 s, batch_cost: 1.13272 s, samples: 2560, ips: 226.00441
+[2021/05/13 00:01:13] root INFO: epoch: [7/500], iter: 820, lr: 0.001000, loss: 36.310600, acc: 0.000000, norm_edit_dis: 0.000000, reader_cost: 0.00180 s, batch_cost: 1.12555 s, samples: 2560, ips: 227.44474
+[2021/05/13 00:01:31] root INFO: epoch: [7/500], iter: 830, lr: 0.001000, loss: 36.882950, acc: 0.000000, norm_edit_dis: 0.000000, reader_cost: 0.00283 s, batch_cost: 1.14051 s, samples: 2560, ips: 224.46107
+[2021/05/13 00:01:49] root INFO: epoch: [7/500], iter: 840, lr: 0.001000, loss: 36.665627, acc: 0.000000, norm_edit_dis: 0.000000, reader_cost: 0.00169 s, batch_cost: 1.18209 s, samples: 2560, ips: 216.56538
+[2021/05/13 00:02:06] root INFO: epoch: [7/500], iter: 850, lr: 0.001000, loss: 35.373173, acc: 0.000000, norm_edit_dis: 0.000000, reader_cost: 0.00162 s, batch_cost: 1.14088 s, samples: 2560, ips: 224.38864
+[2021/05/13 00:02:25] root INFO: epoch: [7/500], iter: 860, lr: 0.001000, loss: 35.320011, acc: 0.000000, norm_edit_dis: 0.000000, reader_cost: 0.00162 s, batch_cost: 1.17993 s, samples: 2560, ips: 216.96115
+[2021/05/13 00:02:42] root INFO: epoch: [7/500], iter: 870, lr: 0.001000, loss: 35.661385, acc: 0.000000, norm_edit_dis: 0.000000, reader_cost: 0.00138 s, batch_cost: 1.11087 s, samples: 2560, ips: 230.44992
+[2021/05/13 00:03:00] root INFO: epoch: [7/500], iter: 880, lr: 0.001000, loss: 35.244656, acc: 0.000000, norm_edit_dis: 0.000000, reader_cost: 0.00172 s, batch_cost: 1.15018 s, samples: 2560, ips: 222.57398
+[2021/05/13 00:03:18] root INFO: epoch: [7/500], iter: 890, lr: 0.001000, loss: 35.393097, acc: 0.000000, norm_edit_dis: 0.000000, reader_cost: 0.00087 s, batch_cost: 1.12757 s, samples: 2560, ips: 227.03734
+[2021/05/13 00:03:35] root INFO: epoch: [7/500], iter: 900, lr: 0.001000, loss: 36.362755, acc: 0.000000, norm_edit_dis: 0.000000, reader_cost: 0.00032 s, batch_cost: 1.09166 s, samples: 2560, ips: 234.50569
+[2021/05/13 00:03:50] root INFO: epoch: [7/500], iter: 909, lr: 0.001000, loss: 36.047108, acc: 0.000000, norm_edit_dis: 0.000000, reader_cost: 0.00031 s, batch_cost: 0.98155 s, samples: 2304, ips: 234.73079
+[2021/05/13 00:03:51] root INFO: save model in ./output/rec_chinese_lite_v2.0/latest
+[2021/05/13 00:03:51] root INFO: Initialize indexs of datasets:['./train/LabelTrain.txt']
+[2021/05/13 00:04:07] root INFO: epoch: [8/500], iter: 910, lr: 0.001000, loss: 36.047108, acc: 0.000000, norm_edit_dis: 0.000000, reader_cost: 0.94391 s, batch_cost: 1.42323 s, samples: 256, ips: 17.98728
+[2021/05/13 00:04:28] root INFO: epoch: [8/500], iter: 920, lr: 0.001000, loss: 35.823586, acc: 0.000000, norm_edit_dis: 0.000000, reader_cost: 0.00387 s, batch_cost: 1.42154 s, samples: 2560, ips: 180.08613
+[2021/05/13 00:04:46] root INFO: epoch: [8/500], iter: 930, lr: 0.001000, loss: 35.731247, acc: 0.000000, norm_edit_dis: 0.000000, reader_cost: 0.00171 s, batch_cost: 1.18439 s, samples: 2560, ips: 216.14411
+[2021/05/13 00:05:04] root INFO: epoch: [8/500], iter: 940, lr: 0.000999, loss: 35.866173, acc: 0.000000, norm_edit_dis: 0.000000, reader_cost: 0.00160 s, batch_cost: 1.10832 s, samples: 2560, ips: 230.97944
+[2021/05/13 00:05:23] root INFO: epoch: [8/500], iter: 950, lr: 0.000999, loss: 36.387901, acc: 0.000000, norm_edit_dis: 0.000000, reader_cost: 0.00190 s, batch_cost: 1.17811 s, samples: 2560, ips: 217.29684
+[2021/05/13 00:05:42] root INFO: epoch: [8/500], iter: 960, lr: 0.000999, loss: 36.238647, acc: 0.000000, norm_edit_dis: 0.000000, reader_cost: 0.00192 s, batch_cost: 1.15737 s, samples: 2560, ips: 221.19068
+[2021/05/13 00:05:59] root INFO: epoch: [8/500], iter: 970, lr: 0.000999, loss: 35.263222, acc: 0.000000, norm_edit_dis: 0.000000, reader_cost: 0.00183 s, batch_cost: 1.12908 s, samples: 2560, ips: 226.73252
+[2021/05/13 00:06:17] root INFO: epoch: [8/500], iter: 980, lr: 0.000999, loss: 34.735947, acc: 0.000000, norm_edit_dis: 0.000000, reader_cost: 0.00164 s, batch_cost: 1.12666 s, samples: 2560, ips: 227.22046
+[2021/05/13 00:06:35] root INFO: epoch: [8/500], iter: 990, lr: 0.000999, loss: 35.344296, acc: 0.000000, norm_edit_dis: 0.000000, reader_cost: 0.00162 s, batch_cost: 1.12400 s, samples: 2560, ips: 227.75839
+[2021/05/13 00:06:52] root INFO: epoch: [8/500], iter: 1000, lr: 0.000999, loss: 35.960602, acc: 0.000000, norm_edit_dis: 0.000000, reader_cost: 0.00122 s, batch_cost: 1.13871 s, samples: 2560, ips: 224.81627
+[2021/05/13 00:07:10] root INFO: epoch: [8/500], iter: 1010, lr: 0.000999, loss: 36.709091, acc: 0.000000, norm_edit_dis: 0.000000, reader_cost: 0.00233 s, batch_cost: 1.15173 s, samples: 2560, ips: 222.27481
+[2021/05/13 00:07:27] root INFO: epoch: [8/500], iter: 1020, lr: 0.000999, loss: 35.724583, acc: 0.000000, norm_edit_dis: 0.000000, reader_cost: 0.00057 s, batch_cost: 1.09443 s, samples: 2560, ips: 233.91189
+[2021/05/13 00:07:46] root INFO: epoch: [8/500], iter: 1030, lr: 0.000999, loss: 34.726196, acc: 0.000000, norm_edit_dis: 0.000000, reader_cost: 0.00026 s, batch_cost: 1.14932 s, samples: 2560, ips: 222.74073
+[2021/05/13 00:08:01] root INFO: epoch: [8/500], iter: 1039, lr: 0.000999, loss: 34.863762, acc: 0.000000, norm_edit_dis: 0.000000, reader_cost: 0.00019 s, batch_cost: 1.00141 s, samples: 2304, ips: 230.07446
+[2021/05/13 00:08:02] root INFO: save model in ./output/rec_chinese_lite_v2.0/latest
+[2021/05/13 00:08:02] root INFO: Initialize indexs of datasets:['./train/LabelTrain.txt']
+[2021/05/13 00:08:18] root INFO: epoch: [9/500], iter: 1040, lr: 0.000999, loss: 34.767586, acc: 0.000000, norm_edit_dis: 0.000000, reader_cost: 1.01115 s, batch_cost: 1.42632 s, samples: 256, ips: 17.94830
+[2021/05/13 00:08:38] root INFO: epoch: [9/500], iter: 1050, lr: 0.000999, loss: 34.767586, acc: 0.000000, norm_edit_dis: 0.000000, reader_cost: 0.00245 s, batch_cost: 1.30916 s, samples: 2560, ips: 195.54516
+[2021/05/13 00:08:57] root INFO: epoch: [9/500], iter: 1060, lr: 0.000999, loss: 34.787956, acc: 0.000000, norm_edit_dis: 0.000000, reader_cost: 0.00181 s, batch_cost: 1.17040 s, samples: 2560, ips: 218.72815
+[2021/05/13 00:09:16] root INFO: epoch: [9/500], iter: 1070, lr: 0.000999, loss: 34.863091, acc: 0.000000, norm_edit_dis: 0.000000, reader_cost: 0.00192 s, batch_cost: 1.17968 s, samples: 2560, ips: 217.00823
+[2021/05/13 00:09:34] root INFO: epoch: [9/500], iter: 1080, lr: 0.000999, loss: 35.284950, acc: 0.000000, norm_edit_dis: 0.000000, reader_cost: 0.00154 s, batch_cost: 1.14617 s, samples: 2560, ips: 223.35330
+[2021/05/13 00:09:51] root INFO: epoch: [9/500], iter: 1090, lr: 0.000999, loss: 35.586964, acc: 0.000000, norm_edit_dis: 0.000000, reader_cost: 0.00167 s, batch_cost: 1.11745 s, samples: 2560, ips: 229.09296
+[2021/05/13 00:10:09] root INFO: epoch: [9/500], iter: 1100, lr: 0.000999, loss: 35.449158, acc: 0.000000, norm_edit_dis: 0.000000, reader_cost: 0.00167 s, batch_cost: 1.11874 s, samples: 2560, ips: 228.82935
+[2021/05/13 00:10:26] root INFO: epoch: [9/500], iter: 1110, lr: 0.000999, loss: 34.864555, acc: 0.000000, norm_edit_dis: 0.000000, reader_cost: 0.00172 s, batch_cost: 1.14363 s, samples: 2560, ips: 223.84910
+[2021/05/13 00:10:44] root INFO: epoch: [9/500], iter: 1120, lr: 0.000999, loss: 34.946850, acc: 0.000000, norm_edit_dis: 0.000000, reader_cost: 0.00166 s, batch_cost: 1.14021 s, samples: 2560, ips: 224.52028
+[2021/05/13 00:11:02] root INFO: epoch: [9/500], iter: 1130, lr: 0.000999, loss: 34.869797, acc: 0.000000, norm_edit_dis: 0.000000, reader_cost: 0.00129 s, batch_cost: 1.14824 s, samples: 2560, ips: 222.95015
+[2021/05/13 00:11:20] root INFO: epoch: [9/500], iter: 1140, lr: 0.000999, loss: 35.305244, acc: 0.000000, norm_edit_dis: 0.000000, reader_cost: 0.00168 s, batch_cost: 1.14043 s, samples: 2560, ips: 224.47704
+[2021/05/13 00:11:38] root INFO: epoch: [9/500], iter: 1150, lr: 0.000999, loss: 35.962090, acc: 0.000000, norm_edit_dis: 0.000000, reader_cost: 0.00105 s, batch_cost: 1.18626 s, samples: 2560, ips: 215.80423
+[2021/05/13 00:11:56] root INFO: epoch: [9/500], iter: 1160, lr: 0.000999, loss: 35.689728, acc: 0.000000, norm_edit_dis: 0.000290, reader_cost: 0.00036 s, batch_cost: 1.17135 s, samples: 2560, ips: 218.55098
+[2021/05/13 00:12:11] root INFO: epoch: [9/500], iter: 1169, lr: 0.000999, loss: 35.450569, acc: 0.000000, norm_edit_dis: 0.000000, reader_cost: 0.00018 s, batch_cost: 1.00738 s, samples: 2304, ips: 228.71155
+[2021/05/13 00:12:11] root INFO: save model in ./output/rec_chinese_lite_v2.0/latest
+[2021/05/13 00:12:12] root INFO: save model in ./output/rec_chinese_lite_v2.0/iter_epoch_9
+[2021/05/13 00:12:12] root INFO: Initialize indexs of datasets:['./train/LabelTrain.txt']
+[2021/05/13 00:12:29] root INFO: epoch: [10/500], iter: 1170, lr: 0.000999, loss: 35.450569, acc: 0.000000, norm_edit_dis: 0.000000, reader_cost: 1.24735 s, batch_cost: 1.61357 s, samples: 256, ips: 15.86541
+[2021/05/13 00:12:48] root INFO: epoch: [10/500], iter: 1180, lr: 0.000999, loss: 35.405773, acc: 0.000000, norm_edit_dis: 0.000000, reader_cost: 0.00299 s, batch_cost: 1.22056 s, samples: 2560, ips: 209.73935
+[2021/05/13 00:13:05] root INFO: epoch: [10/500], iter: 1190, lr: 0.000999, loss: 34.661774, acc: 0.000000, norm_edit_dis: 0.000340, reader_cost: 0.00208 s, batch_cost: 1.10916 s, samples: 2560, ips: 230.80549
+[2021/05/13 00:13:22] root INFO: epoch: [10/500], iter: 1200, lr: 0.000999, loss: 34.316902, acc: 0.000000, norm_edit_dis: 0.000355, reader_cost: 0.00188 s, batch_cost: 1.10943 s, samples: 2560, ips: 230.74913
+[2021/05/13 00:13:40] root INFO: epoch: [10/500], iter: 1210, lr: 0.000999, loss: 34.535362, acc: 0.000000, norm_edit_dis: 0.000651, reader_cost: 0.00348 s, batch_cost: 1.13178 s, samples: 2560, ips: 226.19280
+[2021/05/13 00:13:58] root INFO: epoch: [10/500], iter: 1220, lr: 0.000999, loss: 34.327942, acc: 0.000000, norm_edit_dis: 0.001705, reader_cost: 0.00177 s, batch_cost: 1.11976 s, samples: 2560, ips: 228.61969
+[2021/05/13 00:14:16] root INFO: epoch: [10/500], iter: 1230, lr: 0.000999, loss: 35.001457, acc: 0.000000, norm_edit_dis: 0.002119, reader_cost: 0.00193 s, batch_cost: 1.13208 s, samples: 2560, ips: 226.13193
+[2021/05/13 00:14:34] root INFO: epoch: [10/500], iter: 1240, lr: 0.000999, loss: 35.345123, acc: 0.000000, norm_edit_dis: 0.002024, reader_cost: 0.00163 s, batch_cost: 1.15146 s, samples: 2560, ips: 222.32678
+[2021/05/13 00:14:51] root INFO: epoch: [10/500], iter: 1250, lr: 0.000999, loss: 34.486397, acc: 0.000000, norm_edit_dis: 0.003003, reader_cost: 0.00169 s, batch_cost: 1.14455 s, samples: 2560, ips: 223.66945
+[2021/05/13 00:15:09] root INFO: epoch: [10/500], iter: 1260, lr: 0.000999, loss: 34.149658, acc: 0.000000, norm_edit_dis: 0.003450, reader_cost: 0.00171 s, batch_cost: 1.15048 s, samples: 2560, ips: 222.51634
+[2021/05/13 00:15:27] root INFO: epoch: [10/500], iter: 1270, lr: 0.000999, loss: 34.631737, acc: 0.000000, norm_edit_dis: 0.002530, reader_cost: 0.00171 s, batch_cost: 1.14573 s, samples: 2560, ips: 223.43759
+[2021/05/13 00:15:44] root INFO: epoch: [10/500], iter: 1280, lr: 0.000999, loss: 34.701569, acc: 0.000000, norm_edit_dis: 0.001983, reader_cost: 0.00063 s, batch_cost: 1.11220 s, samples: 2560, ips: 230.17433
+[2021/05/13 00:16:02] root INFO: epoch: [10/500], iter: 1290, lr: 0.000999, loss: 35.430786, acc: 0.000000, norm_edit_dis: 0.002454, reader_cost: 0.00024 s, batch_cost: 1.11777 s, samples: 2560, ips: 229.02734
+[2021/05/13 00:16:17] root INFO: epoch: [10/500], iter: 1299, lr: 0.000999, loss: 34.416855, acc: 0.000000, norm_edit_dis: 0.003285, reader_cost: 0.00019 s, batch_cost: 0.97906 s, samples: 2304, ips: 235.32879
+[2021/05/13 00:16:17] root INFO: save model in ./output/rec_chinese_lite_v2.0/latest
+[2021/05/13 00:16:17] root INFO: Initialize indexs of datasets:['./train/LabelTrain.txt']
+[2021/05/13 00:16:37] root INFO: epoch: [11/500], iter: 1300, lr: 0.000999, loss: 34.416855, acc: 0.000000, norm_edit_dis: 0.003345, reader_cost: 1.34964 s, batch_cost: 1.65635 s, samples: 256, ips: 15.45568
+[2021/05/13 00:16:55] root INFO: epoch: [11/500], iter: 1310, lr: 0.000999, loss: 33.696140, acc: 0.000000, norm_edit_dis: 0.004056, reader_cost: 0.00447 s, batch_cost: 1.19772 s, samples: 2560, ips: 213.73857
+[2021/05/13 00:17:13] root INFO: epoch: [11/500], iter: 1320, lr: 0.000999, loss: 33.545410, acc: 0.000000, norm_edit_dis: 0.004608, reader_cost: 0.00203 s, batch_cost: 1.18386 s, samples: 2560, ips: 216.24098
+[2021/05/13 00:17:32] root INFO: epoch: [11/500], iter: 1330, lr: 0.000999, loss: 33.807961, acc: 0.000000, norm_edit_dis: 0.004436, reader_cost: 0.00200 s, batch_cost: 1.22697 s, samples: 2560, ips: 208.64473
+[2021/05/13 00:17:50] root INFO: epoch: [11/500], iter: 1340, lr: 0.000999, loss: 34.563534, acc: 0.000000, norm_edit_dis: 0.004389, reader_cost: 0.00198 s, batch_cost: 1.19921 s, samples: 2560, ips: 213.47342
+[2021/05/13 00:18:09] root INFO: epoch: [11/500], iter: 1350, lr: 0.000999, loss: 34.293243, acc: 0.000000, norm_edit_dis: 0.004486, reader_cost: 0.00222 s, batch_cost: 1.17505 s, samples: 2560, ips: 217.86388
+[2021/05/13 00:18:28] root INFO: epoch: [11/500], iter: 1360, lr: 0.000999, loss: 33.737091, acc: 0.000000, norm_edit_dis: 0.005489, reader_cost: 0.00314 s, batch_cost: 1.17280 s, samples: 2560, ips: 218.28050
+[2021/05/13 00:18:47] root INFO: epoch: [11/500], iter: 1370, lr: 0.000999, loss: 33.726913, acc: 0.000000, norm_edit_dis: 0.006943, reader_cost: 0.00268 s, batch_cost: 1.17105 s, samples: 2560, ips: 218.60750
+[2021/05/13 00:19:06] root INFO: epoch: [11/500], iter: 1380, lr: 0.000999, loss: 34.279594, acc: 0.000000, norm_edit_dis: 0.005840, reader_cost: 0.00248 s, batch_cost: 1.16354 s, samples: 2560, ips: 220.01842
+[2021/05/13 00:19:25] root INFO: epoch: [11/500], iter: 1390, lr: 0.000999, loss: 34.583344, acc: 0.000000, norm_edit_dis: 0.005023, reader_cost: 0.00233 s, batch_cost: 1.19954 s, samples: 2560, ips: 213.41515
+[2021/05/13 00:19:45] root INFO: epoch: [11/500], iter: 1400, lr: 0.000999, loss: 34.271709, acc: 0.000000, norm_edit_dis: 0.005181, reader_cost: 0.00244 s, batch_cost: 1.19869 s, samples: 2560, ips: 213.56652
+[2021/05/13 00:20:04] root INFO: epoch: [11/500], iter: 1410, lr: 0.000999, loss: 33.700539, acc: 0.000000, norm_edit_dis: 0.005891, reader_cost: 0.00125 s, batch_cost: 1.19990 s, samples: 2560, ips: 213.35175
+[2021/05/13 00:20:22] root INFO: epoch: [11/500], iter: 1420, lr: 0.000999, loss: 33.181976, acc: 0.000000, norm_edit_dis: 0.005188, reader_cost: 0.00054 s, batch_cost: 1.17009 s, samples: 2560, ips: 218.78605
+[2021/05/13 00:20:39] root INFO: epoch: [11/500], iter: 1429, lr: 0.000999, loss: 34.072357, acc: 0.000000, norm_edit_dis: 0.005188, reader_cost: 0.00030 s, batch_cost: 1.03937 s, samples: 2304, ips: 221.67279
+[2021/05/13 00:20:39] root INFO: save model in ./output/rec_chinese_lite_v2.0/latest
+[2021/05/13 00:20:39] root INFO: Initialize indexs of datasets:['./train/LabelTrain.txt']
+[2021/05/13 00:20:56] root INFO: epoch: [12/500], iter: 1430, lr: 0.000999, loss: 34.072357, acc: 0.000000, norm_edit_dis: 0.005188, reader_cost: 1.07245 s, batch_cost: 1.44027 s, samples: 256, ips: 17.77449
+[2021/05/13 00:21:16] root INFO: epoch: [12/500], iter: 1440, lr: 0.000999, loss: 34.608780, acc: 0.000000, norm_edit_dis: 0.005518, reader_cost: 0.00371 s, batch_cost: 1.35002 s, samples: 2560, ips: 189.62726
+[2021/05/13 00:21:35] root INFO: epoch: [12/500], iter: 1450, lr: 0.000999, loss: 34.507298, acc: 0.000000, norm_edit_dis: 0.005739, reader_cost: 0.00209 s, batch_cost: 1.18970 s, samples: 2560, ips: 215.17951
+[2021/05/13 00:21:54] root INFO: epoch: [12/500], iter: 1460, lr: 0.000999, loss: 34.218811, acc: 0.000000, norm_edit_dis: 0.007231, reader_cost: 0.00233 s, batch_cost: 1.13355 s, samples: 2560, ips: 225.83835
+[2021/05/13 00:22:13] root INFO: epoch: [12/500], iter: 1470, lr: 0.000999, loss: 33.714027, acc: 0.000000, norm_edit_dis: 0.007146, reader_cost: 0.00245 s, batch_cost: 1.13027 s, samples: 2560, ips: 226.49544
+[2021/05/13 00:22:32] root INFO: epoch: [12/500], iter: 1480, lr: 0.000999, loss: 33.228302, acc: 0.000000, norm_edit_dis: 0.006588, reader_cost: 0.00310 s, batch_cost: 1.17245 s, samples: 2560, ips: 218.34651
+[2021/05/13 00:22:51] root INFO: epoch: [12/500], iter: 1490, lr: 0.000999, loss: 33.304176, acc: 0.000000, norm_edit_dis: 0.007915, reader_cost: 0.00321 s, batch_cost: 1.18337 s, samples: 2560, ips: 216.33179
+[2021/05/13 00:23:09] root INFO: epoch: [12/500], iter: 1500, lr: 0.000999, loss: 33.561584, acc: 0.000000, norm_edit_dis: 0.008860, reader_cost: 0.00248 s, batch_cost: 1.17755 s, samples: 2560, ips: 217.39986
+[2021/05/13 00:23:28] root INFO: epoch: [12/500], iter: 1510, lr: 0.000999, loss: 33.962112, acc: 0.000000, norm_edit_dis: 0.008668, reader_cost: 0.00239 s, batch_cost: 1.17482 s, samples: 2560, ips: 217.90483
+[2021/05/13 00:23:47] root INFO: epoch: [12/500], iter: 1520, lr: 0.000999, loss: 33.536575, acc: 0.000000, norm_edit_dis: 0.008522, reader_cost: 0.00413 s, batch_cost: 1.17473 s, samples: 2560, ips: 217.92292
+[2021/05/13 00:24:06] root INFO: epoch: [12/500], iter: 1530, lr: 0.000999, loss: 33.281746, acc: 0.000000, norm_edit_dis: 0.008176, reader_cost: 0.00212 s, batch_cost: 1.13155 s, samples: 2560, ips: 226.23794
+[2021/05/13 00:24:24] root INFO: epoch: [12/500], iter: 1540, lr: 0.000999, loss: 32.827194, acc: 0.000000, norm_edit_dis: 0.007846, reader_cost: 0.00130 s, batch_cost: 1.16353 s, samples: 2560, ips: 220.02061
+[2021/05/13 00:24:43] root INFO: epoch: [12/500], iter: 1550, lr: 0.000999, loss: 32.827194, acc: 0.000000, norm_edit_dis: 0.009686, reader_cost: 0.00040 s, batch_cost: 1.15560 s, samples: 2560, ips: 221.52924
+[2021/05/13 00:24:59] root INFO: epoch: [12/500], iter: 1559, lr: 0.000999, loss: 33.106930, acc: 0.000000, norm_edit_dis: 0.011716, reader_cost: 0.00022 s, batch_cost: 1.00231 s, samples: 2304, ips: 229.86804
+[2021/05/13 00:24:59] root INFO: save model in ./output/rec_chinese_lite_v2.0/latest
+[2021/05/13 00:24:59] root INFO: save model in ./output/rec_chinese_lite_v2.0/iter_epoch_12
+[2021/05/13 00:24:59] root INFO: Initialize indexs of datasets:['./train/LabelTrain.txt']
+[2021/05/13 00:25:16] root INFO: epoch: [13/500], iter: 1560, lr: 0.000999, loss: 33.265648, acc: 0.000000, norm_edit_dis: 0.011639, reader_cost: 1.03627 s, batch_cost: 1.37381 s, samples: 256, ips: 18.63426
+[2021/05/13 00:25:36] root INFO: epoch: [13/500], iter: 1570, lr: 0.000999, loss: 33.376831, acc: 0.000000, norm_edit_dis: 0.010440, reader_cost: 0.00538 s, batch_cost: 1.31013 s, samples: 2560, ips: 195.40000
+[2021/05/13 00:25:55] root INFO: epoch: [13/500], iter: 1580, lr: 0.000999, loss: 33.710403, acc: 0.000000, norm_edit_dis: 0.009582, reader_cost: 0.00207 s, batch_cost: 1.16815 s, samples: 2560, ips: 219.15046
+[2021/05/13 00:26:14] root INFO: epoch: [13/500], iter: 1590, lr: 0.000999, loss: 32.434227, acc: 0.000000, norm_edit_dis: 0.009687, reader_cost: 0.00273 s, batch_cost: 1.19268 s, samples: 2560, ips: 214.64272
+[2021/05/13 00:26:33] root INFO: epoch: [13/500], iter: 1600, lr: 0.000999, loss: 32.116936, acc: 0.000000, norm_edit_dis: 0.010152, reader_cost: 0.00211 s, batch_cost: 1.19083 s, samples: 2560, ips: 214.97652
+[2021/05/13 00:26:52] root INFO: epoch: [13/500], iter: 1610, lr: 0.000999, loss: 32.663933, acc: 0.000000, norm_edit_dis: 0.011213, reader_cost: 0.00236 s, batch_cost: 1.19506 s, samples: 2560, ips: 214.21510
+[2021/05/13 00:27:11] root INFO: epoch: [13/500], iter: 1620, lr: 0.000998, loss: 32.892410, acc: 0.000000, norm_edit_dis: 0.011121, reader_cost: 0.00234 s, batch_cost: 1.17822 s, samples: 2560, ips: 217.27781
+[2021/05/13 00:27:30] root INFO: epoch: [13/500], iter: 1630, lr: 0.000998, loss: 33.217495, acc: 0.000000, norm_edit_dis: 0.011920, reader_cost: 0.00258 s, batch_cost: 1.15400 s, samples: 2560, ips: 221.83756
+[2021/05/13 00:27:50] root INFO: epoch: [13/500], iter: 1640, lr: 0.000998, loss: 33.371307, acc: 0.000000, norm_edit_dis: 0.012053, reader_cost: 0.00196 s, batch_cost: 1.22345 s, samples: 2560, ips: 209.24514
+[2021/05/13 00:28:09] root INFO: epoch: [13/500], iter: 1650, lr: 0.000998, loss: 33.124077, acc: 0.000000, norm_edit_dis: 0.012180, reader_cost: 0.00194 s, batch_cost: 1.20863 s, samples: 2560, ips: 211.80950
+[2021/05/13 00:28:28] root INFO: epoch: [13/500], iter: 1660, lr: 0.000998, loss: 33.280830, acc: 0.000000, norm_edit_dis: 0.011781, reader_cost: 0.00231 s, batch_cost: 1.19409 s, samples: 2560, ips: 214.38851
+[2021/05/13 00:28:47] root INFO: epoch: [13/500], iter: 1670, lr: 0.000998, loss: 32.682213, acc: 0.000000, norm_edit_dis: 0.011984, reader_cost: 0.00084 s, batch_cost: 1.18268 s, samples: 2560, ips: 216.45765
+[2021/05/13 00:29:05] root INFO: epoch: [13/500], iter: 1680, lr: 0.000998, loss: 32.501266, acc: 0.000000, norm_edit_dis: 0.011731, reader_cost: 0.00060 s, batch_cost: 1.10062 s, samples: 2560, ips: 232.59648
+[2021/05/13 00:29:22] root INFO: epoch: [13/500], iter: 1689, lr: 0.000998, loss: 32.624836, acc: 0.000000, norm_edit_dis: 0.012184, reader_cost: 0.00021 s, batch_cost: 1.00892 s, samples: 2304, ips: 228.36227
+[2021/05/13 00:29:22] root INFO: save model in ./output/rec_chinese_lite_v2.0/latest
+[2021/05/13 00:29:22] root INFO: Initialize indexs of datasets:['./train/LabelTrain.txt']
+[2021/05/13 00:29:38] root INFO: epoch: [14/500], iter: 1690, lr: 0.000998, loss: 32.633144, acc: 0.000000, norm_edit_dis: 0.012184, reader_cost: 0.90604 s, batch_cost: 1.36409 s, samples: 256, ips: 18.76708
+[2021/05/13 00:29:59] root INFO: epoch: [14/500], iter: 1700, lr: 0.000998, loss: 32.309738, acc: 0.000000, norm_edit_dis: 0.012919, reader_cost: 0.00261 s, batch_cost: 1.34194 s, samples: 2560, ips: 190.76897
+[2021/05/13 00:30:18] root INFO: epoch: [14/500], iter: 1710, lr: 0.000998, loss: 32.002399, acc: 0.000000, norm_edit_dis: 0.012807, reader_cost: 0.00193 s, batch_cost: 1.16821 s, samples: 2560, ips: 219.13921
+[2021/05/13 00:30:37] root INFO: epoch: [14/500], iter: 1720, lr: 0.000998, loss: 32.109589, acc: 0.000000, norm_edit_dis: 0.013165, reader_cost: 0.00194 s, batch_cost: 1.16448 s, samples: 2560, ips: 219.84084
+[2021/05/13 00:30:56] root INFO: epoch: [14/500], iter: 1730, lr: 0.000998, loss: 32.327095, acc: 0.000000, norm_edit_dis: 0.013571, reader_cost: 0.00205 s, batch_cost: 1.20215 s, samples: 2560, ips: 212.95116
+[2021/05/13 00:31:15] root INFO: epoch: [14/500], iter: 1740, lr: 0.000998, loss: 32.464779, acc: 0.000000, norm_edit_dis: 0.014033, reader_cost: 0.00178 s, batch_cost: 1.15856 s, samples: 2560, ips: 220.96414
+[2021/05/13 00:31:34] root INFO: epoch: [14/500], iter: 1750, lr: 0.000998, loss: 32.807796, acc: 0.000000, norm_edit_dis: 0.014010, reader_cost: 0.00194 s, batch_cost: 1.21488 s, samples: 2560, ips: 210.72050
+[2021/05/13 00:31:53] root INFO: epoch: [14/500], iter: 1760, lr: 0.000998, loss: 32.698574, acc: 0.000000, norm_edit_dis: 0.012177, reader_cost: 0.00226 s, batch_cost: 1.16759 s, samples: 2560, ips: 219.25517
+[2021/05/13 00:32:13] root INFO: epoch: [14/500], iter: 1770, lr: 0.000998, loss: 32.669243, acc: 0.000000, norm_edit_dis: 0.013253, reader_cost: 0.00173 s, batch_cost: 1.21733 s, samples: 2560, ips: 210.29569
+[2021/05/13 00:32:32] root INFO: epoch: [14/500], iter: 1780, lr: 0.000998, loss: 32.483864, acc: 0.000000, norm_edit_dis: 0.015167, reader_cost: 0.00192 s, batch_cost: 1.17899 s, samples: 2560, ips: 217.13424
+[2021/05/13 00:32:51] root INFO: epoch: [14/500], iter: 1790, lr: 0.000998, loss: 32.301460, acc: 0.000000, norm_edit_dis: 0.014253, reader_cost: 0.00186 s, batch_cost: 1.15891 s, samples: 2560, ips: 220.89633
+[2021/05/13 00:33:09] root INFO: epoch: [14/500], iter: 1800, lr: 0.000998, loss: 32.807983, acc: 0.000000, norm_edit_dis: 0.014964, reader_cost: 0.00074 s, batch_cost: 1.17455 s, samples: 2560, ips: 217.95622
+[2021/05/13 00:33:28] root INFO: epoch: [14/500], iter: 1810, lr: 0.000998, loss: 32.807983, acc: 0.000000, norm_edit_dis: 0.016911, reader_cost: 0.00084 s, batch_cost: 1.17571 s, samples: 2560, ips: 217.74032
+[2021/05/13 00:33:46] root INFO: epoch: [14/500], iter: 1819, lr: 0.000998, loss: 33.481071, acc: 0.000000, norm_edit_dis: 0.016262, reader_cost: 0.00033 s, batch_cost: 1.09344 s, samples: 2304, ips: 210.71022
+[2021/05/13 00:33:46] root INFO: save model in ./output/rec_chinese_lite_v2.0/latest
+[2021/05/13 00:33:46] root INFO: Initialize indexs of datasets:['./train/LabelTrain.txt']
+[2021/05/13 00:34:03] root INFO: epoch: [15/500], iter: 1820, lr: 0.000998, loss: 33.059814, acc: 0.000000, norm_edit_dis: 0.016508, reader_cost: 1.13148 s, batch_cost: 1.48087 s, samples: 256, ips: 17.28713
+[2021/05/13 00:34:24] root INFO: epoch: [15/500], iter: 1830, lr: 0.000998, loss: 32.828617, acc: 0.000000, norm_edit_dis: 0.016242, reader_cost: 0.00448 s, batch_cost: 1.32599 s, samples: 2560, ips: 193.06384
+[2021/05/13 00:34:42] root INFO: epoch: [15/500], iter: 1840, lr: 0.000998, loss: 32.400227, acc: 0.000000, norm_edit_dis: 0.016240, reader_cost: 0.00196 s, batch_cost: 1.17303 s, samples: 2560, ips: 218.23790
+[2021/05/13 00:35:02] root INFO: epoch: [15/500], iter: 1850, lr: 0.000998, loss: 31.689789, acc: 0.000000, norm_edit_dis: 0.016381, reader_cost: 0.00221 s, batch_cost: 1.17125 s, samples: 2560, ips: 218.56900
+[2021/05/13 00:35:21] root INFO: epoch: [15/500], iter: 1860, lr: 0.000998, loss: 31.634422, acc: 0.000000, norm_edit_dis: 0.018236, reader_cost: 0.00227 s, batch_cost: 1.15987 s, samples: 2560, ips: 220.71386
+[2021/05/13 00:35:40] root INFO: epoch: [15/500], iter: 1870, lr: 0.000998, loss: 31.950293, acc: 0.001953, norm_edit_dis: 0.019606, reader_cost: 0.00190 s, batch_cost: 1.18393 s, samples: 2560, ips: 216.22959
+[2021/05/13 00:35:59] root INFO: epoch: [15/500], iter: 1880, lr: 0.000998, loss: 31.941471, acc: 0.000000, norm_edit_dis: 0.018369, reader_cost: 0.00260 s, batch_cost: 1.17258 s, samples: 2560, ips: 218.32170
+[2021/05/13 00:36:18] root INFO: epoch: [15/500], iter: 1890, lr: 0.000998, loss: 32.066750, acc: 0.000000, norm_edit_dis: 0.017652, reader_cost: 0.00170 s, batch_cost: 1.17836 s, samples: 2560, ips: 217.25047
+[2021/05/13 00:36:37] root INFO: epoch: [15/500], iter: 1900, lr: 0.000998, loss: 31.977390, acc: 0.000000, norm_edit_dis: 0.019141, reader_cost: 0.00222 s, batch_cost: 1.14172 s, samples: 2560, ips: 224.22238
+[2021/05/13 00:36:56] root INFO: epoch: [15/500], iter: 1910, lr: 0.000998, loss: 31.994682, acc: 0.000000, norm_edit_dis: 0.020326, reader_cost: 0.00223 s, batch_cost: 1.17915 s, samples: 2560, ips: 217.10637
+[2021/05/13 00:37:15] root INFO: epoch: [15/500], iter: 1920, lr: 0.000998, loss: 32.572819, acc: 0.000000, norm_edit_dis: 0.018757, reader_cost: 0.00206 s, batch_cost: 1.17917 s, samples: 2560, ips: 217.10188
+[2021/05/13 00:37:33] root INFO: epoch: [15/500], iter: 1930, lr: 0.000998, loss: 31.663038, acc: 0.000000, norm_edit_dis: 0.017153, reader_cost: 0.00073 s, batch_cost: 1.13809 s, samples: 2560, ips: 224.93904
+[2021/05/13 00:37:52] root INFO: epoch: [15/500], iter: 1940, lr: 0.000998, loss: 31.047754, acc: 0.000000, norm_edit_dis: 0.018833, reader_cost: 0.00011 s, batch_cost: 1.18535 s, samples: 2560, ips: 215.96924
+[2021/05/13 00:38:08] root INFO: epoch: [15/500], iter: 1949, lr: 0.000998, loss: 31.374184, acc: 0.000000, norm_edit_dis: 0.019035, reader_cost: 0.00021 s, batch_cost: 1.03885 s, samples: 2304, ips: 221.78279
+[2021/05/13 00:38:09] root INFO: save model in ./output/rec_chinese_lite_v2.0/latest
+[2021/05/13 00:38:09] root INFO: save model in ./output/rec_chinese_lite_v2.0/iter_epoch_15
+[2021/05/13 00:38:09] root INFO: Initialize indexs of datasets:['./train/LabelTrain.txt']
+[2021/05/13 00:38:26] root INFO: epoch: [16/500], iter: 1950, lr: 0.000998, loss: 31.230141, acc: 0.000000, norm_edit_dis: 0.019496, reader_cost: 1.07461 s, batch_cost: 1.49313 s, samples: 256, ips: 17.14516
+[2021/05/13 00:38:46] root INFO: epoch: [16/500], iter: 1960, lr: 0.000998, loss: 31.125034, acc: 0.000000, norm_edit_dis: 0.019399, reader_cost: 0.00287 s, batch_cost: 1.26193 s, samples: 2560, ips: 202.86463
+[2021/05/13 00:39:05] root INFO: epoch: [16/500], iter: 1970, lr: 0.000998, loss: 31.235935, acc: 0.000000, norm_edit_dis: 0.019755, reader_cost: 0.00257 s, batch_cost: 1.18215 s, samples: 2560, ips: 216.55483
+[2021/05/13 00:39:23] root INFO: epoch: [16/500], iter: 1980, lr: 0.000998, loss: 31.460350, acc: 0.000000, norm_edit_dis: 0.022322, reader_cost: 0.00235 s, batch_cost: 1.14830 s, samples: 2560, ips: 222.93900
+[2021/05/13 00:39:42] root INFO: epoch: [16/500], iter: 1990, lr: 0.000998, loss: 31.252968, acc: 0.001953, norm_edit_dis: 0.022328, reader_cost: 0.00241 s, batch_cost: 1.13409 s, samples: 2560, ips: 225.73134
+[2021/05/13 00:40:01] root INFO: epoch: [16/500], iter: 2000, lr: 0.000998, loss: 30.546007, acc: 0.003906, norm_edit_dis: 0.023365, reader_cost: 0.00230 s, batch_cost: 1.18443 s, samples: 2560, ips: 216.13832
+eval model::   0%|          | 0/4 [00:00<?, ?it/s]eval model::  25%|██▌       | 1/4 [00:01<00:04,  1.34s/it]eval model::  50%|█████     | 2/4 [00:01<00:01,  1.07it/s]eval model::  75%|███████▌  | 3/4 [00:02<00:00,  1.29it/s]eval model:: 100%|██████████| 4/4 [00:03<00:00,  1.45it/s]eval model:: 100%|██████████| 4/4 [00:03<00:00,  1.25it/s]
+[2021/05/13 00:40:04] root INFO: cur metric, acc: 0.002, norm_edit_dis: 0.020280142385134647, fps: 406.78050264106906
+[2021/05/13 00:40:04] root INFO: save best model is to ./output/rec_chinese_lite_v2.0/best_accuracy
+[2021/05/13 00:40:04] root INFO: best metric, acc: 0.002, norm_edit_dis: 0.020280142385134647, fps: 406.78050264106906, best_epoch: 16
+[2021/05/13 00:40:23] root INFO: epoch: [16/500], iter: 2010, lr: 0.000998, loss: 31.223686, acc: 0.001953, norm_edit_dis: 0.024050, reader_cost: 0.00259 s, batch_cost: 1.13534 s, samples: 2560, ips: 225.48223
+[2021/05/13 00:40:41] root INFO: epoch: [16/500], iter: 2020, lr: 0.000998, loss: 30.947929, acc: 0.001953, norm_edit_dis: 0.025540, reader_cost: 0.00226 s, batch_cost: 1.15242 s, samples: 2560, ips: 222.14147
+[2021/05/13 00:41:00] root INFO: epoch: [16/500], iter: 2030, lr: 0.000998, loss: 30.801790, acc: 0.003906, norm_edit_dis: 0.026540, reader_cost: 0.00191 s, batch_cost: 1.15232 s, samples: 2560, ips: 222.16106
+[2021/05/13 00:41:18] root INFO: epoch: [16/500], iter: 2040, lr: 0.000998, loss: 31.269224, acc: 0.003906, norm_edit_dis: 0.030641, reader_cost: 0.00210 s, batch_cost: 1.13889 s, samples: 2560, ips: 224.78003
+[2021/05/13 00:41:37] root INFO: epoch: [16/500], iter: 2050, lr: 0.000998, loss: 31.242023, acc: 0.001953, norm_edit_dis: 0.033331, reader_cost: 0.00204 s, batch_cost: 1.14494 s, samples: 2560, ips: 223.59266
+[2021/05/13 00:41:56] root INFO: epoch: [16/500], iter: 2060, lr: 0.000998, loss: 30.595428, acc: 0.003906, norm_edit_dis: 0.033251, reader_cost: 0.00093 s, batch_cost: 1.15125 s, samples: 2560, ips: 222.36765
+[2021/05/13 00:42:14] root INFO: epoch: [16/500], iter: 2070, lr: 0.000998, loss: 30.162491, acc: 0.003906, norm_edit_dis: 0.034606, reader_cost: 0.00021 s, batch_cost: 1.13700 s, samples: 2560, ips: 225.15338
+[2021/05/13 00:42:30] root INFO: epoch: [16/500], iter: 2079, lr: 0.000998, loss: 30.544823, acc: 0.003906, norm_edit_dis: 0.037218, reader_cost: 0.00033 s, batch_cost: 1.03992 s, samples: 2304, ips: 221.55528
+[2021/05/13 00:42:31] root INFO: save model in ./output/rec_chinese_lite_v2.0/latest
+[2021/05/13 00:42:31] root INFO: Initialize indexs of datasets:['./train/LabelTrain.txt']
+[2021/05/13 00:42:48] root INFO: epoch: [17/500], iter: 2080, lr: 0.000997, loss: 30.606596, acc: 0.003906, norm_edit_dis: 0.037218, reader_cost: 1.00256 s, batch_cost: 1.43833 s, samples: 256, ips: 17.79837
+[2021/05/13 00:43:07] root INFO: epoch: [17/500], iter: 2090, lr: 0.000997, loss: 30.674471, acc: 0.003906, norm_edit_dis: 0.041683, reader_cost: 0.00356 s, batch_cost: 1.34489 s, samples: 2560, ips: 190.35083
+[2021/05/13 00:43:25] root INFO: epoch: [17/500], iter: 2100, lr: 0.000997, loss: 30.484985, acc: 0.003906, norm_edit_dis: 0.045870, reader_cost: 0.00166 s, batch_cost: 1.15713 s, samples: 2560, ips: 221.23778
+[2021/05/13 00:43:43] root INFO: epoch: [17/500], iter: 2110, lr: 0.000997, loss: 30.128017, acc: 0.003906, norm_edit_dis: 0.044006, reader_cost: 0.00196 s, batch_cost: 1.13390 s, samples: 2560, ips: 225.76979
+[2021/05/13 00:44:01] root INFO: epoch: [17/500], iter: 2120, lr: 0.000997, loss: 30.410652, acc: 0.003906, norm_edit_dis: 0.044285, reader_cost: 0.00172 s, batch_cost: 1.15496 s, samples: 2560, ips: 221.65290
+[2021/05/13 00:44:19] root INFO: epoch: [17/500], iter: 2130, lr: 0.000997, loss: 30.023703, acc: 0.003906, norm_edit_dis: 0.046817, reader_cost: 0.00162 s, batch_cost: 1.16145 s, samples: 2560, ips: 220.41379
+[2021/05/13 00:44:37] root INFO: epoch: [17/500], iter: 2140, lr: 0.000997, loss: 29.969898, acc: 0.003906, norm_edit_dis: 0.049028, reader_cost: 0.00177 s, batch_cost: 1.16132 s, samples: 2560, ips: 220.43912
+[2021/05/13 00:44:55] root INFO: epoch: [17/500], iter: 2150, lr: 0.000997, loss: 30.161587, acc: 0.005859, norm_edit_dis: 0.052955, reader_cost: 0.00172 s, batch_cost: 1.16066 s, samples: 2560, ips: 220.56423
+[2021/05/13 00:45:13] root INFO: epoch: [17/500], iter: 2160, lr: 0.000997, loss: 30.286966, acc: 0.003906, norm_edit_dis: 0.053312, reader_cost: 0.00177 s, batch_cost: 1.14570 s, samples: 2560, ips: 223.44421
+[2021/05/13 00:45:31] root INFO: epoch: [17/500], iter: 2170, lr: 0.000997, loss: 29.457233, acc: 0.007812, norm_edit_dis: 0.064459, reader_cost: 0.00333 s, batch_cost: 1.14310 s, samples: 2560, ips: 223.95169
+[2021/05/13 00:45:48] root INFO: epoch: [17/500], iter: 2180, lr: 0.000997, loss: 28.823595, acc: 0.007812, norm_edit_dis: 0.065567, reader_cost: 0.00179 s, batch_cost: 1.14133 s, samples: 2560, ips: 224.29974
+[2021/05/13 00:46:06] root INFO: epoch: [17/500], iter: 2190, lr: 0.000997, loss: 29.006733, acc: 0.003906, norm_edit_dis: 0.065722, reader_cost: 0.00064 s, batch_cost: 1.13756 s, samples: 2560, ips: 225.04324
+[2021/05/13 00:46:24] root INFO: epoch: [17/500], iter: 2200, lr: 0.000997, loss: 28.917480, acc: 0.005859, norm_edit_dis: 0.070275, reader_cost: 0.00029 s, batch_cost: 1.12428 s, samples: 2560, ips: 227.70126
+[2021/05/13 00:46:39] root INFO: epoch: [17/500], iter: 2209, lr: 0.000997, loss: 28.712261, acc: 0.007812, norm_edit_dis: 0.074794, reader_cost: 0.00018 s, batch_cost: 1.00453 s, samples: 2304, ips: 229.36193
+[2021/05/13 00:46:40] root INFO: save model in ./output/rec_chinese_lite_v2.0/latest
+[2021/05/13 00:46:40] root INFO: Initialize indexs of datasets:['./train/LabelTrain.txt']
+[2021/05/13 00:46:55] root INFO: epoch: [18/500], iter: 2210, lr: 0.000997, loss: 28.690504, acc: 0.007812, norm_edit_dis: 0.074794, reader_cost: 0.91064 s, batch_cost: 1.31623 s, samples: 256, ips: 19.44950
+[2021/05/13 00:47:17] root INFO: epoch: [18/500], iter: 2220, lr: 0.000997, loss: 28.075470, acc: 0.011719, norm_edit_dis: 0.084138, reader_cost: 0.00514 s, batch_cost: 1.47420 s, samples: 2560, ips: 173.65323
+[2021/05/13 00:47:35] root INFO: epoch: [18/500], iter: 2230, lr: 0.000997, loss: 28.715458, acc: 0.011719, norm_edit_dis: 0.093112, reader_cost: 0.00172 s, batch_cost: 1.17391 s, samples: 2560, ips: 218.07384
+[2021/05/13 00:47:52] root INFO: epoch: [18/500], iter: 2240, lr: 0.000997, loss: 28.633926, acc: 0.011719, norm_edit_dis: 0.101857, reader_cost: 0.00232 s, batch_cost: 1.12271 s, samples: 2560, ips: 228.01887
+[2021/05/13 00:48:10] root INFO: epoch: [18/500], iter: 2250, lr: 0.000997, loss: 28.503262, acc: 0.015625, norm_edit_dis: 0.109260, reader_cost: 0.00177 s, batch_cost: 1.16656 s, samples: 2560, ips: 219.44898
+[2021/05/13 00:48:29] root INFO: epoch: [18/500], iter: 2260, lr: 0.000997, loss: 28.564590, acc: 0.015625, norm_edit_dis: 0.118488, reader_cost: 0.00280 s, batch_cost: 1.18185 s, samples: 2560, ips: 216.60985
+[2021/05/13 00:48:47] root INFO: epoch: [18/500], iter: 2270, lr: 0.000997, loss: 28.274210, acc: 0.015625, norm_edit_dis: 0.124136, reader_cost: 0.00172 s, batch_cost: 1.15754 s, samples: 2560, ips: 221.15911
+[2021/05/13 00:49:05] root INFO: epoch: [18/500], iter: 2280, lr: 0.000997, loss: 28.095943, acc: 0.015625, norm_edit_dis: 0.127696, reader_cost: 0.00198 s, batch_cost: 1.15471 s, samples: 2560, ips: 221.70069
+[2021/05/13 00:49:24] root INFO: epoch: [18/500], iter: 2290, lr: 0.000997, loss: 27.598351, acc: 0.021484, norm_edit_dis: 0.136221, reader_cost: 0.00224 s, batch_cost: 1.20951 s, samples: 2560, ips: 211.65682
+[2021/05/13 00:49:43] root INFO: epoch: [18/500], iter: 2300, lr: 0.000997, loss: 27.223513, acc: 0.023438, norm_edit_dis: 0.140050, reader_cost: 0.00272 s, batch_cost: 1.16428 s, samples: 2560, ips: 219.87770
+[2021/05/13 00:50:02] root INFO: epoch: [18/500], iter: 2310, lr: 0.000997, loss: 27.673653, acc: 0.023438, norm_edit_dis: 0.140292, reader_cost: 0.00323 s, batch_cost: 1.14161 s, samples: 2560, ips: 224.24437
+[2021/05/13 00:50:20] root INFO: epoch: [18/500], iter: 2320, lr: 0.000997, loss: 27.041138, acc: 0.027344, norm_edit_dis: 0.147061, reader_cost: 0.00153 s, batch_cost: 1.14174 s, samples: 2560, ips: 224.21960
+[2021/05/13 00:50:39] root INFO: epoch: [18/500], iter: 2330, lr: 0.000997, loss: 26.382069, acc: 0.027344, norm_edit_dis: 0.148678, reader_cost: 0.00058 s, batch_cost: 1.13822 s, samples: 2560, ips: 224.91248
+[2021/05/13 00:50:55] root INFO: epoch: [18/500], iter: 2339, lr: 0.000997, loss: 26.213663, acc: 0.031250, norm_edit_dis: 0.162835, reader_cost: 0.00022 s, batch_cost: 0.99155 s, samples: 2304, ips: 232.36314
+[2021/05/13 00:50:55] root INFO: save model in ./output/rec_chinese_lite_v2.0/latest
+[2021/05/13 00:50:55] root INFO: save model in ./output/rec_chinese_lite_v2.0/iter_epoch_18
+[2021/05/13 00:50:55] root INFO: Initialize indexs of datasets:['./train/LabelTrain.txt']
+[2021/05/13 00:51:12] root INFO: epoch: [19/500], iter: 2340, lr: 0.000997, loss: 26.213663, acc: 0.031250, norm_edit_dis: 0.164086, reader_cost: 1.10043 s, batch_cost: 1.48593 s, samples: 256, ips: 17.22830
+[2021/05/13 00:51:32] root INFO: epoch: [19/500], iter: 2350, lr: 0.000997, loss: 26.136318, acc: 0.031250, norm_edit_dis: 0.163863, reader_cost: 0.00548 s, batch_cost: 1.29403 s, samples: 2560, ips: 197.83220
+[2021/05/13 00:51:51] root INFO: epoch: [19/500], iter: 2360, lr: 0.000997, loss: 26.201288, acc: 0.031250, norm_edit_dis: 0.162950, reader_cost: 0.00181 s, batch_cost: 1.20555 s, samples: 2560, ips: 212.35115
+[2021/05/13 00:52:10] root INFO: epoch: [19/500], iter: 2370, lr: 0.000997, loss: 26.567327, acc: 0.031250, norm_edit_dis: 0.164965, reader_cost: 0.00194 s, batch_cost: 1.15856 s, samples: 2560, ips: 220.96472
+[2021/05/13 00:52:29] root INFO: epoch: [19/500], iter: 2380, lr: 0.000997, loss: 26.567327, acc: 0.027344, norm_edit_dis: 0.171581, reader_cost: 0.00170 s, batch_cost: 1.16759 s, samples: 2560, ips: 219.25555
+[2021/05/13 00:52:47] root INFO: epoch: [19/500], iter: 2390, lr: 0.000997, loss: 26.358860, acc: 0.031250, norm_edit_dis: 0.171675, reader_cost: 0.00200 s, batch_cost: 1.16255 s, samples: 2560, ips: 220.20600
+[2021/05/13 00:53:06] root INFO: epoch: [19/500], iter: 2400, lr: 0.000997, loss: 26.113056, acc: 0.035156, norm_edit_dis: 0.172610, reader_cost: 0.00264 s, batch_cost: 1.18908 s, samples: 2560, ips: 215.29227
+[2021/05/13 00:53:25] root INFO: epoch: [19/500], iter: 2410, lr: 0.000997, loss: 25.888350, acc: 0.037109, norm_edit_dis: 0.175378, reader_cost: 0.00149 s, batch_cost: 1.17766 s, samples: 2560, ips: 217.37955
+[2021/05/13 00:53:44] root INFO: epoch: [19/500], iter: 2420, lr: 0.000997, loss: 25.330921, acc: 0.035156, norm_edit_dis: 0.186035, reader_cost: 0.00206 s, batch_cost: 1.17380 s, samples: 2560, ips: 218.09486
+[2021/05/13 00:54:03] root INFO: epoch: [19/500], iter: 2430, lr: 0.000997, loss: 25.638445, acc: 0.035156, norm_edit_dis: 0.187849, reader_cost: 0.00224 s, batch_cost: 1.17235 s, samples: 2560, ips: 218.36484
+[2021/05/13 00:54:22] root INFO: epoch: [19/500], iter: 2440, lr: 0.000997, loss: 25.433064, acc: 0.037109, norm_edit_dis: 0.192578, reader_cost: 0.00160 s, batch_cost: 1.16604 s, samples: 2560, ips: 219.54640
+[2021/05/13 00:54:41] root INFO: epoch: [19/500], iter: 2450, lr: 0.000997, loss: 25.283047, acc: 0.041016, norm_edit_dis: 0.196818, reader_cost: 0.00071 s, batch_cost: 1.19930 s, samples: 2560, ips: 213.45829
+[2021/05/13 00:54:59] root INFO: epoch: [19/500], iter: 2460, lr: 0.000996, loss: 24.883205, acc: 0.041016, norm_edit_dis: 0.202673, reader_cost: 0.00025 s, batch_cost: 1.17525 s, samples: 2560, ips: 217.82639
+[2021/05/13 00:55:16] root INFO: epoch: [19/500], iter: 2469, lr: 0.000996, loss: 24.513235, acc: 0.042969, norm_edit_dis: 0.208028, reader_cost: 0.00010 s, batch_cost: 1.04377 s, samples: 2304, ips: 220.73898
+[2021/05/13 00:55:16] root INFO: save model in ./output/rec_chinese_lite_v2.0/latest
+[2021/05/13 00:55:16] root INFO: Initialize indexs of datasets:['./train/LabelTrain.txt']
+[2021/05/13 00:55:34] root INFO: epoch: [20/500], iter: 2470, lr: 0.000996, loss: 24.486488, acc: 0.042969, norm_edit_dis: 0.208028, reader_cost: 1.13860 s, batch_cost: 1.50098 s, samples: 256, ips: 17.05558
+[2021/05/13 00:55:53] root INFO: epoch: [20/500], iter: 2480, lr: 0.000996, loss: 24.806543, acc: 0.046875, norm_edit_dis: 0.204557, reader_cost: 0.00299 s, batch_cost: 1.24371 s, samples: 2560, ips: 205.83570
+[2021/05/13 00:56:12] root INFO: epoch: [20/500], iter: 2490, lr: 0.000996, loss: 24.657021, acc: 0.044922, norm_edit_dis: 0.206728, reader_cost: 0.00219 s, batch_cost: 1.15262 s, samples: 2560, ips: 222.10223
+[2021/05/13 00:56:31] root INFO: epoch: [20/500], iter: 2500, lr: 0.000996, loss: 24.503410, acc: 0.048828, norm_edit_dis: 0.213239, reader_cost: 0.00225 s, batch_cost: 1.16521 s, samples: 2560, ips: 219.70368
+[2021/05/13 00:56:50] root INFO: epoch: [20/500], iter: 2510, lr: 0.000996, loss: 24.316673, acc: 0.054688, norm_edit_dis: 0.219340, reader_cost: 0.00196 s, batch_cost: 1.17599 s, samples: 2560, ips: 217.68898
+[2021/05/13 00:57:09] root INFO: epoch: [20/500], iter: 2520, lr: 0.000996, loss: 24.128372, acc: 0.048828, norm_edit_dis: 0.219340, reader_cost: 0.00201 s, batch_cost: 1.16265 s, samples: 2560, ips: 220.18646
+[2021/05/13 00:57:27] root INFO: epoch: [20/500], iter: 2530, lr: 0.000996, loss: 24.052555, acc: 0.044922, norm_edit_dis: 0.221560, reader_cost: 0.00251 s, batch_cost: 1.13016 s, samples: 2560, ips: 226.51755
+[2021/05/13 00:57:46] root INFO: epoch: [20/500], iter: 2540, lr: 0.000996, loss: 23.886053, acc: 0.050781, norm_edit_dis: 0.228170, reader_cost: 0.00206 s, batch_cost: 1.16262 s, samples: 2560, ips: 220.19150
+[2021/05/13 00:58:05] root INFO: epoch: [20/500], iter: 2550, lr: 0.000996, loss: 23.637159, acc: 0.044922, norm_edit_dis: 0.224874, reader_cost: 0.00253 s, batch_cost: 1.15709 s, samples: 2560, ips: 221.24388
+[2021/05/13 00:58:23] root INFO: epoch: [20/500], iter: 2560, lr: 0.000996, loss: 23.968996, acc: 0.044922, norm_edit_dis: 0.220842, reader_cost: 0.00290 s, batch_cost: 1.14150 s, samples: 2560, ips: 224.26665
+[2021/05/13 00:58:42] root INFO: epoch: [20/500], iter: 2570, lr: 0.000996, loss: 23.961407, acc: 0.052734, norm_edit_dis: 0.223855, reader_cost: 0.00175 s, batch_cost: 1.16811 s, samples: 2560, ips: 219.15822
+[2021/05/13 00:59:01] root INFO: epoch: [20/500], iter: 2580, lr: 0.000996, loss: 23.630606, acc: 0.050781, norm_edit_dis: 0.227085, reader_cost: 0.00075 s, batch_cost: 1.16394 s, samples: 2560, ips: 219.94232
+[2021/05/13 00:59:20] root INFO: epoch: [20/500], iter: 2590, lr: 0.000996, loss: 23.377941, acc: 0.048828, norm_edit_dis: 0.227809, reader_cost: 0.00027 s, batch_cost: 1.18629 s, samples: 2560, ips: 215.79900
+[2021/05/13 00:59:36] root INFO: epoch: [20/500], iter: 2599, lr: 0.000996, loss: 23.747259, acc: 0.048828, norm_edit_dis: 0.232305, reader_cost: 0.00010 s, batch_cost: 1.04506 s, samples: 2304, ips: 220.46668
+[2021/05/13 00:59:37] root INFO: save model in ./output/rec_chinese_lite_v2.0/latest
+[2021/05/13 00:59:37] root INFO: Initialize indexs of datasets:['./train/LabelTrain.txt']
+[2021/05/13 00:59:53] root INFO: epoch: [21/500], iter: 2600, lr: 0.000996, loss: 23.483089, acc: 0.052734, norm_edit_dis: 0.234702, reader_cost: 0.98148 s, batch_cost: 1.38411 s, samples: 256, ips: 18.49560
+[2021/05/13 01:00:14] root INFO: epoch: [21/500], iter: 2610, lr: 0.000996, loss: 23.296478, acc: 0.050781, norm_edit_dis: 0.234702, reader_cost: 0.00476 s, batch_cost: 1.38220 s, samples: 2560, ips: 185.21173
+[2021/05/13 01:00:34] root INFO: epoch: [21/500], iter: 2620, lr: 0.000996, loss: 23.162617, acc: 0.050781, norm_edit_dis: 0.230993, reader_cost: 0.00205 s, batch_cost: 1.20889 s, samples: 2560, ips: 211.76444
+[2021/05/13 01:00:53] root INFO: epoch: [21/500], iter: 2630, lr: 0.000996, loss: 23.227219, acc: 0.050781, norm_edit_dis: 0.231018, reader_cost: 0.00210 s, batch_cost: 1.19095 s, samples: 2560, ips: 214.95527
+[2021/05/13 01:01:12] root INFO: epoch: [21/500], iter: 2640, lr: 0.000996, loss: 22.853033, acc: 0.056641, norm_edit_dis: 0.243761, reader_cost: 0.00171 s, batch_cost: 1.14801 s, samples: 2560, ips: 222.99392
+[2021/05/13 01:01:31] root INFO: epoch: [21/500], iter: 2650, lr: 0.000996, loss: 22.431091, acc: 0.060547, norm_edit_dis: 0.257751, reader_cost: 0.00225 s, batch_cost: 1.18869 s, samples: 2560, ips: 215.36307
+[2021/05/13 01:01:50] root INFO: epoch: [21/500], iter: 2660, lr: 0.000996, loss: 22.953171, acc: 0.060547, norm_edit_dis: 0.263265, reader_cost: 0.00212 s, batch_cost: 1.17667 s, samples: 2560, ips: 217.56243
+[2021/05/13 01:02:09] root INFO: epoch: [21/500], iter: 2670, lr: 0.000996, loss: 22.419613, acc: 0.068359, norm_edit_dis: 0.267207, reader_cost: 0.00206 s, batch_cost: 1.16610 s, samples: 2560, ips: 219.53501
+[2021/05/13 01:02:27] root INFO: epoch: [21/500], iter: 2680, lr: 0.000996, loss: 22.303665, acc: 0.072266, norm_edit_dis: 0.272429, reader_cost: 0.00237 s, batch_cost: 1.15609 s, samples: 2560, ips: 221.43582
+[2021/05/13 01:02:46] root INFO: epoch: [21/500], iter: 2690, lr: 0.000996, loss: 22.210852, acc: 0.062500, norm_edit_dis: 0.272092, reader_cost: 0.00299 s, batch_cost: 1.16152 s, samples: 2560, ips: 220.40052
+[2021/05/13 01:03:06] root INFO: epoch: [21/500], iter: 2700, lr: 0.000996, loss: 22.285091, acc: 0.062500, norm_edit_dis: 0.262843, reader_cost: 0.00244 s, batch_cost: 1.22626 s, samples: 2560, ips: 208.76561
+[2021/05/13 01:03:25] root INFO: epoch: [21/500], iter: 2710, lr: 0.000996, loss: 21.929741, acc: 0.062500, norm_edit_dis: 0.263855, reader_cost: 0.00067 s, batch_cost: 1.18364 s, samples: 2560, ips: 216.28116
+[2021/05/13 01:03:44] root INFO: epoch: [21/500], iter: 2720, lr: 0.000996, loss: 21.753138, acc: 0.064453, norm_edit_dis: 0.274472, reader_cost: 0.00037 s, batch_cost: 1.18676 s, samples: 2560, ips: 215.71323
+[2021/05/13 01:04:01] root INFO: epoch: [21/500], iter: 2729, lr: 0.000996, loss: 21.958916, acc: 0.066406, norm_edit_dis: 0.271366, reader_cost: 0.00052 s, batch_cost: 1.08948 s, samples: 2304, ips: 211.47609
+[2021/05/13 01:04:01] root INFO: save model in ./output/rec_chinese_lite_v2.0/latest
+[2021/05/13 01:04:01] root INFO: save model in ./output/rec_chinese_lite_v2.0/iter_epoch_21
+[2021/05/13 01:04:01] root INFO: Initialize indexs of datasets:['./train/LabelTrain.txt']
+[2021/05/13 01:04:17] root INFO: epoch: [22/500], iter: 2730, lr: 0.000996, loss: 21.955433, acc: 0.070312, norm_edit_dis: 0.274654, reader_cost: 0.97565 s, batch_cost: 1.32633 s, samples: 256, ips: 19.30143
+[2021/05/13 01:04:38] root INFO: epoch: [22/500], iter: 2740, lr: 0.000996, loss: 21.964684, acc: 0.072266, norm_edit_dis: 0.285181, reader_cost: 0.00286 s, batch_cost: 1.34563 s, samples: 2560, ips: 190.24607
+[2021/05/13 01:04:57] root INFO: epoch: [22/500], iter: 2750, lr: 0.000996, loss: 21.835979, acc: 0.070312, norm_edit_dis: 0.281458, reader_cost: 0.00177 s, batch_cost: 1.17779 s, samples: 2560, ips: 217.35566
+[2021/05/13 01:05:16] root INFO: epoch: [22/500], iter: 2760, lr: 0.000996, loss: 22.049486, acc: 0.064453, norm_edit_dis: 0.275895, reader_cost: 0.00225 s, batch_cost: 1.19444 s, samples: 2560, ips: 214.32628
+[2021/05/13 01:05:35] root INFO: epoch: [22/500], iter: 2770, lr: 0.000996, loss: 21.906731, acc: 0.074219, norm_edit_dis: 0.277043, reader_cost: 0.00181 s, batch_cost: 1.18931 s, samples: 2560, ips: 215.25100
+[2021/05/13 01:05:54] root INFO: epoch: [22/500], iter: 2780, lr: 0.000996, loss: 21.280010, acc: 0.076172, norm_edit_dis: 0.290995, reader_cost: 0.00186 s, batch_cost: 1.14414 s, samples: 2560, ips: 223.74859
+[2021/05/13 01:06:13] root INFO: epoch: [22/500], iter: 2790, lr: 0.000995, loss: 21.446045, acc: 0.074219, norm_edit_dis: 0.292700, reader_cost: 0.00206 s, batch_cost: 1.18117 s, samples: 2560, ips: 216.73364
+[2021/05/13 01:06:32] root INFO: epoch: [22/500], iter: 2800, lr: 0.000995, loss: 21.687126, acc: 0.066406, norm_edit_dis: 0.284067, reader_cost: 0.00190 s, batch_cost: 1.18403 s, samples: 2560, ips: 216.21061
+[2021/05/13 01:06:51] root INFO: epoch: [22/500], iter: 2810, lr: 0.000995, loss: 21.535275, acc: 0.072266, norm_edit_dis: 0.284693, reader_cost: 0.00191 s, batch_cost: 1.15526 s, samples: 2560, ips: 221.59579
+[2021/05/13 01:07:10] root INFO: epoch: [22/500], iter: 2820, lr: 0.000995, loss: 21.005527, acc: 0.078125, norm_edit_dis: 0.297073, reader_cost: 0.00178 s, batch_cost: 1.15405 s, samples: 2560, ips: 221.82802
+[2021/05/13 01:07:29] root INFO: epoch: [22/500], iter: 2830, lr: 0.000995, loss: 20.617245, acc: 0.082031, norm_edit_dis: 0.301134, reader_cost: 0.00204 s, batch_cost: 1.15223 s, samples: 2560, ips: 222.17691
+[2021/05/13 01:07:47] root INFO: epoch: [22/500], iter: 2840, lr: 0.000995, loss: 20.384663, acc: 0.087891, norm_edit_dis: 0.308812, reader_cost: 0.00057 s, batch_cost: 1.19397 s, samples: 2560, ips: 214.41103
+[2021/05/13 01:08:06] root INFO: epoch: [22/500], iter: 2850, lr: 0.000995, loss: 20.485403, acc: 0.085938, norm_edit_dis: 0.305225, reader_cost: 0.00010 s, batch_cost: 1.20526 s, samples: 2560, ips: 212.40176
+[2021/05/13 01:08:23] root INFO: epoch: [22/500], iter: 2859, lr: 0.000995, loss: 20.805811, acc: 0.082031, norm_edit_dis: 0.305875, reader_cost: 0.00029 s, batch_cost: 1.00465 s, samples: 2304, ips: 229.33326
+[2021/05/13 01:08:23] root INFO: save model in ./output/rec_chinese_lite_v2.0/latest
+[2021/05/13 01:08:23] root INFO: Initialize indexs of datasets:['./train/LabelTrain.txt']
+[2021/05/13 01:08:38] root INFO: epoch: [23/500], iter: 2860, lr: 0.000995, loss: 20.891266, acc: 0.083984, norm_edit_dis: 0.308703, reader_cost: 0.96157 s, batch_cost: 1.30580 s, samples: 256, ips: 19.60485
+[2021/05/13 01:08:59] root INFO: epoch: [23/500], iter: 2870, lr: 0.000995, loss: 20.684364, acc: 0.089844, norm_edit_dis: 0.310986, reader_cost: 0.00368 s, batch_cost: 1.33693 s, samples: 2560, ips: 191.48358
+[2021/05/13 01:09:19] root INFO: epoch: [23/500], iter: 2880, lr: 0.000995, loss: 20.362263, acc: 0.087891, norm_edit_dis: 0.318399, reader_cost: 0.00184 s, batch_cost: 1.18689 s, samples: 2560, ips: 215.68931
+[2021/05/13 01:09:37] root INFO: epoch: [23/500], iter: 2890, lr: 0.000995, loss: 20.519745, acc: 0.083984, norm_edit_dis: 0.314229, reader_cost: 0.00310 s, batch_cost: 1.16781 s, samples: 2560, ips: 219.21424
+[2021/05/13 01:09:56] root INFO: epoch: [23/500], iter: 2900, lr: 0.000995, loss: 20.045605, acc: 0.085938, norm_edit_dis: 0.313740, reader_cost: 0.00182 s, batch_cost: 1.14542 s, samples: 2560, ips: 223.49951
+[2021/05/13 01:10:15] root INFO: epoch: [23/500], iter: 2910, lr: 0.000995, loss: 19.679070, acc: 0.083984, norm_edit_dis: 0.314389, reader_cost: 0.00172 s, batch_cost: 1.14952 s, samples: 2560, ips: 222.70215
+[2021/05/13 01:10:34] root INFO: epoch: [23/500], iter: 2920, lr: 0.000995, loss: 20.217163, acc: 0.085938, norm_edit_dis: 0.312321, reader_cost: 0.00204 s, batch_cost: 1.15900 s, samples: 2560, ips: 220.88017
+[2021/05/13 01:10:53] root INFO: epoch: [23/500], iter: 2930, lr: 0.000995, loss: 19.976818, acc: 0.089844, norm_edit_dis: 0.322705, reader_cost: 0.00178 s, batch_cost: 1.16217 s, samples: 2560, ips: 220.27665
+[2021/05/13 01:11:11] root INFO: epoch: [23/500], iter: 2940, lr: 0.000995, loss: 19.758224, acc: 0.085938, norm_edit_dis: 0.328802, reader_cost: 0.00193 s, batch_cost: 1.11058 s, samples: 2560, ips: 230.51086
+[2021/05/13 01:11:30] root INFO: epoch: [23/500], iter: 2950, lr: 0.000995, loss: 19.758224, acc: 0.085938, norm_edit_dis: 0.326142, reader_cost: 0.00188 s, batch_cost: 1.15625 s, samples: 2560, ips: 221.40472
+[2021/05/13 01:11:49] root INFO: epoch: [23/500], iter: 2960, lr: 0.000995, loss: 19.446039, acc: 0.083984, norm_edit_dis: 0.321198, reader_cost: 0.00244 s, batch_cost: 1.20449 s, samples: 2560, ips: 212.53750
+[2021/05/13 01:12:08] root INFO: epoch: [23/500], iter: 2970, lr: 0.000995, loss: 20.001247, acc: 0.085938, norm_edit_dis: 0.321525, reader_cost: 0.00169 s, batch_cost: 1.17432 s, samples: 2560, ips: 217.99791
+[2021/05/13 01:12:27] root INFO: epoch: [23/500], iter: 2980, lr: 0.000995, loss: 20.071898, acc: 0.085938, norm_edit_dis: 0.327039, reader_cost: 0.00028 s, batch_cost: 1.20733 s, samples: 2560, ips: 212.03742
+[2021/05/13 01:12:44] root INFO: epoch: [23/500], iter: 2989, lr: 0.000995, loss: 19.790611, acc: 0.091797, norm_edit_dis: 0.335329, reader_cost: 0.00010 s, batch_cost: 1.08460 s, samples: 2304, ips: 212.42942
+[2021/05/13 01:12:45] root INFO: save model in ./output/rec_chinese_lite_v2.0/latest
+[2021/05/13 01:12:45] root INFO: Initialize indexs of datasets:['./train/LabelTrain.txt']
+[2021/05/13 01:13:01] root INFO: epoch: [24/500], iter: 2990, lr: 0.000995, loss: 19.675289, acc: 0.089844, norm_edit_dis: 0.332753, reader_cost: 1.08965 s, batch_cost: 1.44726 s, samples: 256, ips: 17.68857
+[2021/05/13 01:13:21] root INFO: epoch: [24/500], iter: 3000, lr: 0.000995, loss: 19.442265, acc: 0.097656, norm_edit_dis: 0.335377, reader_cost: 0.00366 s, batch_cost: 1.25475 s, samples: 2560, ips: 204.02449
+[2021/05/13 01:13:40] root INFO: epoch: [24/500], iter: 3010, lr: 0.000995, loss: 18.912455, acc: 0.109375, norm_edit_dis: 0.347491, reader_cost: 0.00207 s, batch_cost: 1.14431 s, samples: 2560, ips: 223.71493
+[2021/05/13 01:13:59] root INFO: epoch: [24/500], iter: 3020, lr: 0.000995, loss: 19.047581, acc: 0.105469, norm_edit_dis: 0.338955, reader_cost: 0.00205 s, batch_cost: 1.19717 s, samples: 2560, ips: 213.83793
+[2021/05/13 01:14:18] root INFO: epoch: [24/500], iter: 3030, lr: 0.000995, loss: 19.234650, acc: 0.101562, norm_edit_dis: 0.338363, reader_cost: 0.00203 s, batch_cost: 1.17416 s, samples: 2560, ips: 218.02903
+[2021/05/13 01:14:37] root INFO: epoch: [24/500], iter: 3040, lr: 0.000995, loss: 18.562466, acc: 0.113281, norm_edit_dis: 0.353621, reader_cost: 0.00267 s, batch_cost: 1.14502 s, samples: 2560, ips: 223.57599
+[2021/05/13 01:14:56] root INFO: epoch: [24/500], iter: 3050, lr: 0.000995, loss: 18.050137, acc: 0.113281, norm_edit_dis: 0.362480, reader_cost: 0.00211 s, batch_cost: 1.16651 s, samples: 2560, ips: 219.45769
+[2021/05/13 01:15:15] root INFO: epoch: [24/500], iter: 3060, lr: 0.000995, loss: 17.865421, acc: 0.107422, norm_edit_dis: 0.354542, reader_cost: 0.00195 s, batch_cost: 1.20206 s, samples: 2560, ips: 212.96709
+[2021/05/13 01:15:34] root INFO: epoch: [24/500], iter: 3070, lr: 0.000995, loss: 17.869907, acc: 0.105469, norm_edit_dis: 0.351774, reader_cost: 0.00191 s, batch_cost: 1.15601 s, samples: 2560, ips: 221.45148
+[2021/05/13 01:15:52] root INFO: epoch: [24/500], iter: 3080, lr: 0.000995, loss: 19.330914, acc: 0.101562, norm_edit_dis: 0.349776, reader_cost: 0.00177 s, batch_cost: 1.14307 s, samples: 2560, ips: 223.95782
+[2021/05/13 01:16:11] root INFO: epoch: [24/500], iter: 3090, lr: 0.000994, loss: 19.650410, acc: 0.093750, norm_edit_dis: 0.353056, reader_cost: 0.00265 s, batch_cost: 1.16846 s, samples: 2560, ips: 219.09091
+[2021/05/13 01:16:32] root INFO: epoch: [24/500], iter: 3100, lr: 0.000994, loss: 19.494284, acc: 0.093750, norm_edit_dis: 0.351281, reader_cost: 0.00197 s, batch_cost: 1.18345 s, samples: 2560, ips: 216.31693
+[2021/05/13 01:16:50] root INFO: epoch: [24/500], iter: 3110, lr: 0.000994, loss: 18.992077, acc: 0.101562, norm_edit_dis: 0.353218, reader_cost: 0.00041 s, batch_cost: 1.16828 s, samples: 2560, ips: 219.12520
+[2021/05/13 01:17:07] root INFO: epoch: [24/500], iter: 3119, lr: 0.000994, loss: 18.337057, acc: 0.107422, norm_edit_dis: 0.365228, reader_cost: 0.00009 s, batch_cost: 1.02067 s, samples: 2304, ips: 225.73452
+[2021/05/13 01:17:07] root INFO: save model in ./output/rec_chinese_lite_v2.0/latest
+[2021/05/13 01:17:07] root INFO: save model in ./output/rec_chinese_lite_v2.0/iter_epoch_24
+[2021/05/13 01:17:07] root INFO: Initialize indexs of datasets:['./train/LabelTrain.txt']
+[2021/05/13 01:17:23] root INFO: epoch: [25/500], iter: 3120, lr: 0.000994, loss: 18.291662, acc: 0.107422, norm_edit_dis: 0.365228, reader_cost: 0.69154 s, batch_cost: 1.28624 s, samples: 256, ips: 19.90302
+[2021/05/13 01:17:45] root INFO: epoch: [25/500], iter: 3130, lr: 0.000994, loss: 17.970119, acc: 0.107422, norm_edit_dis: 0.367289, reader_cost: 0.00543 s, batch_cost: 1.39451 s, samples: 2560, ips: 183.57709
+[2021/05/13 01:18:04] root INFO: epoch: [25/500], iter: 3140, lr: 0.000994, loss: 18.073008, acc: 0.105469, norm_edit_dis: 0.366108, reader_cost: 0.00228 s, batch_cost: 1.15743 s, samples: 2560, ips: 221.18011
+[2021/05/13 01:18:22] root INFO: epoch: [25/500], iter: 3150, lr: 0.000994, loss: 18.459679, acc: 0.117188, norm_edit_dis: 0.368348, reader_cost: 0.00230 s, batch_cost: 1.13321 s, samples: 2560, ips: 225.90638
+[2021/05/13 01:18:41] root INFO: epoch: [25/500], iter: 3160, lr: 0.000994, loss: 18.576832, acc: 0.111328, norm_edit_dis: 0.367505, reader_cost: 0.00173 s, batch_cost: 1.15309 s, samples: 2560, ips: 222.01146
+[2021/05/13 01:19:01] root INFO: epoch: [25/500], iter: 3170, lr: 0.000994, loss: 17.957245, acc: 0.111328, norm_edit_dis: 0.372439, reader_cost: 0.00204 s, batch_cost: 1.23690 s, samples: 2560, ips: 206.96951
+[2021/05/13 01:19:20] root INFO: epoch: [25/500], iter: 3180, lr: 0.000994, loss: 17.675140, acc: 0.115234, norm_edit_dis: 0.371517, reader_cost: 0.00202 s, batch_cost: 1.16869 s, samples: 2560, ips: 219.04849
+[2021/05/13 01:19:39] root INFO: epoch: [25/500], iter: 3190, lr: 0.000994, loss: 17.812241, acc: 0.115234, norm_edit_dis: 0.369439, reader_cost: 0.00183 s, batch_cost: 1.17103 s, samples: 2560, ips: 218.61040
+[2021/05/13 01:19:57] root INFO: epoch: [25/500], iter: 3200, lr: 0.000994, loss: 18.094862, acc: 0.111328, norm_edit_dis: 0.375645, reader_cost: 0.00199 s, batch_cost: 1.15480 s, samples: 2560, ips: 221.68285
+[2021/05/13 01:20:16] root INFO: epoch: [25/500], iter: 3210, lr: 0.000994, loss: 17.904182, acc: 0.113281, norm_edit_dis: 0.382212, reader_cost: 0.00204 s, batch_cost: 1.18277 s, samples: 2560, ips: 216.44069
+[2021/05/13 01:20:35] root INFO: epoch: [25/500], iter: 3220, lr: 0.000994, loss: 17.372292, acc: 0.117188, norm_edit_dis: 0.378878, reader_cost: 0.00214 s, batch_cost: 1.15686 s, samples: 2560, ips: 221.28845
+[2021/05/13 01:20:53] root INFO: epoch: [25/500], iter: 3230, lr: 0.000994, loss: 17.372292, acc: 0.130859, norm_edit_dis: 0.384200, reader_cost: 0.00061 s, batch_cost: 1.11870 s, samples: 2560, ips: 228.83653
+[2021/05/13 01:21:11] root INFO: epoch: [25/500], iter: 3240, lr: 0.000994, loss: 17.523727, acc: 0.123047, norm_edit_dis: 0.389093, reader_cost: 0.00059 s, batch_cost: 1.14915 s, samples: 2560, ips: 222.77358
+[2021/05/13 01:21:28] root INFO: epoch: [25/500], iter: 3249, lr: 0.000994, loss: 17.713108, acc: 0.121094, norm_edit_dis: 0.382517, reader_cost: 0.00032 s, batch_cost: 1.02678 s, samples: 2304, ips: 224.38979
+[2021/05/13 01:21:28] root INFO: save model in ./output/rec_chinese_lite_v2.0/latest
+[2021/05/13 01:21:28] root INFO: Initialize indexs of datasets:['./train/LabelTrain.txt']
+[2021/05/13 01:21:45] root INFO: epoch: [26/500], iter: 3250, lr: 0.000994, loss: 17.713108, acc: 0.121094, norm_edit_dis: 0.382213, reader_cost: 1.09037 s, batch_cost: 1.46570 s, samples: 256, ips: 17.46604
+[2021/05/13 01:22:05] root INFO: epoch: [26/500], iter: 3260, lr: 0.000994, loss: 17.837927, acc: 0.121094, norm_edit_dis: 0.382800, reader_cost: 0.00252 s, batch_cost: 1.31957 s, samples: 2560, ips: 194.00241
+[2021/05/13 01:22:23] root INFO: epoch: [26/500], iter: 3270, lr: 0.000994, loss: 17.639084, acc: 0.130859, norm_edit_dis: 0.388266, reader_cost: 0.00197 s, batch_cost: 1.14202 s, samples: 2560, ips: 224.16422
+[2021/05/13 01:22:42] root INFO: epoch: [26/500], iter: 3280, lr: 0.000994, loss: 17.239479, acc: 0.130859, norm_edit_dis: 0.390445, reader_cost: 0.00170 s, batch_cost: 1.15067 s, samples: 2560, ips: 222.47860
+[2021/05/13 01:23:00] root INFO: epoch: [26/500], iter: 3290, lr: 0.000994, loss: 17.323128, acc: 0.128906, norm_edit_dis: 0.389522, reader_cost: 0.00179 s, batch_cost: 1.15649 s, samples: 2560, ips: 221.35982
+[2021/05/13 01:23:18] root INFO: epoch: [26/500], iter: 3300, lr: 0.000994, loss: 17.323128, acc: 0.128906, norm_edit_dis: 0.393509, reader_cost: 0.00183 s, batch_cost: 1.12898 s, samples: 2560, ips: 226.75332
+[2021/05/13 01:23:37] root INFO: epoch: [26/500], iter: 3310, lr: 0.000994, loss: 17.252182, acc: 0.132812, norm_edit_dis: 0.396350, reader_cost: 0.00191 s, batch_cost: 1.15579 s, samples: 2560, ips: 221.49415
+[2021/05/13 01:23:56] root INFO: epoch: [26/500], iter: 3320, lr: 0.000994, loss: 17.215359, acc: 0.128906, norm_edit_dis: 0.397547, reader_cost: 0.00182 s, batch_cost: 1.15447 s, samples: 2560, ips: 221.74737
+[2021/05/13 01:24:14] root INFO: epoch: [26/500], iter: 3330, lr: 0.000994, loss: 16.847235, acc: 0.132812, norm_edit_dis: 0.404447, reader_cost: 0.00200 s, batch_cost: 1.15564 s, samples: 2560, ips: 221.52188
+[2021/05/13 01:24:33] root INFO: epoch: [26/500], iter: 3340, lr: 0.000994, loss: 16.842899, acc: 0.138672, norm_edit_dis: 0.412200, reader_cost: 0.00180 s, batch_cost: 1.13782 s, samples: 2560, ips: 224.99100
+[2021/05/13 01:24:51] root INFO: epoch: [26/500], iter: 3350, lr: 0.000993, loss: 16.405367, acc: 0.136719, norm_edit_dis: 0.400901, reader_cost: 0.00189 s, batch_cost: 1.16641 s, samples: 2560, ips: 219.47696
+[2021/05/13 01:25:10] root INFO: epoch: [26/500], iter: 3360, lr: 0.000993, loss: 16.193731, acc: 0.142578, norm_edit_dis: 0.400464, reader_cost: 0.00075 s, batch_cost: 1.14357 s, samples: 2560, ips: 223.86020
+[2021/05/13 01:25:28] root INFO: epoch: [26/500], iter: 3370, lr: 0.000993, loss: 16.235548, acc: 0.136719, norm_edit_dis: 0.415313, reader_cost: 0.00052 s, batch_cost: 1.10807 s, samples: 2560, ips: 231.03192
+[2021/05/13 01:25:44] root INFO: epoch: [26/500], iter: 3379, lr: 0.000993, loss: 16.232632, acc: 0.136719, norm_edit_dis: 0.413656, reader_cost: 0.00027 s, batch_cost: 0.99287 s, samples: 2304, ips: 232.05384
+[2021/05/13 01:25:45] root INFO: save model in ./output/rec_chinese_lite_v2.0/latest
+[2021/05/13 01:25:45] root INFO: Initialize indexs of datasets:['./train/LabelTrain.txt']
+[2021/05/13 01:26:00] root INFO: epoch: [27/500], iter: 3380, lr: 0.000993, loss: 16.232632, acc: 0.140625, norm_edit_dis: 0.415313, reader_cost: 0.80153 s, batch_cost: 1.27363 s, samples: 256, ips: 20.10006
+[2021/05/13 01:26:21] root INFO: epoch: [27/500], iter: 3390, lr: 0.000993, loss: 16.511223, acc: 0.140625, norm_edit_dis: 0.419446, reader_cost: 0.00361 s, batch_cost: 1.42049 s, samples: 2560, ips: 180.21939
+[2021/05/13 01:26:40] root INFO: epoch: [27/500], iter: 3400, lr: 0.000993, loss: 16.756466, acc: 0.136719, norm_edit_dis: 0.421552, reader_cost: 0.00203 s, batch_cost: 1.17380 s, samples: 2560, ips: 218.09441
+[2021/05/13 01:26:58] root INFO: epoch: [27/500], iter: 3410, lr: 0.000993, loss: 16.962326, acc: 0.138672, norm_edit_dis: 0.420233, reader_cost: 0.00183 s, batch_cost: 1.12564 s, samples: 2560, ips: 227.42602
+[2021/05/13 01:27:17] root INFO: epoch: [27/500], iter: 3420, lr: 0.000993, loss: 16.495331, acc: 0.136719, norm_edit_dis: 0.421071, reader_cost: 0.00210 s, batch_cost: 1.13679 s, samples: 2560, ips: 225.19556
+[2021/05/13 01:27:35] root INFO: epoch: [27/500], iter: 3430, lr: 0.000993, loss: 16.092838, acc: 0.136719, norm_edit_dis: 0.429308, reader_cost: 0.00203 s, batch_cost: 1.12779 s, samples: 2560, ips: 226.99283
+[2021/05/13 01:27:53] root INFO: epoch: [27/500], iter: 3440, lr: 0.000993, loss: 16.300011, acc: 0.136719, norm_edit_dis: 0.416680, reader_cost: 0.00241 s, batch_cost: 1.12232 s, samples: 2560, ips: 228.09810
+[2021/05/13 01:28:12] root INFO: epoch: [27/500], iter: 3450, lr: 0.000993, loss: 16.557930, acc: 0.144531, norm_edit_dis: 0.416395, reader_cost: 0.00195 s, batch_cost: 1.12608 s, samples: 2560, ips: 227.33770
+[2021/05/13 01:28:30] root INFO: epoch: [27/500], iter: 3460, lr: 0.000993, loss: 16.703707, acc: 0.152344, norm_edit_dis: 0.422548, reader_cost: 0.00205 s, batch_cost: 1.13909 s, samples: 2560, ips: 224.74169
+[2021/05/13 01:28:49] root INFO: epoch: [27/500], iter: 3470, lr: 0.000993, loss: 16.138952, acc: 0.148438, norm_edit_dis: 0.424703, reader_cost: 0.00190 s, batch_cost: 1.15222 s, samples: 2560, ips: 222.18030
+[2021/05/13 01:29:07] root INFO: epoch: [27/500], iter: 3480, lr: 0.000993, loss: 16.239876, acc: 0.144531, norm_edit_dis: 0.429700, reader_cost: 0.00196 s, batch_cost: 1.13566 s, samples: 2560, ips: 225.41900
+[2021/05/13 01:29:25] root INFO: epoch: [27/500], iter: 3490, lr: 0.000993, loss: 15.847769, acc: 0.152344, norm_edit_dis: 0.432853, reader_cost: 0.00102 s, batch_cost: 1.11732 s, samples: 2560, ips: 229.11910
+[2021/05/13 01:29:43] root INFO: epoch: [27/500], iter: 3500, lr: 0.000993, loss: 15.329390, acc: 0.154297, norm_edit_dis: 0.434110, reader_cost: 0.00028 s, batch_cost: 1.10774 s, samples: 2560, ips: 231.10126
+[2021/05/13 01:29:59] root INFO: epoch: [27/500], iter: 3509, lr: 0.000993, loss: 15.708431, acc: 0.150391, norm_edit_dis: 0.423445, reader_cost: 0.00044 s, batch_cost: 0.98974 s, samples: 2304, ips: 232.78780
+[2021/05/13 01:30:00] root INFO: save model in ./output/rec_chinese_lite_v2.0/latest
+[2021/05/13 01:30:00] root INFO: save model in ./output/rec_chinese_lite_v2.0/iter_epoch_27
+[2021/05/13 01:30:00] root INFO: Initialize indexs of datasets:['./train/LabelTrain.txt']
+[2021/05/13 01:30:16] root INFO: epoch: [28/500], iter: 3510, lr: 0.000993, loss: 15.708431, acc: 0.150391, norm_edit_dis: 0.429478, reader_cost: 0.97507 s, batch_cost: 1.36409 s, samples: 256, ips: 18.76715
+[2021/05/13 01:30:36] root INFO: epoch: [28/500], iter: 3520, lr: 0.000993, loss: 15.532984, acc: 0.152344, norm_edit_dis: 0.435837, reader_cost: 0.00558 s, batch_cost: 1.28795 s, samples: 2560, ips: 198.76491
+[2021/05/13 01:30:55] root INFO: epoch: [28/500], iter: 3530, lr: 0.000993, loss: 15.754369, acc: 0.154297, norm_edit_dis: 0.434805, reader_cost: 0.00156 s, batch_cost: 1.16791 s, samples: 2560, ips: 219.19464
+[2021/05/13 01:31:13] root INFO: epoch: [28/500], iter: 3540, lr: 0.000993, loss: 16.027006, acc: 0.150391, norm_edit_dis: 0.433150, reader_cost: 0.00298 s, batch_cost: 1.15149 s, samples: 2560, ips: 222.32093
+[2021/05/13 01:31:32] root INFO: epoch: [28/500], iter: 3550, lr: 0.000993, loss: 15.665142, acc: 0.150391, norm_edit_dis: 0.435910, reader_cost: 0.00173 s, batch_cost: 1.13003 s, samples: 2560, ips: 226.54342
+[2021/05/13 01:31:50] root INFO: epoch: [28/500], iter: 3560, lr: 0.000993, loss: 15.704653, acc: 0.152344, norm_edit_dis: 0.436388, reader_cost: 0.00207 s, batch_cost: 1.13475 s, samples: 2560, ips: 225.59969
+[2021/05/13 01:32:09] root INFO: epoch: [28/500], iter: 3570, lr: 0.000993, loss: 15.662807, acc: 0.160156, norm_edit_dis: 0.446700, reader_cost: 0.00200 s, batch_cost: 1.14742 s, samples: 2560, ips: 223.10864
+[2021/05/13 01:32:27] root INFO: epoch: [28/500], iter: 3580, lr: 0.000993, loss: 15.533827, acc: 0.162109, norm_edit_dis: 0.446546, reader_cost: 0.00194 s, batch_cost: 1.13025 s, samples: 2560, ips: 226.49858
+[2021/05/13 01:32:45] root INFO: epoch: [28/500], iter: 3590, lr: 0.000993, loss: 15.262943, acc: 0.160156, norm_edit_dis: 0.445988, reader_cost: 0.00200 s, batch_cost: 1.14027 s, samples: 2560, ips: 224.50840
+[2021/05/13 01:33:03] root INFO: epoch: [28/500], iter: 3600, lr: 0.000992, loss: 15.338878, acc: 0.160156, norm_edit_dis: 0.453329, reader_cost: 0.00187 s, batch_cost: 1.10758 s, samples: 2560, ips: 231.13466
+[2021/05/13 01:33:21] root INFO: epoch: [28/500], iter: 3610, lr: 0.000992, loss: 15.385434, acc: 0.164062, norm_edit_dis: 0.452610, reader_cost: 0.00185 s, batch_cost: 1.12018 s, samples: 2560, ips: 228.53569
+[2021/05/13 01:33:40] root INFO: epoch: [28/500], iter: 3620, lr: 0.000992, loss: 15.745147, acc: 0.166016, norm_edit_dis: 0.447208, reader_cost: 0.00083 s, batch_cost: 1.14299 s, samples: 2560, ips: 223.97443
+[2021/05/13 01:33:58] root INFO: epoch: [28/500], iter: 3630, lr: 0.000992, loss: 15.451185, acc: 0.164062, norm_edit_dis: 0.452599, reader_cost: 0.00009 s, batch_cost: 1.11580 s, samples: 2560, ips: 229.43120
+[2021/05/13 01:34:14] root INFO: epoch: [28/500], iter: 3639, lr: 0.000992, loss: 15.011759, acc: 0.164062, norm_edit_dis: 0.464512, reader_cost: 0.00018 s, batch_cost: 1.01887 s, samples: 2304, ips: 226.13382
+[2021/05/13 01:34:15] root INFO: save model in ./output/rec_chinese_lite_v2.0/latest
+[2021/05/13 01:34:15] root INFO: Initialize indexs of datasets:['./train/LabelTrain.txt']
+[2021/05/13 01:34:31] root INFO: epoch: [29/500], iter: 3640, lr: 0.000992, loss: 15.011759, acc: 0.164062, norm_edit_dis: 0.464512, reader_cost: 1.05023 s, batch_cost: 1.36196 s, samples: 256, ips: 18.79644
+[2021/05/13 01:34:51] root INFO: epoch: [29/500], iter: 3650, lr: 0.000992, loss: 15.285133, acc: 0.164062, norm_edit_dis: 0.456830, reader_cost: 0.00333 s, batch_cost: 1.26350 s, samples: 2560, ips: 202.61239
+[2021/05/13 01:35:10] root INFO: epoch: [29/500], iter: 3660, lr: 0.000992, loss: 14.741961, acc: 0.160156, norm_edit_dis: 0.458269, reader_cost: 0.00202 s, batch_cost: 1.15724 s, samples: 2560, ips: 221.21609
+[2021/05/13 01:35:28] root INFO: epoch: [29/500], iter: 3670, lr: 0.000992, loss: 14.636244, acc: 0.164062, norm_edit_dis: 0.463200, reader_cost: 0.00197 s, batch_cost: 1.13834 s, samples: 2560, ips: 224.88946
+[2021/05/13 01:35:47] root INFO: epoch: [29/500], iter: 3680, lr: 0.000992, loss: 14.553104, acc: 0.177734, norm_edit_dis: 0.474397, reader_cost: 0.00290 s, batch_cost: 1.12777 s, samples: 2560, ips: 226.99607
+[2021/05/13 01:36:05] root INFO: epoch: [29/500], iter: 3690, lr: 0.000992, loss: 14.163347, acc: 0.177734, norm_edit_dis: 0.475784, reader_cost: 0.00190 s, batch_cost: 1.11122 s, samples: 2560, ips: 230.37810
+[2021/05/13 01:36:23] root INFO: epoch: [29/500], iter: 3700, lr: 0.000992, loss: 14.472899, acc: 0.162109, norm_edit_dis: 0.466403, reader_cost: 0.00183 s, batch_cost: 1.11895 s, samples: 2560, ips: 228.78604
+[2021/05/13 01:36:41] root INFO: epoch: [29/500], iter: 3710, lr: 0.000992, loss: 14.693210, acc: 0.167969, norm_edit_dis: 0.466026, reader_cost: 0.00172 s, batch_cost: 1.11500 s, samples: 2560, ips: 229.59563
+[2021/05/13 01:36:59] root INFO: epoch: [29/500], iter: 3720, lr: 0.000992, loss: 14.512514, acc: 0.169922, norm_edit_dis: 0.467935, reader_cost: 0.00199 s, batch_cost: 1.12500 s, samples: 2560, ips: 227.55585
+[2021/05/13 01:37:18] root INFO: epoch: [29/500], iter: 3730, lr: 0.000992, loss: 14.471909, acc: 0.169922, norm_edit_dis: 0.467118, reader_cost: 0.00217 s, batch_cost: 1.13641 s, samples: 2560, ips: 225.27114
+[2021/05/13 01:37:36] root INFO: epoch: [29/500], iter: 3740, lr: 0.000992, loss: 14.584547, acc: 0.173828, norm_edit_dis: 0.469030, reader_cost: 0.00175 s, batch_cost: 1.13770 s, samples: 2560, ips: 225.01470
+[2021/05/13 01:37:54] root INFO: epoch: [29/500], iter: 3750, lr: 0.000992, loss: 14.359502, acc: 0.183594, norm_edit_dis: 0.478561, reader_cost: 0.00057 s, batch_cost: 1.10868 s, samples: 2560, ips: 230.90528
+[2021/05/13 01:38:12] root INFO: epoch: [29/500], iter: 3760, lr: 0.000992, loss: 14.692106, acc: 0.183594, norm_edit_dis: 0.480788, reader_cost: 0.00023 s, batch_cost: 1.12416 s, samples: 2560, ips: 227.72652
+[2021/05/13 01:38:29] root INFO: epoch: [29/500], iter: 3769, lr: 0.000992, loss: 14.938690, acc: 0.177734, norm_edit_dis: 0.473914, reader_cost: 0.00009 s, batch_cost: 0.99345 s, samples: 2304, ips: 231.92003
+[2021/05/13 01:38:29] root INFO: save model in ./output/rec_chinese_lite_v2.0/latest
+[2021/05/13 01:38:29] root INFO: Initialize indexs of datasets:['./train/LabelTrain.txt']
+[2021/05/13 01:38:46] root INFO: epoch: [30/500], iter: 3770, lr: 0.000992, loss: 14.938690, acc: 0.177734, norm_edit_dis: 0.473914, reader_cost: 1.02130 s, batch_cost: 1.39162 s, samples: 256, ips: 18.39577
+[2021/05/13 01:39:06] root INFO: epoch: [30/500], iter: 3780, lr: 0.000992, loss: 14.754112, acc: 0.185547, norm_edit_dis: 0.478724, reader_cost: 0.00574 s, batch_cost: 1.28018 s, samples: 2560, ips: 199.97234
+[2021/05/13 01:39:24] root INFO: epoch: [30/500], iter: 3790, lr: 0.000992, loss: 14.567362, acc: 0.183594, norm_edit_dis: 0.476625, reader_cost: 0.00179 s, batch_cost: 1.12441 s, samples: 2560, ips: 227.67529
+[2021/05/13 01:39:43] root INFO: epoch: [30/500], iter: 3800, lr: 0.000992, loss: 14.242117, acc: 0.181641, norm_edit_dis: 0.482478, reader_cost: 0.00171 s, batch_cost: 1.15451 s, samples: 2560, ips: 221.73877
+[2021/05/13 01:40:01] root INFO: epoch: [30/500], iter: 3810, lr: 0.000992, loss: 14.590790, acc: 0.175781, norm_edit_dis: 0.474309, reader_cost: 0.00187 s, batch_cost: 1.12466 s, samples: 2560, ips: 227.62450
+[2021/05/13 01:40:19] root INFO: epoch: [30/500], iter: 3820, lr: 0.000992, loss: 14.398186, acc: 0.175781, norm_edit_dis: 0.474945, reader_cost: 0.00187 s, batch_cost: 1.10582 s, samples: 2560, ips: 231.50152
+[2021/05/13 01:40:37] root INFO: epoch: [30/500], iter: 3830, lr: 0.000991, loss: 14.067858, acc: 0.183594, norm_edit_dis: 0.477834, reader_cost: 0.00212 s, batch_cost: 1.13171 s, samples: 2560, ips: 226.20601
+[2021/05/13 01:40:55] root INFO: epoch: [30/500], iter: 3840, lr: 0.000991, loss: 14.499265, acc: 0.185547, norm_edit_dis: 0.478345, reader_cost: 0.00201 s, batch_cost: 1.12181 s, samples: 2560, ips: 228.20321
+[2021/05/13 01:41:14] root INFO: epoch: [30/500], iter: 3850, lr: 0.000991, loss: 14.041712, acc: 0.187500, norm_edit_dis: 0.481892, reader_cost: 0.00189 s, batch_cost: 1.12136 s, samples: 2560, ips: 228.29481
+[2021/05/13 01:41:32] root INFO: epoch: [30/500], iter: 3860, lr: 0.000991, loss: 14.202894, acc: 0.189453, norm_edit_dis: 0.483201, reader_cost: 0.00250 s, batch_cost: 1.12797 s, samples: 2560, ips: 226.95620
+[2021/05/13 01:41:50] root INFO: epoch: [30/500], iter: 3870, lr: 0.000991, loss: 14.280256, acc: 0.201172, norm_edit_dis: 0.495405, reader_cost: 0.00196 s, batch_cost: 1.12947 s, samples: 2560, ips: 226.65463
+[2021/05/13 01:42:08] root INFO: epoch: [30/500], iter: 3880, lr: 0.000991, loss: 13.615798, acc: 0.205078, norm_edit_dis: 0.511028, reader_cost: 0.00050 s, batch_cost: 1.07982 s, samples: 2560, ips: 237.07580
+[2021/05/13 01:42:26] root INFO: epoch: [30/500], iter: 3890, lr: 0.000991, loss: 13.849121, acc: 0.205078, norm_edit_dis: 0.507115, reader_cost: 0.00031 s, batch_cost: 1.10318 s, samples: 2560, ips: 232.05688
+[2021/05/13 01:42:43] root INFO: epoch: [30/500], iter: 3899, lr: 0.000991, loss: 13.761974, acc: 0.199219, norm_edit_dis: 0.503649, reader_cost: 0.00021 s, batch_cost: 1.02685 s, samples: 2304, ips: 224.37627
+[2021/05/13 01:42:43] root INFO: save model in ./output/rec_chinese_lite_v2.0/latest
+[2021/05/13 01:42:43] root INFO: save model in ./output/rec_chinese_lite_v2.0/iter_epoch_30
+[2021/05/13 01:42:43] root INFO: Initialize indexs of datasets:['./train/LabelTrain.txt']
+[2021/05/13 01:42:59] root INFO: epoch: [31/500], iter: 3900, lr: 0.000991, loss: 13.884155, acc: 0.199219, norm_edit_dis: 0.503649, reader_cost: 0.97203 s, batch_cost: 1.36201 s, samples: 256, ips: 18.79577
+[2021/05/13 01:43:19] root INFO: epoch: [31/500], iter: 3910, lr: 0.000991, loss: 13.782812, acc: 0.197266, norm_edit_dis: 0.499662, reader_cost: 0.00433 s, batch_cost: 1.31298 s, samples: 2560, ips: 194.97692
+[2021/05/13 01:43:38] root INFO: epoch: [31/500], iter: 3920, lr: 0.000991, loss: 13.565536, acc: 0.195312, norm_edit_dis: 0.495368, reader_cost: 0.00181 s, batch_cost: 1.13254 s, samples: 2560, ips: 226.03995
+[2021/05/13 01:43:56] root INFO: epoch: [31/500], iter: 3930, lr: 0.000991, loss: 13.816368, acc: 0.197266, norm_edit_dis: 0.495970, reader_cost: 0.00235 s, batch_cost: 1.14611 s, samples: 2560, ips: 223.36519
+[2021/05/13 01:44:14] root INFO: epoch: [31/500], iter: 3940, lr: 0.000991, loss: 13.520838, acc: 0.212891, norm_edit_dis: 0.506013, reader_cost: 0.00157 s, batch_cost: 1.12645 s, samples: 2560, ips: 227.26341
+[2021/05/13 01:44:33] root INFO: epoch: [31/500], iter: 3950, lr: 0.000991, loss: 13.495622, acc: 0.208984, norm_edit_dis: 0.502036, reader_cost: 0.00182 s, batch_cost: 1.11673 s, samples: 2560, ips: 229.24119
+[2021/05/13 01:44:51] root INFO: epoch: [31/500], iter: 3960, lr: 0.000991, loss: 13.667318, acc: 0.208984, norm_edit_dis: 0.500723, reader_cost: 0.00182 s, batch_cost: 1.14259 s, samples: 2560, ips: 224.05167
+[2021/05/13 01:45:09] root INFO: epoch: [31/500], iter: 3970, lr: 0.000991, loss: 13.242180, acc: 0.210938, norm_edit_dis: 0.507879, reader_cost: 0.00189 s, batch_cost: 1.14080 s, samples: 2560, ips: 224.40417
+[2021/05/13 01:45:29] root INFO: epoch: [31/500], iter: 3980, lr: 0.000991, loss: 13.428229, acc: 0.210938, norm_edit_dis: 0.510098, reader_cost: 0.00218 s, batch_cost: 1.14933 s, samples: 2560, ips: 222.73804
+[2021/05/13 01:45:48] root INFO: epoch: [31/500], iter: 3990, lr: 0.000991, loss: 13.475306, acc: 0.212891, norm_edit_dis: 0.514906, reader_cost: 0.00196 s, batch_cost: 1.13531 s, samples: 2560, ips: 225.48843
+[2021/05/13 01:46:06] root INFO: epoch: [31/500], iter: 4000, lr: 0.000991, loss: 13.798781, acc: 0.214844, norm_edit_dis: 0.515459, reader_cost: 0.00206 s, batch_cost: 1.12640 s, samples: 2560, ips: 227.27257
+eval model::   0%|          | 0/4 [00:00<?, ?it/s]eval model::  25%|██▌       | 1/4 [00:01<00:04,  1.39s/it]eval model::  50%|█████     | 2/4 [00:01<00:01,  1.09it/s]eval model::  75%|███████▌  | 3/4 [00:02<00:00,  1.28it/s]eval model:: 100%|██████████| 4/4 [00:03<00:00,  1.48it/s]eval model:: 100%|██████████| 4/4 [00:03<00:00,  1.26it/s]
+[2021/05/13 01:46:09] root INFO: cur metric, acc: 0.121, norm_edit_dis: 0.4128713565287482, fps: 409.9441288800638
+[2021/05/13 01:46:09] root INFO: save best model is to ./output/rec_chinese_lite_v2.0/best_accuracy
+[2021/05/13 01:46:09] root INFO: best metric, acc: 0.121, norm_edit_dis: 0.4128713565287482, fps: 409.9441288800638, best_epoch: 31
+[2021/05/13 01:46:27] root INFO: epoch: [31/500], iter: 4010, lr: 0.000991, loss: 13.619719, acc: 0.216797, norm_edit_dis: 0.509645, reader_cost: 0.00089 s, batch_cost: 1.09162 s, samples: 2560, ips: 234.51463
+[2021/05/13 01:46:45] root INFO: epoch: [31/500], iter: 4020, lr: 0.000991, loss: 13.273253, acc: 0.216797, norm_edit_dis: 0.509030, reader_cost: 0.00010 s, batch_cost: 1.12850 s, samples: 2560, ips: 226.84925
+[2021/05/13 01:47:02] root INFO: epoch: [31/500], iter: 4029, lr: 0.000991, loss: 13.384626, acc: 0.230469, norm_edit_dis: 0.515491, reader_cost: 0.00026 s, batch_cost: 1.03005 s, samples: 2304, ips: 223.67919
+[2021/05/13 01:47:02] root INFO: save model in ./output/rec_chinese_lite_v2.0/latest
+[2021/05/13 01:47:02] root INFO: Initialize indexs of datasets:['./train/LabelTrain.txt']
+[2021/05/13 01:47:19] root INFO: epoch: [32/500], iter: 4030, lr: 0.000991, loss: 13.273253, acc: 0.232422, norm_edit_dis: 0.515491, reader_cost: 1.13377 s, batch_cost: 1.51464 s, samples: 256, ips: 16.90176
+[2021/05/13 01:47:39] root INFO: epoch: [32/500], iter: 4040, lr: 0.000991, loss: 13.143496, acc: 0.218750, norm_edit_dis: 0.515535, reader_cost: 0.00298 s, batch_cost: 1.31395 s, samples: 2560, ips: 194.83205
+[2021/05/13 01:47:57] root INFO: epoch: [32/500], iter: 4050, lr: 0.000990, loss: 12.849154, acc: 0.208984, norm_edit_dis: 0.514284, reader_cost: 0.00172 s, batch_cost: 1.12280 s, samples: 2560, ips: 228.00112
+[2021/05/13 01:48:16] root INFO: epoch: [32/500], iter: 4060, lr: 0.000990, loss: 13.000101, acc: 0.207031, norm_edit_dis: 0.509440, reader_cost: 0.00191 s, batch_cost: 1.14678 s, samples: 2560, ips: 223.23348
+[2021/05/13 01:48:34] root INFO: epoch: [32/500], iter: 4070, lr: 0.000990, loss: 13.422811, acc: 0.210938, norm_edit_dis: 0.511256, reader_cost: 0.00175 s, batch_cost: 1.11602 s, samples: 2560, ips: 229.38693
+[2021/05/13 01:48:52] root INFO: epoch: [32/500], iter: 4080, lr: 0.000990, loss: 12.903114, acc: 0.210938, norm_edit_dis: 0.516482, reader_cost: 0.00205 s, batch_cost: 1.13839 s, samples: 2560, ips: 224.87911
+[2021/05/13 01:49:10] root INFO: epoch: [32/500], iter: 4090, lr: 0.000990, loss: 12.828918, acc: 0.222656, norm_edit_dis: 0.521521, reader_cost: 0.00184 s, batch_cost: 1.14342 s, samples: 2560, ips: 223.88953
+[2021/05/13 01:49:29] root INFO: epoch: [32/500], iter: 4100, lr: 0.000990, loss: 12.865222, acc: 0.216797, norm_edit_dis: 0.524313, reader_cost: 0.00200 s, batch_cost: 1.11334 s, samples: 2560, ips: 229.93796
+[2021/05/13 01:49:47] root INFO: epoch: [32/500], iter: 4110, lr: 0.000990, loss: 13.011241, acc: 0.222656, norm_edit_dis: 0.525052, reader_cost: 0.00171 s, batch_cost: 1.11496 s, samples: 2560, ips: 229.60504
+[2021/05/13 01:50:05] root INFO: epoch: [32/500], iter: 4120, lr: 0.000990, loss: 12.866093, acc: 0.226562, norm_edit_dis: 0.518098, reader_cost: 0.00260 s, batch_cost: 1.12510 s, samples: 2560, ips: 227.53543
+[2021/05/13 01:50:23] root INFO: epoch: [32/500], iter: 4130, lr: 0.000990, loss: 13.139278, acc: 0.224609, norm_edit_dis: 0.524388, reader_cost: 0.00174 s, batch_cost: 1.13354 s, samples: 2560, ips: 225.84105
+[2021/05/13 01:50:41] root INFO: epoch: [32/500], iter: 4140, lr: 0.000990, loss: 13.322191, acc: 0.222656, norm_edit_dis: 0.529288, reader_cost: 0.00089 s, batch_cost: 1.12612 s, samples: 2560, ips: 227.32931
+[2021/05/13 01:51:00] root INFO: epoch: [32/500], iter: 4150, lr: 0.000990, loss: 12.461237, acc: 0.222656, norm_edit_dis: 0.532826, reader_cost: 0.00023 s, batch_cost: 1.17702 s, samples: 2560, ips: 217.49829
+[2021/05/13 01:51:17] root INFO: epoch: [32/500], iter: 4159, lr: 0.000990, loss: 12.571081, acc: 0.228516, norm_edit_dis: 0.532884, reader_cost: 0.00036 s, batch_cost: 1.03119 s, samples: 2304, ips: 223.43131
+[2021/05/13 01:51:17] root INFO: save model in ./output/rec_chinese_lite_v2.0/latest
+[2021/05/13 01:51:17] root INFO: Initialize indexs of datasets:['./train/LabelTrain.txt']
+[2021/05/13 01:51:34] root INFO: epoch: [33/500], iter: 4160, lr: 0.000990, loss: 12.461237, acc: 0.228516, norm_edit_dis: 0.534803, reader_cost: 1.00694 s, batch_cost: 1.48536 s, samples: 256, ips: 17.23491
+[2021/05/13 01:51:54] root INFO: epoch: [33/500], iter: 4170, lr: 0.000990, loss: 12.443388, acc: 0.238281, norm_edit_dis: 0.529165, reader_cost: 0.00328 s, batch_cost: 1.23808 s, samples: 2560, ips: 206.77211
+[2021/05/13 01:52:12] root INFO: epoch: [33/500], iter: 4180, lr: 0.000990, loss: 12.468910, acc: 0.240234, norm_edit_dis: 0.527703, reader_cost: 0.00188 s, batch_cost: 1.12200 s, samples: 2560, ips: 228.16299
+[2021/05/13 01:52:31] root INFO: epoch: [33/500], iter: 4190, lr: 0.000990, loss: 12.774854, acc: 0.226562, norm_edit_dis: 0.519105, reader_cost: 0.00203 s, batch_cost: 1.11927 s, samples: 2560, ips: 228.72058
+[2021/05/13 01:52:49] root INFO: epoch: [33/500], iter: 4200, lr: 0.000990, loss: 12.988199, acc: 0.222656, norm_edit_dis: 0.523006, reader_cost: 0.00188 s, batch_cost: 1.11131 s, samples: 2560, ips: 230.35894
+[2021/05/13 01:53:07] root INFO: epoch: [33/500], iter: 4210, lr: 0.000990, loss: 12.806700, acc: 0.230469, norm_edit_dis: 0.534708, reader_cost: 0.00188 s, batch_cost: 1.15451 s, samples: 2560, ips: 221.73827
+[2021/05/13 01:53:25] root INFO: epoch: [33/500], iter: 4220, lr: 0.000990, loss: 12.523584, acc: 0.234375, norm_edit_dis: 0.531936, reader_cost: 0.00192 s, batch_cost: 1.12367 s, samples: 2560, ips: 227.82590
+[2021/05/13 01:53:44] root INFO: epoch: [33/500], iter: 4230, lr: 0.000990, loss: 12.579800, acc: 0.232422, norm_edit_dis: 0.538029, reader_cost: 0.00157 s, batch_cost: 1.13481 s, samples: 2560, ips: 225.58847
+[2021/05/13 01:54:02] root INFO: epoch: [33/500], iter: 4240, lr: 0.000990, loss: 12.672733, acc: 0.224609, norm_edit_dis: 0.525695, reader_cost: 0.00191 s, batch_cost: 1.12273 s, samples: 2560, ips: 228.01659
+[2021/05/13 01:54:20] root INFO: epoch: [33/500], iter: 4250, lr: 0.000990, loss: 12.415342, acc: 0.226562, norm_edit_dis: 0.525695, reader_cost: 0.00305 s, batch_cost: 1.13155 s, samples: 2560, ips: 226.23874
+[2021/05/13 01:54:38] root INFO: epoch: [33/500], iter: 4260, lr: 0.000989, loss: 12.315109, acc: 0.236328, norm_edit_dis: 0.538556, reader_cost: 0.00223 s, batch_cost: 1.11667 s, samples: 2560, ips: 229.25235
+[2021/05/13 01:54:57] root INFO: epoch: [33/500], iter: 4270, lr: 0.000989, loss: 12.419472, acc: 0.246094, norm_edit_dis: 0.546230, reader_cost: 0.00091 s, batch_cost: 1.12647 s, samples: 2560, ips: 227.25808
+[2021/05/13 01:55:15] root INFO: epoch: [33/500], iter: 4280, lr: 0.000989, loss: 12.232505, acc: 0.238281, norm_edit_dis: 0.546230, reader_cost: 0.00048 s, batch_cost: 1.11549 s, samples: 2560, ips: 229.49583
+[2021/05/13 01:55:31] root INFO: epoch: [33/500], iter: 4289, lr: 0.000989, loss: 12.504803, acc: 0.232422, norm_edit_dis: 0.541230, reader_cost: 0.00010 s, batch_cost: 1.02385 s, samples: 2304, ips: 225.03385
+[2021/05/13 01:55:32] root INFO: save model in ./output/rec_chinese_lite_v2.0/latest
+[2021/05/13 01:55:32] root INFO: save model in ./output/rec_chinese_lite_v2.0/iter_epoch_33
+[2021/05/13 01:55:32] root INFO: Initialize indexs of datasets:['./train/LabelTrain.txt']
+[2021/05/13 01:55:50] root INFO: epoch: [34/500], iter: 4290, lr: 0.000989, loss: 12.422964, acc: 0.234375, norm_edit_dis: 0.542008, reader_cost: 1.19716 s, batch_cost: 1.59760 s, samples: 256, ips: 16.02407
+[2021/05/13 01:56:09] root INFO: epoch: [34/500], iter: 4300, lr: 0.000989, loss: 12.583264, acc: 0.238281, norm_edit_dis: 0.544354, reader_cost: 0.00338 s, batch_cost: 1.20011 s, samples: 2560, ips: 213.31307
+[2021/05/13 01:56:27] root INFO: epoch: [34/500], iter: 4310, lr: 0.000989, loss: 12.180855, acc: 0.244141, norm_edit_dis: 0.554562, reader_cost: 0.00181 s, batch_cost: 1.12692 s, samples: 2560, ips: 227.16752
+[2021/05/13 01:56:46] root INFO: epoch: [34/500], iter: 4320, lr: 0.000989, loss: 12.007983, acc: 0.248047, norm_edit_dis: 0.548207, reader_cost: 0.00197 s, batch_cost: 1.16616 s, samples: 2560, ips: 219.52441
+[2021/05/13 01:57:04] root INFO: epoch: [34/500], iter: 4330, lr: 0.000989, loss: 12.001586, acc: 0.246094, norm_edit_dis: 0.550637, reader_cost: 0.00161 s, batch_cost: 1.12739 s, samples: 2560, ips: 227.07380
+[2021/05/13 01:57:22] root INFO: epoch: [34/500], iter: 4340, lr: 0.000989, loss: 12.027645, acc: 0.250000, norm_edit_dis: 0.552921, reader_cost: 0.00186 s, batch_cost: 1.12100 s, samples: 2560, ips: 228.36815
+[2021/05/13 01:57:40] root INFO: epoch: [34/500], iter: 4350, lr: 0.000989, loss: 12.369614, acc: 0.248047, norm_edit_dis: 0.548520, reader_cost: 0.00213 s, batch_cost: 1.13947 s, samples: 2560, ips: 224.66538
+[2021/05/13 01:57:59] root INFO: epoch: [34/500], iter: 4360, lr: 0.000989, loss: 12.405740, acc: 0.244141, norm_edit_dis: 0.542905, reader_cost: 0.00187 s, batch_cost: 1.12015 s, samples: 2560, ips: 228.54167
+[2021/05/13 01:58:17] root INFO: epoch: [34/500], iter: 4370, lr: 0.000989, loss: 12.021975, acc: 0.246094, norm_edit_dis: 0.544868, reader_cost: 0.00186 s, batch_cost: 1.13811 s, samples: 2560, ips: 224.93365
+[2021/05/13 01:58:35] root INFO: epoch: [34/500], iter: 4380, lr: 0.000989, loss: 12.021975, acc: 0.244141, norm_edit_dis: 0.545655, reader_cost: 0.00178 s, batch_cost: 1.12513 s, samples: 2560, ips: 227.52944
+[2021/05/13 01:58:53] root INFO: epoch: [34/500], iter: 4390, lr: 0.000989, loss: 12.255527, acc: 0.242188, norm_edit_dis: 0.548361, reader_cost: 0.00176 s, batch_cost: 1.12233 s, samples: 2560, ips: 228.09703
+[2021/05/13 01:59:12] root INFO: epoch: [34/500], iter: 4400, lr: 0.000989, loss: 12.372456, acc: 0.251953, norm_edit_dis: 0.552861, reader_cost: 0.00090 s, batch_cost: 1.11157 s, samples: 2560, ips: 230.30576
+[2021/05/13 01:59:30] root INFO: epoch: [34/500], iter: 4410, lr: 0.000989, loss: 12.326695, acc: 0.246094, norm_edit_dis: 0.550812, reader_cost: 0.00017 s, batch_cost: 1.12991 s, samples: 2560, ips: 226.56588
+[2021/05/13 01:59:46] root INFO: epoch: [34/500], iter: 4419, lr: 0.000989, loss: 11.872776, acc: 0.251953, norm_edit_dis: 0.551671, reader_cost: 0.00017 s, batch_cost: 1.02996 s, samples: 2304, ips: 223.69855
+[2021/05/13 01:59:47] root INFO: save model in ./output/rec_chinese_lite_v2.0/latest
+[2021/05/13 01:59:47] root INFO: Initialize indexs of datasets:['./train/LabelTrain.txt']
+[2021/05/13 02:00:03] root INFO: epoch: [35/500], iter: 4420, lr: 0.000989, loss: 11.706951, acc: 0.253906, norm_edit_dis: 0.557525, reader_cost: 0.91903 s, batch_cost: 1.32797 s, samples: 256, ips: 19.27759
+[2021/05/13 02:00:23] root INFO: epoch: [35/500], iter: 4430, lr: 0.000989, loss: 12.331222, acc: 0.255859, norm_edit_dis: 0.558357, reader_cost: 0.00275 s, batch_cost: 1.28299 s, samples: 2560, ips: 199.53449
+[2021/05/13 02:00:42] root INFO: epoch: [35/500], iter: 4440, lr: 0.000989, loss: 12.079489, acc: 0.255859, norm_edit_dis: 0.556273, reader_cost: 0.00185 s, batch_cost: 1.12061 s, samples: 2560, ips: 228.44610
+[2021/05/13 02:01:00] root INFO: epoch: [35/500], iter: 4450, lr: 0.000989, loss: 11.637011, acc: 0.261719, norm_edit_dis: 0.561115, reader_cost: 0.00198 s, batch_cost: 1.12268 s, samples: 2560, ips: 228.02654
+[2021/05/13 02:01:18] root INFO: epoch: [35/500], iter: 4460, lr: 0.000988, loss: 11.794995, acc: 0.259766, norm_edit_dis: 0.562042, reader_cost: 0.00177 s, batch_cost: 1.11980 s, samples: 2560, ips: 228.61295
+[2021/05/13 02:01:36] root INFO: epoch: [35/500], iter: 4470, lr: 0.000988, loss: 11.449553, acc: 0.263672, norm_edit_dis: 0.564077, reader_cost: 0.00193 s, batch_cost: 1.12849 s, samples: 2560, ips: 226.85167
+[2021/05/13 02:01:54] root INFO: epoch: [35/500], iter: 4480, lr: 0.000988, loss: 11.394814, acc: 0.263672, norm_edit_dis: 0.566984, reader_cost: 0.00180 s, batch_cost: 1.12208 s, samples: 2560, ips: 228.14709
+[2021/05/13 02:02:13] root INFO: epoch: [35/500], iter: 4490, lr: 0.000988, loss: 11.642862, acc: 0.255859, norm_edit_dis: 0.563846, reader_cost: 0.00210 s, batch_cost: 1.16429 s, samples: 2560, ips: 219.87574
+[2021/05/13 02:02:31] root INFO: epoch: [35/500], iter: 4500, lr: 0.000988, loss: 11.798725, acc: 0.261719, norm_edit_dis: 0.561155, reader_cost: 0.00208 s, batch_cost: 1.13083 s, samples: 2560, ips: 226.38204
+[2021/05/13 02:02:50] root INFO: epoch: [35/500], iter: 4510, lr: 0.000988, loss: 11.693365, acc: 0.271484, norm_edit_dis: 0.575842, reader_cost: 0.00202 s, batch_cost: 1.14073 s, samples: 2560, ips: 224.41840
+[2021/05/13 02:03:08] root INFO: epoch: [35/500], iter: 4520, lr: 0.000988, loss: 11.320077, acc: 0.271484, norm_edit_dis: 0.571383, reader_cost: 0.00202 s, batch_cost: 1.11805 s, samples: 2560, ips: 228.97081
+[2021/05/13 02:03:26] root INFO: epoch: [35/500], iter: 4530, lr: 0.000988, loss: 11.316616, acc: 0.269531, norm_edit_dis: 0.566573, reader_cost: 0.00093 s, batch_cost: 1.10558 s, samples: 2560, ips: 231.55203
+[2021/05/13 02:03:44] root INFO: epoch: [35/500], iter: 4540, lr: 0.000988, loss: 11.393105, acc: 0.265625, norm_edit_dis: 0.571522, reader_cost: 0.00010 s, batch_cost: 1.10647 s, samples: 2560, ips: 231.36583
+[2021/05/13 02:04:00] root INFO: epoch: [35/500], iter: 4549, lr: 0.000988, loss: 11.616838, acc: 0.267578, norm_edit_dis: 0.568752, reader_cost: 0.00017 s, batch_cost: 0.99518 s, samples: 2304, ips: 231.51554
+[2021/05/13 02:04:01] root INFO: save model in ./output/rec_chinese_lite_v2.0/latest
+[2021/05/13 02:04:01] root INFO: Initialize indexs of datasets:['./train/LabelTrain.txt']
+[2021/05/13 02:04:16] root INFO: epoch: [36/500], iter: 4550, lr: 0.000988, loss: 11.616838, acc: 0.265625, norm_edit_dis: 0.570344, reader_cost: 0.77573 s, batch_cost: 1.35873 s, samples: 256, ips: 18.84115
+[2021/05/13 02:04:38] root INFO: epoch: [36/500], iter: 4560, lr: 0.000988, loss: 11.648746, acc: 0.263672, norm_edit_dis: 0.570166, reader_cost: 0.00412 s, batch_cost: 1.39866 s, samples: 2560, ips: 183.03253
+[2021/05/13 02:04:56] root INFO: epoch: [36/500], iter: 4570, lr: 0.000988, loss: 11.652384, acc: 0.261719, norm_edit_dis: 0.570166, reader_cost: 0.00234 s, batch_cost: 1.11193 s, samples: 2560, ips: 230.23014
+[2021/05/13 02:05:14] root INFO: epoch: [36/500], iter: 4580, lr: 0.000988, loss: 11.752501, acc: 0.263672, norm_edit_dis: 0.561156, reader_cost: 0.00178 s, batch_cost: 1.12273 s, samples: 2560, ips: 228.01555
+[2021/05/13 02:05:32] root INFO: epoch: [36/500], iter: 4590, lr: 0.000988, loss: 11.654463, acc: 0.267578, norm_edit_dis: 0.568600, reader_cost: 0.00176 s, batch_cost: 1.13791 s, samples: 2560, ips: 224.97304
+[2021/05/13 02:05:50] root INFO: epoch: [36/500], iter: 4600, lr: 0.000988, loss: 11.654463, acc: 0.277344, norm_edit_dis: 0.576121, reader_cost: 0.00155 s, batch_cost: 1.11241 s, samples: 2560, ips: 230.13120
+[2021/05/13 02:06:09] root INFO: epoch: [36/500], iter: 4610, lr: 0.000988, loss: 11.389582, acc: 0.277344, norm_edit_dis: 0.576670, reader_cost: 0.00215 s, batch_cost: 1.11396 s, samples: 2560, ips: 229.81118
+[2021/05/13 02:06:27] root INFO: epoch: [36/500], iter: 4620, lr: 0.000988, loss: 11.157320, acc: 0.279297, norm_edit_dis: 0.582643, reader_cost: 0.00213 s, batch_cost: 1.11985 s, samples: 2560, ips: 228.60215
+[2021/05/13 02:06:45] root INFO: epoch: [36/500], iter: 4630, lr: 0.000988, loss: 11.473299, acc: 0.269531, norm_edit_dis: 0.580702, reader_cost: 0.00177 s, batch_cost: 1.11950 s, samples: 2560, ips: 228.67294
+[2021/05/13 02:07:03] root INFO: epoch: [36/500], iter: 4640, lr: 0.000988, loss: 11.527685, acc: 0.269531, norm_edit_dis: 0.574469, reader_cost: 0.00186 s, batch_cost: 1.12924 s, samples: 2560, ips: 226.70213
+[2021/05/13 02:07:22] root INFO: epoch: [36/500], iter: 4650, lr: 0.000987, loss: 11.397726, acc: 0.277344, norm_edit_dis: 0.574545, reader_cost: 0.00186 s, batch_cost: 1.14291 s, samples: 2560, ips: 223.98978
+[2021/05/13 02:07:40] root INFO: epoch: [36/500], iter: 4660, lr: 0.000987, loss: 11.287594, acc: 0.277344, norm_edit_dis: 0.575213, reader_cost: 0.00090 s, batch_cost: 1.11721 s, samples: 2560, ips: 229.14201
+[2021/05/13 02:07:59] root INFO: epoch: [36/500], iter: 4670, lr: 0.000987, loss: 11.440643, acc: 0.279297, norm_edit_dis: 0.574446, reader_cost: 0.00022 s, batch_cost: 1.13631 s, samples: 2560, ips: 225.29076
+[2021/05/13 02:08:15] root INFO: epoch: [36/500], iter: 4679, lr: 0.000987, loss: 11.526860, acc: 0.285156, norm_edit_dis: 0.569468, reader_cost: 0.00019 s, batch_cost: 1.03309 s, samples: 2304, ips: 223.02024
+[2021/05/13 02:08:15] root INFO: save model in ./output/rec_chinese_lite_v2.0/latest
+[2021/05/13 02:08:16] root INFO: save model in ./output/rec_chinese_lite_v2.0/iter_epoch_36
+[2021/05/13 02:08:16] root INFO: Initialize indexs of datasets:['./train/LabelTrain.txt']
+[2021/05/13 02:08:33] root INFO: epoch: [37/500], iter: 4680, lr: 0.000987, loss: 11.507870, acc: 0.281250, norm_edit_dis: 0.563551, reader_cost: 1.11976 s, batch_cost: 1.46988 s, samples: 256, ips: 17.41634
+[2021/05/13 02:08:52] root INFO: epoch: [37/500], iter: 4690, lr: 0.000987, loss: 11.359766, acc: 0.291016, norm_edit_dis: 0.580569, reader_cost: 0.00268 s, batch_cost: 1.22925 s, samples: 2560, ips: 208.25769
+[2021/05/13 02:09:10] root INFO: epoch: [37/500], iter: 4700, lr: 0.000987, loss: 11.511665, acc: 0.285156, norm_edit_dis: 0.581620, reader_cost: 0.00216 s, batch_cost: 1.13246 s, samples: 2560, ips: 226.05751
+[2021/05/13 02:09:28] root INFO: epoch: [37/500], iter: 4710, lr: 0.000987, loss: 11.373749, acc: 0.269531, norm_edit_dis: 0.579798, reader_cost: 0.00198 s, batch_cost: 1.13129 s, samples: 2560, ips: 226.29065
+[2021/05/13 02:09:47] root INFO: epoch: [37/500], iter: 4720, lr: 0.000987, loss: 11.007170, acc: 0.271484, norm_edit_dis: 0.587568, reader_cost: 0.00169 s, batch_cost: 1.13788 s, samples: 2560, ips: 224.97889
+[2021/05/13 02:10:05] root INFO: epoch: [37/500], iter: 4730, lr: 0.000987, loss: 10.940546, acc: 0.283203, norm_edit_dis: 0.590150, reader_cost: 0.00196 s, batch_cost: 1.11543 s, samples: 2560, ips: 229.50893
+[2021/05/13 02:10:23] root INFO: epoch: [37/500], iter: 4740, lr: 0.000987, loss: 10.800735, acc: 0.279297, norm_edit_dis: 0.568646, reader_cost: 0.00212 s, batch_cost: 1.12739 s, samples: 2560, ips: 227.07241
+[2021/05/13 02:10:41] root INFO: epoch: [37/500], iter: 4750, lr: 0.000987, loss: 10.755409, acc: 0.287109, norm_edit_dis: 0.579261, reader_cost: 0.00232 s, batch_cost: 1.12984 s, samples: 2560, ips: 226.58009
+[2021/05/13 02:11:00] root INFO: epoch: [37/500], iter: 4760, lr: 0.000987, loss: 11.049503, acc: 0.277344, norm_edit_dis: 0.575314, reader_cost: 0.00191 s, batch_cost: 1.12327 s, samples: 2560, ips: 227.90693
+[2021/05/13 02:11:18] root INFO: epoch: [37/500], iter: 4770, lr: 0.000987, loss: 11.075704, acc: 0.279297, norm_edit_dis: 0.586792, reader_cost: 0.00200 s, batch_cost: 1.14396 s, samples: 2560, ips: 223.78476
+[2021/05/13 02:11:36] root INFO: epoch: [37/500], iter: 4780, lr: 0.000987, loss: 10.899774, acc: 0.287109, norm_edit_dis: 0.587810, reader_cost: 0.00185 s, batch_cost: 1.12195 s, samples: 2560, ips: 228.17374
+[2021/05/13 02:11:54] root INFO: epoch: [37/500], iter: 4790, lr: 0.000987, loss: 11.034218, acc: 0.291016, norm_edit_dis: 0.578671, reader_cost: 0.00060 s, batch_cost: 1.10721 s, samples: 2560, ips: 231.21281
+[2021/05/13 02:12:13] root INFO: epoch: [37/500], iter: 4800, lr: 0.000987, loss: 11.287805, acc: 0.292969, norm_edit_dis: 0.595673, reader_cost: 0.00010 s, batch_cost: 1.17177 s, samples: 2560, ips: 218.47301
+[2021/05/13 02:12:30] root INFO: epoch: [37/500], iter: 4809, lr: 0.000987, loss: 11.274574, acc: 0.300781, norm_edit_dis: 0.594198, reader_cost: 0.00009 s, batch_cost: 1.01323 s, samples: 2304, ips: 227.39257
+[2021/05/13 02:12:30] root INFO: save model in ./output/rec_chinese_lite_v2.0/latest
+[2021/05/13 02:12:30] root INFO: Initialize indexs of datasets:['./train/LabelTrain.txt']
+[2021/05/13 02:12:46] root INFO: epoch: [38/500], iter: 4810, lr: 0.000987, loss: 11.199615, acc: 0.300781, norm_edit_dis: 0.594198, reader_cost: 0.91678 s, batch_cost: 1.36144 s, samples: 256, ips: 18.80364
+[2021/05/13 02:13:06] root INFO: epoch: [38/500], iter: 4820, lr: 0.000987, loss: 10.830994, acc: 0.292969, norm_edit_dis: 0.594653, reader_cost: 0.00363 s, batch_cost: 1.24558 s, samples: 2560, ips: 205.52617
+[2021/05/13 02:13:24] root INFO: epoch: [38/500], iter: 4830, lr: 0.000986, loss: 10.824728, acc: 0.292969, norm_edit_dis: 0.597724, reader_cost: 0.00306 s, batch_cost: 1.12990 s, samples: 2560, ips: 226.56918
+[2021/05/13 02:13:43] root INFO: epoch: [38/500], iter: 4840, lr: 0.000986, loss: 11.055944, acc: 0.292969, norm_edit_dis: 0.590069, reader_cost: 0.00200 s, batch_cost: 1.14376 s, samples: 2560, ips: 223.82223
+[2021/05/13 02:14:01] root INFO: epoch: [38/500], iter: 4850, lr: 0.000986, loss: 11.184856, acc: 0.298828, norm_edit_dis: 0.588182, reader_cost: 0.00201 s, batch_cost: 1.12989 s, samples: 2560, ips: 226.56987
+[2021/05/13 02:14:19] root INFO: epoch: [38/500], iter: 4860, lr: 0.000986, loss: 10.862682, acc: 0.300781, norm_edit_dis: 0.590409, reader_cost: 0.00196 s, batch_cost: 1.13233 s, samples: 2560, ips: 226.08169
+[2021/05/13 02:14:38] root INFO: epoch: [38/500], iter: 4870, lr: 0.000986, loss: 10.822582, acc: 0.298828, norm_edit_dis: 0.589495, reader_cost: 0.00177 s, batch_cost: 1.12186 s, samples: 2560, ips: 228.19319
+[2021/05/13 02:14:56] root INFO: epoch: [38/500], iter: 4880, lr: 0.000986, loss: 10.876142, acc: 0.308594, norm_edit_dis: 0.592835, reader_cost: 0.00180 s, batch_cost: 1.11314 s, samples: 2560, ips: 229.97948
+[2021/05/13 02:15:14] root INFO: epoch: [38/500], iter: 4890, lr: 0.000986, loss: 10.718425, acc: 0.306641, norm_edit_dis: 0.598741, reader_cost: 0.00199 s, batch_cost: 1.14258 s, samples: 2560, ips: 224.05498
+[2021/05/13 02:15:32] root INFO: epoch: [38/500], iter: 4900, lr: 0.000986, loss: 10.387938, acc: 0.304688, norm_edit_dis: 0.607465, reader_cost: 0.00170 s, batch_cost: 1.11136 s, samples: 2560, ips: 230.34754
+[2021/05/13 02:15:51] root INFO: epoch: [38/500], iter: 4910, lr: 0.000986, loss: 10.407089, acc: 0.300781, norm_edit_dis: 0.596611, reader_cost: 0.00174 s, batch_cost: 1.13876 s, samples: 2560, ips: 224.80529
+[2021/05/13 02:16:09] root INFO: epoch: [38/500], iter: 4920, lr: 0.000986, loss: 10.437765, acc: 0.294922, norm_edit_dis: 0.594704, reader_cost: 0.00094 s, batch_cost: 1.13030 s, samples: 2560, ips: 226.48858
+[2021/05/13 02:16:27] root INFO: epoch: [38/500], iter: 4930, lr: 0.000986, loss: 10.494400, acc: 0.294922, norm_edit_dis: 0.595091, reader_cost: 0.00026 s, batch_cost: 1.14798 s, samples: 2560, ips: 222.99961
+[2021/05/13 02:16:44] root INFO: epoch: [38/500], iter: 4939, lr: 0.000986, loss: 10.494400, acc: 0.296875, norm_edit_dis: 0.594214, reader_cost: 0.00009 s, batch_cost: 1.00209 s, samples: 2304, ips: 229.91921
+[2021/05/13 02:16:44] root INFO: save model in ./output/rec_chinese_lite_v2.0/latest
+[2021/05/13 02:16:44] root INFO: Initialize indexs of datasets:['./train/LabelTrain.txt']
+[2021/05/13 02:17:01] root INFO: epoch: [39/500], iter: 4940, lr: 0.000986, loss: 10.501865, acc: 0.296875, norm_edit_dis: 0.594214, reader_cost: 1.05983 s, batch_cost: 1.47299 s, samples: 256, ips: 17.37959
+[2021/05/13 02:17:20] root INFO: epoch: [39/500], iter: 4950, lr: 0.000986, loss: 10.529544, acc: 0.304688, norm_edit_dis: 0.595905, reader_cost: 0.00289 s, batch_cost: 1.23021 s, samples: 2560, ips: 208.09530
+[2021/05/13 02:17:39] root INFO: epoch: [39/500], iter: 4960, lr: 0.000986, loss: 10.478035, acc: 0.316406, norm_edit_dis: 0.596907, reader_cost: 0.00161 s, batch_cost: 1.13444 s, samples: 2560, ips: 225.66231
+[2021/05/13 02:17:57] root INFO: epoch: [39/500], iter: 4970, lr: 0.000986, loss: 10.329201, acc: 0.316406, norm_edit_dis: 0.599238, reader_cost: 0.00173 s, batch_cost: 1.11741 s, samples: 2560, ips: 229.10193
+[2021/05/13 02:18:15] root INFO: epoch: [39/500], iter: 4980, lr: 0.000986, loss: 10.506701, acc: 0.324219, norm_edit_dis: 0.603756, reader_cost: 0.00175 s, batch_cost: 1.11445 s, samples: 2560, ips: 229.70923
+[2021/05/13 02:18:33] root INFO: epoch: [39/500], iter: 4990, lr: 0.000986, loss: 10.416956, acc: 0.304688, norm_edit_dis: 0.596220, reader_cost: 0.00202 s, batch_cost: 1.11913 s, samples: 2560, ips: 228.74831
+[2021/05/13 02:18:51] root INFO: epoch: [39/500], iter: 5000, lr: 0.000986, loss: 10.665129, acc: 0.304688, norm_edit_dis: 0.590902, reader_cost: 0.00199 s, batch_cost: 1.12253 s, samples: 2560, ips: 228.05531
+[2021/05/13 02:19:10] root INFO: epoch: [39/500], iter: 5010, lr: 0.000985, loss: 10.520533, acc: 0.314453, norm_edit_dis: 0.602130, reader_cost: 0.00170 s, batch_cost: 1.11934 s, samples: 2560, ips: 228.70659
+[2021/05/13 02:19:28] root INFO: epoch: [39/500], iter: 5020, lr: 0.000985, loss: 10.386261, acc: 0.328125, norm_edit_dis: 0.609274, reader_cost: 0.00163 s, batch_cost: 1.12137 s, samples: 2560, ips: 228.29164
+[2021/05/13 02:19:46] root INFO: epoch: [39/500], iter: 5030, lr: 0.000985, loss: 10.478625, acc: 0.316406, norm_edit_dis: 0.602504, reader_cost: 0.00176 s, batch_cost: 1.10592 s, samples: 2560, ips: 231.48064
+[2021/05/13 02:20:04] root INFO: epoch: [39/500], iter: 5040, lr: 0.000985, loss: 10.822943, acc: 0.306641, norm_edit_dis: 0.606496, reader_cost: 0.00191 s, batch_cost: 1.11972 s, samples: 2560, ips: 228.62874
+[2021/05/13 02:20:22] root INFO: epoch: [39/500], iter: 5050, lr: 0.000985, loss: 10.779900, acc: 0.306641, norm_edit_dis: 0.600067, reader_cost: 0.00079 s, batch_cost: 1.08579 s, samples: 2560, ips: 235.77287
+[2021/05/13 02:20:41] root INFO: epoch: [39/500], iter: 5060, lr: 0.000985, loss: 10.582243, acc: 0.300781, norm_edit_dis: 0.592014, reader_cost: 0.00030 s, batch_cost: 1.11654 s, samples: 2560, ips: 229.28003
+[2021/05/13 02:20:57] root INFO: epoch: [39/500], iter: 5069, lr: 0.000985, loss: 10.574417, acc: 0.308594, norm_edit_dis: 0.597469, reader_cost: 0.00009 s, batch_cost: 1.00224 s, samples: 2304, ips: 229.88528
+[2021/05/13 02:20:57] root INFO: save model in ./output/rec_chinese_lite_v2.0/latest
+[2021/05/13 02:20:57] root INFO: save model in ./output/rec_chinese_lite_v2.0/iter_epoch_39
+[2021/05/13 02:20:57] root INFO: Initialize indexs of datasets:['./train/LabelTrain.txt']
+[2021/05/13 02:21:16] root INFO: epoch: [40/500], iter: 5070, lr: 0.000985, loss: 10.515823, acc: 0.314453, norm_edit_dis: 0.598389, reader_cost: 1.37192 s, batch_cost: 1.68351 s, samples: 256, ips: 15.20633
+[2021/05/13 02:21:34] root INFO: epoch: [40/500], iter: 5080, lr: 0.000985, loss: 10.172508, acc: 0.333984, norm_edit_dis: 0.618641, reader_cost: 0.00264 s, batch_cost: 1.17566 s, samples: 2560, ips: 217.74958
+[2021/05/13 02:21:53] root INFO: epoch: [40/500], iter: 5090, lr: 0.000985, loss: 10.234588, acc: 0.333984, norm_edit_dis: 0.619823, reader_cost: 0.00203 s, batch_cost: 1.12752 s, samples: 2560, ips: 227.04713
+[2021/05/13 02:22:11] root INFO: epoch: [40/500], iter: 5100, lr: 0.000985, loss: 9.857207, acc: 0.312500, norm_edit_dis: 0.613846, reader_cost: 0.00172 s, batch_cost: 1.10968 s, samples: 2560, ips: 230.69776
+[2021/05/13 02:22:29] root INFO: epoch: [40/500], iter: 5110, lr: 0.000985, loss: 9.752435, acc: 0.322266, norm_edit_dis: 0.618215, reader_cost: 0.00282 s, batch_cost: 1.11942 s, samples: 2560, ips: 228.68974
+[2021/05/13 02:22:47] root INFO: epoch: [40/500], iter: 5120, lr: 0.000985, loss: 9.656183, acc: 0.326172, norm_edit_dis: 0.617173, reader_cost: 0.00182 s, batch_cost: 1.11927 s, samples: 2560, ips: 228.71958
+[2021/05/13 02:23:05] root INFO: epoch: [40/500], iter: 5130, lr: 0.000985, loss: 10.146914, acc: 0.314453, norm_edit_dis: 0.606728, reader_cost: 0.00206 s, batch_cost: 1.14164 s, samples: 2560, ips: 224.23851
+[2021/05/13 02:23:24] root INFO: epoch: [40/500], iter: 5140, lr: 0.000985, loss: 10.010700, acc: 0.318359, norm_edit_dis: 0.609686, reader_cost: 0.00178 s, batch_cost: 1.13896 s, samples: 2560, ips: 224.76586
+[2021/05/13 02:23:42] root INFO: epoch: [40/500], iter: 5150, lr: 0.000985, loss: 9.927728, acc: 0.316406, norm_edit_dis: 0.605861, reader_cost: 0.00224 s, batch_cost: 1.09446 s, samples: 2560, ips: 233.90581
+[2021/05/13 02:24:00] root INFO: epoch: [40/500], iter: 5160, lr: 0.000985, loss: 9.875666, acc: 0.328125, norm_edit_dis: 0.618200, reader_cost: 0.00198 s, batch_cost: 1.15264 s, samples: 2560, ips: 222.09889
+[2021/05/13 02:24:19] root INFO: epoch: [40/500], iter: 5170, lr: 0.000985, loss: 9.780496, acc: 0.328125, norm_edit_dis: 0.625235, reader_cost: 0.00193 s, batch_cost: 1.12175 s, samples: 2560, ips: 228.21544
+[2021/05/13 02:24:37] root INFO: epoch: [40/500], iter: 5180, lr: 0.000984, loss: 10.047269, acc: 0.328125, norm_edit_dis: 0.617518, reader_cost: 0.00073 s, batch_cost: 1.14633 s, samples: 2560, ips: 223.32127
+[2021/05/13 02:24:55] root INFO: epoch: [40/500], iter: 5190, lr: 0.000984, loss: 10.215914, acc: 0.326172, norm_edit_dis: 0.612429, reader_cost: 0.00009 s, batch_cost: 1.10158 s, samples: 2560, ips: 232.39371
+[2021/05/13 02:25:12] root INFO: epoch: [40/500], iter: 5199, lr: 0.000984, loss: 10.075401, acc: 0.324219, norm_edit_dis: 0.613612, reader_cost: 0.00038 s, batch_cost: 0.98952 s, samples: 2304, ips: 232.84080
+[2021/05/13 02:25:12] root INFO: save model in ./output/rec_chinese_lite_v2.0/latest
+[2021/05/13 02:25:12] root INFO: Initialize indexs of datasets:['./train/LabelTrain.txt']
+[2021/05/13 02:25:29] root INFO: epoch: [41/500], iter: 5200, lr: 0.000984, loss: 9.988691, acc: 0.324219, norm_edit_dis: 0.614430, reader_cost: 0.83730 s, batch_cost: 1.45699 s, samples: 256, ips: 17.57047
+[2021/05/13 02:25:49] root INFO: epoch: [41/500], iter: 5210, lr: 0.000984, loss: 9.901283, acc: 0.330078, norm_edit_dis: 0.621583, reader_cost: 0.00304 s, batch_cost: 1.31655 s, samples: 2560, ips: 194.44793
+[2021/05/13 02:26:07] root INFO: epoch: [41/500], iter: 5220, lr: 0.000984, loss: 9.911827, acc: 0.341797, norm_edit_dis: 0.621583, reader_cost: 0.00158 s, batch_cost: 1.14231 s, samples: 2560, ips: 224.10781
+[2021/05/13 02:26:25] root INFO: epoch: [41/500], iter: 5230, lr: 0.000984, loss: 10.150315, acc: 0.337891, norm_edit_dis: 0.617384, reader_cost: 0.00190 s, batch_cost: 1.10944 s, samples: 2560, ips: 230.74668
+[2021/05/13 02:26:43] root INFO: epoch: [41/500], iter: 5240, lr: 0.000984, loss: 10.078587, acc: 0.330078, norm_edit_dis: 0.620478, reader_cost: 0.00168 s, batch_cost: 1.13064 s, samples: 2560, ips: 226.42100
+[2021/05/13 02:27:02] root INFO: epoch: [41/500], iter: 5250, lr: 0.000984, loss: 10.168145, acc: 0.330078, norm_edit_dis: 0.620927, reader_cost: 0.00212 s, batch_cost: 1.11965 s, samples: 2560, ips: 228.64264
+[2021/05/13 02:27:20] root INFO: epoch: [41/500], iter: 5260, lr: 0.000984, loss: 10.057767, acc: 0.330078, norm_edit_dis: 0.620890, reader_cost: 0.00169 s, batch_cost: 1.10910 s, samples: 2560, ips: 230.81787
+[2021/05/13 02:27:38] root INFO: epoch: [41/500], iter: 5270, lr: 0.000984, loss: 9.661202, acc: 0.332031, norm_edit_dis: 0.623520, reader_cost: 0.00193 s, batch_cost: 1.12104 s, samples: 2560, ips: 228.36004
+[2021/05/13 02:27:56] root INFO: epoch: [41/500], iter: 5280, lr: 0.000984, loss: 9.965826, acc: 0.328125, norm_edit_dis: 0.614200, reader_cost: 0.00176 s, batch_cost: 1.14722 s, samples: 2560, ips: 223.14863
+[2021/05/13 02:28:15] root INFO: epoch: [41/500], iter: 5290, lr: 0.000984, loss: 10.015432, acc: 0.316406, norm_edit_dis: 0.613251, reader_cost: 0.00189 s, batch_cost: 1.11936 s, samples: 2560, ips: 228.70271
+[2021/05/13 02:28:33] root INFO: epoch: [41/500], iter: 5300, lr: 0.000984, loss: 9.837891, acc: 0.332031, norm_edit_dis: 0.620211, reader_cost: 0.00337 s, batch_cost: 1.09917 s, samples: 2560, ips: 232.90236
+[2021/05/13 02:28:51] root INFO: epoch: [41/500], iter: 5310, lr: 0.000984, loss: 10.030859, acc: 0.324219, norm_edit_dis: 0.623575, reader_cost: 0.00067 s, batch_cost: 1.10364 s, samples: 2560, ips: 231.95898
+[2021/05/13 02:29:09] root INFO: epoch: [41/500], iter: 5320, lr: 0.000984, loss: 9.652989, acc: 0.322266, norm_edit_dis: 0.615881, reader_cost: 0.00011 s, batch_cost: 1.15157 s, samples: 2560, ips: 222.30596
+[2021/05/13 02:29:26] root INFO: epoch: [41/500], iter: 5329, lr: 0.000984, loss: 9.619254, acc: 0.335938, norm_edit_dis: 0.619863, reader_cost: 0.00008 s, batch_cost: 1.01336 s, samples: 2304, ips: 227.36271
+[2021/05/13 02:29:26] root INFO: save model in ./output/rec_chinese_lite_v2.0/latest
+[2021/05/13 02:29:26] root INFO: Initialize indexs of datasets:['./train/LabelTrain.txt']
+[2021/05/13 02:29:43] root INFO: epoch: [42/500], iter: 5330, lr: 0.000984, loss: 9.619254, acc: 0.335938, norm_edit_dis: 0.619863, reader_cost: 1.04255 s, batch_cost: 1.41372 s, samples: 256, ips: 18.10826
+[2021/05/13 02:30:02] root INFO: epoch: [42/500], iter: 5340, lr: 0.000983, loss: 9.608984, acc: 0.339844, norm_edit_dis: 0.633753, reader_cost: 0.00384 s, batch_cost: 1.22501 s, samples: 2560, ips: 208.97806
+[2021/05/13 02:30:20] root INFO: epoch: [42/500], iter: 5350, lr: 0.000983, loss: 9.704891, acc: 0.333984, norm_edit_dis: 0.633177, reader_cost: 0.00187 s, batch_cost: 1.13189 s, samples: 2560, ips: 226.17078
+[2021/05/13 02:30:39] root INFO: epoch: [42/500], iter: 5360, lr: 0.000983, loss: 9.913568, acc: 0.322266, norm_edit_dis: 0.626669, reader_cost: 0.00214 s, batch_cost: 1.14327 s, samples: 2560, ips: 223.91878
+[2021/05/13 02:30:57] root INFO: epoch: [42/500], iter: 5370, lr: 0.000983, loss: 10.031235, acc: 0.335938, norm_edit_dis: 0.626588, reader_cost: 0.00230 s, batch_cost: 1.11690 s, samples: 2560, ips: 229.20594
+[2021/05/13 02:31:15] root INFO: epoch: [42/500], iter: 5380, lr: 0.000983, loss: 9.916651, acc: 0.335938, norm_edit_dis: 0.619840, reader_cost: 0.00193 s, batch_cost: 1.13189 s, samples: 2560, ips: 226.17134
+[2021/05/13 02:31:33] root INFO: epoch: [42/500], iter: 5390, lr: 0.000983, loss: 9.675638, acc: 0.332031, norm_edit_dis: 0.619840, reader_cost: 0.00191 s, batch_cost: 1.11732 s, samples: 2560, ips: 229.12040
+[2021/05/13 02:31:52] root INFO: epoch: [42/500], iter: 5400, lr: 0.000983, loss: 9.486551, acc: 0.332031, norm_edit_dis: 0.631395, reader_cost: 0.00227 s, batch_cost: 1.13471 s, samples: 2560, ips: 225.60824
+[2021/05/13 02:32:10] root INFO: epoch: [42/500], iter: 5410, lr: 0.000983, loss: 9.743092, acc: 0.337891, norm_edit_dis: 0.618704, reader_cost: 0.00205 s, batch_cost: 1.12426 s, samples: 2560, ips: 227.70520
+[2021/05/13 02:32:28] root INFO: epoch: [42/500], iter: 5420, lr: 0.000983, loss: 9.743092, acc: 0.337891, norm_edit_dis: 0.621723, reader_cost: 0.00212 s, batch_cost: 1.12882 s, samples: 2560, ips: 226.78605
+[2021/05/13 02:32:46] root INFO: epoch: [42/500], iter: 5430, lr: 0.000983, loss: 9.709566, acc: 0.349609, norm_edit_dis: 0.631848, reader_cost: 0.00184 s, batch_cost: 1.13919 s, samples: 2560, ips: 224.72191
+[2021/05/13 02:33:04] root INFO: epoch: [42/500], iter: 5440, lr: 0.000983, loss: 9.691074, acc: 0.349609, norm_edit_dis: 0.637686, reader_cost: 0.00055 s, batch_cost: 1.08431 s, samples: 2560, ips: 236.09436
+[2021/05/13 02:33:23] root INFO: epoch: [42/500], iter: 5450, lr: 0.000983, loss: 9.852728, acc: 0.341797, norm_edit_dis: 0.629222, reader_cost: 0.00057 s, batch_cost: 1.13136 s, samples: 2560, ips: 226.27573
+[2021/05/13 02:33:39] root INFO: epoch: [42/500], iter: 5459, lr: 0.000983, loss: 9.990231, acc: 0.333984, norm_edit_dis: 0.620930, reader_cost: 0.00031 s, batch_cost: 0.98452 s, samples: 2304, ips: 234.02288
+[2021/05/13 02:33:39] root INFO: save model in ./output/rec_chinese_lite_v2.0/latest
+[2021/05/13 02:33:40] root INFO: save model in ./output/rec_chinese_lite_v2.0/iter_epoch_42
+[2021/05/13 02:33:40] root INFO: Initialize indexs of datasets:['./train/LabelTrain.txt']
+[2021/05/13 02:33:55] root INFO: epoch: [43/500], iter: 5460, lr: 0.000983, loss: 9.990231, acc: 0.333984, norm_edit_dis: 0.620930, reader_cost: 1.10414 s, batch_cost: 1.38702 s, samples: 256, ips: 18.45683
+[2021/05/13 02:34:16] root INFO: epoch: [43/500], iter: 5470, lr: 0.000983, loss: 9.578299, acc: 0.337891, norm_edit_dis: 0.623065, reader_cost: 0.00282 s, batch_cost: 1.32323 s, samples: 2560, ips: 193.46645
+[2021/05/13 02:34:34] root INFO: epoch: [43/500], iter: 5480, lr: 0.000983, loss: 9.995279, acc: 0.337891, norm_edit_dis: 0.623147, reader_cost: 0.00210 s, batch_cost: 1.11171 s, samples: 2560, ips: 230.27677
+[2021/05/13 02:34:52] root INFO: epoch: [43/500], iter: 5490, lr: 0.000983, loss: 10.027939, acc: 0.337891, norm_edit_dis: 0.624696, reader_cost: 0.00187 s, batch_cost: 1.10903 s, samples: 2560, ips: 230.83157
+[2021/05/13 02:35:10] root INFO: epoch: [43/500], iter: 5500, lr: 0.000982, loss: 10.080000, acc: 0.339844, norm_edit_dis: 0.634220, reader_cost: 0.00195 s, batch_cost: 1.11396 s, samples: 2560, ips: 229.81056
+[2021/05/13 02:35:28] root INFO: epoch: [43/500], iter: 5510, lr: 0.000982, loss: 9.875984, acc: 0.343750, norm_edit_dis: 0.629749, reader_cost: 0.00189 s, batch_cost: 1.11593 s, samples: 2560, ips: 229.40472
+[2021/05/13 02:35:47] root INFO: epoch: [43/500], iter: 5520, lr: 0.000982, loss: 9.734407, acc: 0.345703, norm_edit_dis: 0.625456, reader_cost: 0.00198 s, batch_cost: 1.12524 s, samples: 2560, ips: 227.50748
+[2021/05/13 02:36:05] root INFO: epoch: [43/500], iter: 5530, lr: 0.000982, loss: 9.660792, acc: 0.357422, norm_edit_dis: 0.631765, reader_cost: 0.00163 s, batch_cost: 1.13421 s, samples: 2560, ips: 225.70684
+[2021/05/13 02:36:23] root INFO: epoch: [43/500], iter: 5540, lr: 0.000982, loss: 9.432005, acc: 0.355469, norm_edit_dis: 0.636909, reader_cost: 0.00186 s, batch_cost: 1.11501 s, samples: 2560, ips: 229.59399
+[2021/05/13 02:36:41] root INFO: epoch: [43/500], iter: 5550, lr: 0.000982, loss: 9.716426, acc: 0.330078, norm_edit_dis: 0.623787, reader_cost: 0.00241 s, batch_cost: 1.14045 s, samples: 2560, ips: 224.47279
+[2021/05/13 02:37:00] root INFO: epoch: [43/500], iter: 5560, lr: 0.000982, loss: 9.457491, acc: 0.330078, norm_edit_dis: 0.625936, reader_cost: 0.00196 s, batch_cost: 1.14335 s, samples: 2560, ips: 223.90438
+[2021/05/13 02:37:18] root INFO: epoch: [43/500], iter: 5570, lr: 0.000982, loss: 9.449148, acc: 0.337891, norm_edit_dis: 0.639236, reader_cost: 0.00111 s, batch_cost: 1.15747 s, samples: 2560, ips: 221.17261
+[2021/05/13 02:37:37] root INFO: epoch: [43/500], iter: 5580, lr: 0.000982, loss: 9.678230, acc: 0.335938, norm_edit_dis: 0.630363, reader_cost: 0.00011 s, batch_cost: 1.14255 s, samples: 2560, ips: 224.06090
+/home/xingli/miniconda3/envs/paddle/lib/python3.7/site-packages/paddle/fluid/layers/utils.py:26: DeprecationWarning: `np.int` is a deprecated alias for the builtin `int`. To silence this warning, use `int` by itself. Doing this will not modify any behavior and is safe. When replacing `np.int`, you may wish to use e.g. `np.int64` or `np.int32` to specify the precision. If you wish to review your current use, check the release note link for additional information.
+Deprecated in NumPy 1.20; for more details and guidance: https://numpy.org/devdocs/release/1.20.0-notes.html#deprecations
+  def convert_to_list(value, n, name, dtype=np.int):
+Traceback (most recent call last):
+  File "tools/train.py", line 27, in <module>
+    import paddle
+  File "/home/xingli/miniconda3/envs/paddle/lib/python3.7/site-packages/paddle/__init__.py", line 29, in <module>
+    from .fluid import monkey_patch_variable
+  File "/home/xingli/miniconda3/envs/paddle/lib/python3.7/site-packages/paddle/fluid/__init__.py", line 51, in <module>
+    from . import io
+  File "/home/xingli/miniconda3/envs/paddle/lib/python3.7/site-packages/paddle/fluid/io.py", line 40, in <module>
+    from . import reader
+  File "/home/xingli/miniconda3/envs/paddle/lib/python3.7/site-packages/paddle/fluid/reader.py", line 25, in <module>
+    from .dataloader import BatchSampler, Dataset, IterableDataset
+  File "/home/xingli/miniconda3/envs/paddle/lib/python3.7/site-packages/paddle/fluid/dataloader/__init__.py", line 17, in <module>
+    from . import dataset
+  File "/home/xingli/miniconda3/envs/paddle/lib/python3.7/site-packages/paddle/fluid/dataloader/dataset.py", line 18, in <module>
+    import paddle.dataset.common
+  File "/home/xingli/miniconda3/envs/paddle/lib/python3.7/site-packages/paddle/dataset/__init__.py", line 27, in <module>
+    import paddle.dataset.flowers
+  File "/home/xingli/miniconda3/envs/paddle/lib/python3.7/site-packages/paddle/dataset/flowers.py", line 38, in <module>
+    from paddle.dataset.image import *
+  File "/home/xingli/miniconda3/envs/paddle/lib/python3.7/site-packages/paddle/dataset/image.py", line 46, in <module>
+    out, err = import_cv2_proc.communicate()
+  File "/home/xingli/miniconda3/envs/paddle/lib/python3.7/subprocess.py", line 964, in communicate
+    stdout, stderr = self._communicate(input, endtime, timeout)
+  File "/home/xingli/miniconda3/envs/paddle/lib/python3.7/subprocess.py", line 1715, in _communicate
+    ready = selector.select(timeout)
+  File "/home/xingli/miniconda3/envs/paddle/lib/python3.7/selectors.py", line 415, in select
+    fd_event_list = self._selector.poll(timeout)
+KeyboardInterrupt
+[2021/05/13 02:37:53] root INFO: epoch: [43/500], iter: 5589, lr: 0.000982, loss: 9.627361, acc: 0.337891, norm_edit_dis: 0.638460, reader_cost: 0.00015 s, batch_cost: 1.02926 s, samples: 2304, ips: 223.84913
+[2021/05/13 02:37:54] root INFO: save model in ./output/rec_chinese_lite_v2.0/latest
+[2021/05/13 02:37:54] root INFO: Initialize indexs of datasets:['./train/LabelTrain.txt']
+[2021/05/13 02:38:11] root INFO: epoch: [44/500], iter: 5590, lr: 0.000982, loss: 9.667374, acc: 0.345703, norm_edit_dis: 0.633469, reader_cost: 1.13869 s, batch_cost: 1.46530 s, samples: 256, ips: 17.47083
+[2021/05/13 02:38:31] root INFO: epoch: [44/500], iter: 5600, lr: 0.000982, loss: 9.224367, acc: 0.359375, norm_edit_dis: 0.643181, reader_cost: 0.00320 s, batch_cost: 1.24951 s, samples: 2560, ips: 204.88033
+[2021/05/13 02:38:49] root INFO: epoch: [44/500], iter: 5610, lr: 0.000982, loss: 9.200468, acc: 0.361328, norm_edit_dis: 0.640215, reader_cost: 0.00184 s, batch_cost: 1.11701 s, samples: 2560, ips: 229.18333
+[2021/05/13 02:39:07] root INFO: epoch: [44/500], iter: 5620, lr: 0.000982, loss: 9.585192, acc: 0.355469, norm_edit_dis: 0.632103, reader_cost: 0.00203 s, batch_cost: 1.12110 s, samples: 2560, ips: 228.34795
+[2021/05/13 02:39:25] root INFO: epoch: [44/500], iter: 5630, lr: 0.000982, loss: 9.517869, acc: 0.347656, norm_edit_dis: 0.630977, reader_cost: 0.00208 s, batch_cost: 1.16533 s, samples: 2560, ips: 219.68038
+[2021/05/13 02:39:44] root INFO: epoch: [44/500], iter: 5640, lr: 0.000982, loss: 9.362877, acc: 0.347656, norm_edit_dis: 0.631595, reader_cost: 0.00192 s, batch_cost: 1.12367 s, samples: 2560, ips: 227.82398
+[2021/05/13 02:40:02] root INFO: epoch: [44/500], iter: 5650, lr: 0.000982, loss: 9.527834, acc: 0.347656, norm_edit_dis: 0.632766, reader_cost: 0.00196 s, batch_cost: 1.12515 s, samples: 2560, ips: 227.52607
+[2021/05/13 02:40:20] root INFO: epoch: [44/500], iter: 5660, lr: 0.000981, loss: 9.739085, acc: 0.347656, norm_edit_dis: 0.635691, reader_cost: 0.00202 s, batch_cost: 1.14730 s, samples: 2560, ips: 223.13206
+[2021/05/13 02:40:38] root INFO: epoch: [44/500], iter: 5670, lr: 0.000981, loss: 9.561567, acc: 0.355469, norm_edit_dis: 0.642992, reader_cost: 0.00192 s, batch_cost: 1.11902 s, samples: 2560, ips: 228.77245
+[2021/05/13 02:40:56] root INFO: epoch: [44/500], iter: 5680, lr: 0.000981, loss: 9.165452, acc: 0.357422, norm_edit_dis: 0.646994, reader_cost: 0.00191 s, batch_cost: 1.10428 s, samples: 2560, ips: 231.82610
+[2021/05/13 02:41:15] root INFO: epoch: [44/500], iter: 5690, lr: 0.000981, loss: 9.148509, acc: 0.363281, norm_edit_dis: 0.639606, reader_cost: 0.00247 s, batch_cost: 1.11572 s, samples: 2560, ips: 229.44751
+[2021/05/13 02:41:33] root INFO: epoch: [44/500], iter: 5700, lr: 0.000981, loss: 9.258383, acc: 0.363281, norm_edit_dis: 0.639139, reader_cost: 0.00082 s, batch_cost: 1.11116 s, samples: 2560, ips: 230.38974
+[2021/05/13 02:41:51] root INFO: epoch: [44/500], iter: 5710, lr: 0.000981, loss: 9.304888, acc: 0.367188, norm_edit_dis: 0.648856, reader_cost: 0.00040 s, batch_cost: 1.11173 s, samples: 2560, ips: 230.27198
+[2021/05/13 02:42:08] root INFO: epoch: [44/500], iter: 5719, lr: 0.000981, loss: 9.184790, acc: 0.363281, norm_edit_dis: 0.640000, reader_cost: 0.00019 s, batch_cost: 1.03211 s, samples: 2304, ips: 223.23256
+[2021/05/13 0

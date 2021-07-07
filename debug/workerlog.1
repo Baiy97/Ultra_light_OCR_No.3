@@ -1,0 +1,818 @@
+/home/xingli/miniconda3/envs/paddle/lib/python3.7/site-packages/paddle/fluid/layers/utils.py:26: DeprecationWarning: `np.int` is a deprecated alias for the builtin `int`. To silence this warning, use `int` by itself. Doing this will not modify any behavior and is safe. When replacing `np.int`, you may wish to use e.g. `np.int64` or `np.int32` to specify the precision. If you wish to review your current use, check the release note link for additional information.
+Deprecated in NumPy 1.20; for more details and guidance: https://numpy.org/devdocs/release/1.20.0-notes.html#deprecations
+  def convert_to_list(value, n, name, dtype=np.int):
+/home/xingli/miniconda3/envs/paddle/lib/python3.7/site-packages/skimage/morphology/_skeletonize.py:241: DeprecationWarning: `np.bool` is a deprecated alias for the builtin `bool`. To silence this warning, use `bool` by itself. Doing this will not modify any behavior and is safe. If you specifically wanted the numpy scalar type, use `np.bool_` here.
+Deprecated in NumPy 1.20; for more details and guidance: https://numpy.org/devdocs/release/1.20.0-notes.html#deprecations
+  0, 1, 1, 0, 0, 1, 0, 0, 0], dtype=np.bool)
+/home/xingli/miniconda3/envs/paddle/lib/python3.7/site-packages/skimage/morphology/_skeletonize.py:256: DeprecationWarning: `np.bool` is a deprecated alias for the builtin `bool`. To silence this warning, use `bool` by itself. Doing this will not modify any behavior and is safe. If you specifically wanted the numpy scalar type, use `np.bool_` here.
+Deprecated in NumPy 1.20; for more details and guidance: https://numpy.org/devdocs/release/1.20.0-notes.html#deprecations
+  0, 0, 0, 0, 0, 0, 0, 0, 0], dtype=np.bool)
+Traceback (most recent call last):
+  File "tools/train.py", line 124, in <module>
+    config, device, logger, vdl_writer = program.preprocess(is_train=True)
+  File "/home/xingli/research/PaddleOCR/tools/program.py", line 379, in preprocess
+    config = load_config(FLAGS.config)
+  File "/home/xingli/research/PaddleOCR/tools/program.py", line 92, in load_config
+    merge_config(yaml.load(open(file_path, 'rb'), Loader=yaml.Loader))
+FileNotFoundError: [Errno 2] No such file or directory: 'configs/rec/rec/ch_ppocr_v2.0/rec_chinese_lite_train_v2.0.yml'
+/home/xingli/miniconda3/envs/paddle/lib/python3.7/site-packages/paddle/fluid/layers/utils.py:26: DeprecationWarning: `np.int` is a deprecated alias for the builtin `int`. To silence this warning, use `int` by itself. Doing this will not modify any behavior and is safe. When replacing `np.int`, you may wish to use e.g. `np.int64` or `np.int32` to specify the precision. If you wish to review your current use, check the release note link for additional information.
+Deprecated in NumPy 1.20; for more details and guidance: https://numpy.org/devdocs/release/1.20.0-notes.html#deprecations
+  def convert_to_list(value, n, name, dtype=np.int):
+/home/xingli/miniconda3/envs/paddle/lib/python3.7/site-packages/skimage/morphology/_skeletonize.py:241: DeprecationWarning: `np.bool` is a deprecated alias for the builtin `bool`. To silence this warning, use `bool` by itself. Doing this will not modify any behavior and is safe. If you specifically wanted the numpy scalar type, use `np.bool_` here.
+Deprecated in NumPy 1.20; for more details and guidance: https://numpy.org/devdocs/release/1.20.0-notes.html#deprecations
+  0, 1, 1, 0, 0, 1, 0, 0, 0], dtype=np.bool)
+/home/xingli/miniconda3/envs/paddle/lib/python3.7/site-packages/skimage/morphology/_skeletonize.py:256: DeprecationWarning: `np.bool` is a deprecated alias for the builtin `bool`. To silence this warning, use `bool` by itself. Doing this will not modify any behavior and is safe. If you specifically wanted the numpy scalar type, use `np.bool_` here.
+Deprecated in NumPy 1.20; for more details and guidance: https://numpy.org/devdocs/release/1.20.0-notes.html#deprecations
+  0, 0, 0, 0, 0, 0, 0, 0, 0], dtype=np.bool)
+main proc 7198 exit, kill process group 7122
+/home/xingli/miniconda3/envs/paddle/lib/python3.7/site-packages/paddle/fluid/layers/utils.py:26: DeprecationWarning: `np.int` is a deprecated alias for the builtin `int`. To silence this warning, use `int` by itself. Doing this will not modify any behavior and is safe. When replacing `np.int`, you may wish to use e.g. `np.int64` or `np.int32` to specify the precision. If you wish to review your current use, check the release note link for additional information.
+Deprecated in NumPy 1.20; for more details and guidance: https://numpy.org/devdocs/release/1.20.0-notes.html#deprecations
+  def convert_to_list(value, n, name, dtype=np.int):
+/home/xingli/miniconda3/envs/paddle/lib/python3.7/site-packages/skimage/morphology/_skeletonize.py:241: DeprecationWarning: `np.bool` is a deprecated alias for the builtin `bool`. To silence this warning, use `bool` by itself. Doing this will not modify any behavior and is safe. If you specifically wanted the numpy scalar type, use `np.bool_` here.
+Deprecated in NumPy 1.20; for more details and guidance: https://numpy.org/devdocs/release/1.20.0-notes.html#deprecations
+  0, 1, 1, 0, 0, 1, 0, 0, 0], dtype=np.bool)
+/home/xingli/miniconda3/envs/paddle/lib/python3.7/site-packages/skimage/morphology/_skeletonize.py:256: DeprecationWarning: `np.bool` is a deprecated alias for the builtin `bool`. To silence this warning, use `bool` by itself. Doing this will not modify any behavior and is safe. If you specifically wanted the numpy scalar type, use `np.bool_` here.
+Deprecated in NumPy 1.20; for more details and guidance: https://numpy.org/devdocs/release/1.20.0-notes.html#deprecations
+  0, 0, 0, 0, 0, 0, 0, 0, 0], dtype=np.bool)
+I0512 23:18:14.279083  4053 nccl_context.cc:189] init nccl context nranks: 3 local rank: 1 gpu id: 1 ring id: 0
+W0512 23:18:14.656517  4053 device_context.cc:362] Please NOTE: device: 1, GPU Compute Capability: 6.1, Driver API Version: 11.0, Runtime API Version: 10.2
+W0512 23:18:14.656774  4053 dynamic_loader.cc:236] The third-party dynamic library (libcudnn.so) that Paddle depends on is not configured correctly. (error code is libcudnn.so: cannot open shared object file: No such file or directory)
+  Suggestions:
+  1. Check if the third-party dynamic library (e.g. CUDA, CUDNN) is installed correctly and its version is matched with paddlepaddle you installed.
+  2. Configure third-party dynamic library environment variables as follows:
+  - Linux: set LD_LIBRARY_PATH by `export LD_LIBRARY_PATH=...`
+  - Windows: set PATH by `set PATH=XXX;
+Traceback (most recent call last):
+  File "tools/train.py", line 125, in <module>
+    main(config, device, logger, vdl_writer)
+  File "tools/train.py", line 47, in main
+    dist.init_parallel_env()
+  File "/home/xingli/miniconda3/envs/paddle/lib/python3.7/site-packages/paddle/distributed/parallel.py", line 184, in init_parallel_env
+    parallel_helper._init_parallel_ctx()
+  File "/home/xingli/miniconda3/envs/paddle/lib/python3.7/site-packages/paddle/fluid/dygraph/parallel_helper.py", line 42, in _init_parallel_ctx
+    __parallel_ctx__clz__.init()
+RuntimeError: (PreconditionNotMet) Cannot load cudnn shared library. Cannot invoke method cudnnGetVersion.
+  [Hint: cudnn_dso_handle should not be null.] (at /paddle/paddle/fluid/platform/dynload/cudnn.cc:76)
+
+/home/xingli/miniconda3/envs/paddle/lib/python3.7/site-packages/paddle/fluid/layers/utils.py:26: DeprecationWarning: `np.int` is a deprecated alias for the builtin `int`. To silence this warning, use `int` by itself. Doing this will not modify any behavior and is safe. When replacing `np.int`, you may wish to use e.g. `np.int64` or `np.int32` to specify the precision. If you wish to review your current use, check the release note link for additional information.
+Deprecated in NumPy 1.20; for more details and guidance: https://numpy.org/devdocs/release/1.20.0-notes.html#deprecations
+  def convert_to_list(value, n, name, dtype=np.int):
+/home/xingli/miniconda3/envs/paddle/lib/python3.7/site-packages/skimage/morphology/_skeletonize.py:241: DeprecationWarning: `np.bool` is a deprecated alias for the builtin `bool`. To silence this warning, use `bool` by itself. Doing this will not modify any behavior and is safe. If you specifically wanted the numpy scalar type, use `np.bool_` here.
+Deprecated in NumPy 1.20; for more details and guidance: https://numpy.org/devdocs/release/1.20.0-notes.html#deprecations
+  0, 1, 1, 0, 0, 1, 0, 0, 0], dtype=np.bool)
+/home/xingli/miniconda3/envs/paddle/lib/python3.7/site-packages/skimage/morphology/_skeletonize.py:256: DeprecationWarning: `np.bool` is a deprecated alias for the builtin `bool`. To silence this warning, use `bool` by itself. Doing this will not modify any behavior and is safe. If you specifically wanted the numpy scalar type, use `np.bool_` here.
+Deprecated in NumPy 1.20; for more details and guidance: https://numpy.org/devdocs/release/1.20.0-notes.html#deprecations
+  0, 0, 0, 0, 0, 0, 0, 0, 0], dtype=np.bool)
+I0512 23:30:25.587926 17079 nccl_context.cc:189] init nccl context nranks: 3 local rank: 1 gpu id: 1 ring id: 0
+W0512 23:30:26.213246 17079 device_context.cc:362] Please NOTE: device: 1, GPU Compute Capability: 6.1, Driver API Version: 11.0, Runtime API Version: 10.2
+W0512 23:30:26.216326 17079 device_context.cc:372] device: 1, cuDNN Version: 7.6.
+Traceback (most recent call last):
+  File "tools/train.py", line 125, in <module>
+    main(config, device, logger, vdl_writer)
+  File "tools/train.py", line 52, in main
+    train_dataloader = build_dataloader(config, 'Train', device, logger)
+  File "/home/xingli/research/PaddleOCR/ppocr/data/__init__.py", line 65, in build_dataloader
+    dataset = eval(module_name)(config, mode, logger, seed)
+  File "/home/xingli/research/PaddleOCR/ppocr/data/simple_dataset.py", line 47, in __init__
+    self.data_lines = self.get_image_info_list(label_file_list, ratio_list)
+  File "/home/xingli/research/PaddleOCR/ppocr/data/simple_dataset.py", line 58, in get_image_info_list
+    with open(file, "rb") as f:
+FileNotFoundError: [Errno 2] No such file or directory: './train/Label.txt'
+/home/xingli/miniconda3/envs/paddle/lib/python3.7/site-packages/paddle/fluid/layers/utils.py:26: DeprecationWarning: `np.int` is a deprecated alias for the builtin `int`. To silence this warning, use `int` by itself. Doing this will not modify any behavior and is safe. When replacing `np.int`, you may wish to use e.g. `np.int64` or `np.int32` to specify the precision. If you wish to review your current use, check the release note link for additional information.
+Deprecated in NumPy 1.20; for more details and guidance: https://numpy.org/devdocs/release/1.20.0-notes.html#deprecations
+  def convert_to_list(value, n, name, dtype=np.int):
+/home/xingli/miniconda3/envs/paddle/lib/python3.7/site-packages/skimage/morphology/_skeletonize.py:241: DeprecationWarning: `np.bool` is a deprecated alias for the builtin `bool`. To silence this warning, use `bool` by itself. Doing this will not modify any behavior and is safe. If you specifically wanted the numpy scalar type, use `np.bool_` here.
+Deprecated in NumPy 1.20; for more details and guidance: https://numpy.org/devdocs/release/1.20.0-notes.html#deprecations
+  0, 1, 1, 0, 0, 1, 0, 0, 0], dtype=np.bool)
+/home/xingli/miniconda3/envs/paddle/lib/python3.7/site-packages/skimage/morphology/_skeletonize.py:256: DeprecationWarning: `np.bool` is a deprecated alias for the builtin `bool`. To silence this warning, use `bool` by itself. Doing this will not modify any behavior and is safe. If you specifically wanted the numpy scalar type, use `np.bool_` here.
+Deprecated in NumPy 1.20; for more details and guidance: https://numpy.org/devdocs/release/1.20.0-notes.html#deprecations
+  0, 0, 0, 0, 0, 0, 0, 0, 0], dtype=np.bool)
+I0512 23:31:02.592928 18163 nccl_context.cc:189] init nccl context nranks: 3 local rank: 1 gpu id: 1 ring id: 0
+W0512 23:31:03.019395 18163 device_context.cc:362] Please NOTE: device: 1, GPU Compute Capability: 6.1, Driver API Version: 11.0, Runtime API Version: 10.2
+W0512 23:31:03.022184 18163 device_context.cc:372] device: 1, cuDNN Version: 7.6.
+Traceback (most recent call last):
+  File "tools/train.py", line 125, in <module>
+    main(config, device, logger, vdl_writer)
+  File "tools/train.py", line 52, in main
+    train_dataloader = build_dataloader(config, 'Train', device, logger)
+  File "/home/xingli/research/PaddleOCR/ppocr/data/__init__.py", line 65, in build_dataloader
+    dataset = eval(module_name)(config, mode, logger, seed)
+  File "/home/xingli/research/PaddleOCR/ppocr/data/simple_dataset.py", line 47, in __init__
+    self.data_lines = self.get_image_info_list(label_file_list, ratio_list)
+  File "/home/xingli/research/PaddleOCR/ppocr/data/simple_dataset.py", line 58, in get_image_info_list
+    with open(file, "rb") as f:
+FileNotFoundError: [Errno 2] No such file or directory: './train/TrainLabel.txt'
+/home/xingli/miniconda3/envs/paddle/lib/python3.7/site-packages/paddle/fluid/layers/utils.py:26: DeprecationWarning: `np.int` is a deprecated alias for the builtin `int`. To silence this warning, use `int` by itself. Doing this will not modify any behavior and is safe. When replacing `np.int`, you may wish to use e.g. `np.int64` or `np.int32` to specify the precision. If you wish to review your current use, check the release note link for additional information.
+Deprecated in NumPy 1.20; for more details and guidance: https://numpy.org/devdocs/release/1.20.0-notes.html#deprecations
+  def convert_to_list(value, n, name, dtype=np.int):
+/home/xingli/miniconda3/envs/paddle/lib/python3.7/site-packages/skimage/morphology/_skeletonize.py:241: DeprecationWarning: `np.bool` is a deprecated alias for the builtin `bool`. To silence this warning, use `bool` by itself. Doing this will not modify any behavior and is safe. If you specifically wanted the numpy scalar type, use `np.bool_` here.
+Deprecated in NumPy 1.20; for more details and guidance: https://numpy.org/devdocs/release/1.20.0-notes.html#deprecations
+  0, 1, 1, 0, 0, 1, 0, 0, 0], dtype=np.bool)
+/home/xingli/miniconda3/envs/paddle/lib/python3.7/site-packages/skimage/morphology/_skeletonize.py:256: DeprecationWarning: `np.bool` is a deprecated alias for the builtin `bool`. To silence this warning, use `bool` by itself. Doing this will not modify any behavior and is safe. If you specifically wanted the numpy scalar type, use `np.bool_` here.
+Deprecated in NumPy 1.20; for more details and guidance: https://numpy.org/devdocs/release/1.20.0-notes.html#deprecations
+  0, 0, 0, 0, 0, 0, 0, 0, 0], dtype=np.bool)
+I0512 23:32:04.406543 19440 nccl_context.cc:189] init nccl context nranks: 3 local rank: 1 gpu id: 1 ring id: 0
+W0512 23:32:04.943742 19440 device_context.cc:362] Please NOTE: device: 1, GPU Compute Capability: 6.1, Driver API Version: 11.0, Runtime API Version: 10.2
+W0512 23:32:04.946935 19440 device_context.cc:372] device: 1, cuDNN Version: 7.6.
+main proc 19723 exit, kill process group 19364
+/home/xingli/miniconda3/envs/paddle/lib/python3.7/site-packages/paddle/fluid/layers/utils.py:26: DeprecationWarning: `np.int` is a deprecated alias for the builtin `int`. To silence this warning, use `int` by itself. Doing this will not modify any behavior and is safe. When replacing `np.int`, you may wish to use e.g. `np.int64` or `np.int32` to specify the precision. If you wish to review your current use, check the release note link for additional information.
+Deprecated in NumPy 1.20; for more details and guidance: https://numpy.org/devdocs/release/1.20.0-notes.html#deprecations
+  def convert_to_list(value, n, name, dtype=np.int):
+/home/xingli/miniconda3/envs/paddle/lib/python3.7/site-packages/skimage/morphology/_skeletonize.py:241: DeprecationWarning: `np.bool` is a deprecated alias for the builtin `bool`. To silence this warning, use `bool` by itself. Doing this will not modify any behavior and is safe. If you specifically wanted the numpy scalar type, use `np.bool_` here.
+Deprecated in NumPy 1.20; for more details and guidance: https://numpy.org/devdocs/release/1.20.0-notes.html#deprecations
+  0, 1, 1, 0, 0, 1, 0, 0, 0], dtype=np.bool)
+/home/xingli/miniconda3/envs/paddle/lib/python3.7/site-packages/skimage/morphology/_skeletonize.py:256: DeprecationWarning: `np.bool` is a deprecated alias for the builtin `bool`. To silence this warning, use `bool` by itself. Doing this will not modify any behavior and is safe. If you specifically wanted the numpy scalar type, use `np.bool_` here.
+Deprecated in NumPy 1.20; for more details and guidance: https://numpy.org/devdocs/release/1.20.0-notes.html#deprecations
+  0, 0, 0, 0, 0, 0, 0, 0, 0], dtype=np.bool)
+I0512 23:34:49.969662 24692 nccl_context.cc:189] init nccl context nranks: 3 local rank: 1 gpu id: 1 ring id: 0
+W0512 23:34:50.379088 24692 device_context.cc:362] Please NOTE: device: 1, GPU Compute Capability: 6.1, Driver API Version: 11.0, Runtime API Version: 10.2
+W0512 23:34:50.382691 24692 device_context.cc:372] device: 1, cuDNN Version: 7.6.
+/home/xingli/miniconda3/envs/paddle/lib/python3.7/site-packages/paddle/fluid/layers/utils.py:26: DeprecationWarning: `np.int` is a deprecated alias for the builtin `int`. To silence this warning, use `int` by itself. Doing this will not modify any behavior and is safe. When replacing `np.int`, you may wish to use e.g. `np.int64` or `np.int32` to specify the precision. If you wish to review your current use, check the release note link for additional information.
+Deprecated in NumPy 1.20; for more details and guidance: https://numpy.org/devdocs/release/1.20.0-notes.html#deprecations
+  def convert_to_list(value, n, name, dtype=np.int):
+Traceback (most recent call last):
+  File "tools/train.py", line 27, in <module>
+    import paddle
+  File "/home/xingli/miniconda3/envs/paddle/lib/python3.7/site-packages/paddle/__init__.py", line 29, in <module>
+    from .fluid import monkey_patch_variable
+  File "/home/xingli/miniconda3/envs/paddle/lib/python3.7/site-packages/paddle/fluid/__init__.py", line 51, in <module>
+    from . import io
+  File "/home/xingli/miniconda3/envs/paddle/lib/python3.7/site-packages/paddle/fluid/io.py", line 40, in <module>
+    from . import reader
+  File "/home/xingli/miniconda3/envs/paddle/lib/python3.7/site-packages/paddle/fluid/reader.py", line 25, in <module>
+    from .dataloader import BatchSampler, Dataset, IterableDataset
+  File "/home/xingli/miniconda3/envs/paddle/lib/python3.7/site-packages/paddle/fluid/dataloader/__init__.py", line 17, in <module>
+    from . import dataset
+  File "/home/xingli/miniconda3/envs/paddle/lib/python3.7/site-packages/paddle/fluid/dataloader/dataset.py", line 18, in <module>
+    import paddle.dataset.common
+  File "/home/xingli/miniconda3/envs/paddle/lib/python3.7/site-packages/paddle/dataset/__init__.py", line 27, in <module>
+    import paddle.dataset.flowers
+  File "/home/xingli/miniconda3/envs/paddle/lib/python3.7/site-packages/paddle/dataset/flowers.py", line 38, in <module>
+    from paddle.dataset.image import *
+  File "/home/xingli/miniconda3/envs/paddle/lib/python3.7/site-packages/paddle/dataset/image.py", line 46, in <module>
+    out, err = import_cv2_proc.communicate()
+  File "/home/xingli/miniconda3/envs/paddle/lib/python3.7/subprocess.py", line 964, in communicate
+    stdout, stderr = self._communicate(input, endtime, timeout)
+  File "/home/xingli/miniconda3/envs/paddle/lib/python3.7/subprocess.py", line 1715, in _communicate
+    ready = selector.select(timeout)
+  File "/home/xingli/miniconda3/envs/paddle/lib/python3.7/selectors.py", line 415, in select
+    fd_event_list = self._selector.poll(timeout)
+KeyboardInterrupt
+/home/xingli/miniconda3/envs/paddle/lib/python3.7/site-packages/paddle/fluid/layers/utils.py:26: DeprecationWarning: `np.int` is a deprecated alias for the builtin `int`. To silence this warning, use `int` by itself. Doing this will not modify any behavior and is safe. When replacing `np.int`, you may wish to use e.g. `np.int64` or `np.int32` to specify the precision. If you wish to review your current use, check the release note link for additional information.
+Deprecated in NumPy 1.20; for more details and guidance: https://numpy.org/devdocs/release/1.20.0-notes.html#deprecations
+  def convert_to_list(value, n, name, dtype=np.int):
+/home/xingli/miniconda3/envs/paddle/lib/python3.7/site-packages/skimage/morphology/_skeletonize.py:241: DeprecationWarning: `np.bool` is a deprecated alias for the builtin `bool`. To silence this warning, use `bool` by itself. Doing this will not modify any behavior and is safe. If you specifically wanted the numpy scalar type, use `np.bool_` here.
+Deprecated in NumPy 1.20; for more details and guidance: https://numpy.org/devdocs/release/1.20.0-notes.html#deprecations
+  0, 1, 1, 0, 0, 1, 0, 0, 0], dtype=np.bool)
+/home/xingli/miniconda3/envs/paddle/lib/python3.7/site-packages/skimage/morphology/_skeletonize.py:256: DeprecationWarning: `np.bool` is a deprecated alias for the builtin `bool`. To silence this warning, use `bool` by itself. Doing this will not modify any behavior and is safe. If you specifically wanted the numpy scalar type, use `np.bool_` here.
+Deprecated in NumPy 1.20; for more details and guidance: https://numpy.org/devdocs/release/1.20.0-notes.html#deprecations
+  0, 0, 0, 0, 0, 0, 0, 0, 0], dtype=np.bool)
+I0514 12:15:48.349346  2345 nccl_context.cc:189] init nccl context nranks: 3 local rank: 1 gpu id: 1 ring id: 0
+W0514 12:15:48.789467  2345 device_context.cc:362] Please NOTE: device: 1, GPU Compute Capability: 6.1, Driver API Version: 11.0, Runtime API Version: 10.2
+W0514 12:15:48.793830  2345 device_context.cc:372] device: 1, cuDNN Version: 7.6.
+main proc 2580 exit, kill process group 2252
+main proc 2547 exit, kill process group 2252
+/home/xingli/miniconda3/envs/paddle/lib/python3.7/site-packages/paddle/fluid/layers/utils.py:26: DeprecationWarning: `np.int` is a deprecated alias for the builtin `int`. To silence this warning, use `int` by itself. Doing this will not modify any behavior and is safe. When replacing `np.int`, you may wish to use e.g. `np.int64` or `np.int32` to specify the precision. If you wish to review your current use, check the release note link for additional information.
+Deprecated in NumPy 1.20; for more details and guidance: https://numpy.org/devdocs/release/1.20.0-notes.html#deprecations
+  def convert_to_list(value, n, name, dtype=np.int):
+/home/xingli/miniconda3/envs/paddle/lib/python3.7/site-packages/skimage/morphology/_skeletonize.py:241: DeprecationWarning: `np.bool` is a deprecated alias for the builtin `bool`. To silence this warning, use `bool` by itself. Doing this will not modify any behavior and is safe. If you specifically wanted the numpy scalar type, use `np.bool_` here.
+Deprecated in NumPy 1.20; for more details and guidance: https://numpy.org/devdocs/release/1.20.0-notes.html#deprecations
+  0, 1, 1, 0, 0, 1, 0, 0, 0], dtype=np.bool)
+/home/xingli/miniconda3/envs/paddle/lib/python3.7/site-packages/skimage/morphology/_skeletonize.py:256: DeprecationWarning: `np.bool` is a deprecated alias for the builtin `bool`. To silence this warning, use `bool` by itself. Doing this will not modify any behavior and is safe. If you specifically wanted the numpy scalar type, use `np.bool_` here.
+Deprecated in NumPy 1.20; for more details and guidance: https://numpy.org/devdocs/release/1.20.0-notes.html#deprecations
+  0, 0, 0, 0, 0, 0, 0, 0, 0], dtype=np.bool)
+I0514 12:17:15.283813  5064 nccl_context.cc:189] init nccl context nranks: 3 local rank: 1 gpu id: 1 ring id: 0
+W0514 12:17:15.834275  5064 device_context.cc:362] Please NOTE: device: 1, GPU Compute Capability: 6.1, Driver API Version: 11.0, Runtime API Version: 10.2
+W0514 12:17:15.837985  5064 device_context.cc:372] device: 1, cuDNN Version: 7.6.
+/home/zlxu/anaconda3/envs/paddleOCR/lib/python3.7/site-packages/paddle/fluid/layers/utils.py:26: DeprecationWarning: `np.int` is a deprecated alias for the builtin `int`. To silence this warning, use `int` by itself. Doing this will not modify any behavior and is safe. When replacing `np.int`, you may wish to use e.g. `np.int64` or `np.int32` to specify the precision. If you wish to review your current use, check the release note link for additional information.
+Deprecated in NumPy 1.20; for more details and guidance: https://numpy.org/devdocs/release/1.20.0-notes.html#deprecations
+  def convert_to_list(value, n, name, dtype=np.int):
+/home/zlxu/anaconda3/envs/paddleOCR/lib/python3.7/site-packages/skimage/morphology/_skeletonize.py:241: DeprecationWarning: `np.bool` is a deprecated alias for the builtin `bool`. To silence this warning, use `bool` by itself. Doing this will not modify any behavior and is safe. If you specifically wanted the numpy scalar type, use `np.bool_` here.
+Deprecated in NumPy 1.20; for more details and guidance: https://numpy.org/devdocs/release/1.20.0-notes.html#deprecations
+  0, 1, 1, 0, 0, 1, 0, 0, 0], dtype=np.bool)
+/home/zlxu/anaconda3/envs/paddleOCR/lib/python3.7/site-packages/skimage/morphology/_skeletonize.py:256: DeprecationWarning: `np.bool` is a deprecated alias for the builtin `bool`. To silence this warning, use `bool` by itself. Doing this will not modify any behavior and is safe. If you specifically wanted the numpy scalar type, use `np.bool_` here.
+Deprecated in NumPy 1.20; for more details and guidance: https://numpy.org/devdocs/release/1.20.0-notes.html#deprecations
+  0, 0, 0, 0, 0, 0, 0, 0, 0], dtype=np.bool)
+main proc 31976 exit, kill process group 31899
+/home/zlxu/anaconda3/envs/paddleOCR/lib/python3.7/site-packages/paddle/fluid/layers/utils.py:26: DeprecationWarning: `np.int` is a deprecated alias for the builtin `int`. To silence this warning, use `int` by itself. Doing this will not modify any behavior and is safe. When replacing `np.int`, you may wish to use e.g. `np.int64` or `np.int32` to specify the precision. If you wish to review your current use, check the release note link for additional information.
+Deprecated in NumPy 1.20; for more details and guidance: https://numpy.org/devdocs/release/1.20.0-notes.html#deprecations
+  def convert_to_list(value, n, name, dtype=np.int):
+/home/zlxu/anaconda3/envs/paddleOCR/lib/python3.7/site-packages/skimage/morphology/_skeletonize.py:241: DeprecationWarning: `np.bool` is a deprecated alias for the builtin `bool`. To silence this warning, use `bool` by itself. Doing this will not modify any behavior and is safe. If you specifically wanted the numpy scalar type, use `np.bool_` here.
+Deprecated in NumPy 1.20; for more details and guidance: https://numpy.org/devdocs/release/1.20.0-notes.html#deprecations
+  0, 1, 1, 0, 0, 1, 0, 0, 0], dtype=np.bool)
+/home/zlxu/anaconda3/envs/paddleOCR/lib/python3.7/site-packages/skimage/morphology/_skeletonize.py:256: DeprecationWarning: `np.bool` is a deprecated alias for the builtin `bool`. To silence this warning, use `bool` by itself. Doing this will not modify any behavior and is safe. If you specifically wanted the numpy scalar type, use `np.bool_` here.
+Deprecated in NumPy 1.20; for more details and guidance: https://numpy.org/devdocs/release/1.20.0-notes.html#deprecations
+  0, 0, 0, 0, 0, 0, 0, 0, 0], dtype=np.bool)
+main proc 23526 exit, kill process group 23437
+/home/zlxu/anaconda3/envs/paddleOCR/lib/python3.7/site-packages/paddle/fluid/layers/utils.py:26: DeprecationWarning: `np.int` is a deprecated alias for the builtin `int`. To silence this warning, use `int` by itself. Doing this will not modify any behavior and is safe. When replacing `np.int`, you may wish to use e.g. `np.int64` or `np.int32` to specify the precision. If you wish to review your current use, check the release note link for additional information.
+Deprecated in NumPy 1.20; for more details and guidance: https://numpy.org/devdocs/release/1.20.0-notes.html#deprecations
+  def convert_to_list(value, n, name, dtype=np.int):
+/home/zlxu/anaconda3/envs/paddleOCR/lib/python3.7/site-packages/skimage/morphology/_skeletonize.py:241: DeprecationWarning: `np.bool` is a deprecated alias for the builtin `bool`. To silence this warning, use `bool` by itself. Doing this will not modify any behavior and is safe. If you specifically wanted the numpy scalar type, use `np.bool_` here.
+Deprecated in NumPy 1.20; for more details and guidance: https://numpy.org/devdocs/release/1.20.0-notes.html#deprecations
+  0, 1, 1, 0, 0, 1, 0, 0, 0], dtype=np.bool)
+/home/zlxu/anaconda3/envs/paddleOCR/lib/python3.7/site-packages/skimage/morphology/_skeletonize.py:256: DeprecationWarning: `np.bool` is a deprecated alias for the builtin `bool`. To silence this warning, use `bool` by itself. Doing this will not modify any behavior and is safe. If you specifically wanted the numpy scalar type, use `np.bool_` here.
+Deprecated in NumPy 1.20; for more details and guidance: https://numpy.org/devdocs/release/1.20.0-notes.html#deprecations
+  0, 0, 0, 0, 0, 0, 0, 0, 0], dtype=np.bool)
+main proc 24361 exit, kill process group 24278
+/home/zlxu/anaconda3/envs/paddleOCR/lib/python3.7/site-packages/paddle/fluid/layers/utils.py:26: DeprecationWarning: `np.int` is a deprecated alias for the builtin `int`. To silence this warning, use `int` by itself. Doing this will not modify any behavior and is safe. When replacing `np.int`, you may wish to use e.g. `np.int64` or `np.int32` to specify the precision. If you wish to review your current use, check the release note link for additional information.
+Deprecated in NumPy 1.20; for more details and guidance: https://numpy.org/devdocs/release/1.20.0-notes.html#deprecations
+  def convert_to_list(value, n, name, dtype=np.int):
+/home/zlxu/anaconda3/envs/paddleOCR/lib/python3.7/site-packages/skimage/morphology/_skeletonize.py:241: DeprecationWarning: `np.bool` is a deprecated alias for the builtin `bool`. To silence this warning, use `bool` by itself. Doing this will not modify any behavior and is safe. If you specifically wanted the numpy scalar type, use `np.bool_` here.
+Deprecated in NumPy 1.20; for more details and guidance: https://numpy.org/devdocs/release/1.20.0-notes.html#deprecations
+  0, 1, 1, 0, 0, 1, 0, 0, 0], dtype=np.bool)
+/home/zlxu/anaconda3/envs/paddleOCR/lib/python3.7/site-packages/skimage/morphology/_skeletonize.py:256: DeprecationWarning: `np.bool` is a deprecated alias for the builtin `bool`. To silence this warning, use `bool` by itself. Doing this will not modify any behavior and is safe. If you specifically wanted the numpy scalar type, use `np.bool_` here.
+Deprecated in NumPy 1.20; for more details and guidance: https://numpy.org/devdocs/release/1.20.0-notes.html#deprecations
+  0, 0, 0, 0, 0, 0, 0, 0, 0], dtype=np.bool)
+I0517 10:59:11.190526 26483 nccl_context.cc:189] init nccl context nranks: 3 local rank: 1 gpu id: 1 ring id: 0
+W0517 10:59:11.705356 26483 device_context.cc:362] Please NOTE: device: 1, GPU Compute Capability: 6.1, Driver API Version: 11.0, Runtime API Version: 10.2
+W0517 10:59:11.710378 26483 device_context.cc:372] device: 1, cuDNN Version: 7.6.
+main proc 30081 exit, kill process group 26393main proc 30088 exit, kill process group 26393/home/zlxu/anaconda3/envs/paddleOCR/lib/python3.7/site-packages/paddle/fluid/layers/utils.py:26: DeprecationWarning: `np.int` is a deprecated alias for the builtin `int`. To silence this warning, use `int` by itself. Doing this will not modify any behavior and is safe. When replacing `np.int`, you may wish to use e.g. `np.int64` or `np.int32` to specify the precision. If you wish to review your current use, check the release note link for additional information.
+Deprecated in NumPy 1.20; for more details and guidance: https://numpy.org/devdocs/release/1.20.0-notes.html#deprecations
+  def convert_to_list(value, n, name, dtype=np.int):
+/home/zlxu/anaconda3/envs/paddleOCR/lib/python3.7/site-packages/skimage/morphology/_skeletonize.py:241: DeprecationWarning: `np.bool` is a deprecated alias for the builtin `bool`. To silence this warning, use `bool` by itself. Doing this will not modify any behavior and is safe. If you specifically wanted the numpy scalar type, use `np.bool_` here.
+Deprecated in NumPy 1.20; for more details and guidance: https://numpy.org/devdocs/release/1.20.0-notes.html#deprecations
+  0, 1, 1, 0, 0, 1, 0, 0, 0], dtype=np.bool)
+/home/zlxu/anaconda3/envs/paddleOCR/lib/python3.7/site-packages/skimage/morphology/_skeletonize.py:256: DeprecationWarning: `np.bool` is a deprecated alias for the builtin `bool`. To silence this warning, use `bool` by itself. Doing this will not modify any behavior and is safe. If you specifically wanted the numpy scalar type, use `np.bool_` here.
+Deprecated in NumPy 1.20; for more details and guidance: https://numpy.org/devdocs/release/1.20.0-notes.html#deprecations
+  0, 0, 0, 0, 0, 0, 0, 0, 0], dtype=np.bool)
+I0517 11:06:06.014415 31989 nccl_context.cc:189] init nccl context nranks: 3 local rank: 1 gpu id: 1 ring id: 0
+W0517 11:06:06.573050 31989 device_context.cc:362] Please NOTE: device: 1, GPU Compute Capability: 6.1, Driver API Version: 11.0, Runtime API Version: 10.2
+W0517 11:06:06.578336 31989 device_context.cc:372] device: 1, cuDNN Version: 7.6.
+/home/zlxu/anaconda3/envs/paddleOCR/lib/python3.7/site-packages/paddle/fluid/layers/utils.py:26: DeprecationWarning: `np.int` is a deprecated alias for the builtin `int`. To silence this warning, use `int` by itself. Doing this will not modify any behavior and is safe. When replacing `np.int`, you may wish to use e.g. `np.int64` or `np.int32` to specify the precision. If you wish to review your current use, check the release note link for additional information.
+Deprecated in NumPy 1.20; for more details and guidance: https://numpy.org/devdocs/release/1.20.0-notes.html#deprecations
+  def convert_to_list(value, n, name, dtype=np.int):
+/home/zlxu/anaconda3/envs/paddleOCR/lib/python3.7/site-packages/skimage/morphology/_skeletonize.py:241: DeprecationWarning: `np.bool` is a deprecated alias for the builtin `bool`. To silence this warning, use `bool` by itself. Doing this will not modify any behavior and is safe. If you specifically wanted the numpy scalar type, use `np.bool_` here.
+Deprecated in NumPy 1.20; for more details and guidance: https://numpy.org/devdocs/release/1.20.0-notes.html#deprecations
+  0, 1, 1, 0, 0, 1, 0, 0, 0], dtype=np.bool)
+/home/zlxu/anaconda3/envs/paddleOCR/lib/python3.7/site-packages/skimage/morphology/_skeletonize.py:256: DeprecationWarning: `np.bool` is a deprecated alias for the builtin `bool`. To silence this warning, use `bool` by itself. Doing this will not modify any behavior and is safe. If you specifically wanted the numpy scalar type, use `np.bool_` here.
+Deprecated in NumPy 1.20; for more details and guidance: https://numpy.org/devdocs/release/1.20.0-notes.html#deprecations
+  0, 0, 0, 0, 0, 0, 0, 0, 0], dtype=np.bool)
+I0517 15:36:16.317066 20876 nccl_context.cc:189] init nccl context nranks: 3 local rank: 1 gpu id: 1 ring id: 0
+W0517 15:36:16.793251 20876 device_context.cc:362] Please NOTE: device: 1, GPU Compute Capability: 6.1, Driver API Version: 11.0, Runtime API Version: 10.2
+W0517 15:36:16.797394 20876 device_context.cc:372] device: 1, cuDNN Version: 7.6.
+main proc 21271 exit, kill process group 20804
+/home/zlxu/anaconda3/envs/paddleOCR/lib/python3.7/site-packages/paddle/fluid/layers/utils.py:26: DeprecationWarning: `np.int` is a deprecated alias for the builtin `int`. To silence this warning, use `int` by itself. Doing this will not modify any behavior and is safe. When replacing `np.int`, you may wish to use e.g. `np.int64` or `np.int32` to specify the precision. If you wish to review your current use, check the release note link for additional information.
+Deprecated in NumPy 1.20; for more details and guidance: https://numpy.org/devdocs/release/1.20.0-notes.html#deprecations
+  def convert_to_list(value, n, name, dtype=np.int):
+/home/zlxu/anaconda3/envs/paddleOCR/lib/python3.7/site-packages/skimage/morphology/_skeletonize.py:241: DeprecationWarning: `np.bool` is a deprecated alias for the builtin `bool`. To silence this warning, use `bool` by itself. Doing this will not modify any behavior and is safe. If you specifically wanted the numpy scalar type, use `np.bool_` here.
+Deprecated in NumPy 1.20; for more details and guidance: https://numpy.org/devdocs/release/1.20.0-notes.html#deprecations
+  0, 1, 1, 0, 0, 1, 0, 0, 0], dtype=np.bool)
+/home/zlxu/anaconda3/envs/paddleOCR/lib/python3.7/site-packages/skimage/morphology/_skeletonize.py:256: DeprecationWarning: `np.bool` is a deprecated alias for the builtin `bool`. To silence this warning, use `bool` by itself. Doing this will not modify any behavior and is safe. If you specifically wanted the numpy scalar type, use `np.bool_` here.
+Deprecated in NumPy 1.20; for more details and guidance: https://numpy.org/devdocs/release/1.20.0-notes.html#deprecations
+  0, 0, 0, 0, 0, 0, 0, 0, 0], dtype=np.bool)
+I0517 15:37:30.741003 22247 nccl_context.cc:189] init nccl context nranks: 3 local rank: 1 gpu id: 1 ring id: 0
+W0517 15:37:31.197311 22247 device_context.cc:362] Please NOTE: device: 1, GPU Compute Capability: 6.1, Driver API Version: 11.0, Runtime API Version: 10.2
+W0517 15:37:31.203114 22247 device_context.cc:372] device: 1, cuDNN Version: 7.6.
+/home/zlxu/anaconda3/envs/paddleOCR/lib/python3.7/site-packages/paddle/fluid/layers/utils.py:26: DeprecationWarning: `np.int` is a deprecated alias for the builtin `int`. To silence this warning, use `int` by itself. Doing this will not modify any behavior and is safe. When replacing `np.int`, you may wish to use e.g. `np.int64` or `np.int32` to specify the precision. If you wish to review your current use, check the release note link for additional information.
+Deprecated in NumPy 1.20; for more details and guidance: https://numpy.org/devdocs/release/1.20.0-notes.html#deprecations
+  def convert_to_list(value, n, name, dtype=np.int):
+/home/zlxu/anaconda3/envs/paddleOCR/lib/python3.7/site-packages/skimage/morphology/_skeletonize.py:241: DeprecationWarning: `np.bool` is a deprecated alias for the builtin `bool`. To silence this warning, use `bool` by itself. Doing this will not modify any behavior and is safe. If you specifically wanted the numpy scalar type, use `np.bool_` here.
+Deprecated in NumPy 1.20; for more details and guidance: https://numpy.org/devdocs/release/1.20.0-notes.html#deprecations
+  0, 1, 1, 0, 0, 1, 0, 0, 0], dtype=np.bool)
+/home/zlxu/anaconda3/envs/paddleOCR/lib/python3.7/site-packages/skimage/morphology/_skeletonize.py:256: DeprecationWarning: `np.bool` is a deprecated alias for the builtin `bool`. To silence this warning, use `bool` by itself. Doing this will not modify any behavior and is safe. If you specifically wanted the numpy scalar type, use `np.bool_` here.
+Deprecated in NumPy 1.20; for more details and guidance: https://numpy.org/devdocs/release/1.20.0-notes.html#deprecations
+  0, 0, 0, 0, 0, 0, 0, 0, 0], dtype=np.bool)
+I0606 00:01:15.743901 14765 nccl_context.cc:189] init nccl context nranks: 2 local rank: 1 gpu id: 1 ring id: 0
+W0606 00:01:16.419067 14765 device_context.cc:362] Please NOTE: device: 1, GPU Compute Capability: 6.1, Driver API Version: 11.0, Runtime API Version: 10.2
+W0606 00:01:16.424203 14765 device_context.cc:372] device: 1, cuDNN Version: 7.6.
+main proc 17496 exit, kill process group 14701main proc 17500 exit, kill process group 14701main proc 17495 exit, kill process group 14701main proc 17493 exit, kill process group 14701main proc 17499 exit, kill process group 14701
+
+
+
+
+/home/zlxu/anaconda3/envs/paddleOCR/lib/python3.7/site-packages/paddle/fluid/layers/utils.py:26: DeprecationWarning: `np.int` is a deprecated alias for the builtin `int`. To silence this warning, use `int` by itself. Doing this will not modify any behavior and is safe. When replacing `np.int`, you may wish to use e.g. `np.int64` or `np.int32` to specify the precision. If you wish to review your current use, check the release note link for additional information.
+Deprecated in NumPy 1.20; for more details and guidance: https://numpy.org/devdocs/release/1.20.0-notes.html#deprecations
+  def convert_to_list(value, n, name, dtype=np.int):
+/home/zlxu/anaconda3/envs/paddleOCR/lib/python3.7/site-packages/skimage/morphology/_skeletonize.py:241: DeprecationWarning: `np.bool` is a deprecated alias for the builtin `bool`. To silence this warning, use `bool` by itself. Doing this will not modify any behavior and is safe. If you specifically wanted the numpy scalar type, use `np.bool_` here.
+Deprecated in NumPy 1.20; for more details and guidance: https://numpy.org/devdocs/release/1.20.0-notes.html#deprecations
+  0, 1, 1, 0, 0, 1, 0, 0, 0], dtype=np.bool)
+/home/zlxu/anaconda3/envs/paddleOCR/lib/python3.7/site-packages/skimage/morphology/_skeletonize.py:256: DeprecationWarning: `np.bool` is a deprecated alias for the builtin `bool`. To silence this warning, use `bool` by itself. Doing this will not modify any behavior and is safe. If you specifically wanted the numpy scalar type, use `np.bool_` here.
+Deprecated in NumPy 1.20; for more details and guidance: https://numpy.org/devdocs/release/1.20.0-notes.html#deprecations
+  0, 0, 0, 0, 0, 0, 0, 0, 0], dtype=np.bool)
+I0606 00:18:29.478893 18724 nccl_context.cc:189] init nccl context nranks: 2 local rank: 1 gpu id: 1 ring id: 0
+W0606 00:18:30.048998 18724 device_context.cc:362] Please NOTE: device: 1, GPU Compute Capability: 6.1, Driver API Version: 11.0, Runtime API Version: 10.2
+W0606 00:18:30.054370 18724 device_context.cc:372] device: 1, cuDNN Version: 7.6.
+main proc 18807 exit, kill process group 18665main proc 18995 exit, kill process group 18665main proc 18886 exit, kill process group 18665main proc 19077 exit, kill process group 18665main proc 19076 exit, kill process group 18665main proc 19073 exit, kill process group 18665
+
+main proc 18805 exit, kill process group 18665
+main proc 18794 exit, kill process group 18665
+
+
+main proc 19075 exit, kill process group 18665
+
+
+/home/zlxu/anaconda3/envs/paddleOCR/lib/python3.7/site-packages/paddle/fluid/layers/utils.py:26: DeprecationWarning: `np.int` is a deprecated alias for the builtin `int`. To silence this warning, use `int` by itself. Doing this will not modify any behavior and is safe. When replacing `np.int`, you may wish to use e.g. `np.int64` or `np.int32` to specify the precision. If you wish to review your current use, check the release note link for additional information.
+Deprecated in NumPy 1.20; for more details and guidance: https://numpy.org/devdocs/release/1.20.0-notes.html#deprecations
+  def convert_to_list(value, n, name, dtype=np.int):
+/home/zlxu/anaconda3/envs/paddleOCR/lib/python3.7/site-packages/skimage/morphology/_skeletonize.py:241: DeprecationWarning: `np.bool` is a deprecated alias for the builtin `bool`. To silence this warning, use `bool` by itself. Doing this will not modify any behavior and is safe. If you specifically wanted the numpy scalar type, use `np.bool_` here.
+Deprecated in NumPy 1.20; for more details and guidance: https://numpy.org/devdocs/release/1.20.0-notes.html#deprecations
+  0, 1, 1, 0, 0, 1, 0, 0, 0], dtype=np.bool)
+/home/zlxu/anaconda3/envs/paddleOCR/lib/python3.7/site-packages/skimage/morphology/_skeletonize.py:256: DeprecationWarning: `np.bool` is a deprecated alias for the builtin `bool`. To silence this warning, use `bool` by itself. Doing this will not modify any behavior and is safe. If you specifically wanted the numpy scalar type, use `np.bool_` here.
+Deprecated in NumPy 1.20; for more details and guidance: https://numpy.org/devdocs/release/1.20.0-notes.html#deprecations
+  0, 0, 0, 0, 0, 0, 0, 0, 0], dtype=np.bool)
+I0606 00:19:08.193998 19481 nccl_context.cc:189] init nccl context nranks: 3 local rank: 1 gpu id: 1 ring id: 0
+W0606 00:19:11.668190 19481 device_context.cc:362] Please NOTE: device: 1, GPU Compute Capability: 6.1, Driver API Version: 11.0, Runtime API Version: 10.2
+W0606 00:19:11.673338 19481 device_context.cc:372] device: 1, cuDNN Version: 7.6.
+/home/slcheng/anaconda3/envs/paddleocr/lib/python3.7/site-packages/skimage/morphology/_skeletonize.py:241: DeprecationWarning: `np.bool` is a deprecated alias for the builtin `bool`. To silence this warning, use `bool` by itself. Doing this will not modify any behavior and is safe. If you specifically wanted the numpy scalar type, use `np.bool_` here.
+Deprecated in NumPy 1.20; for more details and guidance: https://numpy.org/devdocs/release/1.20.0-notes.html#deprecations
+  0, 1, 1, 0, 0, 1, 0, 0, 0], dtype=np.bool)
+/home/slcheng/anaconda3/envs/paddleocr/lib/python3.7/site-packages/skimage/morphology/_skeletonize.py:256: DeprecationWarning: `np.bool` is a deprecated alias for the builtin `bool`. To silence this warning, use `bool` by itself. Doing this will not modify any behavior and is safe. If you specifically wanted the numpy scalar type, use `np.bool_` here.
+Deprecated in NumPy 1.20; for more details and guidance: https://numpy.org/devdocs/release/1.20.0-notes.html#deprecations
+  0, 0, 0, 0, 0, 0, 0, 0, 0], dtype=np.bool)
+I0615 22:57:19.779592 31141 gen_comm_id_helper.cc:181] Server listening on: 127.0.0.1:58006 successful.
+I0615 22:57:20.079969 31141 nccl_context.cc:74] init nccl context nranks: 2 local rank: 1 gpu id: 1 ring id: 0
+W0615 22:57:20.439425 31141 device_context.cc:404] Please NOTE: device: 1, GPU Compute Capability: 7.5, Driver API Version: 11.0, Runtime API Version: 10.2
+W0615 22:57:20.443625 31141 device_context.cc:422] device: 1, cuDNN Version: 7.6.
+Traceback (most recent call last):
+  File "tools/train.py", line 125, in <module>
+    main(config, device, logger, vdl_writer)
+  File "tools/train.py", line 93, in main
+    pre_best_model_dict = init_model(config, model, logger, optimizer)
+  File "/home/slcheng/light_OCR/PaddleOCR/ppocr/utils/save_load.py", line 89, in init_model
+    "Given dir {}.pdparams not exist.".format(checkpoints)
+AssertionError: Given dir ./output_mobileNet_tea/rec_owndict/latest.pdparams not exist.
+/home/slcheng/anaconda3/envs/paddleocr/lib/python3.7/site-packages/skimage/morphology/_skeletonize.py:241: DeprecationWarning: `np.bool` is a deprecated alias for the builtin `bool`. To silence this warning, use `bool` by itself. Doing this will not modify any behavior and is safe. If you specifically wanted the numpy scalar type, use `np.bool_` here.
+Deprecated in NumPy 1.20; for more details and guidance: https://numpy.org/devdocs/release/1.20.0-notes.html#deprecations
+  0, 1, 1, 0, 0, 1, 0, 0, 0], dtype=np.bool)
+/home/slcheng/anaconda3/envs/paddleocr/lib/python3.7/site-packages/skimage/morphology/_skeletonize.py:256: DeprecationWarning: `np.bool` is a deprecated alias for the builtin `bool`. To silence this warning, use `bool` by itself. Doing this will not modify any behavior and is safe. If you specifically wanted the numpy scalar type, use `np.bool_` here.
+Deprecated in NumPy 1.20; for more details and guidance: https://numpy.org/devdocs/release/1.20.0-notes.html#deprecations
+  0, 0, 0, 0, 0, 0, 0, 0, 0], dtype=np.bool)
+I0615 22:58:11.029732 31943 gen_comm_id_helper.cc:181] Server listening on: 127.0.0.1:45595 successful.
+I0615 22:58:11.517995 31943 nccl_context.cc:74] init nccl context nranks: 2 local rank: 1 gpu id: 1 ring id: 0
+W0615 22:58:11.948673 31943 device_context.cc:404] Please NOTE: device: 1, GPU Compute Capability: 7.5, Driver API Version: 11.0, Runtime API Version: 10.2
+W0615 22:58:11.954277 31943 device_context.cc:422] device: 1, cuDNN Version: 7.6.
+main proc 18372 exit, kill process group 31872/home/slcheng/anaconda3/envs/paddleocr/lib/python3.7/site-packages/skimage/morphology/_skeletonize.py:241: DeprecationWarning: `np.bool` is a deprecated alias for the builtin `bool`. To silence this warning, use `bool` by itself. Doing this will not modify any behavior and is safe. If you specifically wanted the numpy scalar type, use `np.bool_` here.
+Deprecated in NumPy 1.20; for more details and guidance: https://numpy.org/devdocs/release/1.20.0-notes.html#deprecations
+  0, 1, 1, 0, 0, 1, 0, 0, 0], dtype=np.bool)
+/home/slcheng/anaconda3/envs/paddleocr/lib/python3.7/site-packages/skimage/morphology/_skeletonize.py:256: DeprecationWarning: `np.bool` is a deprecated alias for the builtin `bool`. To silence this warning, use `bool` by itself. Doing this will not modify any behavior and is safe. If you specifically wanted the numpy scalar type, use `np.bool_` here.
+Deprecated in NumPy 1.20; for more details and guidance: https://numpy.org/devdocs/release/1.20.0-notes.html#deprecations
+  0, 0, 0, 0, 0, 0, 0, 0, 0], dtype=np.bool)
+I0615 23:54:29.648528 25451 gen_comm_id_helper.cc:181] Server listening on: 127.0.0.1:51645 successful.
+I0615 23:54:29.961701 25451 nccl_context.cc:74] init nccl context nranks: 2 local rank: 1 gpu id: 1 ring id: 0
+W0615 23:54:30.251478 25451 device_context.cc:404] Please NOTE: device: 1, GPU Compute Capability: 7.5, Driver API Version: 11.0, Runtime API Version: 10.2
+W0615 23:54:30.318887 25451 device_context.cc:422] device: 1, cuDNN Version: 7.6.
+/home/slcheng/anaconda3/envs/paddleocr/lib/python3.7/site-packages/skimage/morphology/_skeletonize.py:241: DeprecationWarning: `np.bool` is a deprecated alias for the builtin `bool`. To silence this warning, use `bool` by itself. Doing this will not modify any behavior and is safe. If you specifically wanted the numpy scalar type, use `np.bool_` here.
+Deprecated in NumPy 1.20; for more details and guidance: https://numpy.org/devdocs/release/1.20.0-notes.html#deprecations
+  0, 1, 1, 0, 0, 1, 0, 0, 0], dtype=np.bool)
+/home/slcheng/anaconda3/envs/paddleocr/lib/python3.7/site-packages/skimage/morphology/_skeletonize.py:256: DeprecationWarning: `np.bool` is a deprecated alias for the builtin `bool`. To silence this warning, use `bool` by itself. Doing this will not modify any behavior and is safe. If you specifically wanted the numpy scalar type, use `np.bool_` here.
+Deprecated in NumPy 1.20; for more details and guidance: https://numpy.org/devdocs/release/1.20.0-notes.html#deprecations
+  0, 0, 0, 0, 0, 0, 0, 0, 0], dtype=np.bool)
+I0624 11:04:50.413126 17313 gen_comm_id_helper.cc:181] Server listening on: 127.0.0.1:57358 successful.
+I0624 11:04:50.786401 17313 nccl_context.cc:74] init nccl context nranks: 2 local rank: 1 gpu id: 1 ring id: 0
+W0624 11:04:51.184410 17313 device_context.cc:404] Please NOTE: device: 1, GPU Compute Capability: 7.5, Driver API Version: 11.0, Runtime API Version: 10.2
+W0624 11:04:51.260043 17313 device_context.cc:422] device: 1, cuDNN Version: 7.6.
+Traceback (most recent call last):
+  File "tools/train.py", line 125, in <module>
+    main(config, device, logger, vdl_writer)
+  File "tools/train.py", line 102, in main
+    eval_class, pre_best_model_dict, logger, vdl_writer)
+  File "/home/slcheng/light_OCR/PaddleOCR/tools/program.py", line 215, in train
+    preds = model(images)
+  File "/home/slcheng/anaconda3/envs/paddleocr/lib/python3.7/site-packages/paddle/fluid/dygraph/layers.py", line 898, in __call__
+    outputs = self.forward(*inputs, **kwargs)
+  File "/home/slcheng/anaconda3/envs/paddleocr/lib/python3.7/site-packages/paddle/fluid/dygraph/parallel.py", line 578, in forward
+    outputs = self._layers(*inputs, **kwargs)
+  File "/home/slcheng/anaconda3/envs/paddleocr/lib/python3.7/site-packages/paddle/fluid/dygraph/layers.py", line 898, in __call__
+    outputs = self.forward(*inputs, **kwargs)
+  File "/home/slcheng/light_OCR/PaddleOCR/ppocr/modeling/architectures/base_model.py", line 76, in forward
+    x = self.neck(x)
+  File "/home/slcheng/anaconda3/envs/paddleocr/lib/python3.7/site-packages/paddle/fluid/dygraph/layers.py", line 898, in __call__
+    outputs = self.forward(*inputs, **kwargs)
+  File "/home/slcheng/light_OCR/PaddleOCR/ppocr/modeling/necks/rnn.py", line 91, in forward
+    x = self.encoder(x)
+  File "/home/slcheng/anaconda3/envs/paddleocr/lib/python3.7/site-packages/paddle/fluid/dygraph/layers.py", line 898, in __call__
+    outputs = self.forward(*inputs, **kwargs)
+  File "/home/slcheng/light_OCR/PaddleOCR/ppocr/modeling/necks/rnn.py", line 45, in forward
+    x, _ = self.lstm(x)
+  File "/home/slcheng/anaconda3/envs/paddleocr/lib/python3.7/site-packages/paddle/fluid/dygraph/layers.py", line 898, in __call__
+    outputs = self.forward(*inputs, **kwargs)
+  File "/home/slcheng/anaconda3/envs/paddleocr/lib/python3.7/site-packages/paddle/nn/layer/rnn.py", line 1049, in forward
+    return self._cudnn_impl(inputs, initial_states, sequence_length)
+  File "/home/slcheng/anaconda3/envs/paddleocr/lib/python3.7/site-packages/paddle/nn/layer/rnn.py", line 990, in _cudnn_impl
+    not self.training)
+OSError: (External)  Cudnn error, CUDNN_STATUS_EXECUTION_FAILED  (at /paddle/paddle/fluid/platform/cudnn_helper.h:348)
+  [operator < rnn > error]
+/home/slcheng/anaconda3/envs/paddleocr/lib/python3.7/site-packages/skimage/morphology/_skeletonize.py:241: DeprecationWarning: `np.bool` is a deprecated alias for the builtin `bool`. To silence this warning, use `bool` by itself. Doing this will not modify any behavior and is safe. If you specifically wanted the numpy scalar type, use `np.bool_` here.
+Deprecated in NumPy 1.20; for more details and guidance: https://numpy.org/devdocs/release/1.20.0-notes.html#deprecations
+  0, 1, 1, 0, 0, 1, 0, 0, 0], dtype=np.bool)
+/home/slcheng/anaconda3/envs/paddleocr/lib/python3.7/site-packages/skimage/morphology/_skeletonize.py:256: DeprecationWarning: `np.bool` is a deprecated alias for the builtin `bool`. To silence this warning, use `bool` by itself. Doing this will not modify any behavior and is safe. If you specifically wanted the numpy scalar type, use `np.bool_` here.
+Deprecated in NumPy 1.20; for more details and guidance: https://numpy.org/devdocs/release/1.20.0-notes.html#deprecations
+  0, 0, 0, 0, 0, 0, 0, 0, 0], dtype=np.bool)
+I0624 11:14:15.411662 23041 gen_comm_id_helper.cc:181] Server listening on: 127.0.0.1:51346 successful.
+I0624 11:14:15.832696 23041 nccl_context.cc:74] init nccl context nranks: 2 local rank: 1 gpu id: 1 ring id: 0
+W0624 11:14:16.285809 23041 device_context.cc:404] Please NOTE: device: 1, GPU Compute Capability: 7.5, Driver API Version: 11.0, Runtime API Version: 10.2
+W0624 11:14:16.290259 23041 device_context.cc:422] device: 1, cuDNN Version: 7.6.
+/home/slcheng/anaconda3/envs/paddleocr/lib/python3.7/site-packages/skimage/morphology/_skeletonize.py:241: DeprecationWarning: `np.bool` is a deprecated alias for the builtin `bool`. To silence this warning, use `bool` by itself. Doing this will not modify any behavior and is safe. If you specifically wanted the numpy scalar type, use `np.bool_` here.
+Deprecated in NumPy 1.20; for more details and guidance: https://numpy.org/devdocs/release/1.20.0-notes.html#deprecations
+  0, 1, 1, 0, 0, 1, 0, 0, 0], dtype=np.bool)
+/home/slcheng/anaconda3/envs/paddleocr/lib/python3.7/site-packages/skimage/morphology/_skeletonize.py:256: DeprecationWarning: `np.bool` is a deprecated alias for the builtin `bool`. To silence this warning, use `bool` by itself. Doing this will not modify any behavior and is safe. If you specifically wanted the numpy scalar type, use `np.bool_` here.
+Deprecated in NumPy 1.20; for more details and guidance: https://numpy.org/devdocs/release/1.20.0-notes.html#deprecations
+  0, 0, 0, 0, 0, 0, 0, 0, 0], dtype=np.bool)
+I0627 17:08:46.840724 14879 gen_comm_id_helper.cc:181] Server listening on: 127.0.0.1:58158 successful.
+I0627 17:08:47.192173 14879 nccl_context.cc:74] init nccl context nranks: 2 local rank: 1 gpu id: 1 ring id: 0
+W0627 17:08:47.556219 14879 device_context.cc:404] Please NOTE: device: 1, GPU Compute Capability: 7.5, Driver API Version: 11.0, Runtime API Version: 10.2
+W0627 17:08:47.563827 14879 device_context.cc:422] device: 1, cuDNN Version: 7.6.
+Traceback (most recent call last):
+  File "tools/train.py", line 125, in <module>
+    main(config, device, logger, vdl_writer)
+  File "tools/train.py", line 102, in main
+    eval_class, pre_best_model_dict, logger, vdl_writer)
+  File "/home/slcheng/light_OCR/PaddleOCR/tools/program.py", line 215, in train
+    preds = model(images)
+  File "/home/slcheng/anaconda3/envs/paddleocr/lib/python3.7/site-packages/paddle/fluid/dygraph/layers.py", line 898, in __call__
+    outputs = self.forward(*inputs, **kwargs)
+  File "/home/slcheng/anaconda3/envs/paddleocr/lib/python3.7/site-packages/paddle/fluid/dygraph/parallel.py", line 578, in forward
+    outputs = self._layers(*inputs, **kwargs)
+  File "/home/slcheng/anaconda3/envs/paddleocr/lib/python3.7/site-packages/paddle/fluid/dygraph/layers.py", line 898, in __call__
+    outputs = self.forward(*inputs, **kwargs)
+  File "/home/slcheng/light_OCR/PaddleOCR/ppocr/modeling/architectures/base_model.py", line 74, in forward
+    x = self.backbone(x)
+  File "/home/slcheng/anaconda3/envs/paddleocr/lib/python3.7/site-packages/paddle/fluid/dygraph/layers.py", line 898, in __call__
+    outputs = self.forward(*inputs, **kwargs)
+  File "/home/slcheng/light_OCR/PaddleOCR/ppocr/modeling/backbones/rec_mobilenet_v3.py", line 136, in forward
+    x = self.blocks(x)
+  File "/home/slcheng/anaconda3/envs/paddleocr/lib/python3.7/site-packages/paddle/fluid/dygraph/layers.py", line 898, in __call__
+    outputs = self.forward(*inputs, **kwargs)
+  File "/home/slcheng/anaconda3/envs/paddleocr/lib/python3.7/site-packages/paddle/fluid/dygraph/container.py", line 97, in forward
+    input = layer(input)
+  File "/home/slcheng/anaconda3/envs/paddleocr/lib/python3.7/site-packages/paddle/fluid/dygraph/layers.py", line 898, in __call__
+    outputs = self.forward(*inputs, **kwargs)
+  File "/home/slcheng/light_OCR/PaddleOCR/ppocr/modeling/backbones/det_mobilenet_v3.py", line 255, in forward
+    x = self.mid_se(x)
+  File "/home/slcheng/anaconda3/envs/paddleocr/lib/python3.7/site-packages/paddle/fluid/dygraph/layers.py", line 898, in __call__
+    outputs = self.forward(*inputs, **kwargs)
+  File "/home/slcheng/light_OCR/PaddleOCR/ppocr/modeling/backbones/det_mobilenet_v3.py", line 305, in forward
+    return inputs * outputs
+  File "/home/slcheng/anaconda3/envs/paddleocr/lib/python3.7/site-packages/paddle/fluid/dygraph/math_op_patch.py", line 250, in __impl__
+    return math_op(self, other_var, 'axis', axis)
+SystemError: (Fatal) Operator elementwise_mul raises an paddle::memory::allocation::BadAlloc exception.
+The exception content is
+:ResourceExhaustedError: 
+
+Out of memory error on GPU 1. Cannot allocate 150.000244MB memory on GPU 1, 10.714844GB memory has been allocated and available memory is only 47.437500MB.
+
+Please check whether there is any other process using GPU 1.
+1. If yes, please stop them, or start PaddlePaddle on another GPU.
+2. If no, please decrease the batch size of your model. 
+
+ (at /paddle/paddle/fluid/memory/allocation/cuda_allocator.cc:79)
+. (at /paddle/paddle/fluid/imperative/tracer.cc:192)
+
+/home/slcheng/anaconda3/envs/paddleocr/lib/python3.7/site-packages/skimage/morphology/_skeletonize.py:241: DeprecationWarning: `np.bool` is a deprecated alias for the builtin `bool`. To silence this warning, use `bool` by itself. Doing this will not modify any behavior and is safe. If you specifically wanted the numpy scalar type, use `np.bool_` here.
+Deprecated in NumPy 1.20; for more details and guidance: https://numpy.org/devdocs/release/1.20.0-notes.html#deprecations
+  0, 1, 1, 0, 0, 1, 0, 0, 0], dtype=np.bool)
+/home/slcheng/anaconda3/envs/paddleocr/lib/python3.7/site-packages/skimage/morphology/_skeletonize.py:256: DeprecationWarning: `np.bool` is a deprecated alias for the builtin `bool`. To silence this warning, use `bool` by itself. Doing this will not modify any behavior and is safe. If you specifically wanted the numpy scalar type, use `np.bool_` here.
+Deprecated in NumPy 1.20; for more details and guidance: https://numpy.org/devdocs/release/1.20.0-notes.html#deprecations
+  0, 0, 0, 0, 0, 0, 0, 0, 0], dtype=np.bool)
+I0627 17:10:15.689011 16238 gen_comm_id_helper.cc:181] Server listening on: 127.0.0.1:58753 successful.
+I0627 17:10:15.883101 16238 nccl_context.cc:74] init nccl context nranks: 2 local rank: 1 gpu id: 1 ring id: 0
+W0627 17:10:16.281894 16238 device_context.cc:404] Please NOTE: device: 1, GPU Compute Capability: 7.5, Driver API Version: 11.0, Runtime API Version: 10.2
+W0627 17:10:16.288231 16238 device_context.cc:422] device: 1, cuDNN Version: 7.6.
+Traceback (most recent call last):
+  File "tools/train.py", line 125, in <module>
+    main(config, device, logger, vdl_writer)
+  File "tools/train.py", line 102, in main
+    eval_class, pre_best_model_dict, logger, vdl_writer)
+  File "/home/slcheng/light_OCR/PaddleOCR/tools/program.py", line 215, in train
+    preds = model(images)
+  File "/home/slcheng/anaconda3/envs/paddleocr/lib/python3.7/site-packages/paddle/fluid/dygraph/layers.py", line 898, in __call__
+    outputs = self.forward(*inputs, **kwargs)
+  File "/home/slcheng/anaconda3/envs/paddleocr/lib/python3.7/site-packages/paddle/fluid/dygraph/parallel.py", line 578, in forward
+    outputs = self._layers(*inputs, **kwargs)
+  File "/home/slcheng/anaconda3/envs/paddleocr/lib/python3.7/site-packages/paddle/fluid/dygraph/layers.py", line 898, in __call__
+    outputs = self.forward(*inputs, **kwargs)
+  File "/home/slcheng/light_OCR/PaddleOCR/ppocr/modeling/architectures/base_model.py", line 74, in forward
+    x = self.backbone(x)
+  File "/home/slcheng/anaconda3/envs/paddleocr/lib/python3.7/site-packages/paddle/fluid/dygraph/layers.py", line 898, in __call__
+    outputs = self.forward(*inputs, **kwargs)
+  File "/home/slcheng/light_OCR/PaddleOCR/ppocr/modeling/backbones/rec_mobilenet_v3.py", line 139, in forward
+    x = paddle.sum(x, axis=2, keepdims=True)
+TypeError: sum() got an unexpected keyword argument 'keepdims'
+/home/slcheng/anaconda3/envs/paddleocr/lib/python3.7/site-packages/skimage/morphology/_skeletonize.py:241: DeprecationWarning: `np.bool` is a deprecated alias for the builtin `bool`. To silence this warning, use `bool` by itself. Doing this will not modify any behavior and is safe. If you specifically wanted the numpy scalar type, use `np.bool_` here.
+Deprecated in NumPy 1.20; for more details and guidance: https://numpy.org/devdocs/release/1.20.0-notes.html#deprecations
+  0, 1, 1, 0, 0, 1, 0, 0, 0], dtype=np.bool)
+/home/slcheng/anaconda3/envs/paddleocr/lib/python3.7/site-packages/skimage/morphology/_skeletonize.py:256: DeprecationWarning: `np.bool` is a deprecated alias for the builtin `bool`. To silence this warning, use `bool` by itself. Doing this will not modify any behavior and is safe. If you specifically wanted the numpy scalar type, use `np.bool_` here.
+Deprecated in NumPy 1.20; for more details and guidance: https://numpy.org/devdocs/release/1.20.0-notes.html#deprecations
+  0, 0, 0, 0, 0, 0, 0, 0, 0], dtype=np.bool)
+I0627 17:11:05.640689 17362 gen_comm_id_helper.cc:181] Server listening on: 127.0.0.1:34218 successful.
+I0627 17:11:05.786507 17362 nccl_context.cc:74] init nccl context nranks: 2 local rank: 1 gpu id: 1 ring id: 0
+W0627 17:11:06.176046 17362 device_context.cc:404] Please NOTE: device: 1, GPU Compute Capability: 7.5, Driver API Version: 11.0, Runtime API Version: 10.2
+W0627 17:11:06.182621 17362 device_context.cc:422] device: 1, cuDNN Version: 7.6.
+[2021/06/27 17:13:16] root ERROR: When parsing line Train_005659.jpg	邝正平	邝,12,24	正,24,30	平,30,43
+, error happened with msg: OpenCV(4.2.0) /io/opencv/modules/imgproc/src/color.cpp:182: error: (-215:Assertion failed) !_src.empty() in function 'cvtColor'
+
+[2021/06/27 17:15:25] root ERROR: When parsing line Train_037723.jpg	限公	限,0,3	公,3,26
+, error happened with msg: OpenCV(4.2.0) /io/opencv/modules/imgproc/src/color.cpp:182: error: (-215:Assertion failed) !_src.empty() in function 'cvtColor'
+
+[2021/06/27 17:44:39] root ERROR: When parsing line Train_035331.jpg	红虫	红,0,5	虫,5,31
+, error happened with msg: OpenCV(4.2.0) /io/opencv/modules/imgproc/src/resize.cpp:4045: error: (-215:Assertion failed) !ssize.empty() in function 'resize'
+
+[2021/06/27 17:57:24] root ERROR: When parsing line Train_024636.jpg	18339411688	1,0,3	8,3,11	3,11,19	3,19,27	9,27,35	4,35,39	1,39,47	1,47,51	6,51,59	8,59,67	8,67,75
+, error happened with msg: OpenCV(4.2.0) /io/opencv/modules/imgproc/src/color.cpp:182: error: (-215:Assertion failed) !_src.empty() in function 'cvtColor'
+
+[2021/06/27 18:42:38] root ERROR: When parsing line Train_042676.jpg	TEL05523-869666469
+, error happened with msg: OpenCV(4.2.0) /io/opencv/modules/imgproc/src/resize.cpp:4045: error: (-215:Assertion failed) !ssize.empty() in function 'resize'
+
+[2021/06/27 18:47:44] root ERROR: When parsing line Train_016452.jpg	礼品  饰品  化妆品	礼,2,27	品,27,48	 ,48,57	 ,57,59	饰,59,81	品,81,100	 ,100,108	 ,108,111	化,111,130	妆,130,152	品,152,171
+, error happened with msg: OpenCV(4.2.0) /io/opencv/modules/imgproc/src/resize.cpp:4045: error: (-215:Assertion failed) !ssize.empty() in function 'resize'
+
+[2021/06/27 19:03:56] root ERROR: When parsing line Train_012921.jpg	电话：	电,17,52	话,52,87	：,87,96
+, error happened with msg: OpenCV(4.2.0) /io/opencv/modules/imgproc/src/color.cpp:182: error: (-215:Assertion failed) !_src.empty() in function 'cvtColor'
+
+[2021/06/27 19:21:55] root ERROR: When parsing line Train_028892.jpg	LANGCEOISEE	L,5,10	A,10,17	N,17,25	G,25,30	C,30,33	E,33,38	O,38,40	I,40,43	S,43,48	E,48,53	E,53,56
+, error happened with msg: index -1 is out of bounds for axis 1 with size 0
+[2021/06/27 19:55:19] root ERROR: When parsing line Train_046249.jpg	红兴	红,0,8	兴,8,49
+, error happened with msg: index -1 is out of bounds for axis 1 with size 0
+[2021/06/27 20:02:16] root ERROR: When parsing line Train_049134.jpg	创业	创,0,3	业,3,23
+, error happened with msg: index -1 is out of bounds for axis 1 with size 0
+[2021/06/27 20:05:55] root ERROR: When parsing line Train_037723.jpg	限公	限,0,3	公,3,26
+, error happened with msg: OpenCV(4.2.0) /io/opencv/modules/imgproc/src/color.cpp:182: error: (-215:Assertion failed) !_src.empty() in function 'cvtColor'
+
+[2021/06/27 20:16:45] root ERROR: When parsing line Train_026255.jpg	绿竹	绿,0,5	竹,5,35
+, error happened with msg: OpenCV(4.2.0) /io/opencv/modules/imgproc/src/color.cpp:182: error: (-215:Assertion failed) !_src.empty() in function 'cvtColor'
+
+[2021/06/27 21:11:09] root ERROR: When parsing line Train_017892.jpg	2110135	2,0,4	1,4,16	1,16,20	0,20,28	1,28,32	3,32,40	5,40,52
+, error happened with msg: index -1 is out of bounds for axis 1 with size 0
+[2021/06/27 21:31:46] root ERROR: When parsing line Train_037723.jpg	限公	限,0,3	公,3,26
+, error happened with msg: index -1 is out of bounds for axis 1 with size 0
+[2021/06/27 21:42:05] root ERROR: When parsing line Train_037640.jpg	秘制	秘,9,29	制,29,34
+, error happened with msg: OpenCV(4.2.0) /io/opencv/modules/imgproc/src/color.cpp:182: error: (-215:Assertion failed) !_src.empty() in function 'cvtColor'
+
+[2021/06/27 22:29:10] root ERROR: When parsing line Train_047721.jpg	戴上手表	戴,4,12	上,12,14	手,14,22	表,22,32
+, error happened with msg: index -1 is out of bounds for axis 1 with size 0
+[2021/06/27 23:00:23] root ERROR: When parsing line Train_015265.jpg	Nutrition	N,5,17	u,17,25	t,25,27	r,27,32	i,32,35	t,35,40	i,40,45	o,45,52	n,52,60
+, error happened with msg: OpenCV(4.2.0) /io/opencv/modules/imgproc/src/color.cpp:182: error: (-215:Assertion failed) !_src.empty() in function 'cvtColor'
+
+[2021/06/27 23:22:59] root ERROR: When parsing line Train_040957.jpg	全国连锁	全,4,12	国,12,14	连,14,21	锁,21,39
+, error happened with msg: index -1 is out of bounds for axis 1 with size 0
+[2021/06/27 23:41:40] root ERROR: When parsing line Train_070832.jpg	1.5mgX250丸	1,5,7	.,7,12	5,12,20	m,20,30	g,30,37	X,37,45	2,45,55	5,55,65	0,65,75	丸,75,90
+, error happened with msg: index -1 is out of bounds for axis 1 with size 0
+[2021/06/28 00:22:12] root ERROR: When parsing line Train_047821.jpg	代收	代,0,3	收,3,25
+, error happened with msg: index -1 is out of bounds for axis 1 with size 0
+[2021/06/28 01:04:03] root ERROR: When parsing line Train_027332.jpg	B座18号	B,2,9	座,9,17	1,17,19	8,19,27	号,27,32
+, error happened with msg: OpenCV(4.2.0) /io/opencv/modules/imgproc/src/color.cpp:182: error: (-215:Assertion failed) !_src.empty() in function 'cvtColor'
+
+[2021/06/28 01:06:31] root ERROR: When parsing line Train_037723.jpg	限公	限,0,3	公,3,26
+, error happened with msg: index -1 is out of bounds for axis 1 with size 0
+[2021/06/28 01:24:01] root ERROR: When parsing line Train_070832.jpg	1.5mgX250丸	1,5,7	.,7,12	5,12,20	m,20,30	g,30,37	X,37,45	2,45,55	5,55,65	0,65,75	丸,75,90
+, error happened with msg: OpenCV(4.2.0) /io/opencv/modules/imgproc/src/resize.cpp:4045: error: (-215:Assertion failed) !ssize.empty() in function 'resize'
+
+[2021/06/28 02:05:09] root ERROR: When parsing line Train_025173.jpg	5i5j	5,4,8	i,8,17	5,17,21	j,21,30
+, error happened with msg: OpenCV(4.2.0) /io/opencv/modules/imgproc/src/color.cpp:182: error: (-215:Assertion failed) !_src.empty() in function 'cvtColor'
+
+[2021/06/28 03:58:07] root ERROR: When parsing line Train_017258.jpg	5i5j	5,6,12	i,12,19	5,19,32	j,32,45
+, error happened with msg: index -1 is out of bounds for axis 1 with size 0
+[2021/06/28 04:19:53] root ERROR: When parsing line Train_006741.jpg	Two Floor,Room 203	T,5,13	w,13,24	o,24,30	 ,30,38	F,38,46	l,46,54	o,54,62	o,62,71	r,71,73	,,73,79	R,79,90	o,90,98	o,98,106	m,106,114	 ,114,117	2,117,125	0,125,131	3,131,134
+, error happened with msg: OpenCV(4.2.0) /io/opencv/modules/imgproc/src/color.cpp:182: error: (-215:Assertion failed) !_src.empty() in function 'cvtColor'
+
+[2021/06/28 08:09:21] root ERROR: When parsing line Train_008687.jpg	cp中国福利彩票	c,0,5	p,5,11	中,11,23	国,23,28	福,28,40	利,40,51	彩,51,63	票,63,75
+, error happened with msg: OpenCV(4.2.0) /io/opencv/modules/imgproc/src/resize.cpp:4045: error: (-215:Assertion failed) !ssize.empty() in function 'resize'
+
+[2021/06/28 08:16:29] root ERROR: When parsing line Train_003807.jpg	大不同	大,0,14	不,14,71	同,71,100
+, error happened with msg: OpenCV(4.2.0) /io/opencv/modules/imgproc/src/color.cpp:182: error: (-215:Assertion failed) !_src.empty() in function 'cvtColor'
+
+[2021/06/28 08:52:03] root ERROR: When parsing line Train_037748.jpg	门窗	门,0,5	窗,5,36
+, error happened with msg: OpenCV(4.2.0) /io/opencv/modules/imgproc/src/color.cpp:182: error: (-215:Assertion failed) !_src.empty() in function 'cvtColor'
+
+[2021/06/28 09:43:20] root ERROR: When parsing line Train_049134.jpg	创业	创,0,3	业,3,23
+, error happened with msg: OpenCV(4.2.0) /io/opencv/modules/imgproc/src/color.cpp:182: error: (-215:Assertion failed) !_src.empty() in function 'cvtColor'
+
+[2021/06/28 10:27:15] root ERROR: When parsing line Train_049134.jpg	创业	创,0,3	业,3,23
+, error happened with msg: index -1 is out of bounds for axis 1 with size 0
+[2021/06/28 11:07:06] root ERROR: When parsing line Train_031335.jpg	China	C,2,9	h,9,12	i,12,14	n,14,24	a,24,32
+, error happened with msg: index -1 is out of bounds for axis 1 with size 0
+[2021/06/28 12:03:13] root ERROR: When parsing line Train_036622.jpg	广州	广,0,6	州,6,41
+, error happened with msg: index -1 is out of bounds for axis 1 with size 0
+[2021/06/28 12:07:27] root ERROR: When parsing line Train_025847.jpg	H app	H,4,7	 ,7,9	a,9,14	p,14,18	p,18,26
+, error happened with msg: OpenCV(4.2.0) /io/opencv/modules/imgproc/src/color.cpp:182: error: (-215:Assertion failed) !_src.empty() in function 'cvtColor'
+
+[2021/06/28 12:11:33] root ERROR: When parsing line Train_037640.jpg	秘制	秘,9,29	制,29,34
+, error happened with msg: index -1 is out of bounds for axis 1 with size 0
+[2021/06/28 13:23:27] root ERROR: When parsing line Train_007652.jpg	古美	古,0,8	美,8,62
+, error happened with msg: index -1 is out of bounds for axis 1 with size 0
+[2021/06/28 14:09:57] root ERROR: When parsing line Train_037723.jpg	限公	限,0,3	公,3,26
+, error happened with msg: index -1 is out of bounds for axis 1 with size 0
+[2021/06/28 14:37:15] root ERROR: When parsing line Train_002680.jpg	麻辣烫	麻,9,27	辣,27,54	烫,54,63
+, error happened with msg: index -1 is out of bounds for axis 1 with size 0
+[2021/06/28 15:24:16] root ERROR: When parsing line Train_010836.jpg	5i5j	5,8,16	i,16,32	5,32,48	j,48,65
+, error happened with msg: index -1 is out of bounds for axis 1 with size 0
+[2021/06/28 16:34:53] root ERROR: When parsing line Train_035298.jpg	复印	复,0,3	印,3,21
+, error happened with msg: index -1 is out of bounds for axis 1 with size 0
+[2021/06/28 17:36:22] root ERROR: When parsing line Train_042472.jpg	欢节同庆 引爆全城 豪礼不停 相约	欢,5,12	节,12,18	同,18,23	庆,23,25	 ,25,28	引,28,36	爆,36,41	全,41,49	城,49,51	 ,51,59	豪,59,67	礼,67,82	不,82,90	停,90,98	 ,98,105	相,105,113	约,113,124
+, error happened with msg: OpenCV(4.2.0) /io/opencv/modules/imgproc/src/resize.cpp:4045: error: (-215:Assertion failed) !ssize.empty() in function 'resize'
+
+[2021/06/28 18:24:06] root ERROR: When parsing line Train_043571.jpg	24
+, error happened with msg: OpenCV(4.2.0) /io/opencv/modules/imgproc/src/resize.cpp:4045: error: (-215:Assertion failed) !ssize.empty() in function 'resize'
+
+[2021/06/28 18:58:06] root ERROR: When parsing line Train_037941.jpg	09
+, error happened with msg: OpenCV(4.2.0) /io/opencv/modules/imgproc/src/resize.cpp:4045: error: (-215:Assertion failed) !ssize.empty() in function 'resize'
+
+[2021/06/28 20:16:40] root ERROR: When parsing line Train_035298.jpg	复印	复,0,3	印,3,21
+, error happened with msg: index -1 is out of bounds for axis 1 with size 0
+[2021/06/28 20:17:55] root ERROR: When parsing line Train_047821.jpg	代收	代,0,3	收,3,25
+, error happened with msg: OpenCV(4.2.0) /io/opencv/modules/imgproc/src/color.cpp:182: error: (-215:Assertion failed) !_src.empty() in function 'cvtColor'
+
+[2021/06/28 21:06:34] root ERROR: When parsing line Train_027332.jpg	B座18号	B,2,9	座,9,17	1,17,19	8,19,27	号,27,32
+, error happened with msg: OpenCV(4.2.0) /io/opencv/modules/imgproc/src/resize.cpp:4045: error: (-215:Assertion failed) !ssize.empty() in function 'resize'
+
+[2021/06/28 21:33:16] root ERROR: When parsing line Train_044651.jpg	199	1,0,3	9,3,22	9,22,53
+, error happened with msg: OpenCV(4.2.0) /io/opencv/modules/imgproc/src/resize.cpp:4045: error: (-215:Assertion failed) !ssize.empty() in function 'resize'
+
+[2021/06/28 22:58:13] root ERROR: When parsing line Train_048886.jpg	←男	←,6,12	男,12,50
+, error happened with msg: index -1 is out of bounds for axis 1 with size 0
+[2021/06/28 23:20:49] root ERROR: When parsing line Train_047821.jpg	代收	代,0,3	收,3,25
+, error happened with msg: OpenCV(4.2.0) /io/opencv/modules/imgproc/src/color.cpp:182: error: (-215:Assertion failed) !_src.empty() in function 'cvtColor'
+
+[2021/06/29 02:49:53] root ERROR: When parsing line Train_047821.jpg	代收	代,0,3	收,3,25
+, error happened with msg: index -1 is out of bounds for axis 1 with size 0
+[2021/06/29 03:41:20] root ERROR: When parsing line Train_024975.jpg	恒通汽贸
+, error happened with msg: OpenCV(4.2.0) /io/opencv/modules/imgproc/src/resize.cpp:4045: error: (-215:Assertion failed) !ssize.empty() in function 'resize'
+
+[2021/06/29 06:27:06] root ERROR: When parsing line Train_070832.jpg	1.5mgX250丸	1,5,7	.,7,12	5,12,20	m,20,30	g,30,37	X,37,45	2,45,55	5,55,65	0,65,75	丸,75,90
+, error happened with msg: OpenCV(4.2.0) /io/opencv/modules/imgproc/src/color.cpp:182: error: (-215:Assertion failed) !_src.empty() in function 'cvtColor'
+
+[2021/06/29 07:19:54] root ERROR: When parsing line Train_046085.jpg	24小时	2,10,12	4,12,17	小,17,20	时,20,25
+, error happened with msg: OpenCV(4.2.0) /io/opencv/modules/imgproc/src/color.cpp:182: error: (-215:Assertion failed) !_src.empty() in function 'cvtColor'
+
+[2021/06/29 07:20:39] root ERROR: When parsing line Train_044160.jpg	0351-35939	0,9,38	3,38,67	5,67,101	1,101,121	-,121,155	3,155,184	5,184,213	9,213,242	3,242,271	9,271,286
+, error happened with msg: OpenCV(4.2.0) /io/opencv/modules/imgproc/src/resize.cpp:4045: error: (-215:Assertion failed) !ssize.empty() in function 'resize'
+
+[2021/06/29 07:50:19] root ERROR: When parsing line Train_017835.jpg	98/150	9,6,18	8,18,31	/,31,37	1,37,50	5,50,56	0,56,69
+, error happened with msg: index -1 is out of bounds for axis 1 with size 0
+[2021/06/29 10:17:12] root ERROR: When parsing line Train_049160.jpg	FULI CAIP	F,5,17	U,17,30	L,30,41	I,41,43	 ,43,51	C,51,66	A,66,79	I,79,87	P,87,100
+, error happened with msg: OpenCV(4.2.0) /io/opencv/modules/imgproc/src/resize.cpp:4045: error: (-215:Assertion failed) !ssize.empty() in function 'resize'
+
+[2021/06/29 10:34:22] root ERROR: When parsing line Train_044651.jpg	199	1,0,3	9,3,22	9,22,53
+, error happened with msg: OpenCV(4.2.0) /io/opencv/modules/imgproc/src/color.cpp:182: error: (-215:Assertion failed) !_src.empty() in function 'cvtColor'
+
+[2021/06/29 11:05:11] root ERROR: When parsing line Train_013251.jpg	高压机 气动	高,12,50	压,50,87	机,87,112	 ,112,125	气,125,175	动,175,200
+, error happened with msg: OpenCV(4.2.0) /io/opencv/modules/imgproc/src/color.cpp:182: error: (-215:Assertion failed) !_src.empty() in function 'cvtColor'
+
+[2021/06/29 11:20:12] root ERROR: When parsing line Train_008176.jpg	内	内,12,87
+, error happened with msg: OpenCV(4.2.0) /io/opencv/modules/imgproc/src/resize.cpp:4045: error: (-215:Assertion failed) !ssize.empty() in function 'resize'
+
+[2021/06/29 12:07:29] root ERROR: When parsing line Train_019084.jpg	CO.,LTD	C,2,13	O,13,18	.,18,20	,,20,28	L,28,36	T,36,41	D,41,52
+, error happened with msg: index -1 is out of bounds for axis 1 with size 0
+[2021/06/29 14:40:36] root ERROR: When parsing line Train_027710.jpg	招商服务中心	招,0,7	商,7,31	服,31,62	务,62,109	中,109,164	心,164,243
+, error happened with msg: OpenCV(4.2.0) /io/opencv/modules/imgproc/src/color.cpp:182: error: (-215:Assertion failed) !_src.empty() in function 'cvtColor'
+
+[2021/06/29 15:08:53] root ERROR: When parsing line Train_007652.jpg	古美	古,0,8	美,8,62
+, error happened with msg: index -1 is out of bounds for axis 1 with size 0
+[2021/06/29 16:15:48] root ERROR: When parsing line Train_004585.jpg	永发装饰	永,3,11	发,11,19	装,19,23	饰,23,31
+, error happened with msg: index -1 is out of bounds for axis 1 with size 0
+[2021/06/29 16:34:44] root ERROR: When parsing line Train_024636.jpg	18339411688	1,0,3	8,3,11	3,11,19	3,19,27	9,27,35	4,35,39	1,39,47	1,47,51	6,51,59	8,59,67	8,67,75
+, error happened with msg: OpenCV(4.2.0) /io/opencv/modules/imgproc/src/color.cpp:182: error: (-215:Assertion failed) !_src.empty() in function 'cvtColor'
+
+[2021/06/29 17:15:05] root ERROR: When parsing line Train_052226.jpg	全价72.00元
+, error happened with msg: OpenCV(4.2.0) /io/opencv/modules/imgproc/src/resize.cpp:4045: error: (-215:Assertion failed) !ssize.empty() in function 'resize'
+
+[2021/06/29 17:15:31] root ERROR: When parsing line Train_037723.jpg	限公	限,0,3	公,3,26
+, error happened with msg: index -1 is out of bounds for axis 1 with size 0
+[2021/06/29 18:30:05] root ERROR: When parsing line Train_035298.jpg	复印	复,0,3	印,3,21
+, error happened with msg: index -1 is out of bounds for axis 1 with size 0
+[2021/06/29 21:27:23] root ERROR: When parsing line Train_035298.jpg	复印	复,0,3	印,3,21
+, error happened with msg: index -1 is out of bounds for axis 1 with size 0
+[2021/06/29 22:12:15] root ERROR: When parsing line Train_049134.jpg	创业	创,0,3	业,3,23
+, error happened with msg: index -1 is out of bounds for axis 1 with size 0
+[2021/06/30 00:06:52] root ERROR: When parsing line Train_019049.jpg	快速换屏	快,5,10	速,10,16	换,16,21	屏,21,32
+, error happened with msg: index -1 is out of bounds for axis 1 with size 0
+[2021/06/30 01:15:07] root ERROR: When parsing line Train_047721.jpg	戴上手表	戴,4,12	上,12,14	手,14,22	表,22,32
+, error happened with msg: OpenCV(4.2.0) /io/opencv/modules/imgproc/src/color.cpp:182: error: (-215:Assertion failed) !_src.empty() in function 'cvtColor'
+
+[2021/06/30 01:46:12] root ERROR: When parsing line Train_008836.jpg	东宣广告图文	东,8,12	宣,12,16	广,16,20	告,20,24	图,24,32	文,32,36
+, error happened with msg: index -1 is out of bounds for axis 1 with size 0
+[2021/06/30 02:43:39] root ERROR: When parsing line Train_035298.jpg	复印	复,0,3	印,3,21
+, error happened with msg: index -1 is out of bounds for axis 1 with size 0
+[2021/06/30 03:19:14] root ERROR: When parsing line Train_047821.jpg	代收	代,0,3	收,3,25
+, error happened with msg: index -1 is out of bounds for axis 1 with size 0
+[2021/06/30 03:27:43] root ERROR: When parsing line Train_022984.jpg	幼	幼,22,103
+, error happened with msg: OpenCV(4.2.0) /io/opencv/modules/imgproc/src/resize.cpp:4045: error: (-215:Assertion failed) !ssize.empty() in function 'resize'
+
+[2021/06/30 04:38:23] root ERROR: When parsing line Train_046085.jpg	24小时	2,10,12	4,12,17	小,17,20	时,20,25
+, error happened with msg: OpenCV(4.2.0) /io/opencv/modules/imgproc/src/resize.cpp:4045: error: (-215:Assertion failed) !ssize.empty() in function 'resize'
+
+[2021/06/30 05:13:07] root ERROR: When parsing line Train_047821.jpg	代收	代,0,3	收,3,25
+, error happened with msg: OpenCV(4.2.0) /io/opencv/modules/imgproc/src/color.cpp:182: error: (-215:Assertion failed) !_src.empty() in function 'cvtColor'
+
+[2021/06/30 05:59:40] root ERROR: When parsing line Train_037748.jpg	门窗	门,0,5	窗,5,36
+, error happened with msg: OpenCV(4.2.0) /io/opencv/modules/imgproc/src/resize.cpp:4045: error: (-215:Assertion failed) !ssize.empty() in function 'resize'
+
+[2021/06/30 06:27:57] root ERROR: When parsing line Train_021680.jpg	烟酒 棋牌	烟,6,18	酒,18,24	 ,24,30	棋,30,48	牌,48,60
+, error happened with msg: OpenCV(4.2.0) /io/opencv/modules/imgproc/src/color.cpp:182: error: (-215:Assertion failed) !_src.empty() in function 'cvtColor'
+
+[2021/06/30 07:58:45] root ERROR: When parsing line Train_017098.jpg	鸭爪爪	鸭,8,26	爪,26,44	爪,44,53
+, error happened with msg: index -1 is out of bounds for axis 1 with size 0
+[2021/06/30 08:02:47] root ERROR: When parsing line Train_047721.jpg	戴上手表	戴,4,12	上,12,14	手,14,22	表,22,32
+, error happened with msg: OpenCV(4.2.0) /io/opencv/modules/imgproc/src/resize.cpp:4045: error: (-215:Assertion failed) !ssize.empty() in function 'resize'
+
+[2021/06/30 08:32:49] root ERROR: When parsing line Train_038181.jpg	LED滚动屏	L,5,7	E,7,15	D,15,22	滚,22,33	动,33,43	屏,43,56
+, error happened with msg: index -1 is out of bounds for axis 1 with size 0
+[2021/06/30 08:33:53] root ERROR: When parsing line Train_026255.jpg	绿竹	绿,0,5	竹,5,35
+, error happened with msg: index -1 is out of bounds for axis 1 with size 0
+[2021/06/30 11:16:51] root ERROR: When parsing line Train_030757.jpg	铝合金钢网、窗沙—	铝,5,20	合,20,22	金,22,42	钢,42,62	网,62,82	、,82,105	窗,105,122	沙,122,142	—,142,160
+, error happened with msg: OpenCV(4.2.0) /io/opencv/modules/imgproc/src/color.cpp:182: error: (-215:Assertion failed) !_src.empty() in function 'cvtColor'
+
+[2021/06/30 11:30:51] root ERROR: When parsing line Train_035298.jpg	复印	复,0,3	印,3,21
+, error happened with msg: OpenCV(4.2.0) /io/opencv/modules/imgproc/src/resize.cpp:4045: error: (-215:Assertion failed) !ssize.empty() in function 'resize'
+
+[2021/06/30 11:45:44] root ERROR: When parsing line Train_018934.jpg	商务酒店
+, error happened with msg: OpenCV(4.2.0) /io/opencv/modules/imgproc/src/resize.cpp:4045: error: (-215:Assertion failed) !ssize.empty() in function 'resize'
+
+[2021/06/30 12:08:12] root ERROR: When parsing line Train_026397.jpg	精修摩托  电动车	精,4,55	修,55,96	摩,96,138	托,138,170	 ,170,184	 ,184,188	电,188,229	动,229,271	车,271,299
+, error happened with msg: OpenCV(4.2.0) /io/opencv/modules/imgproc/src/color.cpp:182: error: (-215:Assertion failed) !_src.empty() in function 'cvtColor'
+
+[2021/06/30 12:46:16] root ERROR: When parsing line Train_010327.jpg	景泰名烟名酒	景,14,66	泰,66,125	名,125,170	烟,170,229	名,229,274	酒,274,326
+, error happened with msg: OpenCV(4.2.0) /io/opencv/modules/imgproc/src/resize.cpp:4045: error: (-215:Assertion failed) !ssize.empty() in function 'resize'
+
+[2021/06/30 13:25:56] root ERROR: When parsing line Train_010571.jpg	河南德益隆	河,3,10	南,10,13	德,13,20	益,20,27	隆,27,38
+, error happened with msg: index -1 is out of bounds for axis 1 with size 0
+[2021/06/30 13:38:22] root ERROR: When parsing line Train_001999.jpg	13761916218	1,4,8	3,8,21	7,21,30	6,30,34	1,34,43	9,43,51	1,51,60	6,60,68	2,68,73	1,73,81	8,81,86
+, error happened with msg: OpenCV(4.2.0) /io/opencv/modules/imgproc/src/color.cpp:182: error: (-215:Assertion failed) !_src.empty() in function 'cvtColor'
+
+[2021/06/30 14:25:59] root ERROR: When parsing line Train_038181.jpg	LED滚动屏	L,5,7	E,7,15	D,15,22	滚,22,33	动,33,43	屏,43,56
+, error happened with msg: OpenCV(4.2.0) /io/opencv/modules/imgproc/src/color.cpp:182: error: (-215:Assertion failed) !_src.empty() in function 'cvtColor'
+
+[2021/06/30 14:57:03] root ERROR: When parsing line Train_035298.jpg	复印	复,0,3	印,3,21
+, error happened with msg: index -1 is out of bounds for axis 1 with size 0
+[2021/06/30 15:51:46] root ERROR: When parsing line Train_049817.jpg	村夫烤鱼	村,4,8	夫,8,16	烤,16,20	鱼,20,29
+, error happened with msg: index -1 is out of bounds for axis 1 with size 0
+[2021/06/30 15:55:24] root ERROR: When parsing line Train_006775.jpg	鹏程车零	鹏,11,17	程,17,29	车,29,47	零,47,53
+, error happened with msg: OpenCV(4.2.0) /io/opencv/modules/imgproc/src/resize.cpp:4045: error: (-215:Assertion failed) !ssize.empty() in function 'resize'
+
+[2021/06/30 17:08:43] root ERROR: When parsing line Train_027359.jpg	创业	创,0,22	业,22,132
+, error happened with msg: index -1 is out of bounds for axis 1 with size 0
+[2021/06/30 17:17:31] root ERROR: When parsing line Train_037723.jpg	限公	限,0,3	公,3,26
+, error happened with msg: OpenCV(4.2.0) /io/opencv/modules/imgproc/src/color.cpp:182: error: (-215:Assertion failed) !_src.empty() in function 'cvtColor'
+
+[2021/06/30 18:15:50] root ERROR: When parsing line Train_044651.jpg	199	1,0,3	9,3,22	9,22,53
+, error happened with msg: index -1 is out of bounds for axis 1 with size 0
+[2021/06/30 18:16:49] root ERROR: When parsing line Train_035298.jpg	复印	复,0,3	印,3,21
+, error happened with msg: index -1 is out of bounds for axis 1 with size 0
+[2021/06/30 18:47:32] root ERROR: When parsing line Train_045297.jpg	油烟机  煤气	油,5,15	烟,15,20	机,20,25	 ,25,35	 ,35,40	煤,40,55	气,55,60
+, error happened with msg: OpenCV(4.2.0) /io/opencv/modules/imgproc/src/color.cpp:182: error: (-215:Assertion failed) !_src.empty() in function 'cvtColor'
+
+[2021/06/30 18:52:33] root ERROR: When parsing line Train_000790.jpg	水饺 馄饨 面条	水,6,12	饺,12,18	 ,18,24	馄,24,30	饨,30,37	 ,37,43	面,43,55	条,55,68
+, error happened with msg: index -1 is out of bounds for axis 1 with size 0
+[2021/06/30 19:28:02] root ERROR: When parsing line Train_016173.jpg	鲜花专卖店
+, error happened with msg: OpenCV(4.2.0) /io/opencv/modules/imgproc/src/resize.cpp:4045: error: (-215:Assertion failed) !ssize.empty() in function 'resize'
+
+[2021/06/30 21:10:59] root ERROR: When parsing line Train_044651.jpg	199	1,0,3	9,3,22	9,22,53
+, error happened with msg: index -1 is out of bounds for axis 1 with size 0
+[2021/06/30 21:24:56] root ERROR: When parsing line Train_037723.jpg	限公	限,0,3	公,3,26
+, error happened with msg: OpenCV(4.2.0) /io/opencv/modules/imgproc/src/color.cpp:182: error: (-215:Assertion failed) !_src.empty() in function 'cvtColor'
+
+[2021/06/30 22:02:34] root ERROR: When parsing line Train_045297.jpg	油烟机  煤气	油,5,15	烟,15,20	机,20,25	 ,25,35	 ,35,40	煤,40,55	气,55,60
+, error happened with msg: index -1 is out of bounds for axis 1 with size 0
+[2021/06/30 22:07:46] root ERROR: When parsing line Train_017765.jpg	黛西口腔	黛,5,16	西,16,27	口,27,32	腔,32,38
+, error happened with msg: OpenCV(4.2.0) /io/opencv/modules/imgproc/src/resize.cpp:4045: error: (-215:Assertion failed) !ssize.empty() in function 'resize'
+
+[2021/06/30 22:19:11] root ERROR: When parsing line Train_013953.jpg	18022473023	1,0,6	8,6,18	0,18,24	2,24,37	2,37,43	4,43,49	7,49,55	3,55,68	0,68,74	2,74,86	3,86,93
+, error happened with msg: OpenCV(4.2.0) /io/opencv/modules/imgproc/src/color.cpp:182: error: (-215:Assertion failed) !_src.empty() in function 'cvtColor'
+
+[2021/06/30 22:21:13] root ERROR: When parsing line Train_037723.jpg	限公	限,0,3	公,3,26
+, error happened with msg: OpenCV(4.2.0) /io/opencv/modules/imgproc/src/color.cpp:182: error: (-215:Assertion failed) !_src.empty() in function 'cvtColor'
+
+[2021/06/30 22:47:26] root ERROR: When parsing line Train_037723.jpg	限公	限,0,3	公,3,26
+, error happened with msg: OpenCV(4.2.0) /io/opencv/modules/imgproc/src/color.cpp:182: error: (-215:Assertion failed) !_src.empty() in function 'cvtColor'
+
+[2021/06/30 22:52:57] root ERROR: When parsing line Train_037723.jpg	限公	限,0,3	公,3,26
+, error happened with msg: OpenCV(4.2.0) /io/opencv/modules/imgproc/src/resize.cpp:4045: error: (-215:Assertion failed) !ssize.empty() in function 'resize'
+
+[2021/06/30 23:22:09] root ERROR: When parsing line Train_049817.jpg	村夫烤鱼	村,4,8	夫,8,16	烤,16,20	鱼,20,29
+, error happened with msg: index -1 is out of bounds for axis 1 with size 0
+[2021/06/30 23:33:04] root ERROR: When parsing line Train_047472.jpg	16A	1,6,12	6,12,30	A,30,42
+, error happened with msg: index -1 is out of bounds for axis 1 with size 0
+[2021/07/01 02:03:35] root ERROR: When parsing line Train_011564.jpg	晚：15：3	晚,2,13	：,13,21	1,21,26	5,26,32	：,32,34	3,34,43
+, error happened with msg: index -1 is out of bounds for axis 1 with size 0
+[2021/07/01 03:26:56] root ERROR: When parsing line Train_047821.jpg	代收	代,0,3	收,3,25
+, error happened with msg: OpenCV(4.2.0) /io/opencv/modules/imgproc/src/color.cpp:182: error: (-215:Assertion failed) !_src.empty() in function 'cvtColor'
+
+[2021/07/01 04:35:20] root ERROR: When parsing line Train_049134.jpg	创业	创,0,3	业,3,23
+, error happened with msg: index -1 is out of bounds for axis 1 with size 0
+[2021/07/01 04:54:28] root ERROR: When parsing line Train_041296.jpg	老年生活便利
+, error happened with msg: OpenCV(4.2.0) /io/opencv/modules/imgproc/src/resize.cpp:4045: error: (-215:Assertion failed) !ssize.empty() in function 'resize'
+
+[2021/07/01 05:25:35] root ERROR: When parsing line Train_038854.jpg	标水	标,4,8	水,8,52
+, error happened with msg: index -1 is out of bounds for axis 1 with size 0
+[2021/07/01 07:17:53] root ERROR: When parsing line Train_031335.jpg	China	C,2,9	h,9,12	i,12,14	n,14,24	a,24,32
+, error happened with msg: OpenCV(4.2.0) /io/opencv/modules/imgproc/src/color.cpp:182: error: (-215:Assertion failed) !_src.empty() in function 'cvtColor'
+
+[2021/07/01 07:20:03] root ERROR: When parsing line Train_049134.jpg	创业	创,0,3	业,3,23
+, error happened with msg: index -1 is out of bounds for axis 1 with size 0
+[2021/07/01 09:23:12] root ERROR: When parsing line Train_037640.jpg	秘制	秘,9,29	制,29,34
+, error happened with msg: OpenCV(4.2.0) /io/opencv/modules/imgproc/src/color.cpp:182: error: (-215:Assertion failed) !_src.empty() in function 'cvtColor'
+
+[2021/07/01 10:19:40] root ERROR: When parsing line Train_021680.jpg	烟酒 棋牌	烟,6,18	酒,18,24	 ,24,30	棋,30,48	牌,48,60
+, error happened with msg: index -1 is out of bounds for axis 1 with size 0
+[2021/07/01 10:45:32] root ERROR: When parsing line Train_047821.jpg	代收	代,0,3	收,3,25
+, error happened with msg: OpenCV(4.2.0) /io/opencv/modules/imgproc/src/color.cpp:182: error: (-215:Assertion failed) !_src.empty() in function 'cvtColor'
+
+[2021/07/01 11:26:33] root ERROR: When parsing line Train_008836.jpg	东宣广告图文	东,8,12	宣,12,16	广,16,20	告,20,24	图,24,32	文,32,36
+, error happened with msg: index -1 is out of bounds for axis 1 with size 0
+[2021/07/01 12:17:19] root ERROR: When parsing line Train_035298.jpg	复印	复,0,3	印,3,21
+, error happened with msg: OpenCV(4.2.0) /io/opencv/modules/imgproc/src/resize.cpp:4045: error: (-215:Assertion failed) !ssize.empty() in function 'resize'
+
+[2021/07/01 12:19:39] root ERROR: When parsing line Train_049134.jpg	创业	创,0,3	业,3,23
+, error happened with msg: index -1 is out of bounds for axis 1 with size 0
+[2021/07/01 13:25:56] root ERROR: When parsing line Train_049134.jpg	创业	创,0,3	业,3,23
+, error happened with msg: index -1 is out of bounds for axis 1 with size 0
