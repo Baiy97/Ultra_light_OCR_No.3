@@ -1,4 +1,5 @@
 # 注意数据存储位置
+wget https://bj.bcebos.com/v1/ai-studio-online/8ad391b076894b449ca938ebe40cf6788ab000aa6e0d463586315734f20ceb20?responseContentDisposition=attachment%3B%20filename%3D%E8%AE%AD%E7%BB%83%E6%95%B0%E6%8D%AE%E9%9B%86.zip&authorization=bce-auth-v1%2F0ef6765c1e494918bc0d4c3ca3e5c6d1%2F2021-05-09T15%3A40%3A37Z%2F-1%2F%2Fd0127b44a66b9e5ef114252b5be3402d58604332f5e047055fb2c3073f949902
 
 
 # 第一阶段训练

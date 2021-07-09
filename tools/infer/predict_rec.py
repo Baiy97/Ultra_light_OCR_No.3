@@ -262,27 +262,27 @@ def main(args):
     details = []
     for idx, image_file in enumerate(image_file_list):
         img, flag = check_and_read_gif(image_file)
-        # if not flag:
-        #     img = cv2.imread(image_file)
-        # if img is None:
-        #     logger.info("error in loading image:{}".format(image_file))
-        #     continue
-        # valid_image_file_list.append(image_file)
-        # img_list.append(img)
+        # # if not flag:
+        # #     img = cv2.imread(image_file)
+        # # if img is None:
+        # #     logger.info("error in loading image:{}".format(image_file))
+        # #     continue
+        # # valid_image_file_list.append(image_file)
+        # # img_list.append(img)
         if not flag:
             img = cv2.imread(image_file)
-            '''
-            TODO data augmentation
-            '''
+            # '''
+            # TODO data augmentation
+            # '''
             # image_files_, imgs_ = [image_file] * 8, sample_augmentation(img)
             # image_files_, imgs_ = split_aug(img, image_file)
         if img is None:
             logger.info("error in loading image:{}".format(image_file))
             continue
-        valid_image_file_list.append(image_file)
-        img_list.append(img)
-        # valid_image_file_list += image_files_
-        # img_list += imgs_
+        # valid_image_file_list.append(image_file)
+        # img_list.append(img)
+        valid_image_file_list += [image_file]
+        img_list += [img]
         
         if len(img_list) >= args.rec_batch_num or idx == len(
                 image_file_list) - 1:
@@ -304,7 +304,11 @@ def main(args):
                 imgname = valid_image_file_list[ino].split('/')[-1]
                 lines.append(imgname+'\t'+rec_res[ino][0]+'\n')
                 # import ipdb; ipdb.set_trace()
-                details.append(imgname + '\t' + rec_res[ino][0] + '\t' + str(rec_res[ino][1]) + '\t' + ','.join([str(t) for t in rec_res[ino][2]]) + '\t' + ','.join([str(t) for t in rec_res[ino][3].tolist()]) + '\n')
+                # details.append(imgname + '\t' + rec_res[ino][0] + '\t' + str(rec_res[ino][1]) + '\t' + ','.join([str(t) for t in rec_res[ino][2]]) + '\t' + ','.join([str(t) for t in rec_res[ino][3].tolist()]) + '\n')
+                details.append(imgname + '\t' + rec_res[ino][0]  + '\t' + ','.join(
+                    [str(t) for t in rec_res[ino][3].tolist()]) + '\n')
+
+
                 # import ipdb; ipdb.set_trace()
                 logger.info("Predicts of {}:{}".format(valid_image_file_list[
                     ino], rec_res[ino][:2]))
